@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1777442661613,
+  "updatedAt": 1777443480939,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
@@ -359,67 +359,6 @@
       },
       "createdAt": 1777370055451,
       "updatedAt": 1777371637705
-    },
-    {
-      "id": "03fd461b-f301-489e-8315-25079124609b",
-      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
-      "name": "123",
-      "type": "flowchart",
-      "data": {
-        "nodes": [
-          {
-            "id": "start",
-            "type": "flow-terminator",
-            "position": {
-              "x": 739,
-              "y": 98
-            },
-            "data": {
-              "label": "Start"
-            },
-            "measured": {
-              "width": 140,
-              "height": 52
-            },
-            "selected": false,
-            "dragging": false
-          },
-          {
-            "id": "1",
-            "type": "flow-process",
-            "position": {
-              "x": 744,
-              "y": 350
-            },
-            "data": {
-              "label": "Process"
-            },
-            "measured": {
-              "width": 140,
-              "height": 52
-            },
-            "selected": false,
-            "dragging": false
-          }
-        ],
-        "edges": [
-          {
-            "id": "e-start-1",
-            "source": "start",
-            "target": "1",
-            "animated": true,
-            "style": {
-              "strokeWidth": 2
-            },
-            "markerEnd": {
-              "type": "arrowclosed"
-            }
-          }
-        ],
-        "mermaidCode": "graph TD\n  start([\"Start\"])\n  1(\"Process\")\n  start -.-> 1\n"
-      },
-      "createdAt": 1777365078115,
-      "updatedAt": 1777368272300
     }
   ]
 }
