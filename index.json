@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1777443480939,
+  "updatedAt": 1777443604335,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
@@ -308,57 +308,6 @@
       },
       "createdAt": 1777362313943,
       "updatedAt": 1777371842942
-    },
-    {
-      "id": "7205207a-35c6-415d-8cd5-a1d54624bbf8",
-      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
-      "name": "123",
-      "type": "mindmap",
-      "data": {
-        "nodes": [
-          {
-            "id": "root",
-            "label": "Main Topic",
-            "parentId": null,
-            "order": 0,
-            "shape": "circle"
-          },
-          {
-            "id": "n1",
-            "label": "Topic 1",
-            "parentId": "root",
-            "order": 0,
-            "shape": "default"
-          },
-          {
-            "id": "n2",
-            "label": "Topic 2",
-            "parentId": "root",
-            "order": 1,
-            "shape": "default"
-          },
-          {
-            "id": "n3",
-            "label": "Topic 3",
-            "parentId": "root",
-            "order": 2,
-            "shape": "default"
-          },
-          {
-            "id": "n1a",
-            "label": "Subtopic",
-            "parentId": "n1",
-            "order": 0,
-            "shape": "default"
-          }
-        ],
-        "mmLayout": "both",
-        "mmNodeStyle": "box",
-        "mmBgPattern": "none",
-        "mermaidCode": "mindmap\n  Main Topic\n    Topic 1\n      Subtopic\n    Topic 2\n    Topic 3\n"
-      },
-      "createdAt": 1777370055451,
-      "updatedAt": 1777371637705
     }
   ]
 }
