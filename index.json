@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777476821669,
+  "updatedAt": 1777476938687,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777476809994
+      "updatedAt": 1777476879741
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -42,17 +42,23 @@
             "id": "1",
             "type": "flow-process",
             "position": {
-              "x": 250,
-              "y": 150
+              "x": 330,
+              "y": 222
             },
             "data": {
-              "label": "Process撒开大姐卢卡斯建档立卡是几点啦时间的拉升阶段"
+              "label": "Process撒开大姐卢卡斯建档立卡是几点啦时间的拉升阶段",
+              "width": 294,
+              "height": 57
             },
             "measured": {
-              "width": 140,
-              "height": 52
+              "width": 294,
+              "height": 57
             },
-            "selected": true
+            "selected": true,
+            "dragging": false,
+            "width": 294,
+            "height": 57,
+            "resizing": false
           }
         ],
         "edges": [
@@ -74,7 +80,7 @@
         "mermaidCode": "graph TD\n  start([\"Start\"])\n  1(\"Process撒开大姐卢卡斯建档立卡是几点啦时间的拉升阶段\")\n  start -.-> 1\n"
       },
       "createdAt": 1777471703729,
-      "updatedAt": 1777476809980
+      "updatedAt": 1777476879730
     },
     {
       "id": "72901668-cf46-4cd8-a626-2ddf0cd6d1a0",
