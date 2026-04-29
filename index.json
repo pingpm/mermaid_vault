@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777473966079,
+  "updatedAt": 1777476582882,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777473856496
+      "updatedAt": 1777476549447
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -109,12 +109,12 @@
           }
         ],
         "mmLayout": "right",
-        "mmNodeStyle": "underline",
+        "mmNodeStyle": "plain",
         "mmBgPattern": "lines",
         "mermaidCode": "mindmap\n  Main Topic\n    New node\n    New node\n    是大姐卡好看接电话撒点回家啊可是大姐卡和思考觉得哈数据库和大姐啊是大姐啊哈数据库等哈数据库和大姐卡是大姐看哈数据德华将阿克苏河大姐卡上打死的\n    New node\n      New node\n    New node\n    New node\n    New node\n    New node\n    New node\n    New node\n    New node\n    New node\n"
       },
       "createdAt": 1777362313943,
-      "updatedAt": 1777473856483
+      "updatedAt": 1777476549432
     },
     {
       "id": "b22299ee-543e-47dc-ad11-17cbdfb81d80",
