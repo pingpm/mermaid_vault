@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777476938687,
+  "updatedAt": 1777477182749,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777476879741
+      "updatedAt": 1777477171526
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -34,8 +34,8 @@
               "label": "Start"
             },
             "measured": {
-              "width": 140,
-              "height": 52
+              "width": 100,
+              "height": 40
             }
           },
           {
@@ -46,7 +46,7 @@
               "y": 222
             },
             "data": {
-              "label": "Process撒开大姐卢卡斯建档立卡是几点啦时间的拉升阶段",
+              "label": "考虑考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑；看；离开了；考虑；考虑；",
               "width": 294,
               "height": 57
             },
@@ -77,10 +77,10 @@
             }
           }
         ],
-        "mermaidCode": "graph TD\n  start([\"Start\"])\n  1(\"Process撒开大姐卢卡斯建档立卡是几点啦时间的拉升阶段\")\n  start -.-> 1\n"
+        "mermaidCode": "graph TD\n  start([\"Start\"])\n  1(\"考虑考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑；看；离开了；考虑；考虑；\")\n  start -.-> 1\n"
       },
       "createdAt": 1777471703729,
-      "updatedAt": 1777476879730
+      "updatedAt": 1777477171523
     },
     {
       "id": "72901668-cf46-4cd8-a626-2ddf0cd6d1a0",
