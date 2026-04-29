@@ -1,0 +1,33 @@
+sequenceDiagram
+  autonumber
+  actor p0 as User
+  participant p1 as System
+  participant p2 as d m s
+  participant p3 as c m s
+  participant p4 as f m d
+  p0->>p1: Request
+  activate p1
+  deactivate p1
+  p1-->>p0: Response
+  p0->>p1: get
+  activate p1
+  deactivate p1
+  p1-->>p0: Reply
+  p0->>p1: 123123
+  activate p1
+  deactivate p1
+  p1-->>p0: Reply
+  p0->>p3: 2323
+  activate p3
+  deactivate p3
+  p3-->>p0: Reply
+  p0->>p3: 12323
+  activate p3
+  deactivate p3
+  p3-->>p0: Reply
+  p0--)p4: 21323
+  p0->>p1: 123213
+
+  %% Links
+  %% [接口1] http://www.baidu.com (used in: get)
+  %% [接口222] https://www.google.com (used in: 12323)
