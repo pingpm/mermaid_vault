@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777531428870,
+  "updatedAt": 1777532121724,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777531381938
+      "updatedAt": 1777532013512
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -16,6 +16,149 @@
     }
   ],
   "diagrams": [
+    {
+      "id": "e57a9910-97b8-4c65-9669-0c2f3234df41",
+      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
+      "name": "取消 订单时序",
+      "type": "sequence",
+      "data": {
+        "lifelines": [
+          {
+            "id": "user",
+            "label": "用户",
+            "kind": "actor",
+            "order": 0
+          },
+          {
+            "id": "system",
+            "label": "支付宝平台",
+            "kind": "entity",
+            "order": 1
+          },
+          {
+            "id": "6698b3f8-acb8-44c2-8178-37674293da63",
+            "label": "商户系统",
+            "kind": "entity",
+            "order": 2
+          }
+        ],
+        "messages": [
+          {
+            "id": "605b5ac9-979d-432e-8ecb-8b1cb49804e2",
+            "from": "user",
+            "to": "system",
+            "label": "发起取消 订单",
+            "type": "sync",
+            "order": 0
+          },
+          {
+            "id": "18193717-039e-4528-8fca-6790fe1a33ca",
+            "from": "system",
+            "to": "6698b3f8-acb8-44c2-8178-37674293da63",
+            "label": "预取消咨询spi.alipay.commerce.logistics.carshipping.cancel.consult",
+            "type": "sync",
+            "order": 1
+          },
+          {
+            "id": "7d63e9c6-72ff-496d-8969-579023adc4f1",
+            "from": "6698b3f8-acb8-44c2-8178-37674293da63",
+            "to": "system",
+            "label": "返回取消咨询结果 cancel _ fee, is free _ _ cancel",
+            "type": "return",
+            "order": 2
+          },
+          {
+            "id": "5b0c412f-cb53-47ac-b0b1-9aa07a5fdb5c",
+            "from": "system",
+            "to": "user",
+            "label": "展示取消结果及费⽤",
+            "type": "return",
+            "order": 3
+          },
+          {
+            "id": "df7b08d9-5a13-40c0-99a6-0608c45164d9",
+            "from": "user",
+            "to": "system",
+            "label": "确认取消",
+            "type": "sync",
+            "order": 4
+          },
+          {
+            "id": "8fff6269-4e8a-4205-a7b5-fa995ddf240e",
+            "from": "system",
+            "to": "6698b3f8-acb8-44c2-8178-37674293da63",
+            "label": "订单取消 请求(spi.alipay.commerce.logistics.carshipping.order.cancel含 cancel reason id",
+            "type": "sync",
+            "order": 5
+          },
+          {
+            "id": "75320a8f-ce56-4d78-9148-424b495fda06",
+            "from": "6698b3f8-acb8-44c2-8178-37674293da63",
+            "to": "system",
+            "label": "返回取消结果(cancel _ fee, pay_ cancel _ fee, cancel _ status)",
+            "type": "return",
+            "order": 6
+          },
+          {
+            "id": "07c3d411-8824-4e54-9d45-fdcc4523d849",
+            "from": "system",
+            "to": "user",
+            "label": "推 送：取消成功 如有退款告知退款⾦额",
+            "type": "sync",
+            "order": 7
+          },
+          {
+            "id": "8139a469-eb33-42d1-b6c9-049fdffe461f",
+            "from": "system",
+            "to": "user",
+            "label": "订单已取消",
+            "type": "sync",
+            "order": 8
+          }
+        ],
+        "notes": [
+          {
+            "id": "101fa674-1f5e-4ce9-bda5-37e6feaa915c",
+            "text": "判断是否可取消 计算取消 费⽤",
+            "position": "over",
+            "lifelineIds": [
+              "6698b3f8-acb8-44c2-8178-37674293da63"
+            ],
+            "afterOrder": 1
+          },
+          {
+            "id": "7f9727f8-3e60-484e-aadd-80f09ae68403",
+            "text": "执⾏取消 核算最终费⽤",
+            "position": "over",
+            "lifelineIds": [
+              "6698b3f8-acb8-44c2-8178-37674293da63"
+            ],
+            "afterOrder": 5
+          },
+          {
+            "id": "e64d681d-ac81-47d9-ad70-e124d99b4926",
+            "text": "状态同步：CS_CANCEL",
+            "position": "over",
+            "lifelineIds": [
+              "system"
+            ],
+            "afterOrder": 7
+          }
+        ],
+        "fragments": [],
+        "links": [],
+        "colWidths": {},
+        "gaps": {
+          "system": 206,
+          "user": 169
+        },
+        "lifelineStyle": "dashed",
+        "boxStyle": "rounded",
+        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 用户\n  participant p1 as 支付宝平台\n  participant p2 as 商户系统\n  p0->>p1: 发起取消 订单\n  p1->>p2: 预取消咨询spi.alipay.commerce.logistics.carshipping.cancel.consult\n  Note over p2: 判断是否可取消 计算取消 费⽤\n  p2-->>p1: 返回取消咨询结果 cancel _ fee, is free _ _ cancel\n  p1-->>p0: 展示取消结果及费⽤\n  p0->>p1: 确认取消\n  p1->>p2: 订单取消 请求(spi.alipay.commerce.logistics.carshipping.order.cancel含 cancel reason id\n  Note over p2: 执⾏取消 核算最终费⽤\n  p2-->>p1: 返回取消结果(cancel _ fee, pay_ cancel _ fee, cancel _ status)\n  p1->>p0: 推 送：取消成功 如有退款告知退款⾦额\n  Note over p1: 状态同步：CS_CANCEL\n  p1->>p0: 订单已取消\n"
+      },
+      "createdAt": 1777530359403,
+      "updatedAt": 1777532013491
+    },
     {
       "id": "b22299ee-543e-47dc-ad11-17cbdfb81d80",
       "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
@@ -223,149 +366,6 @@
       },
       "createdAt": 1777365067419,
       "updatedAt": 1777531381927
-    },
-    {
-      "id": "e57a9910-97b8-4c65-9669-0c2f3234df41",
-      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
-      "name": "取消 订单时序",
-      "type": "sequence",
-      "data": {
-        "lifelines": [
-          {
-            "id": "user",
-            "label": "用户",
-            "kind": "actor",
-            "order": 0
-          },
-          {
-            "id": "system",
-            "label": "支付宝平台",
-            "kind": "entity",
-            "order": 1
-          },
-          {
-            "id": "6698b3f8-acb8-44c2-8178-37674293da63",
-            "label": "商户系统",
-            "kind": "entity",
-            "order": 2
-          }
-        ],
-        "messages": [
-          {
-            "id": "605b5ac9-979d-432e-8ecb-8b1cb49804e2",
-            "from": "user",
-            "to": "system",
-            "label": "发起取消 订单",
-            "type": "sync",
-            "order": 0
-          },
-          {
-            "id": "18193717-039e-4528-8fca-6790fe1a33ca",
-            "from": "system",
-            "to": "6698b3f8-acb8-44c2-8178-37674293da63",
-            "label": "预取消咨询spi.alipay.commerce.logistics.carshipping.cancel.consult",
-            "type": "sync",
-            "order": 1
-          },
-          {
-            "id": "7d63e9c6-72ff-496d-8969-579023adc4f1",
-            "from": "6698b3f8-acb8-44c2-8178-37674293da63",
-            "to": "system",
-            "label": "返回取消咨询结果 cancel _ fee, is free _ _ cancel",
-            "type": "return",
-            "order": 2
-          },
-          {
-            "id": "5b0c412f-cb53-47ac-b0b1-9aa07a5fdb5c",
-            "from": "system",
-            "to": "user",
-            "label": "展示取消结果及费⽤",
-            "type": "return",
-            "order": 3
-          },
-          {
-            "id": "df7b08d9-5a13-40c0-99a6-0608c45164d9",
-            "from": "user",
-            "to": "system",
-            "label": "确认取消",
-            "type": "sync",
-            "order": 4
-          },
-          {
-            "id": "8fff6269-4e8a-4205-a7b5-fa995ddf240e",
-            "from": "system",
-            "to": "6698b3f8-acb8-44c2-8178-37674293da63",
-            "label": "订单取消 请求(spi.alipay.commerce.logistics.carshipping.order.cancel含 cancel reason id",
-            "type": "sync",
-            "order": 5
-          },
-          {
-            "id": "75320a8f-ce56-4d78-9148-424b495fda06",
-            "from": "6698b3f8-acb8-44c2-8178-37674293da63",
-            "to": "system",
-            "label": "返回取消结果(cancel _ fee, pay_ cancel _ fee, cancel _ status)",
-            "type": "return",
-            "order": 6
-          },
-          {
-            "id": "07c3d411-8824-4e54-9d45-fdcc4523d849",
-            "from": "system",
-            "to": "user",
-            "label": "推 送：取消成功 如有退款告知退款⾦额",
-            "type": "sync",
-            "order": 7
-          },
-          {
-            "id": "8139a469-eb33-42d1-b6c9-049fdffe461f",
-            "from": "system",
-            "to": "user",
-            "label": "订单已取消",
-            "type": "sync",
-            "order": 8
-          }
-        ],
-        "notes": [
-          {
-            "id": "101fa674-1f5e-4ce9-bda5-37e6feaa915c",
-            "text": "判断是否可取消 计算取消 费⽤",
-            "position": "over",
-            "lifelineIds": [
-              "6698b3f8-acb8-44c2-8178-37674293da63"
-            ],
-            "afterOrder": 1
-          },
-          {
-            "id": "7f9727f8-3e60-484e-aadd-80f09ae68403",
-            "text": "执⾏取消 核算最终费⽤",
-            "position": "over",
-            "lifelineIds": [
-              "6698b3f8-acb8-44c2-8178-37674293da63"
-            ],
-            "afterOrder": 5
-          },
-          {
-            "id": "e64d681d-ac81-47d9-ad70-e124d99b4926",
-            "text": "状态同步：CS_CANCEL",
-            "position": "over",
-            "lifelineIds": [
-              "system"
-            ],
-            "afterOrder": 7
-          }
-        ],
-        "fragments": [],
-        "links": [],
-        "colWidths": {},
-        "gaps": {
-          "system": 206,
-          "user": 169
-        },
-        "lifelineStyle": "dashed",
-        "boxStyle": "rounded",
-        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 用户\n  participant p1 as 支付宝平台\n  participant p2 as 商户系统\n  p0->>p1: 发起取消 订单\n  p1->>p2: 预取消咨询spi.alipay.commerce.logistics.carshipping.cancel.consult\n  Note over p2: 判断是否可取消 计算取消 费⽤\n  p2-->>p1: 返回取消咨询结果 cancel _ fee, is free _ _ cancel\n  p1-->>p0: 展示取消结果及费⽤\n  p0->>p1: 确认取消\n  p1->>p2: 订单取消 请求(spi.alipay.commerce.logistics.carshipping.order.cancel含 cancel reason id\n  Note over p2: 执⾏取消 核算最终费⽤\n  p2-->>p1: 返回取消结果(cancel _ fee, pay_ cancel _ fee, cancel _ status)\n  p1->>p0: 推 送：取消成功 如有退款告知退款⾦额\n  Note over p1: 状态同步：CS_CANCEL\n  p1->>p0: 订单已取消\n"
-      },
-      "createdAt": 1777530359403,
-      "updatedAt": 1777530667195
     },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
