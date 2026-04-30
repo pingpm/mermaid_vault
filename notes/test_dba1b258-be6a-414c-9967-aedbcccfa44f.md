@@ -9,6 +9,7 @@ sequenceDiagram
   p0->>p1: 填写起终点、⻋型、⽤⻋时间
   p1->>p2: 运⼒询价请求 (spi.alipay.commerce.logistics.carshipping.inquiry.query)
   activate p2
+  Note over p2: 计算线路价格
   p2-->>p1: 返回报价信息 (available, price _ info, transport _ type)
   deactivate p2
   p1-->>p0: 展示运⼒及价格
@@ -23,5 +24,6 @@ sequenceDiagram
   activate p2
   p2-->>p1: 处理结果 (result=true)
   deactivate p2
+  p1->>p0: ⽀付成功，等待接单
 
 ```
