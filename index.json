@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777526144091,
+  "updatedAt": 1777526383208,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777526133051
+      "updatedAt": 1777526371204
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -204,7 +204,16 @@
             "afterOrder": 5
           }
         ],
-        "fragments": [],
+        "fragments": [
+          {
+            "kind": "loop",
+            "label": "阿斯顿",
+            "startOrder": 0,
+            "endOrder": 15,
+            "branches": [],
+            "id": "a9a8b3e5-3be8-4db5-a051-4d848f0eeb60"
+          }
+        ],
         "links": [],
         "colWidths": {},
         "gaps": {
@@ -215,10 +224,10 @@
         },
         "lifelineStyle": "dashed",
         "boxStyle": "rounded",
-        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 用户\n  participant p1 as 支付宝平台\n  participant p2 as 商户系统\n  participant p3 as 22222\n  participant p4 as 123\n  p0->>p1: 填写起终点、⻋型、⽤⻋时间\n  p1->>p2: 运⼒询价请求 (spi.alipay.commerce.logistics.carshipping.inquiry.query)\n  Note over p2: 计算线路价格\n  p2-->>p1: 返回报价信息 (available, price _ info, transport _ type)\n  p2->>p3: Message\n  p4->>p4: 123\n  p2->>p2: 收到\n  Note left of p2: 创建订单⽣成商户订单号\n  p1-->>p0: 展示运⼒及价格\n  p0->>p1: 选择运⼒，确认下单\n  p4->>p4: Message\n  p1->>p2: 订单创建请求 (spi.alipay.commerce.logistics.carshipping.order.create)\n  p2-->>p1: 返回订单信息(business_order_no, alipay_trade_no)\n  p1-->>p0: 订单创建成功，跳转⽀付\n  p0->>p1: 完成⽀付\n  p1->>p2: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)\n  p2-->>p1: 处理结果 (result=true)\n  p1->>p0: ⽀付成功，等待接单\n"
+        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 用户\n  participant p1 as 支付宝平台\n  participant p2 as 商户系统\n  participant p3 as 22222\n  participant p4 as 123\n  loop 阿斯顿\n  p0->>p1: 填写起终点、⻋型、⽤⻋时间\n  p1->>p2: 运⼒询价请求 (spi.alipay.commerce.logistics.carshipping.inquiry.query)\n  Note over p2: 计算线路价格\n  p2-->>p1: 返回报价信息 (available, price _ info, transport _ type)\n  p2->>p3: Message\n  p4->>p4: 123\n  p2->>p2: 收到\n  Note left of p2: 创建订单⽣成商户订单号\n  p1-->>p0: 展示运⼒及价格\n  p0->>p1: 选择运⼒，确认下单\n  p4->>p4: Message\n  p1->>p2: 订单创建请求 (spi.alipay.commerce.logistics.carshipping.order.create)\n  p2-->>p1: 返回订单信息(business_order_no, alipay_trade_no)\n  p1-->>p0: 订单创建成功，跳转⽀付\n  p0->>p1: 完成⽀付\n  p1->>p2: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)\n  p2-->>p1: 处理结果 (result=true)\n  p1->>p0: ⽀付成功，等待接单\n  end\n"
       },
       "createdAt": 1777518659349,
-      "updatedAt": 1777526133020
+      "updatedAt": 1777526371194
     },
     {
       "id": "c67d29b2-1ede-441e-9024-359aebe3bb9a",
@@ -281,10 +290,10 @@
             }
           }
         ],
-        "mermaidCode": "graph TD start([\"Start\"]) 1(\"Process\") 30e554d4-4f96-424e-9f90-e42c67859951(\"Process 3\")\n  start -.-> 1\n  1 --> 30e554d4-4f96-424e-9f90-e42c67859951\n"
+        "mermaidCode": "graph TD\n  start([\"Start\"])\n  1(\"考虑考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑；看；离开了；考虑；考虑；\")\n  start -.-> 1\n"
       },
       "createdAt": 1777471703729,
-      "updatedAt": 1777519934346
+      "updatedAt": 1777526295602
     },
     {
       "id": "72901668-cf46-4cd8-a626-2ddf0cd6d1a0",

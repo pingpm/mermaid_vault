@@ -8,6 +8,7 @@ sequenceDiagram
   participant p2 as 商户系统
   participant p3 as 22222
   participant p4 as 123
+  loop 阿斯顿
   p0->>p1: 填写起终点、⻋型、⽤⻋时间
   p1->>p2: 运⼒询价请求 (spi.alipay.commerce.logistics.carshipping.inquiry.query)
   Note over p2: 计算线路价格
@@ -26,5 +27,6 @@ sequenceDiagram
   p1->>p2: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)
   p2-->>p1: 处理结果 (result=true)
   p1->>p0: ⽀付成功，等待接单
+  end
 
 ```
