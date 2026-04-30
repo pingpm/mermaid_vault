@@ -15,11 +15,14 @@ sequenceDiagram
   p4->>p4: Message
   p1->>p2: Message
   activate p2
+  p4->>p3: Message
+  Note left of p2: 创建订单⽣成商户订单号
   p2-->>p1: Reply
   deactivate p2
-  Note left of p2: 创建订单⽣成商户订单号
+  p3->>p4: Message
   p1-->>p0: 展示运⼒及价格
   p0->>p1: 选择运⼒，确认下单
+  p4->>p4: Message
   p1->>p2: 订单创建请求 (spi.alipay.commerce.logistics.carshipping.order.create)
   p2-->>p1: 返回订单信息(business_order_no, alipay_trade_no)
   p1-->>p0: 订单创建成功，跳转⽀付
