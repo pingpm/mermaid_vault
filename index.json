@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777527489802,
+  "updatedAt": 1777527597777,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777527481418
+      "updatedAt": 1777527593686
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -157,7 +157,37 @@
             "order": 13
           }
         ],
-        "notes": [],
+        "notes": [
+          {
+            "text": "scene=CAR\nSHIPPING\nORDER\n_\n_\n_\ndata 包含订单状态信息\nALIPAY",
+            "position": "over",
+            "lifelineIds": [
+              "system"
+            ],
+            "afterOrder": 0,
+            "id": "457738f9-6c9b-4a97-9c90-4c546cae1083"
+          },
+          {
+            "text": "核⼼状态节点：",
+            "position": "over",
+            "lifelineIds": [
+              "user",
+              "system",
+              "76b085e7-cfa5-43b0-a2f4-0fad6874fb6f"
+            ],
+            "afterOrder": 1,
+            "id": "d1c580c3-77c5-4462-9ec8-0f58c9fba5f6"
+          },
+          {
+            "text": "CS_TO_PICKUP 待接单",
+            "position": "over",
+            "lifelineIds": [
+              "user"
+            ],
+            "afterOrder": 1,
+            "id": "42622b2a-4987-4673-a724-a7611e640e8f"
+          }
+        ],
         "fragments": [],
         "links": [],
         "colWidths": {
@@ -169,10 +199,10 @@
         },
         "lifelineStyle": "dashed",
         "boxStyle": "rounded",
-        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 商户系统\n  participant p1 as ⽀付宝平台\n  actor p2 as ⽤ ⽤ 户\n  p0->>p1: 状态同步接⼝ (alipay.commerce.logistics.waybill.status.sync)\n  activate p1\n  p1-->>p0: 同步成功\n  deactivate p1\n  p0->>p1: 同步：已接单 (CS TAKE _ ORDER) 含司机姓名、电话、⻋架号\n  p1->>p2: 推 送：司机已接单，正在赶往取⻋地\n  p0->>p1: 同步：已取⻋ (CS PICKED _ _ 含⻋辆照⽚、VIN 码 UP)\n  p1->>p2: 推 送：司机已接单，正在赶往取⻋地\n  p0->>p1: 同步：运送 中 (CS _ DELIVERING)\n  p1->>p2: 推 送：⻋辆在运输途中\n  p0->>p1: 同步：已送达 (CS _ ARRIVED)\n  p1->>p2: 推 送：⻋辆已送达⽬的地\n  p0->>p1: 同步：服务完成 (CS SERVICE _ _ COMPLETED)\n  p1->>p2: 推 送：服务完成\n  p0->>p1: 同步：订单完成 (CS _ SUCCESS)\n  p1->>p2: 推 送：订单完成\n"
+        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 商户系统\n  participant p1 as ⽀付宝平台\n  actor p2 as ⽤ ⽤ 户\n  p0->>p1: 状态同步接⼝ (alipay.commerce.logistics.waybill.status.sync)\n  activate p1\n  Note over p1: scene=CAR SHIPPING ORDER _ _ _ data 包含订单状态信息 ALIPAY\n  p1-->>p0: 同步成功\n  deactivate p1\n  Note over p0,p1,p2: 核⼼状态节点：\n  Note over p0: CS_TO_PICKUP 待接单\n  p0->>p1: 同步：已接单 (CS TAKE _ ORDER) 含司机姓名、电话、⻋架号\n  p1->>p2: 推 送：司机已接单，正在赶往取⻋地\n  p0->>p1: 同步：已取⻋ (CS PICKED _ _ 含⻋辆照⽚、VIN 码 UP)\n  p1->>p2: 推 送：司机已接单，正在赶往取⻋地\n  p0->>p1: 同步：运送 中 (CS _ DELIVERING)\n  p1->>p2: 推 送：⻋辆在运输途中\n  p0->>p1: 同步：已送达 (CS _ ARRIVED)\n  p1->>p2: 推 送：⻋辆已送达⽬的地\n  p0->>p1: 同步：服务完成 (CS SERVICE _ _ COMPLETED)\n  p1->>p2: 推 送：服务完成\n  p0->>p1: 同步：订单完成 (CS _ SUCCESS)\n  p1->>p2: 推 送：订单完成\n"
       },
       "createdAt": 1777527266203,
-      "updatedAt": 1777527481390
+      "updatedAt": 1777527593674
     },
     {
       "id": "dba1b258-be6a-414c-9967-aedbcccfa44f",
