@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777520206153,
+  "updatedAt": 1777520325702,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777519984193
+      "updatedAt": 1777520321096
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -166,15 +166,15 @@
         "gaps": {
           "2f405436-b135-4d9d-a1ce-f9a020ffd73a": 186,
           "f19d02ee-d945-457e-be98-e11f10277bca": 135,
-          "fe4eb442-72d4-4959-9056-1ccbe9f6b95b": 219,
+          "fe4eb442-72d4-4959-9056-1ccbe9f6b95b": 243,
           "39bf119f-b745-4b0d-b89a-95fc71385ad9": 166
         },
         "lifelineStyle": "dashed",
         "boxStyle": "rounded",
-        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 用户\n  participant p1 as 支付宝平台\n  participant p2 as 商户系统\n  p0->>p1: 填写起终点、⻋型、⽤⻋时间\n  p1->>p2: 运⼒询价请求 (spi.alipay.commerce.logistics.carshipping.inquiry.query)\n  Note over p2: 计算线路价格\n  p2-->>p1: 返回报价信息 (available, price _ info, transport _ type)\n  p1-->>p0: 展示运⼒及价格\n  p0->>p1: 选择运⼒， 确认下单\n  p1->>p2: 订单创建请求 (spi.alipay.commerce.logistics.carshipping.order.create)\n  Note left of p2: 创建订单⽣成商户订单号\n  p2-->>p1: 返回订单信息(business_order_no, alipay_trade_no)\n  p1-->>p0: 订单创建成功， 跳转⽀付\n  p0->>p1: 完成⽀付\n  p1->>p2: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)\n  p2-->>p1: 处理结果 (result=true)\n  p1->>p0: ⽀付成功，等待接单"
+        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 用户\n  participant p1 as 支付宝平台\n  participant p2 as 商户系统\n  p0->>p1: 填写起终点、⻋型、⽤⻋时间\n  p1->>p2: 运⼒询价请求 (spi.alipay.commerce.logistics.carshipping.inquiry.query)\n  Note over p2: 计算线路价格\n  p2-->>p1: 返回报价信息 (available, price _ info, transport _ type)\n  p1-->>p0: 展示运⼒及价格\n  p0->>p1: 选择运⼒，确认下单\n  p1->>p2: 订单创建请求 (spi.alipay.commerce.logistics.carshipping.order.create)\n  Note left of p2: 创建订单⽣成商户订单号\n  p2-->>p1: 返回订单信息(business_order_no, alipay_trade_no)\n  p1-->>p0: 订单创建成功，跳转⽀付\n  p0->>p1: 完成⽀付\n  p1->>p2: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)\n  p2-->>p1: 处理结果 (result=true)\n  p1->>p0: ⽀付成功，等待接单\n"
       },
       "createdAt": 1777518659349,
-      "updatedAt": 1777519984131
+      "updatedAt": 1777520321063
     },
     {
       "id": "c67d29b2-1ede-441e-9024-359aebe3bb9a",
