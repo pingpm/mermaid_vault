@@ -4,12 +4,13 @@ sequenceDiagram
   participant p1 as 支付宝平台
   participant p2 as 商户系统
   p0->>p1: 发起取消 订单
-  activate p1
   p1->>p2: 预取消咨询spi.alipay.commerce.logistics.carshipping.cancel.consult
-  activate p2
+  Note over p2: 判断是否可取消 计算取消 费⽤
   p2-->>p1: 返回取消咨询结果 cancel _ fee, is free _ _ cancel
-  deactivate p2
   p1-->>p0: 展示取消结果及费⽤
-  deactivate p1
   p0->>p1: 确认取消
-  p1->>p2: 订单取消 请求
+  p1->>p2: 订单取消 请求(spi.alipay.commerce.logistics.carshipping.order.cancel含 cancel reason id
+  Note over p2: 执⾏取消 核算最终费⽤
+  p2-->>p1: 返回取消结果(cancel _ fee, pay_ cancel _ fee, cancel _ status)
+  p1->>p0: 推 送：取消成功 如有退款告知退款⾦额
+  p1->>p0: 订单已取消
