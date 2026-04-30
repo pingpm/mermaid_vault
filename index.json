@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777523967099,
+  "updatedAt": 1777524088756,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777523930401
+      "updatedAt": 1777524004683
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -161,20 +161,12 @@
             "order": 12
           },
           {
-            "id": "fc225dee-125d-43f0-aa2d-446fef58ed17",
-            "from": "32e390d0-b1fd-4161-b406-aeadbd1caf73",
-            "to": "f1346a41-3865-4c41-a714-75300d2d3d4a",
-            "label": "Message",
-            "type": "sync",
-            "order": 13
-          },
-          {
             "id": "465b0448-22bd-4adc-9d0b-ee29df4ab641",
             "from": "fe4eb442-72d4-4959-9056-1ccbe9f6b95b",
             "to": "bd2a540f-8c33-4d68-b8e4-46ae75998863",
             "label": "⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)",
             "type": "sync",
-            "order": 14
+            "order": 13
           },
           {
             "id": "aad63559-31fb-4f3b-a6fe-5849bada9c0b",
@@ -182,7 +174,7 @@
             "to": "fe4eb442-72d4-4959-9056-1ccbe9f6b95b",
             "label": "处理结果 (result=true)",
             "type": "return",
-            "order": 15
+            "order": 14
           },
           {
             "id": "4bcbebde-ac37-4d6b-8339-9c508ceefb9a",
@@ -190,7 +182,7 @@
             "to": "39bf119f-b745-4b0d-b89a-95fc71385ad9",
             "label": "⽀付成功，等待接单",
             "type": "sync",
-            "order": 16
+            "order": 15
           }
         ],
         "notes": [
@@ -224,10 +216,10 @@
         },
         "lifelineStyle": "dashed",
         "boxStyle": "rounded",
-        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 用户\n  participant p1 as 支付宝平台\n  participant p2 as 商户系统\n  participant p3 as 22222\n  participant p4 as 123\n  p0->>p1: 填写起终点、⻋型、⽤⻋时间\n  p1->>p2: 运⼒询价请求 (spi.alipay.commerce.logistics.carshipping.inquiry.query)\n  Note over p2: 计算线路价格\n  p2-->>p1: 返回报价信息 (available, price _ info, transport _ type)\n  p4->>p4: 啊哈数据德华姐卡是短裤就撒谎大姐卡是的撒谎的快乐哈数据库德华啥德华来看大叔快乐的哈萨克大姐啊了\n  p1->>p2: Message\n  activate p2\n  p2-->>p1: Reply\n  deactivate p2\n  Note left of p2: 创建订单⽣成商户订单号\n  p1-->>p0: 展示运⼒及价格\n  p0->>p1: 选择运⼒，确认下单\n  p4->>p4: Message\n  p1->>p2: 订单创建请求 (spi.alipay.commerce.logistics.carshipping.order.create)\n  p2-->>p1: 返回订单信息(business_order_no, alipay_trade_no)\n  p1-->>p0: 订单创建成功，跳转⽀付\n  p0->>p1: 完成⽀付\n  p3->>p4: Message\n  p1->>p2: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)\n  p2-->>p1: 处理结果 (result=true)\n  p1->>p0: ⽀付成功，等待接单\n"
+        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 用户\n  participant p1 as 支付宝平台\n  participant p2 as 商户系统\n  participant p3 as 22222\n  participant p4 as 123\n  p0->>p1: 填写起终点、⻋型、⽤⻋时间\n  p1->>p2: 运⼒询价请求 (spi.alipay.commerce.logistics.carshipping.inquiry.query)\n  Note over p2: 计算线路价格\n  p2-->>p1: 返回报价信息 (available, price _ info, transport _ type)\n  p4->>p4: 啊哈数据德华姐卡是短裤就撒谎大姐卡是的撒谎的快乐哈数据库德华啥德华来看大叔快乐的哈萨克大姐啊了\n  p1->>p2: Message\n  activate p2\n  p2-->>p1: Reply\n  deactivate p2\n  Note left of p2: 创建订单⽣成商户订单号\n  p1-->>p0: 展示运⼒及价格\n  p0->>p1: 选择运⼒，确认下单\n  p4->>p4: Message\n  p1->>p2: 订单创建请求 (spi.alipay.commerce.logistics.carshipping.order.create)\n  p2-->>p1: 返回订单信息(business_order_no, alipay_trade_no)\n  p1-->>p0: 订单创建成功，跳转⽀付\n  p0->>p1: 完成⽀付\n  p1->>p2: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)\n  p2-->>p1: 处理结果 (result=true)\n  p1->>p0: ⽀付成功，等待接单\n"
       },
       "createdAt": 1777518659349,
-      "updatedAt": 1777523930387
+      "updatedAt": 1777524004662
     },
     {
       "id": "c67d29b2-1ede-441e-9024-359aebe3bb9a",

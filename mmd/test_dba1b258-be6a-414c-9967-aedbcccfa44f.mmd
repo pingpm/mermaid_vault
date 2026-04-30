@@ -22,7 +22,6 @@ sequenceDiagram
   p2-->>p1: 返回订单信息(business_order_no, alipay_trade_no)
   p1-->>p0: 订单创建成功，跳转⽀付
   p0->>p1: 完成⽀付
-  p3->>p4: Message
   p1->>p2: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)
   p2-->>p1: 处理结果 (result=true)
   p1->>p0: ⽀付成功，等待接单
