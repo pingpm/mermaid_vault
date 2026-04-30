@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777530262688,
+  "updatedAt": 1777530387043,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777530257424
+      "updatedAt": 1777530377421
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -16,6 +16,57 @@
     }
   ],
   "diagrams": [
+    {
+      "id": "e57a9910-97b8-4c65-9669-0c2f3234df41",
+      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
+      "name": "取消 订单时序",
+      "type": "sequence",
+      "data": {
+        "lifelines": [
+          {
+            "id": "user",
+            "label": "用户",
+            "kind": "actor",
+            "order": 0
+          },
+          {
+            "id": "system",
+            "label": "System",
+            "kind": "entity",
+            "order": 1
+          }
+        ],
+        "messages": [
+          {
+            "id": "m1",
+            "from": "user",
+            "to": "system",
+            "label": "Request",
+            "type": "sync",
+            "order": 0
+          },
+          {
+            "id": "m2",
+            "from": "system",
+            "to": "user",
+            "label": "Response",
+            "type": "return",
+            "order": 1,
+            "replyToId": "m1"
+          }
+        ],
+        "notes": [],
+        "fragments": [],
+        "links": [],
+        "colWidths": {},
+        "gaps": {},
+        "lifelineStyle": "dashed",
+        "boxStyle": "rounded",
+        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 用户\n  participant p1 as System\n  p0->>p1: Request\n  activate p1\n  p1-->>p0: Response\n  deactivate p1\n"
+      },
+      "createdAt": 1777530359403,
+      "updatedAt": 1777530377405
+    },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
       "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
@@ -44,7 +95,7 @@
         ],
         "messages": [
           {
-            "id": "3aa63e12-95d4-4e4d-b0cd-c15acad8a6da",
+            "id": "1f96aa9c-561d-4524-9e6a-a5261539180e",
             "from": "user",
             "to": "system",
             "label": "同步：待支付（TO_PAY）含费用明细（order_fee,base_delivery_fee等）",
@@ -52,7 +103,7 @@
             "order": 0
           },
           {
-            "id": "1b1aabb0-af3d-416a-a144-31ed3175a200",
+            "id": "fe480f88-3b77-4bb5-93c7-e43ee4453de9",
             "from": "system",
             "to": "c7482b91-6314-4c64-9531-4cd304234fcb",
             "label": "展示待⽀付账单",
@@ -60,16 +111,15 @@
             "order": 1
           },
           {
-            "id": "724e9195-a95a-4064-97c1-8d39f91adbd9",
+            "id": "9309a0b0-058e-4dce-b02c-127a3304756d",
             "from": "c7482b91-6314-4c64-9531-4cd304234fcb",
             "to": "system",
             "label": "完成⽀付",
             "type": "return",
-            "order": 2,
-            "replyToId": "1b1aabb0-af3d-416a-a144-31ed3175a200"
+            "order": 2
           },
           {
-            "id": "4fce4598-ce87-40a4-85f9-1edc615e7f37",
+            "id": "620ce9a4-e78e-4ee1-afa3-c0c0f8d0df98",
             "from": "system",
             "to": "user",
             "label": "⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)",
@@ -77,16 +127,15 @@
             "order": 3
           },
           {
-            "id": "e27ecab2-fd54-40b5-a00b-c9dca141c7b9",
+            "id": "e5a7a101-9751-4fe9-9915-de7e3e3c6814",
             "from": "user",
             "to": "system",
             "label": "确认成功",
             "type": "return",
-            "order": 4,
-            "replyToId": "4fce4598-ce87-40a4-85f9-1edc615e7f37"
+            "order": 4
           },
           {
-            "id": "3209fc56-6324-4761-a1f0-e90d99b9585d",
+            "id": "eeafd6aa-3bcc-405a-92c8-470255300d26",
             "from": "user",
             "to": "system",
             "label": "同步：⽀付成功 (PAY _ SUCCESS) 含抽佣⾦额 (commission _ fee)",
@@ -94,7 +143,7 @@
             "order": 5
           },
           {
-            "id": "74590f1c-1b4b-4221-9661-56eb18e0b3bd",
+            "id": "9aee8047-0210-4d27-bb96-568a2616779a",
             "from": "system",
             "to": "c7482b91-6314-4c64-9531-4cd304234fcb",
             "label": "推 送：⽀付成功",
@@ -102,7 +151,7 @@
             "order": 6
           },
           {
-            "id": "e75fdf9c-459f-4d0a-a42b-1bf10e578b8d",
+            "id": "fdbefb9b-dfab-428b-8588-f1412856caef",
             "from": "user",
             "to": "system",
             "label": "同步：退款 (REFUND) 含退款⾦额 (refund _ fee)、退款 因",
@@ -110,7 +159,7 @@
             "order": 7
           },
           {
-            "id": "1b744655-b6ce-43f6-8df7-edf40bcce042",
+            "id": "a20a8ac1-711b-4aea-ae08-d32884debfaf",
             "from": "system",
             "to": "c7482b91-6314-4c64-9531-4cd304234fcb",
             "label": "推 送：退款处理中",
@@ -120,13 +169,34 @@
         ],
         "notes": [
           {
+            "id": "7bd728fe-d5c1-4fd9-9872-14461c2b84f4",
             "text": "⽀付单状态同步",
             "position": "over",
             "lifelineIds": [
-              "user"
+              "user",
+              "system"
             ],
-            "afterOrder": -1,
-            "id": "5a72080e-b8a6-411a-9af1-60c2bb38890b"
+            "afterOrder": -1
+          },
+          {
+            "id": "ac1f78a0-1cf5-4a3b-87b9-e7b6f016e1e7",
+            "text": "到付/尾款场景",
+            "position": "over",
+            "lifelineIds": [
+              "user",
+              "system"
+            ],
+            "afterOrder": -1
+          },
+          {
+            "id": "61e5f356-96f4-42cb-bb2a-a79554f6496c",
+            "text": "退款场景",
+            "position": "over",
+            "lifelineIds": [
+              "user",
+              "system"
+            ],
+            "afterOrder": 6
           }
         ],
         "fragments": [],
@@ -138,10 +208,10 @@
         },
         "lifelineStyle": "dashed",
         "boxStyle": "rounded",
-        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 商户系统\n  participant p1 as ⽀付宝平台\n  actor p2 as 用户\n  Note over p0: ⽀付单状态同步\n  p0->>p1: 同步：待支付（TO_PAY）含费用明细（order_fee,base_delivery_fee等）\n  p1->>p2: 展示待⽀付账单\n  activate p2\n  p2-->>p1: 完成⽀付\n  deactivate p2\n  p1->>p0: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)\n  activate p0\n  p0-->>p1: 确认成功\n  deactivate p0\n  p0->>p1: 同步：⽀付成功 (PAY _ SUCCESS) 含抽佣⾦额 (commission _ fee)\n  p1->>p2: 推 送：⽀付成功\n  p0->>p1: 同步：退款 (REFUND) 含退款⾦额 (refund _ fee)、退款 因\n  p1->>p2: 推 送：退款处理中\n"
+        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 商户系统\n  participant p1 as ⽀付宝平台\n  actor p2 as 用户\n  Note over p0,p1: ⽀付单状态同步\n  Note over p0,p1: 到付/尾款场景\n  p0->>p1: 同步：待支付（TO_PAY）含费用明细（order_fee,base_delivery_fee等）\n  p1->>p2: 展示待⽀付账单\n  activate p2\n  p2-->>p1: 完成⽀付\n  deactivate p2\n  p1->>p0: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)\n  activate p0\n  p0-->>p1: 确认成功\n  deactivate p0\n  p0->>p1: 同步：⽀付成功 (PAY _ SUCCESS) 含抽佣⾦额 (commission _ fee)\n  p1->>p2: 推 送：⽀付成功\n  Note over p0,p1: 退款场景\n  p0->>p1: 同步：退款 (REFUND) 含退款⾦额 (refund _ fee)、退款 因\n  p1->>p2: 推 送：退款处理中\n"
       },
       "createdAt": 1777529989460,
-      "updatedAt": 1777530257416
+      "updatedAt": 1777530310558
     },
     {
       "id": "4997c745-c344-4a00-aecc-c93ea21a179e",
