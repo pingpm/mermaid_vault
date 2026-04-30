@@ -1,4 +1,7 @@
 graph TD
+  subgraph lane_lane_3["Review"]
+    t_task_4["Code Review"]
+  end
   subgraph lane_lane_1["Planning"]
     t_task_1["Define Requirements"]
     t_task_2{"Approved?"}
@@ -7,9 +10,6 @@ graph TD
   subgraph lane_lane_2["Development"]
     t_task_3["Implement Feature"]
     t_43b12910_5a3e_485e_8185_afcefd1cbb3b["2323"]
-  end
-  subgraph lane_lane_3["Review"]
-    t_task_4["Code Review"]
   end
   t_task_1 --> t_task_2
   t_task_2 -->|"Yes"| t_task_3
