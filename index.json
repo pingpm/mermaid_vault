@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777529786546,
+  "updatedAt": 1777530026089,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777529730830
+      "updatedAt": 1777530018778
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -16,6 +16,63 @@
     }
   ],
   "diagrams": [
+    {
+      "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
+      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
+      "name": "支付单状态同步时序",
+      "type": "sequence",
+      "data": {
+        "lifelines": [
+          {
+            "id": "user",
+            "label": "商户系统",
+            "kind": "actor",
+            "order": 0
+          },
+          {
+            "id": "system",
+            "label": "⽀付宝平台",
+            "kind": "entity",
+            "order": 1
+          },
+          {
+            "id": "c7482b91-6314-4c64-9531-4cd304234fcb",
+            "label": "用户",
+            "kind": "actor",
+            "order": 2
+          }
+        ],
+        "messages": [
+          {
+            "id": "m1",
+            "from": "user",
+            "to": "system",
+            "label": "Request",
+            "type": "sync",
+            "order": 0
+          },
+          {
+            "id": "m2",
+            "from": "system",
+            "to": "user",
+            "label": "Response",
+            "type": "return",
+            "order": 1,
+            "replyToId": "m1"
+          }
+        ],
+        "notes": [],
+        "fragments": [],
+        "links": [],
+        "colWidths": {},
+        "gaps": {},
+        "lifelineStyle": "dashed",
+        "boxStyle": "rounded",
+        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 商户系统\n  participant p1 as ⽀付宝平台\n  actor p2 as 用户\n  p0->>p1: Request\n  activate p1\n  p1-->>p0: Response\n  deactivate p1\n"
+      },
+      "createdAt": 1777529989460,
+      "updatedAt": 1777530018769
+    },
     {
       "id": "4997c745-c344-4a00-aecc-c93ea21a179e",
       "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
@@ -44,7 +101,7 @@
         ],
         "messages": [
           {
-            "id": "3b64387d-3da7-41b7-b8dc-78541f58367d",
+            "id": "46e26bcd-40e2-4883-9c91-24bb811ba88e",
             "from": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "to": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "label": "状态同步接⼝ (alipay.commerce.logistics.waybill.status.sync)",
@@ -52,7 +109,7 @@
             "order": 0
           },
           {
-            "id": "9e89d3b3-79c8-48e6-9420-ef2a4baf6a8f",
+            "id": "1096d8d1-71f6-4634-8592-8ebb9df90c97",
             "from": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "to": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "label": "同步成功",
@@ -60,7 +117,7 @@
             "order": 1
           },
           {
-            "id": "444d5563-758f-481c-a386-4aeabb23676c",
+            "id": "08a717cc-6949-48ee-93eb-3aba1f7c1c14",
             "from": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "to": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "label": "同步：已接单 (CS TAKE _ _ ORDER) 含司机姓名、电话、⻋架号",
@@ -68,7 +125,7 @@
             "order": 2
           },
           {
-            "id": "a0d91657-cd24-4a8f-89c0-3ddbcb841f20",
+            "id": "4d844cde-a587-4106-a6a4-80348ece7903",
             "from": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "to": "b85e8e8b-6874-4884-ac96-38efad8375b8",
             "label": "推 送：司机已接单，正在赶往取⻋地",
@@ -76,7 +133,7 @@
             "order": 3
           },
           {
-            "id": "ddbcd7da-cc70-4883-b833-541a9f74db0d",
+            "id": "4bfd6742-4d6e-4471-8919-1ad92f3ff331",
             "from": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "to": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "label": "同步：已取⻋ (CS PICKED _ _ 含⻋辆照⽚、VIN 码 UP)",
@@ -84,7 +141,7 @@
             "order": 4
           },
           {
-            "id": "58362fd1-0807-4131-b4a8-600ca6fbd8e2",
+            "id": "6b7b5301-56b1-4144-bfd2-33f3547151f7",
             "from": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "to": "b85e8e8b-6874-4884-ac96-38efad8375b8",
             "label": "推 送：司机已取⻋，运输中",
@@ -92,7 +149,7 @@
             "order": 5
           },
           {
-            "id": "e0a6b51b-3fe6-47be-b86b-52392b657cc5",
+            "id": "62d3569e-9507-4a18-b070-c1a9776d56ec",
             "from": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "to": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "label": "同步：运送 中 (CS _ DELIVERING)",
@@ -100,7 +157,7 @@
             "order": 6
           },
           {
-            "id": "56694763-bcfa-439d-8bfb-e95c0684ee5b",
+            "id": "3ba2fa3c-ec5f-4d0a-ba3a-a30ff954edae",
             "from": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "to": "b85e8e8b-6874-4884-ac96-38efad8375b8",
             "label": "推 送：⻋辆在运输途中",
@@ -108,7 +165,7 @@
             "order": 7
           },
           {
-            "id": "26b8e3ec-6e1e-4b2b-9586-58e014d910cd",
+            "id": "79050660-8eca-4fcb-a054-d086d51e8ad2",
             "from": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "to": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "label": "同步：已送达 (CS _ ARRIVED)",
@@ -116,7 +173,7 @@
             "order": 8
           },
           {
-            "id": "43c25443-3163-4a6e-ab6a-756aada15497",
+            "id": "80ed9ac1-993e-4678-a48f-5097f2268a33",
             "from": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "to": "b85e8e8b-6874-4884-ac96-38efad8375b8",
             "label": "推 送：⻋辆已送达⽬的地",
@@ -124,7 +181,7 @@
             "order": 9
           },
           {
-            "id": "c9a8348d-f5b2-4321-9811-313b7a94ec5b",
+            "id": "408fff33-da85-4550-869f-bd874d9d7601",
             "from": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "to": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "label": "同步：服务完成 (CS SERVICE _ _ COMPLETED)",
@@ -132,7 +189,7 @@
             "order": 10
           },
           {
-            "id": "0f08c00b-4edc-49b1-aea3-617edb7df6bc",
+            "id": "54cd012d-83e2-424d-8001-aadb7319076f",
             "from": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "to": "b85e8e8b-6874-4884-ac96-38efad8375b8",
             "label": "推 送：服务完成",
@@ -140,7 +197,7 @@
             "order": 11
           },
           {
-            "id": "4f7a6f88-8936-4932-a528-81c79ecbcf49",
+            "id": "27fe5750-ff02-4afe-ac20-7eba4eac9bd7",
             "from": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "to": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "label": "同步：订单完成 (CS _ SUCCESS)",
@@ -148,7 +205,7 @@
             "order": 12
           },
           {
-            "id": "7a6a8105-349f-4bae-a9da-c971d61bed55",
+            "id": "883abaad-31f3-48ca-9990-e197212490d5",
             "from": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "to": "b85e8e8b-6874-4884-ac96-38efad8375b8",
             "label": "推 送：订单完成",
@@ -158,7 +215,7 @@
         ],
         "notes": [
           {
-            "id": "cf2c8b9a-01bc-4cf5-99b2-da08c6cc8440",
+            "id": "3d2cccb9-aad3-4d7b-b9d5-29e2d8cf464c",
             "text": "scene=CAR_SHIPPING_ORDER_ALIPAY_data 包含订单状态信息",
             "position": "over",
             "lifelineIds": [
@@ -167,7 +224,7 @@
             "afterOrder": 0
           },
           {
-            "id": "9bbce29d-de1a-4f05-9748-21e509e31d6f",
+            "id": "7d8dfb48-4da3-44f3-8aab-9617f87f9e73",
             "text": "核⼼状态节点：",
             "position": "over",
             "lifelineIds": [
@@ -177,7 +234,7 @@
             "afterOrder": 1
           },
           {
-            "id": "a8bac765-0d34-4c63-a06a-5d666d8f060b",
+            "id": "1c333a9a-1aef-4a62-a01f-5103cb1301da",
             "text": "CS_TOPICK_UP 待接单",
             "position": "over",
             "lifelineIds": [
@@ -198,7 +255,7 @@
         "mermaidCode": "sequenceDiagram\n  autonumber\n  participant p0 as 商户系统\n  participant p1 as 支付宝平台\n  actor p2 as 用户\n  p0->>p1: 状态同步接⼝ (alipay.commerce.logistics.waybill.status.sync)\n  Note over p1: scene=CAR_SHIPPING_ORDER_ALIPAY_data 包含订单状态信息\n  p1-->>p0: 同步成功\n  Note over p0,p2: 核⼼状态节点：\n  Note over p0: CS_TOPICK_UP 待接单\n  p0->>p1: 同步：已接单 (CS TAKE _ _ ORDER) 含司机姓名、电话、⻋架号\n  p1->>p2: 推 送：司机已接单，正在赶往取⻋地\n  p0->>p1: 同步：已取⻋ (CS PICKED _ _ 含⻋辆照⽚、VIN 码 UP)\n  p1->>p2: 推 送：司机已取⻋，运输中\n  p0->>p1: 同步：运送 中 (CS _ DELIVERING)\n  p1->>p2: 推 送：⻋辆在运输途中\n  p0->>p1: 同步：已送达 (CS _ ARRIVED)\n  p1->>p2: 推 送：⻋辆已送达⽬的地\n  p0->>p1: 同步：服务完成 (CS SERVICE _ _ COMPLETED)\n  p1->>p2: 推 送：服务完成\n  p0->>p1: 同步：订单完成 (CS _ SUCCESS)\n  p1->>p2: 推 送：订单完成\n"
       },
       "createdAt": 1777527266203,
-      "updatedAt": 1777529730353
+      "updatedAt": 1777529958226
     },
     {
       "id": "dba1b258-be6a-414c-9967-aedbcccfa44f",
