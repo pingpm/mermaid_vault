@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777528331170,
+  "updatedAt": 1777528452011,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777528326220
+      "updatedAt": 1777528390832
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -44,7 +44,7 @@
         ],
         "messages": [
           {
-            "id": "3e458c4d-c119-46c6-925e-c478d2622127",
+            "id": "a1f34e9c-0f40-4e84-aea1-1a497e9784aa",
             "from": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "to": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "label": "状态同步接⼝ (alipay.commerce.logistics.waybill.status.sync)",
@@ -52,16 +52,15 @@
             "order": 0
           },
           {
-            "id": "14a4ef13-d1db-48e4-a6c5-ca844027e7ca",
+            "id": "76f2fa70-d93c-4c53-a55b-010c417a4a60",
             "from": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "to": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "label": "同步成功",
             "type": "return",
-            "order": 1,
-            "replyToId": "3e458c4d-c119-46c6-925e-c478d2622127"
+            "order": 1
           },
           {
-            "id": "c8a31bae-9081-43d7-bc1c-cd8f5abfdd0b",
+            "id": "64d48b4d-ce11-413a-a8e0-ff10a515426b",
             "from": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "to": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "label": "同步：已接单 (CS TAKE _ _ ORDER) 含司机姓名、电话、⻋架号",
@@ -69,7 +68,7 @@
             "order": 2
           },
           {
-            "id": "a77575fa-181b-49df-91fc-39b64c94aad8",
+            "id": "22d720dd-014e-4c41-b544-1612bdc8e16a",
             "from": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "to": "b85e8e8b-6874-4884-ac96-38efad8375b8",
             "label": "推 送：司机已接单，正在赶往取⻋地",
@@ -77,7 +76,7 @@
             "order": 3
           },
           {
-            "id": "a514a8ff-e1cd-42aa-b194-18aa13a0fb56",
+            "id": "7b4f29ca-d084-4c56-ba86-37f876ae090d",
             "from": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "to": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "label": "同步：已取⻋ (CS PICKED _ _ 含⻋辆照⽚、VIN 码 UP)",
@@ -85,7 +84,7 @@
             "order": 4
           },
           {
-            "id": "b2fb24f7-4477-4f9c-9941-f7e677559d51",
+            "id": "f037beb3-4ae9-4b50-a8a8-b9fc04f36e25",
             "from": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "to": "b85e8e8b-6874-4884-ac96-38efad8375b8",
             "label": "推 送：司机已取⻋，运输中",
@@ -93,7 +92,7 @@
             "order": 5
           },
           {
-            "id": "f379273b-d0bf-4679-bee1-2ea6eb34f346",
+            "id": "b766b73b-3063-4ebb-8bbc-db8f35fc5fb1",
             "from": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "to": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "label": "同步：运送 中 (CS _ DELIVERING)",
@@ -101,7 +100,7 @@
             "order": 6
           },
           {
-            "id": "bafd8619-1a6d-4d99-8d0d-1a006d469cae",
+            "id": "52b9d655-3e8c-4035-853c-adf5f6d5f9cc",
             "from": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "to": "b85e8e8b-6874-4884-ac96-38efad8375b8",
             "label": "推 送：⻋辆在运输途中",
@@ -109,7 +108,7 @@
             "order": 7
           },
           {
-            "id": "5b50f7ef-bcf8-4fa7-809c-e7c697c13926",
+            "id": "6f4a1939-f7e7-46fe-85bd-624703eb4a21",
             "from": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "to": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "label": "同步：已送达 (CS _ ARRIVED)",
@@ -117,7 +116,7 @@
             "order": 8
           },
           {
-            "id": "eb364e62-ccdc-491b-bb92-688744390781",
+            "id": "6919c90b-a622-4f0d-a398-df6d76fe6c35",
             "from": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "to": "b85e8e8b-6874-4884-ac96-38efad8375b8",
             "label": "推 送：⻋辆已送达⽬的地",
@@ -125,7 +124,7 @@
             "order": 9
           },
           {
-            "id": "fd00dabb-1d2d-4d8a-abf9-3df019ac2c93",
+            "id": "dc290787-9e4f-4679-8ddc-ce7d6fe203c2",
             "from": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "to": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "label": "同步：服务完成 (CS SERVICE _ _ COMPLETED)",
@@ -133,7 +132,7 @@
             "order": 10
           },
           {
-            "id": "5f1b5db8-8cd1-40c5-8ea6-fd63aabbf65f",
+            "id": "f97ba985-6f70-423e-94ac-755c41ff9055",
             "from": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "to": "b85e8e8b-6874-4884-ac96-38efad8375b8",
             "label": "推 送：服务完成",
@@ -141,7 +140,7 @@
             "order": 11
           },
           {
-            "id": "0890f86e-ab6a-40df-a32b-cb210339197a",
+            "id": "805ff568-8189-47ab-b3ca-790e7f34ba72",
             "from": "0e7553d2-5c32-457e-a162-1a187a9a0b51",
             "to": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "label": "同步：订单完成 (CS _ SUCCESS)",
@@ -149,7 +148,7 @@
             "order": 12
           },
           {
-            "id": "e19b6114-c204-4532-b343-f0ec4812a775",
+            "id": "5c8c9bdf-2419-43c7-9483-d8236dd5d229",
             "from": "eef2ed63-753f-4e98-966c-fe0fad60dddc",
             "to": "b85e8e8b-6874-4884-ac96-38efad8375b8",
             "label": "推 送：订单完成",
@@ -159,13 +158,32 @@
         ],
         "notes": [
           {
+            "id": "9db8d044-db1e-4dad-8e14-a04797929e21",
             "text": "scene=CAR_SHIPPING_ORDER_ALIPAY_data 包含订单状态信息",
             "position": "over",
             "lifelineIds": [
               "eef2ed63-753f-4e98-966c-fe0fad60dddc"
             ],
-            "afterOrder": 0,
-            "id": "125b3a9e-5257-4a51-8726-19f4d768dfa5"
+            "afterOrder": 0
+          },
+          {
+            "id": "2a1d5853-ac6c-404a-b2ae-7dab1da988e1",
+            "text": "核⼼状态节点：",
+            "position": "over",
+            "lifelineIds": [
+              "0e7553d2-5c32-457e-a162-1a187a9a0b51",
+              "b85e8e8b-6874-4884-ac96-38efad8375b8"
+            ],
+            "afterOrder": 1
+          },
+          {
+            "text": "CS_TOPICK_UP 待接单",
+            "position": "over",
+            "lifelineIds": [
+              "0e7553d2-5c32-457e-a162-1a187a9a0b51"
+            ],
+            "afterOrder": 1,
+            "id": "1d0c86e7-dd68-4d21-95a0-cba2c584e5f0"
           }
         ],
         "fragments": [],
@@ -177,10 +195,10 @@
         },
         "lifelineStyle": "dashed",
         "boxStyle": "rounded",
-        "mermaidCode": "sequenceDiagram\n  autonumber\n  participant p0 as 商户系统\n  participant p1 as 支付宝平台\n  actor p2 as 用户\n  p0->>p1: 状态同步接⼝ (alipay.commerce.logistics.waybill.status.sync)\n  activate p1\n  Note over p1: scene=CAR_SHIPPING_ORDER_ALIPAY_data 包含订单状态信息\n  p1-->>p0: 同步成功\n  deactivate p1\n  p0->>p1: 同步：已接单 (CS TAKE _ _ ORDER) 含司机姓名、电话、⻋架号\n  p1->>p2: 推 送：司机已接单，正在赶往取⻋地\n  p0->>p1: 同步：已取⻋ (CS PICKED _ _ 含⻋辆照⽚、VIN 码 UP)\n  p1->>p2: 推 送：司机已取⻋，运输中\n  p0->>p1: 同步：运送 中 (CS _ DELIVERING)\n  p1->>p2: 推 送：⻋辆在运输途中\n  p0->>p1: 同步：已送达 (CS _ ARRIVED)\n  p1->>p2: 推 送：⻋辆已送达⽬的地\n  p0->>p1: 同步：服务完成 (CS SERVICE _ _ COMPLETED)\n  p1->>p2: 推 送：服务完成\n  p0->>p1: 同步：订单完成 (CS _ SUCCESS)\n  p1->>p2: 推 送：订单完成\n"
+        "mermaidCode": "sequenceDiagram\n  autonumber\n  participant p0 as 商户系统\n  participant p1 as 支付宝平台\n  actor p2 as 用户\n  p0->>p1: 状态同步接⼝ (alipay.commerce.logistics.waybill.status.sync)\n  Note over p1: scene=CAR_SHIPPING_ORDER_ALIPAY_data 包含订单状态信息\n  p1-->>p0: 同步成功\n  Note over p0,p2: 核⼼状态节点：\n  Note over p0: CS_TOPICK_UP 待接单\n  p0->>p1: 同步：已接单 (CS TAKE _ _ ORDER) 含司机姓名、电话、⻋架号\n  p1->>p2: 推 送：司机已接单，正在赶往取⻋地\n  p0->>p1: 同步：已取⻋ (CS PICKED _ _ 含⻋辆照⽚、VIN 码 UP)\n  p1->>p2: 推 送：司机已取⻋，运输中\n  p0->>p1: 同步：运送 中 (CS _ DELIVERING)\n  p1->>p2: 推 送：⻋辆在运输途中\n  p0->>p1: 同步：已送达 (CS _ ARRIVED)\n  p1->>p2: 推 送：⻋辆已送达⽬的地\n  p0->>p1: 同步：服务完成 (CS SERVICE _ _ COMPLETED)\n  p1->>p2: 推 送：服务完成\n  p0->>p1: 同步：订单完成 (CS _ SUCCESS)\n  p1->>p2: 推 送：订单完成\n"
       },
       "createdAt": 1777527266203,
-      "updatedAt": 1777528326151
+      "updatedAt": 1777528390801
     },
     {
       "id": "dba1b258-be6a-414c-9967-aedbcccfa44f",

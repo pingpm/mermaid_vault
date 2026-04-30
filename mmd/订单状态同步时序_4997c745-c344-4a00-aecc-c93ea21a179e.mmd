@@ -4,10 +4,10 @@ sequenceDiagram
   participant p1 as 支付宝平台
   actor p2 as 用户
   p0->>p1: 状态同步接⼝ (alipay.commerce.logistics.waybill.status.sync)
-  activate p1
   Note over p1: scene=CAR_SHIPPING_ORDER_ALIPAY_data 包含订单状态信息
   p1-->>p0: 同步成功
-  deactivate p1
+  Note over p0,p2: 核⼼状态节点：
+  Note over p0: CS_TOPICK_UP 待接单
   p0->>p1: 同步：已接单 (CS TAKE _ _ ORDER) 含司机姓名、电话、⻋架号
   p1->>p2: 推 送：司机已接单，正在赶往取⻋地
   p0->>p1: 同步：已取⻋ (CS PICKED _ _ 含⻋辆照⽚、VIN 码 UP)
