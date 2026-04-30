@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777530026089,
+  "updatedAt": 1777530262688,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777530018778
+      "updatedAt": 1777530257424
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -44,34 +44,104 @@
         ],
         "messages": [
           {
-            "id": "m1",
+            "id": "3aa63e12-95d4-4e4d-b0cd-c15acad8a6da",
             "from": "user",
             "to": "system",
-            "label": "Request",
+            "label": "同步：待支付（TO_PAY）含费用明细（order_fee,base_delivery_fee等）",
             "type": "sync",
             "order": 0
           },
           {
-            "id": "m2",
+            "id": "1b1aabb0-af3d-416a-a144-31ed3175a200",
+            "from": "system",
+            "to": "c7482b91-6314-4c64-9531-4cd304234fcb",
+            "label": "展示待⽀付账单",
+            "type": "sync",
+            "order": 1
+          },
+          {
+            "id": "724e9195-a95a-4064-97c1-8d39f91adbd9",
+            "from": "c7482b91-6314-4c64-9531-4cd304234fcb",
+            "to": "system",
+            "label": "完成⽀付",
+            "type": "return",
+            "order": 2,
+            "replyToId": "1b1aabb0-af3d-416a-a144-31ed3175a200"
+          },
+          {
+            "id": "4fce4598-ce87-40a4-85f9-1edc615e7f37",
             "from": "system",
             "to": "user",
-            "label": "Response",
+            "label": "⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)",
+            "type": "sync",
+            "order": 3
+          },
+          {
+            "id": "e27ecab2-fd54-40b5-a00b-c9dca141c7b9",
+            "from": "user",
+            "to": "system",
+            "label": "确认成功",
             "type": "return",
-            "order": 1,
-            "replyToId": "m1"
+            "order": 4,
+            "replyToId": "4fce4598-ce87-40a4-85f9-1edc615e7f37"
+          },
+          {
+            "id": "3209fc56-6324-4761-a1f0-e90d99b9585d",
+            "from": "user",
+            "to": "system",
+            "label": "同步：⽀付成功 (PAY _ SUCCESS) 含抽佣⾦额 (commission _ fee)",
+            "type": "sync",
+            "order": 5
+          },
+          {
+            "id": "74590f1c-1b4b-4221-9661-56eb18e0b3bd",
+            "from": "system",
+            "to": "c7482b91-6314-4c64-9531-4cd304234fcb",
+            "label": "推 送：⽀付成功",
+            "type": "sync",
+            "order": 6
+          },
+          {
+            "id": "e75fdf9c-459f-4d0a-a42b-1bf10e578b8d",
+            "from": "user",
+            "to": "system",
+            "label": "同步：退款 (REFUND) 含退款⾦额 (refund _ fee)、退款 因",
+            "type": "sync",
+            "order": 7
+          },
+          {
+            "id": "1b744655-b6ce-43f6-8df7-edf40bcce042",
+            "from": "system",
+            "to": "c7482b91-6314-4c64-9531-4cd304234fcb",
+            "label": "推 送：退款处理中",
+            "type": "sync",
+            "order": 8
           }
         ],
-        "notes": [],
+        "notes": [
+          {
+            "text": "⽀付单状态同步",
+            "position": "over",
+            "lifelineIds": [
+              "user"
+            ],
+            "afterOrder": -1,
+            "id": "5a72080e-b8a6-411a-9af1-60c2bb38890b"
+          }
+        ],
         "fragments": [],
         "links": [],
         "colWidths": {},
-        "gaps": {},
+        "gaps": {
+          "user": 271,
+          "system": 92
+        },
         "lifelineStyle": "dashed",
         "boxStyle": "rounded",
-        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 商户系统\n  participant p1 as ⽀付宝平台\n  actor p2 as 用户\n  p0->>p1: Request\n  activate p1\n  p1-->>p0: Response\n  deactivate p1\n"
+        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 商户系统\n  participant p1 as ⽀付宝平台\n  actor p2 as 用户\n  Note over p0: ⽀付单状态同步\n  p0->>p1: 同步：待支付（TO_PAY）含费用明细（order_fee,base_delivery_fee等）\n  p1->>p2: 展示待⽀付账单\n  activate p2\n  p2-->>p1: 完成⽀付\n  deactivate p2\n  p1->>p0: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)\n  activate p0\n  p0-->>p1: 确认成功\n  deactivate p0\n  p0->>p1: 同步：⽀付成功 (PAY _ SUCCESS) 含抽佣⾦额 (commission _ fee)\n  p1->>p2: 推 送：⽀付成功\n  p0->>p1: 同步：退款 (REFUND) 含退款⾦额 (refund _ fee)、退款 因\n  p1->>p2: 推 送：退款处理中\n"
       },
       "createdAt": 1777529989460,
-      "updatedAt": 1777530018769
+      "updatedAt": 1777530257416
     },
     {
       "id": "4997c745-c344-4a00-aecc-c93ea21a179e",
