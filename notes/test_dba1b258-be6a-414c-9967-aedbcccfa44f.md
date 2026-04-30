@@ -1,0 +1,16 @@
+# test
+
+```mermaid
+sequenceDiagram
+  autonumber
+  actor p0 as 用户
+  participant p1 as 支付宝平台
+  participant p2 as 商户系统
+  p0->>p1: 填写起终点、⻋型、⽤⻋时间
+  p1->>p2: 运⼒询价请求 (spi.alipay.commerce.logistics.carshipping.inquiry.query)
+  activate p2
+  p2-->>p1: 返回报价信息 (available, price _ info, transport _ type)
+  deactivate p2
+  p1-->>p0: 展示运⼒及价格
+
+```
