@@ -12,14 +12,10 @@ sequenceDiagram
   p1->>p2: 运⼒询价请求 (spi.alipay.commerce.logistics.carshipping.inquiry.query)
   Note over p2: 计算线路价格
   p2-->>p1: 返回报价信息 (available, price _ info, transport _ type)
-  p4->>p4: 啊哈数据德华姐卡是短裤就撒谎大姐卡是的撒谎的快乐哈数据库德华啥德华来看大叔快乐的哈萨克大姐啊了
-  p1->>p2: Message
-  activate p2
-  p2-->>p1: Reply
-  deactivate p2
-  Note left of p2: 创建订单⽣成商户订单号
+  p4->>p4: 123
   p2->>p2: Message
   p1-->>p0: 展示运⼒及价格
+  Note left of p2: 创建订单⽣成商户订单号
   p0->>p1: 选择运⼒，确认下单
   p4->>p4: Message
   p1->>p2: 订单创建请求 (spi.alipay.commerce.logistics.carshipping.order.create)
