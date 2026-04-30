@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777526383208,
+  "updatedAt": 1777526502561,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777526371204
+      "updatedAt": 1777526495606
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -40,18 +40,6 @@
             "label": "商户系统",
             "kind": "entity",
             "order": 2
-          },
-          {
-            "id": "32e390d0-b1fd-4161-b406-aeadbd1caf73",
-            "label": "22222",
-            "kind": "entity",
-            "order": 3
-          },
-          {
-            "id": "f1346a41-3865-4c41-a714-75300d2d3d4a",
-            "label": "123",
-            "kind": "entity",
-            "order": 4
           }
         ],
         "messages": [
@@ -80,22 +68,6 @@
             "order": 2
           },
           {
-            "id": "1f388a7d-92f1-4d27-b305-45d8cb96339b",
-            "from": "bd2a540f-8c33-4d68-b8e4-46ae75998863",
-            "to": "32e390d0-b1fd-4161-b406-aeadbd1caf73",
-            "label": "Message",
-            "type": "sync",
-            "order": 3
-          },
-          {
-            "id": "71c921be-bad4-41da-a3d7-11260261631c",
-            "from": "f1346a41-3865-4c41-a714-75300d2d3d4a",
-            "to": "f1346a41-3865-4c41-a714-75300d2d3d4a",
-            "label": "123",
-            "type": "sync",
-            "order": 4
-          },
-          {
             "id": "86202b98-ac80-4158-be21-9d5cdcd3455d",
             "from": "bd2a540f-8c33-4d68-b8e4-46ae75998863",
             "to": "bd2a540f-8c33-4d68-b8e4-46ae75998863",
@@ -118,14 +90,6 @@
             "label": "选择运⼒，确认下单",
             "type": "sync",
             "order": 7
-          },
-          {
-            "id": "8ff7fb22-eee4-4eb6-abb1-ab9bf374053a",
-            "from": "f1346a41-3865-4c41-a714-75300d2d3d4a",
-            "to": "f1346a41-3865-4c41-a714-75300d2d3d4a",
-            "label": "Message",
-            "type": "sync",
-            "order": 8
           },
           {
             "id": "f196cc23-b322-4e7a-82a2-c1f2e4d39ae0",
@@ -202,18 +166,19 @@
               "bd2a540f-8c33-4d68-b8e4-46ae75998863"
             ],
             "afterOrder": 5
-          }
-        ],
-        "fragments": [
+          },
           {
-            "kind": "loop",
-            "label": "阿斯顿",
-            "startOrder": 0,
-            "endOrder": 15,
-            "branches": [],
-            "id": "a9a8b3e5-3be8-4db5-a051-4d848f0eeb60"
+            "text": "123",
+            "position": "right of",
+            "lifelineIds": [
+              "39bf119f-b745-4b0d-b89a-95fc71385ad9",
+              "bd2a540f-8c33-4d68-b8e4-46ae75998863"
+            ],
+            "afterOrder": -1,
+            "id": "bcd3fac8-b9d3-41ae-bd61-35986ba1b32d"
           }
         ],
+        "fragments": [],
         "links": [],
         "colWidths": {},
         "gaps": {
@@ -224,10 +189,10 @@
         },
         "lifelineStyle": "dashed",
         "boxStyle": "rounded",
-        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 用户\n  participant p1 as 支付宝平台\n  participant p2 as 商户系统\n  participant p3 as 22222\n  participant p4 as 123\n  loop 阿斯顿\n  p0->>p1: 填写起终点、⻋型、⽤⻋时间\n  p1->>p2: 运⼒询价请求 (spi.alipay.commerce.logistics.carshipping.inquiry.query)\n  Note over p2: 计算线路价格\n  p2-->>p1: 返回报价信息 (available, price _ info, transport _ type)\n  p2->>p3: Message\n  p4->>p4: 123\n  p2->>p2: 收到\n  Note left of p2: 创建订单⽣成商户订单号\n  p1-->>p0: 展示运⼒及价格\n  p0->>p1: 选择运⼒，确认下单\n  p4->>p4: Message\n  p1->>p2: 订单创建请求 (spi.alipay.commerce.logistics.carshipping.order.create)\n  p2-->>p1: 返回订单信息(business_order_no, alipay_trade_no)\n  p1-->>p0: 订单创建成功，跳转⽀付\n  p0->>p1: 完成⽀付\n  p1->>p2: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)\n  p2-->>p1: 处理结果 (result=true)\n  p1->>p0: ⽀付成功，等待接单\n  end\n"
+        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 用户\n  participant p1 as 支付宝平台\n  participant p2 as 商户系统\n  Note right of p0,p2: 123\n  p0->>p1: 填写起终点、⻋型、⽤⻋时间\n  p1->>p2: 运⼒询价请求 (spi.alipay.commerce.logistics.carshipping.inquiry.query)\n  Note over p2: 计算线路价格\n  p2-->>p1: 返回报价信息 (available, price _ info, transport _ type)\n  p2->>p2: 收到\n  p1-->>p0: 展示运⼒及价格\n  p0->>p1: 选择运⼒，确认下单\n  Note left of p2: 创建订单⽣成商户订单号\n  p1->>p2: 订单创建请求 (spi.alipay.commerce.logistics.carshipping.order.create)\n  p2-->>p1: 返回订单信息(business_order_no, alipay_trade_no)\n  p1-->>p0: 订单创建成功，跳转⽀付\n  p0->>p1: 完成⽀付\n  p1->>p2: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)\n  p2-->>p1: 处理结果 (result=true)\n  p1->>p0: ⽀付成功，等待接单\n"
       },
       "createdAt": 1777518659349,
-      "updatedAt": 1777526371194
+      "updatedAt": 1777526495596
     },
     {
       "id": "c67d29b2-1ede-441e-9024-359aebe3bb9a",
