@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777933319749,
+  "updatedAt": 1777933469929,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777933238951
+      "updatedAt": 1777933319764
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -22,162 +22,12 @@
       "name": "1111",
       "type": "swimlane",
       "data": {
-        "lanes": [
-          {
-            "id": "lane-1",
-            "label": "Planning",
-            "order": 0
-          },
-          {
-            "id": "lane-2",
-            "label": "Development",
-            "order": 1
-          },
-          {
-            "id": "lane-3",
-            "label": "Review",
-            "order": 2
-          }
-        ],
-        "tasks": [
-          {
-            "id": "task-1",
-            "laneId": "lane-1",
-            "label": "Define Requirements",
-            "shape": "process",
-            "order": 0,
-            "col": 0,
-            "row": 0,
-            "x": 718.5976095617531,
-            "y": 48.350597609561746,
-            "width": 156,
-            "height": 56
-          },
-          {
-            "id": "task-2",
-            "laneId": "lane-1",
-            "label": "Approved?",
-            "shape": "decision",
-            "order": 1,
-            "col": 1,
-            "row": 0,
-            "x": 371.36254980079684,
-            "y": 64.09561752988046,
-            "width": 156,
-            "height": 92
-          },
-          {
-            "id": "task-3",
-            "laneId": "lane-2",
-            "label": "Implement Feature",
-            "shape": "process",
-            "order": 0,
-            "col": 0,
-            "row": 0,
-            "x": 24,
-            "y": 24,
-            "width": 156,
-            "height": 56
-          },
-          {
-            "id": "task-4",
-            "laneId": "lane-3",
-            "label": "Code Review",
-            "shape": "process",
-            "order": 0,
-            "col": 0,
-            "row": 0,
-            "x": 24,
-            "y": 24,
-            "width": 156,
-            "height": 56
-          },
-          {
-            "id": "113a10d4-b994-4d3d-9dc2-eeb89ee88102",
-            "laneId": "lane-2",
-            "label": "流程 2",
-            "shape": "process",
-            "order": 1,
-            "x": 314.0478087649402,
-            "y": 65.00398406374507,
-            "width": 156,
-            "height": 56
-          },
-          {
-            "id": "288b81bb-5983-4dd7-b060-7880e81beab4",
-            "laneId": "lane-2",
-            "label": "判断 3",
-            "shape": "decision",
-            "order": 2,
-            "x": 656.199203187251,
-            "y": 35.21115537848607,
-            "width": 92,
-            "height": 92
-          },
-          {
-            "id": "71f531c6-02f8-4593-b12f-12b9f43b6b6a",
-            "laneId": "lane-2",
-            "label": "流程 4",
-            "shape": "process",
-            "order": 3,
-            "x": 463.81673306772905,
-            "y": 176,
-            "width": 156,
-            "height": 56
-          }
-        ],
-        "connections": [
-          {
-            "id": "c1",
-            "fromTaskId": "task-1",
-            "toTaskId": "task-2"
-          },
-          {
-            "id": "c2",
-            "fromTaskId": "task-2",
-            "toTaskId": "task-3",
-            "label": "Yes"
-          },
-          {
-            "id": "c3",
-            "fromTaskId": "task-3",
-            "toTaskId": "task-4"
-          },
-          {
-            "id": "f6dd706d-0ccb-45e4-a4d3-82aacbb5eba3",
-            "fromTaskId": "task-1",
-            "toTaskId": "288b81bb-5983-4dd7-b060-7880e81beab4",
-            "sourceHandle": "bottom",
-            "targetHandle": "top"
-          },
-          {
-            "id": "fb93b9f9-c13a-42f2-b431-e57625028320",
-            "fromTaskId": "113a10d4-b994-4d3d-9dc2-eeb89ee88102",
-            "toTaskId": "288b81bb-5983-4dd7-b060-7880e81beab4",
-            "sourceHandle": "right",
-            "targetHandle": "left"
-          },
-          {
-            "id": "c8583445-dc97-49ec-a786-11fbb70c1951",
-            "fromTaskId": "71f531c6-02f8-4593-b12f-12b9f43b6b6a",
-            "toTaskId": "288b81bb-5983-4dd7-b060-7880e81beab4",
-            "sourceHandle": "right",
-            "targetHandle": "right"
-          },
-          {
-            "id": "9f247e52-9c18-4b7f-992b-10de133673c0",
-            "fromTaskId": "task-2",
-            "toTaskId": "288b81bb-5983-4dd7-b060-7880e81beab4",
-            "sourceHandle": "right",
-            "targetHandle": "top"
-          }
-        ],
-        "swBgPattern": "none",
-        "swDirection": "LR",
-        "mermaidCode": "graph LR\n  subgraph lane_lane_1[\"Planning\"]\n    t_task_1[\"Define Requirements\"]\n    t_task_2{\"Approved?\"}\n  end\n  subgraph lane_lane_2[\"Development\"]\n    t_task_3[\"Implement Feature\"]\n    t_288b81bb_5983_4dd7_b060_7880e81beab4{\"判断 3\"}\n    t_113a10d4_b994_4d3d_9dc2_eeb89ee88102[\"流程 2\"]\n    t_71f531c6_02f8_4593_b12f_12b9f43b6b6a[\"流程 4\"]\n  end\n  subgraph lane_lane_3[\"Review\"]\n    t_task_4[\"Code Review\"]\n  end\n  t_task_1 --> t_task_2\n  t_task_2 -->|\"Yes\"| t_task_3\n  t_task_3 --> t_task_4\n  t_task_1 --> t_288b81bb_5983_4dd7_b060_7880e81beab4\n  t_113a10d4_b994_4d3d_9dc2_eeb89ee88102 --> t_288b81bb_5983_4dd7_b060_7880e81beab4\n  t_71f531c6_02f8_4593_b12f_12b9f43b6b6a --> t_288b81bb_5983_4dd7_b060_7880e81beab4\n  t_task_2 --> t_288b81bb_5983_4dd7_b060_7880e81beab4\n"
+        "nodes": [],
+        "edges": [],
+        "mermaidCode": "graph TD\n"
       },
       "createdAt": 1777932364181,
-      "updatedAt": 1777933238929
+      "updatedAt": 1777933319748
     },
     {
       "id": "2aa821d9-00bc-435d-89ca-b7d291d22ba8",
