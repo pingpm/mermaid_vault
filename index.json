@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1777935837207,
+  "updatedAt": 1777935857351,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
@@ -16,84 +16,6 @@
     }
   ],
   "diagrams": [
-    {
-      "id": "ef4b75bf-af74-407c-b5e3-bc46bc458e8e",
-      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
-      "name": "23",
-      "type": "swimlane",
-      "data": {
-        "lanes": [
-          {
-            "id": "lane-1",
-            "label": "Planning",
-            "order": 0
-          },
-          {
-            "id": "lane-2",
-            "label": "Development",
-            "order": 1
-          },
-          {
-            "id": "lane-3",
-            "label": "Review",
-            "order": 2
-          }
-        ],
-        "tasks": [
-          {
-            "id": "task-1",
-            "laneId": "lane-1",
-            "label": "Define Requirements",
-            "shape": "process",
-            "order": 0
-          },
-          {
-            "id": "task-2",
-            "laneId": "lane-1",
-            "label": "Approved?",
-            "shape": "decision",
-            "order": 1
-          },
-          {
-            "id": "task-3",
-            "laneId": "lane-2",
-            "label": "Implement Feature",
-            "shape": "process",
-            "order": 0
-          },
-          {
-            "id": "task-4",
-            "laneId": "lane-3",
-            "label": "Code Review",
-            "shape": "process",
-            "order": 0
-          }
-        ],
-        "connections": [
-          {
-            "id": "c1",
-            "fromTaskId": "task-1",
-            "toTaskId": "task-2"
-          },
-          {
-            "id": "c2",
-            "fromTaskId": "task-2",
-            "toTaskId": "task-3",
-            "label": "Yes"
-          },
-          {
-            "id": "c3",
-            "fromTaskId": "task-3",
-            "toTaskId": "task-4"
-          }
-        ],
-        "swBgPattern": "none",
-        "swDirection": "LR",
-        "mermaidCode": ""
-      },
-      "createdAt": 1777935237219,
-      "updatedAt": 1777935237219
-    },
     {
       "id": "4997c745-c344-4a00-aecc-c93ea21a179e",
       "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
