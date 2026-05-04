@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777934190009,
+  "updatedAt": 1777934795471,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777934083373
+      "updatedAt": 1777934707407
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -48,8 +48,8 @@
             "order": 0,
             "col": 0,
             "row": 0,
-            "x": 619.5378486055777,
-            "y": 45.227091633466145,
+            "x": 684.398406374502,
+            "y": 34.61354581673305,
             "width": 156,
             "height": 56
           },
@@ -74,8 +74,8 @@
             "order": 0,
             "col": 0,
             "row": 0,
-            "x": 24,
-            "y": 24,
+            "x": 22.406374501992104,
+            "y": 26.358565737051777,
             "width": 156,
             "height": 56
           },
@@ -98,6 +98,7 @@
             "id": "c1",
             "fromTaskId": "task-1",
             "toTaskId": "task-2",
+            "sourceHandle": "left",
             "targetHandle": "right"
           },
           {
@@ -110,7 +111,8 @@
           {
             "id": "c3",
             "fromTaskId": "task-3",
-            "toTaskId": "task-4"
+            "toTaskId": "task-4",
+            "sourceHandle": "bottom"
           }
         ],
         "swBgPattern": "none",
@@ -118,7 +120,7 @@
         "mermaidCode": "graph LR\n  subgraph lane_lane_1[\"Planning\"]\n    t_task_2{\"Approved?\"}\n    t_task_1[\"Define Requirements\"]\n  end\n  subgraph lane_lane_2[\"Development\"]\n    t_task_3[\"Implement Feature\"]\n  end\n  subgraph lane_lane_3[\"Review\"]\n    t_task_4[\"Code Review\"]\n  end\n  t_task_1 --> t_task_2\n  t_task_2 -->|\"Yes\"| t_task_3\n  t_task_3 --> t_task_4\n"
       },
       "createdAt": 1777934064559,
-      "updatedAt": 1777934083356
+      "updatedAt": 1777934707386
     },
     {
       "id": "4997c745-c344-4a00-aecc-c93ea21a179e",
