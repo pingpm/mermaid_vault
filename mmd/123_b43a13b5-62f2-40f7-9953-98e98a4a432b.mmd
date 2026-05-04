@@ -1,8 +1,8 @@
 graph LR
   subgraph lane_lane_1["Planning"]
-    t_task_2{"Approved?"}
     t_task_1["Define Requirements"]
     t_3d4d3c03_8ba1_4aec_83b1_1abf996d96d6["流程 3"]
+    t_task_2{"Approved?"}
   end
   subgraph lane_lane_2["Development"]
     t_task_3["Implement Feature"]
@@ -14,4 +14,3 @@ graph LR
   t_task_2 -->|"Yes"| t_task_3
   t_task_3 --> t_task_4
   t_task_2 -->|"ceshi"| t_3d4d3c03_8ba1_4aec_83b1_1abf996d96d6
-  t_3d4d3c03_8ba1_4aec_83b1_1abf996d96d6 --> t_task_2
