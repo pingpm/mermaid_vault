@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777905665799,
+  "updatedAt": 1777906558668,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777904154384
+      "updatedAt": 1777906464729
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -38,15 +38,33 @@
             "order": 0,
             "col": 0,
             "row": 0
+          },
+          {
+            "id": "13a3d5f8-1df1-440d-bcc6-69e2a282aec1",
+            "laneId": "de74ea9c-9b52-4f58-b8e2-a9eec44c9aed",
+            "label": "23",
+            "shape": "decision",
+            "order": 1,
+            "col": 0,
+            "row": 1
+          },
+          {
+            "id": "be87b2c9-55ef-4791-8adb-6bb9ab35f062",
+            "laneId": "de74ea9c-9b52-4f58-b8e2-a9eec44c9aed",
+            "label": "123123",
+            "shape": "process",
+            "order": 2,
+            "col": 1,
+            "row": 0
           }
         ],
         "connections": [],
         "swBgPattern": "none",
         "swDirection": "LR",
-        "mermaidCode": "graph TD\n  subgraph lane_de74ea9c_9b52_4f58_b8e2_a9eec44c9aed[\"uu\"]\n    t_cf99de01_8763_43a8_92f4_735e26e539d8[\"iuio\"]\n  end\n"
+        "mermaidCode": "graph LR\n  subgraph lane_de74ea9c_9b52_4f58_b8e2_a9eec44c9aed[\"uu\"]\n    t_cf99de01_8763_43a8_92f4_735e26e539d8[\"iuio\"]\n    t_be87b2c9_55ef_4791_8adb_6bb9ab35f062[\"123123\"]\n    t_13a3d5f8_1df1_440d_bcc6_69e2a282aec1{\"23\"}\n  end\n"
       },
       "createdAt": 1777518227052,
-      "updatedAt": 1777904154383
+      "updatedAt": 1777906464717
     },
     {
       "id": "4997c745-c344-4a00-aecc-c93ea21a179e",
