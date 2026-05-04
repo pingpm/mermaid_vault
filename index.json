@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1777934006256,
+  "updatedAt": 1777934027180,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
@@ -117,19 +117,6 @@
       },
       "createdAt": 1777933572219,
       "updatedAt": 1777933650537
-    },
-    {
-      "id": "1d9d633a-5bbd-4d54-9737-00bfe004ea8d",
-      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
-      "name": "1111",
-      "type": "swimlane",
-      "data": {
-        "nodes": [],
-        "edges": [],
-        "mermaidCode": "graph TD\n"
-      },
-      "createdAt": 1777932364181,
-      "updatedAt": 1777933319748
     },
     {
       "id": "4997c745-c344-4a00-aecc-c93ea21a179e",
