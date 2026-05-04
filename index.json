@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777907268721,
+  "updatedAt": 1777907418303,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777907260169
+      "updatedAt": 1777907293257
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -44,26 +44,13 @@
             "height": 92
           },
           {
-            "id": "be87b2c9-55ef-4791-8adb-6bb9ab35f062",
-            "laneId": "de74ea9c-9b52-4f58-b8e2-a9eec44c9aed",
-            "label": "123123",
-            "shape": "process",
-            "order": 2,
-            "col": 1,
-            "row": 0,
-            "x": 244,
-            "y": 24,
-            "width": 156,
-            "height": 56
-          },
-          {
             "id": "10273d92-288b-41c4-b78c-3b4d08e9af8f",
             "laneId": "de74ea9c-9b52-4f58-b8e2-a9eec44c9aed",
             "label": "456",
             "shape": "process",
             "order": 2,
-            "x": 284.0452261306532,
-            "y": 72.0326633165829,
+            "x": 338.643216080402,
+            "y": 114.2688442211055,
             "width": 156,
             "height": 56
           },
@@ -82,10 +69,10 @@
         "connections": [],
         "swBgPattern": "none",
         "swDirection": "LR",
-        "mermaidCode": "graph LR\n  subgraph lane_de74ea9c_9b52_4f58_b8e2_a9eec44c9aed[\"uu\"]\n    t_be87b2c9_55ef_4791_8adb_6bb9ab35f062[\"123123\"]\n    t_10273d92_288b_41c4_b78c_3b4d08e9af8f[\"456\"]\n    t_670379e5_44ea_4f3e_aee0_d029f69378f0{\"89\"}\n    t_13a3d5f8_1df1_440d_bcc6_69e2a282aec1{\"23\"}\n  end\n"
+        "mermaidCode": "graph LR\n  subgraph lane_de74ea9c_9b52_4f58_b8e2_a9eec44c9aed[\"uu\"]\n    t_670379e5_44ea_4f3e_aee0_d029f69378f0{\"89\"}\n    t_10273d92_288b_41c4_b78c_3b4d08e9af8f[\"456\"]\n    t_13a3d5f8_1df1_440d_bcc6_69e2a282aec1{\"23\"}\n  end\n"
       },
       "createdAt": 1777518227052,
-      "updatedAt": 1777907260159
+      "updatedAt": 1777907293245
     },
     {
       "id": "4997c745-c344-4a00-aecc-c93ea21a179e",
