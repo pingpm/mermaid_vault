@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777945411690,
+  "updatedAt": 1777945530797,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777945167390
+      "updatedAt": 1777945513556
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -27,21 +27,21 @@
             "id": "lane-1",
             "label": "Planning",
             "order": 0,
-            "width": 1640,
-            "height": 288
+            "width": 1675,
+            "height": 336
           },
           {
             "id": "lane-2",
             "label": "Development",
             "order": 1,
-            "width": 1642,
-            "height": 288
+            "width": 1677,
+            "height": 338
           },
           {
             "id": "lane-3",
             "label": "Review",
             "order": 2,
-            "width": 1640,
+            "width": 1675,
             "height": 288
           }
         ],
@@ -54,8 +54,8 @@
             "order": 0,
             "col": 0,
             "row": 0,
-            "x": 24,
-            "y": 24,
+            "x": 491.5059760956176,
+            "y": 15.521912350597603,
             "width": 156,
             "height": 56
           },
@@ -67,8 +67,8 @@
             "order": 1,
             "col": 1,
             "row": 0,
-            "x": 244,
-            "y": 24,
+            "x": 251.2669322709163,
+            "y": 77.29083665338646,
             "width": 156,
             "height": 92
           },
@@ -80,8 +80,8 @@
             "order": 0,
             "col": 0,
             "row": 0,
-            "x": 24,
-            "y": 24,
+            "x": 89.40239043824698,
+            "y": 42.167330677290806,
             "width": 156,
             "height": 56
           },
@@ -114,7 +114,8 @@
           {
             "id": "c3",
             "fromTaskId": "task-3",
-            "toTaskId": "task-4"
+            "toTaskId": "task-4",
+            "sourceHandle": "bottom"
           }
         ],
         "swBgPattern": "none",
@@ -122,7 +123,7 @@
         "mermaidCode": "graph LR\n  subgraph lane_lane_1[\"Planning\"]\n    t_task_1[\"Define Requirements\"]\n    t_task_2{\"Approved?\"}\n  end\n  subgraph lane_lane_2[\"Development\"]\n    t_task_3[\"Implement Feature\"]\n  end\n  subgraph lane_lane_3[\"Review\"]\n    t_task_4[\"Code Review\"]\n  end\n  t_task_1 --> t_task_2\n  t_task_2 -->|\"Yes\"| t_task_3\n  t_task_3 --> t_task_4\n"
       },
       "createdAt": 1777945120264,
-      "updatedAt": 1777945167369
+      "updatedAt": 1777945513539
     },
     {
       "id": "4997c745-c344-4a00-aecc-c93ea21a179e",
