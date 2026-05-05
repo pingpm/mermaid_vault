@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777969994191,
+  "updatedAt": 1777970113630,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777969985268
+      "updatedAt": 1777969993071
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -118,14 +118,14 @@
           }
         ],
         "swBgPattern": "dots",
-        "swDirection": "TD",
+        "swDirection": "LR",
         "swTheme": "default",
         "swLaneGap": 24,
         "swLaneColorOverrides": {},
-        "mermaidCode": "graph TD\n  subgraph lane_lane_1[\"Planning\"]\n    t_task_1([\"Start\"])\n    t_task_2[\"Define Requirements\"]\n    t_task_3{\"Approved?\"}\n  end\n  subgraph lane_lane_2[\"Development\"]\n    t_task_4[\"Implement Feature\"]\n  end\n  subgraph lane_lane_3[\"Review\"]\n    t_task_5[\"Code Review\"]\n  end\n  t_task_1 --> t_task_2\n  t_task_2 --> t_task_3\n  t_task_3 -->|\"Yes\"| t_task_4\n  t_task_4 --> t_task_5\n"
+        "mermaidCode": "graph LR\n  subgraph lane_lane_1[\"Planning\"]\n    t_task_3{\"Approved?\"}\n    t_task_1([\"Start\"])\n    t_task_2[\"Define Requirements\"]\n  end\n  subgraph lane_lane_2[\"Development\"]\n    t_task_4[\"Implement Feature\"]\n  end\n  subgraph lane_lane_3[\"Review\"]\n    t_task_5[\"Code Review\"]\n  end\n  t_task_1 --> t_task_2\n  t_task_2 --> t_task_3\n  t_task_3 -->|\"Yes\"| t_task_4\n  t_task_4 --> t_task_5\n"
       },
       "createdAt": 1777969911409,
-      "updatedAt": 1777969985240
+      "updatedAt": 1777969993061
     },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
