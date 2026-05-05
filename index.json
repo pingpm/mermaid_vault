@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777972920392,
+  "updatedAt": 1777973159814,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777972829254
+      "updatedAt": 1777973068012
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -27,22 +27,22 @@
             "id": "lane-1",
             "label": "Planning",
             "order": 0,
-            "width": 1321,
-            "height": 793
+            "width": 1291,
+            "height": 713
           },
           {
             "id": "lane-2",
             "label": "Development",
             "order": 1,
-            "width": 1321,
-            "height": 1520
+            "width": 1291,
+            "height": 1440
           },
           {
             "id": "lane-3",
             "label": "Review",
             "order": 2,
-            "width": 1321,
-            "height": 1378
+            "width": 1291,
+            "height": 1298
           }
         ],
         "tasks": [
@@ -124,14 +124,14 @@
           }
         ],
         "swBgPattern": "none",
-        "swDirection": "TD",
+        "swDirection": "LR",
         "swTheme": "default",
         "swLaneGap": 24,
         "swLaneColorOverrides": {},
-        "mermaidCode": "graph TD\n  subgraph lane_lane_1[\"Planning\"]\n    t_task_1([\"Start\"])\n    t_task_2[\"Define Requirements\"]\n    t_task_3{\"Approved?\"}\n  end\n  subgraph lane_lane_2[\"Development\"]\n    t_task_4[\"Implement Feature\"]\n  end\n  subgraph lane_lane_3[\"Review\"]\n    t_task_5[\"Code Review\"]\n  end\n  t_task_1 --> t_task_2\n  t_task_2 --> t_task_3\n  t_task_3 -->|\"Yes\"| t_task_4\n  t_task_4 --> t_task_5\n"
+        "mermaidCode": "graph LR\n  subgraph lane_lane_1[\"Planning\"]\n    t_task_3{\"Approved?\"}\n    t_task_1([\"Start\"])\n    t_task_2[\"Define Requirements\"]\n  end\n  subgraph lane_lane_2[\"Development\"]\n    t_task_4[\"Implement Feature\"]\n  end\n  subgraph lane_lane_3[\"Review\"]\n    t_task_5[\"Code Review\"]\n  end\n  t_task_1 --> t_task_2\n  t_task_2 --> t_task_3\n  t_task_3 -->|\"Yes\"| t_task_4\n  t_task_4 --> t_task_5\n"
       },
       "createdAt": 1777970613462,
-      "updatedAt": 1777972829231
+      "updatedAt": 1777973067990
     },
     {
       "id": "c67d29b2-1ede-441e-9024-359aebe3bb9a",
