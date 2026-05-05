@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1777987247050,
+  "updatedAt": 1777987402279,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
@@ -16,72 +16,6 @@
     }
   ],
   "diagrams": [
-    {
-      "id": "c67d29b2-1ede-441e-9024-359aebe3bb9a",
-      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
-      "name": "qwewe",
-      "type": "flowchart",
-      "data": {
-        "nodes": [
-          {
-            "id": "start",
-            "type": "flow-terminator",
-            "position": {
-              "x": 250,
-              "y": 50
-            },
-            "data": {
-              "label": "Start"
-            },
-            "measured": {
-              "width": 100,
-              "height": 40
-            }
-          },
-          {
-            "id": "1",
-            "type": "flow-process",
-            "position": {
-              "x": 345,
-              "y": 299
-            },
-            "data": {
-              "label": "考虑考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑；看；离开了；考虑；考虑；",
-              "width": 294,
-              "height": 57
-            },
-            "measured": {
-              "width": 294,
-              "height": 57
-            },
-            "selected": false,
-            "dragging": false,
-            "width": 294,
-            "height": 57,
-            "resizing": false
-          }
-        ],
-        "edges": [
-          {
-            "id": "e-start-1",
-            "source": "start",
-            "target": "1",
-            "animated": true,
-            "style": {
-              "stroke": "#6366f1",
-              "strokeWidth": 2
-            },
-            "markerEnd": {
-              "type": "arrowclosed",
-              "color": "#6366f1"
-            }
-          }
-        ],
-        "mermaidCode": "graph TD\n  start([\"Start\"])\n  1(\"考虑考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑考虑；考虑；考虑；考虑；考虑；考虑；考虑；考虑；看；离开了；考虑；考虑；\")\n  start -.-> 1\n"
-      },
-      "createdAt": 1777471703729,
-      "updatedAt": 1777972611251
-    },
     {
       "id": "26780708-380d-47c8-a24e-350f52eac4d1",
       "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
