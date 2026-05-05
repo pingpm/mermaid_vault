@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777958742846,
+  "updatedAt": 1777958863191,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777958710009
+      "updatedAt": 1777958755936
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -61,8 +61,8 @@
             "order": 0,
             "col": 0,
             "row": 0,
-            "x": 0,
-            "y": 4.456671251719399,
+            "x": 713.232462173315,
+            "y": 33.969738651994504,
             "width": 156,
             "height": 56
           },
@@ -74,8 +74,8 @@
             "order": 1,
             "col": 1,
             "row": 0,
-            "x": 537.149931224209,
-            "y": 111.94497936726273,
+            "x": 315.8019257221457,
+            "y": 110.30536451169189,
             "width": 156,
             "height": 92
           },
@@ -129,7 +129,7 @@
         "mermaidCode": "graph LR\n  subgraph lane_lane_1[\"Planning\"]\n    t_task_1[\"Define Requirements\"]\n    t_task_2{\"Approved?\"}\n  end\n  subgraph lane_lane_2[\"Development\"]\n    t_task_3[\"Implement Feature\"]\n  end\n  subgraph lane_lane_3[\"Review\"]\n    t_task_4[\"Code Review\"]\n  end\n  t_task_1 --> t_task_2\n  t_task_2 -->|\"Yes\"| t_task_3\n  t_task_3 --> t_task_4\n"
       },
       "createdAt": 1777958679134,
-      "updatedAt": 1777958710000
+      "updatedAt": 1777958755929
     },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
