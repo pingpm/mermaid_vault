@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777987679930,
+  "updatedAt": 1777987916175,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777987645926
+      "updatedAt": 1777987807044
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -107,7 +107,8 @@
             "toTaskId": "task-4",
             "label": "Yes",
             "sourceHandle": "bottom",
-            "targetHandle": "top"
+            "targetHandle": "top",
+            "dashed": true
           },
           {
             "id": "c4",
@@ -126,7 +127,7 @@
         "mermaidCode": "graph LR\n  subgraph lane_lane_1[\"Planning\"]\n    t_task_3{\"Approved?\"}\n    t_task_1([\"Start\"])\n    t_task_2[\"Define Requirements\"]\n  end\n  subgraph lane_lane_2[\"Development\"]\n    t_task_4[\"Implement Feature\"]\n  end\n  subgraph lane_lane_3[\"Review\"]\n    t_task_5[\"Code Review\"]\n  end\n  t_task_1 --> t_task_2\n  t_task_2 --> t_task_3\n  t_task_3 -->|\"Yes\"| t_task_4\n  t_task_4 --> t_task_5\n"
       },
       "createdAt": 1777987461567,
-      "updatedAt": 1777987645903
+      "updatedAt": 1777987807036
     },
     {
       "id": "26780708-380d-47c8-a24e-350f52eac4d1",
