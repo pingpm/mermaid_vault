@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777986720759,
+  "updatedAt": 1777986961017,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777986637151
+      "updatedAt": 1777986931282
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -22,152 +22,12 @@
       "name": "123",
       "type": "swimlane",
       "data": {
-        "lanes": [
-          {
-            "id": "lane-1",
-            "label": "Planning",
-            "order": 0,
-            "width": 776,
-            "height": 242
-          },
-          {
-            "id": "lane-2",
-            "label": "Development",
-            "order": 1,
-            "width": 776,
-            "height": 224
-          },
-          {
-            "id": "lane-3",
-            "label": "Review",
-            "order": 2,
-            "width": 776,
-            "height": 461
-          },
-          {
-            "id": "3853eb6c-8db3-497f-82a5-6e3d83ee829c",
-            "label": "Lane 4",
-            "order": 3,
-            "width": 776,
-            "height": 200
-          },
-          {
-            "id": "58d5b1ab-6913-4669-9710-fee6c175058c",
-            "label": "Lane 5",
-            "order": 4,
-            "width": 776,
-            "height": 200
-          }
-        ],
-        "tasks": [
-          {
-            "id": "task-1",
-            "laneId": "lane-1",
-            "label": "Start",
-            "shape": "terminator",
-            "order": 0,
-            "x": 40,
-            "y": 72
-          },
-          {
-            "id": "task-2",
-            "laneId": "lane-1",
-            "label": "Define Requirements",
-            "shape": "process",
-            "order": 1,
-            "x": 240,
-            "y": 72
-          },
-          {
-            "id": "task-3",
-            "laneId": "lane-1",
-            "label": "Approved?",
-            "shape": "decision",
-            "order": 2,
-            "x": 460,
-            "y": 54
-          },
-          {
-            "id": "task-4",
-            "laneId": "lane-2",
-            "label": "Implement Feature",
-            "shape": "process",
-            "order": 0,
-            "x": 460,
-            "y": 72
-          },
-          {
-            "id": "task-5",
-            "laneId": "lane-3",
-            "label": "Code Review",
-            "shape": "process",
-            "order": 0,
-            "x": 460,
-            "y": 72
-          },
-          {
-            "id": "f878443c-fb42-4e7b-9ed5-04e5d1d848d1",
-            "laneId": "lane-3",
-            "label": "Process 2",
-            "shape": "process",
-            "order": 1,
-            "x": 373.3067400275104,
-            "y": 232.14305364511688,
-            "width": 156,
-            "height": 56
-          },
-          {
-            "id": "b37941da-d4bf-4f20-8d84-af6f34391525",
-            "laneId": "lane-3",
-            "label": "Decision 3",
-            "shape": "decision",
-            "order": 2,
-            "x": 91.34525447042643,
-            "y": 273,
-            "width": 92,
-            "height": 92
-          }
-        ],
-        "connections": [
-          {
-            "id": "c1",
-            "fromTaskId": "task-1",
-            "toTaskId": "task-2",
-            "sourceHandle": "right",
-            "targetHandle": "left"
-          },
-          {
-            "id": "c2",
-            "fromTaskId": "task-2",
-            "toTaskId": "task-3",
-            "sourceHandle": "right",
-            "targetHandle": "left"
-          },
-          {
-            "id": "c3",
-            "fromTaskId": "task-3",
-            "toTaskId": "task-4",
-            "label": "Yes",
-            "sourceHandle": "bottom",
-            "targetHandle": "top"
-          },
-          {
-            "id": "c4",
-            "fromTaskId": "task-4",
-            "toTaskId": "task-5",
-            "sourceHandle": "bottom",
-            "targetHandle": "top"
-          }
-        ],
-        "swBgPattern": "none",
-        "swDirection": "LR",
-        "swTheme": "default",
-        "swLaneGap": 24,
-        "swLaneColorOverrides": {},
-        "mermaidCode": "graph LR\n  subgraph lane_lane_1[\"Planning\"]\n    t_task_3{\"Approved?\"}\n    t_task_1([\"Start\"])\n    t_task_2[\"Define Requirements\"]\n  end\n  subgraph lane_lane_2[\"Development\"]\n    t_task_4[\"Implement Feature\"]\n  end\n  subgraph lane_lane_3[\"Review\"]\n    t_task_5[\"Code Review\"]\n    t_f878443c_fb42_4e7b_9ed5_04e5d1d848d1[\"Process 2\"]\n    t_b37941da_d4bf_4f20_8d84_af6f34391525{\"Decision 3\"}\n  end\n  t_task_1 --> t_task_2\n  t_task_2 --> t_task_3\n  t_task_3 -->|\"Yes\"| t_task_4\n  t_task_4 --> t_task_5\n"
+        "nodes": [],
+        "edges": [],
+        "mermaidCode": "graph TD\n"
       },
       "createdAt": 1777973598659,
-      "updatedAt": 1777986637132
+      "updatedAt": 1777986931262
     },
     {
       "id": "c67d29b2-1ede-441e-9024-359aebe3bb9a",
