@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777956251164,
+  "updatedAt": 1777957690616,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777956211906
+      "updatedAt": 1777957642865
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -127,14 +127,28 @@
             "fromTaskId": "task-3",
             "toTaskId": "task-4",
             "sourceHandle": "bottom"
+          },
+          {
+            "id": "4ac87ae7-cf57-46ac-9202-6585b03cc422",
+            "fromTaskId": "69f290e6-49fe-4997-a1c0-d3876c8f9e58",
+            "toTaskId": "task-2",
+            "sourceHandle": "bottom",
+            "targetHandle": "right"
+          },
+          {
+            "id": "92014130-e1a3-43e5-9554-fbed12bafef8",
+            "fromTaskId": "task-1",
+            "toTaskId": "task-2",
+            "sourceHandle": "left",
+            "targetHandle": "right"
           }
         ],
         "swBgPattern": "none",
         "swDirection": "LR",
-        "mermaidCode": "graph LR\n  subgraph lane_lane_2[\"Development\"]\n    t_task_3[\"Implement Feature\"]\n  end\n  subgraph lane_lane_1[\"Planning\"]\n    t_task_1[\"Define Requirements\"]\n    t_task_2{\"Approved?\"}\n    t_69f290e6_49fe_4997_a1c0_d3876c8f9e58[/\"Document 3\"\\]\n  end\n  subgraph lane_lane_3[\"Review\"]\n    t_task_4[\"Code Review\"]\n  end\n  t_task_1 --> t_task_2\n  t_task_2 -->|\"Yes\"| t_task_3\n  t_task_3 --> t_task_4\n"
+        "mermaidCode": "graph LR\n  subgraph lane_lane_2[\"Development\"]\n    t_task_3[\"Implement Feature\"]\n  end\n  subgraph lane_lane_1[\"Planning\"]\n    t_task_1[\"Define Requirements\"]\n    t_task_2{\"Approved?\"}\n    t_69f290e6_49fe_4997_a1c0_d3876c8f9e58[/\"Document 3\"\\]\n  end\n  subgraph lane_lane_3[\"Review\"]\n    t_task_4[\"Code Review\"]\n  end\n  t_task_1 --> t_task_2\n  t_task_2 -->|\"Yes\"| t_task_3\n  t_task_3 --> t_task_4\n  t_69f290e6_49fe_4997_a1c0_d3876c8f9e58 --> t_task_2\n  t_task_1 --> t_task_2\n"
       },
       "createdAt": 1777945120264,
-      "updatedAt": 1777956211894
+      "updatedAt": 1777957642856
     },
     {
       "id": "4997c745-c344-4a00-aecc-c93ea21a179e",
