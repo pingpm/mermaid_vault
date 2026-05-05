@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777945654887,
+  "updatedAt": 1777956132421,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777945649503
+      "updatedAt": 1777956059744
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -28,21 +28,21 @@
             "label": "Planning",
             "order": 1,
             "width": 1675,
-            "height": 336
+            "height": 530
           },
           {
             "id": "lane-2",
             "label": "Development",
             "order": 0,
             "width": 1677,
-            "height": 338
+            "height": 377
           },
           {
             "id": "lane-3",
             "label": "Review",
             "order": 2,
             "width": 1675,
-            "height": 288
+            "height": 401
           }
         ],
         "tasks": [
@@ -54,8 +54,8 @@
             "order": 0,
             "col": 0,
             "row": 0,
-            "x": 491.5059760956176,
-            "y": 15.521912350597603,
+            "x": 708.9623407485415,
+            "y": 32.07950356782533,
             "width": 156,
             "height": 56
           },
@@ -80,8 +80,8 @@
             "order": 0,
             "col": 0,
             "row": 0,
-            "x": 89.40239043824698,
-            "y": 42.167330677290806,
+            "x": 88.0610889774236,
+            "y": 101.18459495351922,
             "width": 156,
             "height": 56
           },
@@ -95,6 +95,17 @@
             "row": 0,
             "x": 24,
             "y": 24,
+            "width": 156,
+            "height": 56
+          },
+          {
+            "id": "69f290e6-49fe-4997-a1c0-d3876c8f9e58",
+            "laneId": "lane-1",
+            "label": "Document 3",
+            "shape": "document",
+            "order": 2,
+            "x": 660.8790292656089,
+            "y": 226.6171391443853,
             "width": 156,
             "height": 56
           }
@@ -120,10 +131,10 @@
         ],
         "swBgPattern": "none",
         "swDirection": "LR",
-        "mermaidCode": "graph LR\n  subgraph lane_lane_2[\"Development\"]\n    t_task_3[\"Implement Feature\"]\n  end\n  subgraph lane_lane_1[\"Planning\"]\n    t_task_1[\"Define Requirements\"]\n    t_task_2{\"Approved?\"}\n  end\n  subgraph lane_lane_3[\"Review\"]\n    t_task_4[\"Code Review\"]\n  end\n  t_task_1 --> t_task_2\n  t_task_2 -->|\"Yes\"| t_task_3\n  t_task_3 --> t_task_4\n"
+        "mermaidCode": "graph LR\n  subgraph lane_lane_2[\"Development\"]\n    t_task_3[\"Implement Feature\"]\n  end\n  subgraph lane_lane_1[\"Planning\"]\n    t_task_1[\"Define Requirements\"]\n    t_task_2{\"Approved?\"}\n    t_69f290e6_49fe_4997_a1c0_d3876c8f9e58[/\"Document 3\"\\]\n  end\n  subgraph lane_lane_3[\"Review\"]\n    t_task_4[\"Code Review\"]\n  end\n  t_task_1 --> t_task_2\n  t_task_2 -->|\"Yes\"| t_task_3\n  t_task_3 --> t_task_4\n"
       },
       "createdAt": 1777945120264,
-      "updatedAt": 1777945649484
+      "updatedAt": 1777956059738
     },
     {
       "id": "4997c745-c344-4a00-aecc-c93ea21a179e",
