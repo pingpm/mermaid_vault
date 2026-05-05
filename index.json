@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1777991166949,
+  "updatedAt": 1777991291357,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1777991145703
+      "updatedAt": 1777991186185
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -91,8 +91,8 @@
             "label": "文档 2",
             "shape": "document",
             "order": 1,
-            "x": 740.7235213204954,
-            "y": 17.76616231086666,
+            "x": 987.4580467675378,
+            "y": 10.437414030261436,
             "width": 225,
             "height": 110
           }
@@ -138,14 +138,14 @@
         ],
         "swBgPattern": "none",
         "swDirection": "LR",
-        "swEdgeStyle": "smooth",
+        "swEdgeStyle": "curve",
         "swTheme": "default",
         "swLaneGap": 24,
         "swLaneColorOverrides": {},
         "mermaidCode": "graph LR\n  subgraph lane_lane_1[\"Planning\"]\n    t_task_3{\"Approved?\"}\n    t_task_2[\"Define Requirements\"]\n    t_task_1([\"Start\"])\n  end\n  subgraph lane_lane_2[\"Development\"]\n    t_bcb52ef5_1ab2_466e_a13e_b9249e2c2349[/\"文档 2\"\\]\n    t_task_4[\"Implement Feature\"]\n  end\n  subgraph lane_lane_3[\"Review\"]\n    t_task_5[\"Code Review\"]\n  end\n  t_task_1 --> t_task_2\n  t_task_2 --> t_task_3\n  t_task_3 -->|\"Yes\"| t_task_4\n  t_bcb52ef5_1ab2_466e_a13e_b9249e2c2349 --> t_task_4\n  t_task_4 --> t_task_5\n"
       },
       "createdAt": 1777987461567,
-      "updatedAt": 1777991145697
+      "updatedAt": 1777991186179
     },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
