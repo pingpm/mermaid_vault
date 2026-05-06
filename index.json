@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778050923115,
+  "updatedAt": 1778051041575,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778050916201
+      "updatedAt": 1778050992177
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -40,18 +40,54 @@
             "label": "New node",
             "parentId": "2d425fa2-9121-46c3-b6b1-9cc6f5b99f63",
             "order": 1
+          },
+          {
+            "id": "2b1ec50a-69d9-4772-8060-c04a189afe5b",
+            "label": "New node",
+            "parentId": "2d425fa2-9121-46c3-b6b1-9cc6f5b99f63",
+            "order": 2
+          },
+          {
+            "id": "d9d1677e-d8c0-415e-8ab6-92a120c4c520",
+            "label": "New node",
+            "parentId": "d9e410d1-beea-46dc-b68f-125093379110",
+            "order": 0
+          },
+          {
+            "id": "990ea880-dd20-41a0-93d6-1d9e98b99d99",
+            "label": "New node",
+            "parentId": "2b1ec50a-69d9-4772-8060-c04a189afe5b",
+            "order": 0
+          },
+          {
+            "id": "5e243dd3-1946-4c35-824d-e45f826d3bba",
+            "label": "New node",
+            "parentId": "b04c3fb7-9143-4e5c-869d-5b4b0bb155c1",
+            "order": 0
+          },
+          {
+            "id": "456b8ed3-271c-4fe1-afca-07dd405004db",
+            "label": "New node",
+            "parentId": "d9e410d1-beea-46dc-b68f-125093379110",
+            "order": 1
+          },
+          {
+            "id": "66f08129-188c-47c1-ad97-7d10d6375551",
+            "label": "New node",
+            "parentId": "2b1ec50a-69d9-4772-8060-c04a189afe5b",
+            "order": 1
           }
         ],
-        "mmLayout": "both",
+        "mmLayout": "right",
         "mmNodeStyle": "plain",
         "mmBgPattern": "dots",
         "mmEdgeStyle": "curve",
         "mmTheme": "default",
         "mmSlotOverrides": {},
-        "mermaidCode": "mindmap\n  Main Topic\n    撒娇的看撒谎的\n    New node\n"
+        "mermaidCode": "mindmap\n  Main Topic\n    撒娇的看撒谎的\n      New node\n    New node\n      New node\n      New node\n    New node\n      New node\n      New node\n"
       },
       "createdAt": 1778032289416,
-      "updatedAt": 1778050916192
+      "updatedAt": 1778050992167
     },
     {
       "id": "3c82e5dc-80e4-4b41-a50d-f90f98ff5790",
