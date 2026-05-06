@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778054673197,
+  "updatedAt": 1778054792362,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778054639317
+      "updatedAt": 1778054767298
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -17,137 +17,94 @@
   ],
   "diagrams": [
     {
+      "id": "60cf6978-a70f-4def-8ccd-10984f35fbae",
+      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
+      "name": "123",
+      "type": "sequence",
+      "data": {
+        "lifelines": [
+          {
+            "id": "user",
+            "label": "User",
+            "kind": "actor",
+            "order": 0
+          },
+          {
+            "id": "system",
+            "label": "System",
+            "kind": "entity",
+            "order": 1
+          }
+        ],
+        "messages": [
+          {
+            "id": "m1",
+            "from": "user",
+            "to": "system",
+            "label": "Request",
+            "type": "sync",
+            "order": 0
+          },
+          {
+            "id": "m2",
+            "from": "system",
+            "to": "user",
+            "label": "Response",
+            "type": "return",
+            "order": 1,
+            "replyToId": "m1"
+          },
+          {
+            "id": "f729f830-c36b-4fe5-bb9a-2ec824852611",
+            "from": "user",
+            "to": "system",
+            "label": "请求网络",
+            "type": "sync",
+            "order": 2
+          },
+          {
+            "id": "b6e4c551-8f01-42a1-b15a-6974d8368582",
+            "from": "system",
+            "to": "user",
+            "label": "返回数据",
+            "type": "return",
+            "order": 3,
+            "replyToId": "f729f830-c36b-4fe5-bb9a-2ec824852611"
+          },
+          {
+            "id": "3faea69d-5fa4-47bf-9e9d-5761cd99207b",
+            "from": "user",
+            "to": "system",
+            "label": "Message",
+            "type": "sync",
+            "order": 4
+          }
+        ],
+        "notes": [],
+        "fragments": [],
+        "links": [],
+        "colWidths": {},
+        "gaps": {},
+        "lifelineStyle": "dashed",
+        "boxStyle": "rounded",
+        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as User\n  participant p1 as System\n  p0->>p1: Request\n  activate p1\n  p1-->>p0: Response\n  deactivate p1\n  p0->>p1: 请求网络\n  activate p1\n  p1-->>p0: 返回数据\n  deactivate p1\n  p0->>p1: Message\n"
+      },
+      "createdAt": 1778032248085,
+      "updatedAt": 1778054767245
+    },
+    {
       "id": "b48bb6cf-b5cb-4b18-99f7-65d1a9412bee",
       "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "345",
       "type": "swimlane",
       "data": {
-        "lanes": [
-          {
-            "id": "0ebd989f-406b-4b32-9df3-ef9886caa6a8",
-            "label": "Planning",
-            "order": 0
-          },
-          {
-            "id": "368c1a39-dfed-4968-816b-a88399c556b4",
-            "label": "Development",
-            "order": 1
-          },
-          {
-            "id": "88020aa4-dd1b-4303-aa24-f648e6d73a62",
-            "label": "Review",
-            "order": 2
-          }
-        ],
-        "tasks": [
-          {
-            "id": "c6b5f7dd-2553-4263-a12f-65d40ec722a5",
-            "laneId": "0ebd989f-406b-4b32-9df3-ef9886caa6a8",
-            "label": "Define Requirements",
-            "shape": "process",
-            "order": 0,
-            "x": 0,
-            "y": 20
-          },
-          {
-            "id": "1eea93cb-fedf-44b4-9003-1008161ac9d5",
-            "laneId": "0ebd989f-406b-4b32-9df3-ef9886caa6a8",
-            "label": "Start",
-            "shape": "terminator",
-            "order": 1,
-            "x": 220,
-            "y": 20
-          },
-          {
-            "id": "fa5e6135-4b26-4200-8c7c-01a6cc144077",
-            "laneId": "0ebd989f-406b-4b32-9df3-ef9886caa6a8",
-            "label": "Approved?",
-            "shape": "decision",
-            "order": 2,
-            "x": 440,
-            "y": 20
-          },
-          {
-            "id": "6bfc4a42-c340-4f7e-a4f7-c354a102ae0d",
-            "laneId": "0ebd989f-406b-4b32-9df3-ef9886caa6a8",
-            "label": "Process 4",
-            "shape": "process",
-            "order": 3,
-            "x": 660,
-            "y": 20
-          },
-          {
-            "id": "a21b7889-7c44-4419-bd9a-8e7844b6db7e",
-            "laneId": "368c1a39-dfed-4968-816b-a88399c556b4",
-            "label": "Implement Feature",
-            "shape": "process",
-            "order": 0,
-            "x": 8.550206327372763,
-            "y": 24.885832187070207
-          },
-          {
-            "id": "310d496c-a88e-4f33-a962-108ad279f24b",
-            "laneId": "88020aa4-dd1b-4303-aa24-f648e6d73a62",
-            "label": "Code Review",
-            "shape": "process",
-            "order": 0,
-            "x": 0,
-            "y": 20
-          }
-        ],
-        "connections": [
-          {
-            "id": "1d3919b7-c6cb-4c7a-92a7-fce7d7b81741",
-            "fromTaskId": "1eea93cb-fedf-44b4-9003-1008161ac9d5",
-            "toTaskId": "c6b5f7dd-2553-4263-a12f-65d40ec722a5",
-            "dashed": false,
-            "sourceHandle": "left",
-            "targetHandle": "right"
-          },
-          {
-            "id": "361843d4-31a7-4f1c-8e55-3eb0ea17ec01",
-            "fromTaskId": "c6b5f7dd-2553-4263-a12f-65d40ec722a5",
-            "toTaskId": "fa5e6135-4b26-4200-8c7c-01a6cc144077",
-            "dashed": false,
-            "sourceHandle": "right",
-            "targetHandle": "left"
-          },
-          {
-            "id": "388c3d61-68de-437f-8041-f09c2101335c",
-            "fromTaskId": "fa5e6135-4b26-4200-8c7c-01a6cc144077",
-            "toTaskId": "a21b7889-7c44-4419-bd9a-8e7844b6db7e",
-            "label": "Yes",
-            "dashed": false,
-            "sourceHandle": "left",
-            "targetHandle": "right"
-          },
-          {
-            "id": "7472174c-f485-49d3-aded-c5ccf4964dec",
-            "fromTaskId": "a21b7889-7c44-4419-bd9a-8e7844b6db7e",
-            "toTaskId": "310d496c-a88e-4f33-a962-108ad279f24b",
-            "dashed": false,
-            "sourceHandle": "bottom",
-            "targetHandle": "top"
-          },
-          {
-            "id": "0056d82f-553f-4376-8a4c-71a1bc51be0c",
-            "fromTaskId": "fa5e6135-4b26-4200-8c7c-01a6cc144077",
-            "toTaskId": "6bfc4a42-c340-4f7e-a4f7-c354a102ae0d",
-            "dashed": false,
-            "sourceHandle": "right",
-            "targetHandle": "left"
-          }
-        ],
-        "swBgPattern": "none",
-        "swDirection": "LR",
-        "swEdgeStyle": "smooth",
-        "swTheme": "default",
-        "swLaneGap": 24,
-        "swLaneColorOverrides": {},
-        "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0[\"Define Requirements\"]\n    t_1([\"Start\"])\n    t_2{\"Approved?\"}\n    t_3[\"Process 4\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_4[\"Implement Feature\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_5[\"Code Review\"]\n  end\n  t_1 --> t_0\n  t_0 --> t_2\n  t_2 -->|\"Yes\"| t_4\n  t_4 --> t_5\n  t_2 --> t_3\n"
+        "nodes": [],
+        "edges": [],
+        "mermaidCode": "flowchart TD\n",
+        "flowEdgeStyle": "smooth"
       },
       "createdAt": 1778054363017,
-      "updatedAt": 1778054639282
+      "updatedAt": 1778054748387
     },
     {
       "id": "62e6c88a-5c2a-4de8-84fc-1d3788bd37bb",
@@ -320,74 +277,6 @@
       },
       "createdAt": 1778054009145,
       "updatedAt": 1778054024880
-    },
-    {
-      "id": "60cf6978-a70f-4def-8ccd-10984f35fbae",
-      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
-      "name": "123",
-      "type": "sequence",
-      "data": {
-        "lifelines": [
-          {
-            "id": "user",
-            "label": "User",
-            "kind": "actor",
-            "order": 0
-          },
-          {
-            "id": "system",
-            "label": "System",
-            "kind": "entity",
-            "order": 1
-          }
-        ],
-        "messages": [
-          {
-            "id": "m1",
-            "from": "user",
-            "to": "system",
-            "label": "Request",
-            "type": "sync",
-            "order": 0
-          },
-          {
-            "id": "m2",
-            "from": "system",
-            "to": "user",
-            "label": "Response",
-            "type": "return",
-            "order": 1,
-            "replyToId": "m1"
-          },
-          {
-            "id": "f729f830-c36b-4fe5-bb9a-2ec824852611",
-            "from": "user",
-            "to": "system",
-            "label": "请求网络",
-            "type": "sync",
-            "order": 2
-          },
-          {
-            "id": "b6e4c551-8f01-42a1-b15a-6974d8368582",
-            "from": "system",
-            "to": "user",
-            "label": "返回数据",
-            "type": "return",
-            "order": 3,
-            "replyToId": "f729f830-c36b-4fe5-bb9a-2ec824852611"
-          }
-        ],
-        "notes": [],
-        "fragments": [],
-        "links": [],
-        "colWidths": {},
-        "gaps": {},
-        "lifelineStyle": "dashed",
-        "boxStyle": "rounded",
-        "mermaidCode": "flowchart TD\n  start([\"Start\"])\n  1(\"Process\")\n  c6c59789-c1c6-4f40-b71e-37e621c2905e(\"Process 3\")\n  e555e08a-bfc9-47f3-9a7f-eaa219d94710[\"Rect 4\"]\n  d900c80b-cacd-4d95-b9a7-b296318b0ecc{\"Decision 5\"}\n  f0f8827e-1137-40fe-a32e-842b9fff72bf{\"Decision 6\"}\n  d7917ee6-b73d-4caf-9604-4d45f98aedcc{\"Decision 7\"}\n  be16baa8-772f-4c33-a19c-b39b0715a351{\"Decision 8\"}\n  start -.-> 1\n"
-      },
-      "createdAt": 1778032248085,
-      "updatedAt": 1778052863896
     },
     {
       "id": "bce12562-173a-469d-af23-0a7174f9f99f",
