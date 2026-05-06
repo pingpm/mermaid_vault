@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778032744904,
+  "updatedAt": 1778032864976,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778032712903
+      "updatedAt": 1778032788638
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -85,6 +85,67 @@
               "width": 100,
               "height": 40
             }
+          },
+          {
+            "id": "7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13",
+            "type": "flow-manual",
+            "position": {
+              "x": 1059,
+              "y": 457
+            },
+            "data": {
+              "label": "Input/Output 5"
+            },
+            "measured": {
+              "width": 185,
+              "height": 51
+            }
+          },
+          {
+            "id": "c08d4eab-03ff-4bb2-8d24-cee61d141f9d",
+            "type": "flow-document",
+            "position": {
+              "x": 1086,
+              "y": 574
+            },
+            "data": {
+              "label": "Document 6"
+            },
+            "measured": {
+              "width": 137,
+              "height": 67
+            },
+            "selected": false
+          },
+          {
+            "id": "cacbf4fd-8267-4e6e-acf7-b18af6489a9a",
+            "type": "flow-note",
+            "position": {
+              "x": 976,
+              "y": 594
+            },
+            "data": {
+              "label": "Note 7"
+            },
+            "measured": {
+              "width": 100,
+              "height": 59
+            }
+          },
+          {
+            "id": "34b56764-0d96-4aae-a160-b1c1707fb3df",
+            "type": "flow-document",
+            "position": {
+              "x": 1444,
+              "y": 429
+            },
+            "data": {
+              "label": "Document 8"
+            },
+            "measured": {
+              "width": 137,
+              "height": 67
+            }
           }
         ],
         "edges": [
@@ -149,10 +210,10 @@
             "id": "xy-edge__1right-f836676b-fb2c-4936-a911-d066d325c8e0"
           }
         ],
-        "mermaidCode": "graph TD\n  start([\"Start\"])\n  1(\"Process\")\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2(\"Process 3\")\n  f836676b-fb2c-4936-a911-d066d325c8e0[\"Rect 4\"]\n  start -.-> 1\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2 --> 2b55b8de-e64f-48f1-a8b6-94cca48b33d2\n  1 --> 2b55b8de-e64f-48f1-a8b6-94cca48b33d2\n  1 --> f836676b-fb2c-4936-a911-d066d325c8e0\n"
+        "mermaidCode": "graph TD\n  start([\"Start\"])\n  1(\"Process\")\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2(\"Process 3\")\n  f836676b-fb2c-4936-a911-d066d325c8e0[\"Rect 4\"]\n  7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13[/\"Input/Output 5\"/]\n  c08d4eab-03ff-4bb2-8d24-cee61d141f9d[/\"Document 6\"\\]\n  cacbf4fd-8267-4e6e-acf7-b18af6489a9a>\"Note 7\"]\n  34b56764-0d96-4aae-a160-b1c1707fb3df[/\"Document 8\"\\]\n  start -.-> 1\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2 --> 2b55b8de-e64f-48f1-a8b6-94cca48b33d2\n  1 --> 2b55b8de-e64f-48f1-a8b6-94cca48b33d2\n  1 --> f836676b-fb2c-4936-a911-d066d325c8e0\n"
       },
       "createdAt": 1778032152027,
-      "updatedAt": 1778032712891
+      "updatedAt": 1778032788630
     },
     {
       "id": "fd577967-5106-494e-bdae-c0afb858c4be",
