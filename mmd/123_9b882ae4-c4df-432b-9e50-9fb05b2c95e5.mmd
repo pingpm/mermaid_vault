@@ -1,7 +1,7 @@
 flowchart LR
   subgraph lane_0["Planning"]
-    t_0(["Start"])
-    t_1{"Approved?"}
+    t_0{"Approved?"}
+    t_1(["Start"])
     t_2["Define Requirements"]
   end
   subgraph lane_1["Development"]
@@ -10,7 +10,7 @@ flowchart LR
   subgraph lane_2["Review"]
     t_4["Code Review"]
   end
-  t_2 --> t_1
-  t_1 -->|"Yes"| t_3
+  t_0 -->|"Yes"| t_3
   t_3 --> t_4
-  t_0 --> t_2
+  t_1 --> t_2
+  t_2 --> t_0
