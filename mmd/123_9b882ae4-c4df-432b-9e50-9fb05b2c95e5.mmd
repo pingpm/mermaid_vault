@@ -7,8 +7,8 @@ flowchart LR
   subgraph lane_1["Development"]
     t_3{"Decision 2"}
     t_4(["Start / End 3"])
-    t_5["Process 5"]
-    t_6["Process 6"]
+    t_5["Process 6"]
+    t_6["Process 5"]
     t_7["Implement Feature"]
   end
   subgraph lane_2["Review"]
@@ -31,6 +31,6 @@ flowchart LR
   t_2 --> t_1
   t_1 --> t_0
   t_4 --> t_1
-  t_7 --> t_5
-  t_5 --> t_6
-  t_6 --> t_10
+  t_7 --> t_6
+  t_6 --> t_5
+  t_5 --> t_10
