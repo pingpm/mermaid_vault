@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778039464480,
+  "updatedAt": 1778039582408,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778039454575
+      "updatedAt": 1778039526640
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -24,37 +24,61 @@
       "data": {
         "nodes": [
           {
-            "id": "31236885-f137-42cb-aaad-b48c48b6b3fd",
+            "id": "7be936ca-d10f-41d0-9643-225f76967233",
             "label": "Main Topic",
             "parentId": null,
             "order": 0
           },
           {
-            "id": "a99cccd8-7e96-4bf9-80cd-f35c730747dd",
-            "label": "新节点",
-            "parentId": "31236885-f137-42cb-aaad-b48c48b6b3fd",
+            "id": "a0eeb540-035f-4d2e-a0eb-42496733b2ad",
+            "label": "1",
+            "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
+            "order": 0
+          },
+          {
+            "id": "259105fc-7fca-4b94-b5ee-b13dcad95d23",
+            "label": "2",
+            "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
             "order": 1
           },
           {
-            "id": "a4f4050d-8c12-4d1f-a9fd-43cfaffb087a",
-            "label": "新节点",
-            "parentId": "31236885-f137-42cb-aaad-b48c48b6b3fd",
+            "id": "e2210d10-323c-4915-a64b-f60a012250b8",
+            "label": "3",
+            "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
             "order": 2
           },
           {
-            "id": "2229a08e-256c-4477-9466-4f155d94e1d6",
-            "label": "撒大叔的",
-            "parentId": "31236885-f137-42cb-aaad-b48c48b6b3fd",
+            "id": "e904d554-69c9-409d-ab4d-a10b7da05dd5",
+            "label": "新节点",
+            "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
             "order": 3
+          },
+          {
+            "id": "9f5b9618-5179-4338-bb03-af29b987d01e",
+            "label": "我和死啊德华i收速度快睡觉啊大姐卡上了的到",
+            "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
+            "order": 4
+          },
+          {
+            "id": "7b32ec7a-d463-4f69-9835-9c5066e92040",
+            "label": "新节点",
+            "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
+            "order": 5
+          },
+          {
+            "id": "b9a26590-3a36-430b-a419-dbb553ae67c9",
+            "label": "新节点",
+            "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
+            "order": 6
           }
         ],
         "mmLayout": "right",
         "mmNodeStyle": "box",
         "mmBgPattern": "none",
-        "mermaidCode": "mindmap\n  Main Topic\n    新节点\n    新节点\n    撒大叔的\n"
+        "mermaidCode": "mindmap\n  Main Topic\n    1\n    2\n    3\n    新节点\n    我和死啊德华i收速度快睡觉啊大姐卡上了的到\n    新节点\n    新节点\n"
       },
       "createdAt": 1778032289416,
-      "updatedAt": 1778039454566
+      "updatedAt": 1778039526636
     },
     {
       "id": "3c82e5dc-80e4-4b41-a50d-f90f98ff5790",
