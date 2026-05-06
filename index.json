@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778033105913,
+  "updatedAt": 1778033335713,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778032986872
+      "updatedAt": 1778033327610
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -69,14 +69,14 @@
               "width": 100,
               "height": 40
             },
-            "selected": true
+            "selected": false
           },
           {
             "id": "f836676b-fb2c-4936-a911-d066d325c8e0",
             "type": "flow-process-rect",
             "position": {
-              "x": 747,
-              "y": 426
+              "x": 760,
+              "y": 366
             },
             "data": {
               "label": "Rect 4"
@@ -84,7 +84,9 @@
             "measured": {
               "width": 100,
               "height": 40
-            }
+            },
+            "selected": true,
+            "dragging": false
           },
           {
             "id": "7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13",
@@ -131,7 +133,8 @@
             "measured": {
               "width": 100,
               "height": 59
-            }
+            },
+            "selected": false
           },
           {
             "id": "34b56764-0d96-4aae-a160-b1c1707fb3df",
@@ -194,7 +197,8 @@
               "type": "arrowclosed",
               "color": "#6366f1"
             },
-            "id": "xy-edge__2b55b8de-e64f-48f1-a8b6-94cca48b33d2right-2b55b8de-e64f-48f1-a8b6-94cca48b33d2left"
+            "id": "xy-edge__2b55b8de-e64f-48f1-a8b6-94cca48b33d2right-2b55b8de-e64f-48f1-a8b6-94cca48b33d2left",
+            "selected": false
           },
           {
             "source": "1",
@@ -224,13 +228,44 @@
               "type": "arrowclosed",
               "color": "#6366f1"
             },
-            "id": "xy-edge__1right-f836676b-fb2c-4936-a911-d066d325c8e0"
+            "id": "xy-edge__1right-f836676b-fb2c-4936-a911-d066d325c8e0",
+            "selected": false
+          },
+          {
+            "source": "f836676b-fb2c-4936-a911-d066d325c8e0",
+            "sourceHandle": "right",
+            "target": "7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13",
+            "animated": false,
+            "style": {
+              "stroke": "#6366f1",
+              "strokeWidth": 2
+            },
+            "markerEnd": {
+              "type": "arrowclosed",
+              "color": "#6366f1"
+            },
+            "id": "xy-edge__f836676b-fb2c-4936-a911-d066d325c8e0right-7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13"
+          },
+          {
+            "source": "f836676b-fb2c-4936-a911-d066d325c8e0",
+            "target": "cd307345-a2eb-40e4-8f4c-f274dbcdef02",
+            "animated": false,
+            "style": {
+              "stroke": "#6366f1",
+              "strokeWidth": 2
+            },
+            "markerEnd": {
+              "type": "arrowclosed",
+              "color": "#6366f1"
+            },
+            "id": "xy-edge__f836676b-fb2c-4936-a911-d066d325c8e0-cd307345-a2eb-40e4-8f4c-f274dbcdef02"
           }
         ],
-        "mermaidCode": "graph TD\n  start([\"Start\"])\n  1(\"Process\")\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2(\"Process 3\")\n  f836676b-fb2c-4936-a911-d066d325c8e0[\"Rect 4\"]\n  7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13[/\"Input/Output 5\"/]\n  c08d4eab-03ff-4bb2-8d24-cee61d141f9d[/\"Document 6\"\\]\n  cacbf4fd-8267-4e6e-acf7-b18af6489a9a>\"Note 7\"]\n  34b56764-0d96-4aae-a160-b1c1707fb3df[/\"Document 8\"\\]\n  cd307345-a2eb-40e4-8f4c-f274dbcdef02[\"Rect 9\"]\n  start -.-> 1\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2 --> 2b55b8de-e64f-48f1-a8b6-94cca48b33d2\n  1 --> 2b55b8de-e64f-48f1-a8b6-94cca48b33d2\n  1 --> f836676b-fb2c-4936-a911-d066d325c8e0\n"
+        "mermaidCode": "graph TD\n  start([\"Start\"])\n  1(\"Process\")\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2(\"Process 3\")\n  f836676b-fb2c-4936-a911-d066d325c8e0[\"Rect 4\"]\n  7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13[/\"Input/Output 5\"/]\n  c08d4eab-03ff-4bb2-8d24-cee61d141f9d[/\"Document 6\"\\]\n  cacbf4fd-8267-4e6e-acf7-b18af6489a9a>\"Note 7\"]\n  34b56764-0d96-4aae-a160-b1c1707fb3df[/\"Document 8\"\\]\n  cd307345-a2eb-40e4-8f4c-f274dbcdef02[\"Rect 9\"]\n  start -.-> 1\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2 --> 2b55b8de-e64f-48f1-a8b6-94cca48b33d2\n  1 --> 2b55b8de-e64f-48f1-a8b6-94cca48b33d2\n  1 --> f836676b-fb2c-4936-a911-d066d325c8e0\n  f836676b-fb2c-4936-a911-d066d325c8e0 --> 7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13\n  f836676b-fb2c-4936-a911-d066d325c8e0 --> cd307345-a2eb-40e4-8f4c-f274dbcdef02\n",
+        "flowEdgeStyle": "smooth"
       },
       "createdAt": 1778032152027,
-      "updatedAt": 1778032986862
+      "updatedAt": 1778033327601
     },
     {
       "id": "fd577967-5106-494e-bdae-c0afb858c4be",
