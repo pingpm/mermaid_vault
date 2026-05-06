@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778045894170,
+  "updatedAt": 1778046286107,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778045684891
+      "updatedAt": 1778046276511
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -22,13 +22,53 @@
       "name": "123",
       "type": "mindmap",
       "data": {
-        "nodes": [],
-        "edges": [],
-        "mermaidCode": "graph TD\n",
-        "flowEdgeStyle": "smooth"
+        "nodes": [
+          {
+            "id": "a96da85b-0109-4406-8d6f-96643354a82c",
+            "label": "Main Topic",
+            "parentId": null,
+            "order": 0
+          },
+          {
+            "id": "52351db4-a96e-40f8-a09c-7e06ee0dddb2",
+            "label": "New node",
+            "parentId": "a96da85b-0109-4406-8d6f-96643354a82c",
+            "order": 0
+          },
+          {
+            "id": "558ec916-fbac-481c-bf9b-3f6b09da6808",
+            "label": "New node",
+            "parentId": "52351db4-a96e-40f8-a09c-7e06ee0dddb2",
+            "order": 0
+          },
+          {
+            "id": "1e9bb33d-28f0-4a74-8327-d807c94662a7",
+            "label": "New node",
+            "parentId": "a96da85b-0109-4406-8d6f-96643354a82c",
+            "order": 1
+          },
+          {
+            "id": "db6c362b-47d5-427e-9e7a-951bdf21106f",
+            "label": "阿斯顿",
+            "parentId": "a96da85b-0109-4406-8d6f-96643354a82c",
+            "order": 2
+          },
+          {
+            "id": "d62bcae2-e113-40a9-9ed4-4d6149e2ba33",
+            "label": "New node",
+            "parentId": "a96da85b-0109-4406-8d6f-96643354a82c",
+            "order": 3
+          }
+        ],
+        "mmLayout": "right",
+        "mmNodeStyle": "plain",
+        "mmBgPattern": "none",
+        "mmEdgeStyle": "rounded",
+        "mmTheme": "monochrome",
+        "mermaidCode": "mindmap\n  Main Topic\n    New node\n      New node\n    New node\n    阿斯顿\n    New node\n"
       },
       "createdAt": 1778032289416,
-      "updatedAt": 1778045684888
+      "updatedAt": 1778046276500
     },
     {
       "id": "3c82e5dc-80e4-4b41-a50d-f90f98ff5790",
@@ -375,7 +415,7 @@
         "flowEdgeStyle": "smooth"
       },
       "createdAt": 1778032152027,
-      "updatedAt": 1778045666813
+      "updatedAt": 1778046179402
     },
     {
       "id": "60cf6978-a70f-4def-8ccd-10984f35fbae",
