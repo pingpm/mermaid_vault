@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778052337091,
+  "updatedAt": 1778052457255,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778052331174
+      "updatedAt": 1778052337652
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -31,7 +31,13 @@
               "y": 50
             },
             "data": {
-              "label": "Start"
+              "label": "Start",
+              "width": 100,
+              "height": 40
+            },
+            "measured": {
+              "width": 100,
+              "height": 40
             }
           },
           {
@@ -42,7 +48,13 @@
               "y": 150
             },
             "data": {
-              "label": "Process"
+              "label": "Process",
+              "width": 100,
+              "height": 40
+            },
+            "measured": {
+              "width": 100,
+              "height": 40
             }
           }
         ],
@@ -51,13 +63,22 @@
             "id": "e-start-1",
             "source": "start",
             "target": "1",
-            "animated": true
+            "animated": true,
+            "style": {
+              "stroke": "#6366f1",
+              "strokeWidth": 2
+            },
+            "markerEnd": {
+              "type": "arrowclosed",
+              "color": "#6366f1"
+            }
           }
         ],
-        "mermaidCode": "flowchart TD\n  start([\"Start\"])\n  1[\"Process\"]\n  start --> 1\n"
+        "mermaidCode": "flowchart TD start([\"Start\"]) 1(\"Process\") c6c59789-c1c6-4f40-b71e-37e621c2905e(\"Process 3\") e555e08a-bfc9-47f3-9a7f-eaa219d94710[\"Rect 4\"] d900c80b-cacd-4d95-b9a7-b296318b0ecc{\"Decision 5\"}\n  start -.-> 1\n",
+        "flowEdgeStyle": "smooth"
       },
       "createdAt": 1778052331156,
-      "updatedAt": 1778052331156
+      "updatedAt": 1778052337644
     },
     {
       "id": "bce12562-173a-469d-af23-0a7174f9f99f",
