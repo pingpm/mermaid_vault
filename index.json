@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778039698989,
+  "updatedAt": 1778039981951,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778039647089
+      "updatedAt": 1778039968114
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -25,66 +25,42 @@
         "nodes": [
           {
             "id": "7be936ca-d10f-41d0-9643-225f76967233",
-            "label": "Main Topic",
+            "label": "疑问点",
             "parentId": null,
             "order": 0
           },
           {
-            "id": "a0eeb540-035f-4d2e-a0eb-42496733b2ad",
-            "label": "1",
+            "id": "dd7a40f4-e7e6-4d14-a6ba-297ee8b80f44",
+            "label": "外部确认",
             "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
             "order": 0
           },
           {
-            "id": "259105fc-7fca-4b94-b5ee-b13dcad95d23",
-            "label": "2",
+            "id": "d0922a7f-14b8-4efe-afcf-18dc12228f15",
+            "label": "内部确认",
             "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
             "order": 1
           },
           {
-            "id": "e2210d10-323c-4915-a64b-f60a012250b8",
-            "label": "啊是大姐看辣椒素的快乐撒节点",
-            "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
-            "order": 2
+            "id": "7d3a37a3-8238-406f-9781-c291c992b8b8",
+            "label": "是否需要提送车",
+            "parentId": "dd7a40f4-e7e6-4d14-a6ba-297ee8b80f44",
+            "order": 0
           },
           {
-            "id": "e904d554-69c9-409d-ab4d-a10b7da05dd5",
-            "label": "新节点",
-            "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
-            "order": 3
-          },
-          {
-            "id": "9f5b9618-5179-4338-bb03-af29b987d01e",
-            "label": "啊是大姐卡刷卡大姐辣椒素的快乐撒健康的理解阿斯科利大啊是大姐卡拉斯京的快乐撒的啊就是看德拉吉拉开始大姐拉屎的",
-            "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
-            "order": 4
-          },
-          {
-            "id": "7b32ec7a-d463-4f69-9835-9c5066e92040",
-            "label": "新节点",
-            "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
-            "order": 5
-          },
-          {
-            "id": "b9a26590-3a36-430b-a419-dbb553ae67c9",
-            "label": "新节点",
-            "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
-            "order": 6
-          },
-          {
-            "id": "17fa1f6e-ce57-41df-919e-5647385e056d",
-            "label": "新节点",
-            "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
-            "order": 7
+            "id": "1abbc78a-166b-46e2-a59d-d3dd88c24a6a",
+            "label": "查价和下单没有车辆估值，可以默认送20万保险，超出后的保险应该怎么处理",
+            "parentId": "dd7a40f4-e7e6-4d14-a6ba-297ee8b80f44",
+            "order": 1
           }
         ],
         "mmLayout": "right",
-        "mmNodeStyle": "box",
+        "mmNodeStyle": "plain",
         "mmBgPattern": "none",
-        "mermaidCode": "mindmap\n  Main Topic\n    1\n    2\n    啊是大姐看辣椒素的快乐撒节点\n    新节点\n    啊是大姐卡刷卡大姐辣椒素的快乐撒健康的理解阿斯科利大啊是大姐卡拉斯京的快乐撒的啊就是看德拉吉拉开始大姐拉屎的\n    新节点\n    新节点\n    新节点\n"
+        "mermaidCode": "mindmap\n  疑问点\n    外部确认\n      是否需要提送车\n      查价和下单没有车辆估值，可以默认送20万保险，超出后的保险应该怎么处理\n    内部确认\n"
       },
       "createdAt": 1778032289416,
-      "updatedAt": 1778039647084
+      "updatedAt": 1778039968102
     },
     {
       "id": "3c82e5dc-80e4-4b41-a50d-f90f98ff5790",
