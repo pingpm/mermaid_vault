@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778034724832,
+  "updatedAt": 1778035248992,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778034631563
+      "updatedAt": 1778035244530
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -27,8 +27,8 @@
             "id": "start",
             "type": "flow-terminator",
             "position": {
-              "x": 250,
-              "y": 50
+              "x": 248,
+              "y": -9.625
             },
             "data": {
               "label": "Start"
@@ -37,7 +37,8 @@
               "width": 100,
               "height": 40
             },
-            "selected": false
+            "selected": false,
+            "dragging": false
           },
           {
             "id": "1",
@@ -92,8 +93,8 @@
             "id": "7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13",
             "type": "flow-manual",
             "position": {
-              "x": 1059,
-              "y": 457
+              "x": 958,
+              "y": 449
             },
             "data": {
               "label": "Input/Output 5"
@@ -102,7 +103,8 @@
               "width": 185,
               "height": 51
             },
-            "selected": false
+            "selected": false,
+            "dragging": false
           },
           {
             "id": "c08d4eab-03ff-4bb2-8d24-cee61d141f9d",
@@ -172,8 +174,8 @@
             "id": "80730659-8bb1-4cec-afc1-f508a219c696",
             "type": "flow-subgraph",
             "position": {
-              "x": 909.6326425640707,
-              "y": 31.814093314664547
+              "x": 893.6326425640707,
+              "y": 36.81409331466455
             },
             "data": {
               "label": "Swimlane 10",
@@ -234,22 +236,6 @@
           }
         ],
         "edges": [
-          {
-            "id": "e-start-1",
-            "source": "start",
-            "target": "1",
-            "animated": false,
-            "style": {
-              "stroke": "#6366f1",
-              "strokeWidth": 2,
-              "strokeDasharray": "6 3"
-            },
-            "markerEnd": {
-              "type": "arrowclosed",
-              "color": "#6366f1"
-            },
-            "selected": false
-          },
           {
             "source": "1",
             "target": "2b55b8de-e64f-48f1-a8b6-94cca48b33d2",
@@ -346,15 +332,15 @@
             "target": "f836676b-fb2c-4936-a911-d066d325c8e0",
             "animated": false,
             "style": {
-              "stroke": "#f43f5e",
+              "stroke": "#10b981",
               "strokeWidth": 2
             },
             "markerEnd": {
               "type": "arrowclosed",
-              "color": "#f43f5e"
+              "color": "#10b981"
             },
             "id": "xy-edge__1right-f836676b-fb2c-4936-a911-d066d325c8e0",
-            "selected": true,
+            "selected": false,
             "data": {
               "label": "测试一下"
             }
@@ -375,13 +361,27 @@
             },
             "id": "xy-edge__2b55b8de-e64f-48f1-a8b6-94cca48b33d2right-cd307345-a2eb-40e4-8f4c-f274dbcdef02left",
             "selected": false
+          },
+          {
+            "source": "start",
+            "target": "1",
+            "animated": false,
+            "style": {
+              "stroke": "#6366f1",
+              "strokeWidth": 2
+            },
+            "markerEnd": {
+              "type": "arrowclosed",
+              "color": "#6366f1"
+            },
+            "id": "xy-edge__start-1"
           }
         ],
-        "mermaidCode": "graph TD\n  subgraph 80730659-8bb1-4cec-afc1-f508a219c696 [\"Swimlane 10\"]\n    7714202b-77ab-4f03-8f6c-5da3acacc44a(\"Process 11\")\n    f3a9e38a-2da4-4a9a-9213-2643698c5eb0{\"Decision 12\"}\n  end\n  start([\"Start\"])\n  1(\"Process\")\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2(\"Process 3\")\n  f836676b-fb2c-4936-a911-d066d325c8e0[\"Rect 4\"]\n  7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13[/\"Input/Output 5\"/]\n  c08d4eab-03ff-4bb2-8d24-cee61d141f9d[/\"Document 6\"\\]\n  cacbf4fd-8267-4e6e-acf7-b18af6489a9a>\"Note 7\"]\n  34b56764-0d96-4aae-a160-b1c1707fb3df[/\"Document 8\"\\]\n  cd307345-a2eb-40e4-8f4c-f274dbcdef02[\"Rect 9\"]\n  start -.-> 1\n  1 --> 2b55b8de-e64f-48f1-a8b6-94cca48b33d2\n  f836676b-fb2c-4936-a911-d066d325c8e0 --> 7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13\n  f836676b-fb2c-4936-a911-d066d325c8e0 --> cd307345-a2eb-40e4-8f4c-f274dbcdef02\n  7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13 --> cacbf4fd-8267-4e6e-acf7-b18af6489a9a\n  cacbf4fd-8267-4e6e-acf7-b18af6489a9a --> c08d4eab-03ff-4bb2-8d24-cee61d141f9d\n  7714202b-77ab-4f03-8f6c-5da3acacc44a --> f3a9e38a-2da4-4a9a-9213-2643698c5eb0\n  1 --> f836676b-fb2c-4936-a911-d066d325c8e0\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2 --> cd307345-a2eb-40e4-8f4c-f274dbcdef02\n",
+        "mermaidCode": "graph TD\n  subgraph 80730659-8bb1-4cec-afc1-f508a219c696 [\"Swimlane 10\"]\n    7714202b-77ab-4f03-8f6c-5da3acacc44a(\"Process 11\")\n    f3a9e38a-2da4-4a9a-9213-2643698c5eb0{\"Decision 12\"}\n  end\n  start([\"Start\"])\n  1(\"Process\")\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2(\"Process 3\")\n  f836676b-fb2c-4936-a911-d066d325c8e0[\"Rect 4\"]\n  7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13[/\"Input/Output 5\"/]\n  c08d4eab-03ff-4bb2-8d24-cee61d141f9d[/\"Document 6\"\\]\n  cacbf4fd-8267-4e6e-acf7-b18af6489a9a>\"Note 7\"]\n  34b56764-0d96-4aae-a160-b1c1707fb3df[/\"Document 8\"\\]\n  cd307345-a2eb-40e4-8f4c-f274dbcdef02[\"Rect 9\"]\n  1 --> 2b55b8de-e64f-48f1-a8b6-94cca48b33d2\n  f836676b-fb2c-4936-a911-d066d325c8e0 --> 7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13\n  f836676b-fb2c-4936-a911-d066d325c8e0 --> cd307345-a2eb-40e4-8f4c-f274dbcdef02\n  7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13 --> cacbf4fd-8267-4e6e-acf7-b18af6489a9a\n  cacbf4fd-8267-4e6e-acf7-b18af6489a9a --> c08d4eab-03ff-4bb2-8d24-cee61d141f9d\n  7714202b-77ab-4f03-8f6c-5da3acacc44a --> f3a9e38a-2da4-4a9a-9213-2643698c5eb0\n  1 -->|\"测试一下\"| f836676b-fb2c-4936-a911-d066d325c8e0\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2 --> cd307345-a2eb-40e4-8f4c-f274dbcdef02\n  start --> 1\n",
         "flowEdgeStyle": "smooth"
       },
       "createdAt": 1778032152027,
-      "updatedAt": 1778034631551
+      "updatedAt": 1778035244510
     },
     {
       "id": "fd577967-5106-494e-bdae-c0afb858c4be",
