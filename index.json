@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778035369300,
+  "updatedAt": 1778035489039,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778035352246
+      "updatedAt": 1778035443041
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -80,14 +80,19 @@
               "y": 366
             },
             "data": {
-              "label": "Rect 4"
+              "label": "Rect 4",
+              "width": 100,
+              "height": 36
             },
             "measured": {
               "width": 100,
-              "height": 40
+              "height": 36
             },
             "selected": false,
-            "dragging": false
+            "dragging": false,
+            "width": 100,
+            "height": 36,
+            "resizing": false
           },
           {
             "id": "7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13",
@@ -97,14 +102,19 @@
               "y": 449
             },
             "data": {
-              "label": "Input/Output 5"
+              "label": "Input/Output 5",
+              "width": 191,
+              "height": 59
             },
             "measured": {
-              "width": 185,
-              "height": 51
+              "width": 191,
+              "height": 59
             },
             "selected": false,
-            "dragging": false
+            "dragging": false,
+            "width": 191,
+            "height": 59,
+            "resizing": false
           },
           {
             "id": "c08d4eab-03ff-4bb2-8d24-cee61d141f9d",
@@ -131,13 +141,18 @@
               "y": 594
             },
             "data": {
-              "label": "Note 7"
+              "label": "Note 7",
+              "width": 119,
+              "height": 41
             },
             "measured": {
-              "width": 100,
-              "height": 59
+              "width": 119,
+              "height": 41
             },
-            "selected": false
+            "selected": false,
+            "width": 119,
+            "height": 41,
+            "resizing": false
           },
           {
             "id": "34b56764-0d96-4aae-a160-b1c1707fb3df",
@@ -294,7 +309,8 @@
               "type": "arrowclosed",
               "color": "#6366f1"
             },
-            "id": "xy-edge__7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13-cacbf4fd-8267-4e6e-acf7-b18af6489a9a"
+            "id": "xy-edge__7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13-cacbf4fd-8267-4e6e-acf7-b18af6489a9a",
+            "selected": false
           },
           {
             "source": "cacbf4fd-8267-4e6e-acf7-b18af6489a9a",
@@ -309,7 +325,8 @@
               "type": "arrowclosed",
               "color": "#6366f1"
             },
-            "id": "xy-edge__cacbf4fd-8267-4e6e-acf7-b18af6489a9a-c08d4eab-03ff-4bb2-8d24-cee61d141f9dleft"
+            "id": "xy-edge__cacbf4fd-8267-4e6e-acf7-b18af6489a9a-c08d4eab-03ff-4bb2-8d24-cee61d141f9dleft",
+            "selected": false
           },
           {
             "source": "7714202b-77ab-4f03-8f6c-5da3acacc44a",
@@ -341,7 +358,7 @@
               "color": "#10b981"
             },
             "id": "xy-edge__1right-f836676b-fb2c-4936-a911-d066d325c8e0",
-            "selected": true,
+            "selected": false,
             "data": {
               "label": "测试一下"
             }
@@ -382,7 +399,7 @@
         "flowEdgeStyle": "smooth"
       },
       "createdAt": 1778032152027,
-      "updatedAt": 1778035352209
+      "updatedAt": 1778035443039
     },
     {
       "id": "fd577967-5106-494e-bdae-c0afb858c4be",
