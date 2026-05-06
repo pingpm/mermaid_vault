@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778051762340,
+  "updatedAt": 1778052002889,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778051679069
+      "updatedAt": 1778051950391
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -16,94 +16,6 @@
     }
   ],
   "diagrams": [
-    {
-      "id": "fd577967-5106-494e-bdae-c0afb858c4be",
-      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
-      "name": "123",
-      "type": "mindmap",
-      "data": {
-        "nodes": [
-          {
-            "id": "2d425fa2-9121-46c3-b6b1-9cc6f5b99f63",
-            "label": "Main Topic",
-            "parentId": null,
-            "order": 0
-          },
-          {
-            "id": "b04c3fb7-9143-4e5c-869d-5b4b0bb155c1",
-            "label": "撒娇的看撒谎的",
-            "parentId": "2d425fa2-9121-46c3-b6b1-9cc6f5b99f63",
-            "order": 0,
-            "collapsed": true
-          },
-          {
-            "id": "d9e410d1-beea-46dc-b68f-125093379110",
-            "label": "New node",
-            "parentId": "2d425fa2-9121-46c3-b6b1-9cc6f5b99f63",
-            "order": 1,
-            "collapsed": true
-          },
-          {
-            "id": "2b1ec50a-69d9-4772-8060-c04a189afe5b",
-            "label": "New node",
-            "parentId": "2d425fa2-9121-46c3-b6b1-9cc6f5b99f63",
-            "order": 2,
-            "collapsed": true
-          },
-          {
-            "id": "d9d1677e-d8c0-415e-8ab6-92a120c4c520",
-            "label": "New node",
-            "parentId": "d9e410d1-beea-46dc-b68f-125093379110",
-            "order": 0
-          },
-          {
-            "id": "990ea880-dd20-41a0-93d6-1d9e98b99d99",
-            "label": "New node",
-            "parentId": "2b1ec50a-69d9-4772-8060-c04a189afe5b",
-            "order": 0
-          },
-          {
-            "id": "5e243dd3-1946-4c35-824d-e45f826d3bba",
-            "label": "New node",
-            "parentId": "b04c3fb7-9143-4e5c-869d-5b4b0bb155c1",
-            "order": 0
-          },
-          {
-            "id": "456b8ed3-271c-4fe1-afca-07dd405004db",
-            "label": "New node",
-            "parentId": "d9e410d1-beea-46dc-b68f-125093379110",
-            "order": 1
-          },
-          {
-            "id": "66f08129-188c-47c1-ad97-7d10d6375551",
-            "label": "New node",
-            "parentId": "2b1ec50a-69d9-4772-8060-c04a189afe5b",
-            "order": 1
-          },
-          {
-            "id": "d93c6db7-9126-4dce-be56-714040b4fd7d",
-            "label": "New node",
-            "parentId": "b04c3fb7-9143-4e5c-869d-5b4b0bb155c1",
-            "order": 1
-          },
-          {
-            "id": "719a5616-3255-47d1-a9e7-f1847cbc7baf",
-            "label": "New node",
-            "parentId": "2d425fa2-9121-46c3-b6b1-9cc6f5b99f63",
-            "order": 3
-          }
-        ],
-        "mmLayout": "right",
-        "mmNodeStyle": "underline",
-        "mmBgPattern": "lines",
-        "mmEdgeStyle": "curve",
-        "mmTheme": "ocean",
-        "mmSlotOverrides": {},
-        "mermaidCode": "mindmap\n  物流相关需求整理\n    导入公里数和费用\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/erly0gkfgrhpnphy\n      简介：在导入公里数菜单中增加导入公里数和费用功能；导入字段分为：订单号、公里数、费用，三项均必填，导入后系统将按照订单号查询对应的订单，然后更新订单上的公里数和费用\n      业务场景：适用于大客户订单经常修改订单公里数和费用\n    运力调度询价、订单展示订单跟进信息\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/adflagyf3aqofbsf\n      简介：在运力调度的询价、订单展示客服在订单上设置的跟进信息（散户和大客户跟进信息结构不同，对应的订单需要取对应的跟进信息）\n      业务场景：运力与客服部门需要频繁沟通同步信息\n    物流应收结算单发票申请修改抬头\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/db3x58yffkwbuir9\n      简介：大客户订单在申请发票的时候，会读取客户配置中的发票抬头和邮寄信息，如果邮寄信息修改，无法在此处直接修改，需要在客户配置中修改后再申请，本次在此处增加修改邮寄信息的功能，默认读取客户配置中的信息\n      业务场景：申请发票时邮寄信息与客户配置中的不同\n    大客户订单批量设置中交兴路\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/gk01scgguqkfpzui\n    承运人saas、司机APP派单车牌号必填\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/gk01scgguqkfpzui\n    大客户订单列表中增加公里数日志页面\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/gk01scgguqkfpzui\n      简介：在下单、确认订单、修改订单、确认提车、要求提车时间、确认公里数这些节点查询订单公里数，并记录日志\n    New node\n    New node\n    New node\n    New node\n    asss\n    APP\n    New node\n"
-      },
-      "createdAt": 1778032289416,
-      "updatedAt": 1778051679057
-    },
     {
       "id": "3c82e5dc-80e4-4b41-a50d-f90f98ff5790",
       "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
@@ -449,7 +361,188 @@
         "flowEdgeStyle": "smooth"
       },
       "createdAt": 1778032152027,
-      "updatedAt": 1778047094331
+      "updatedAt": 1778051950378
+    },
+    {
+      "id": "fd577967-5106-494e-bdae-c0afb858c4be",
+      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
+      "name": "123",
+      "type": "mindmap",
+      "data": {
+        "nodes": [
+          {
+            "id": "fefd140f-8933-45d3-b77e-9ac249d80056",
+            "label": "物流相关需求整理",
+            "parentId": null,
+            "order": 0
+          },
+          {
+            "id": "10e297ab-d3d3-4659-8873-4ec63e383804",
+            "label": "导入公里数和费用",
+            "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+            "order": 0
+          },
+          {
+            "id": "ffb594b8-c5e7-49d3-8ffc-9021edb18beb",
+            "label": "需求连接：https://souche.yuque.com/gp0gfa/lg26bb/erly0gkfgrhpnphy",
+            "parentId": "10e297ab-d3d3-4659-8873-4ec63e383804",
+            "order": 0
+          },
+          {
+            "id": "aabb1208-0c2c-44fb-a63e-4dbd9f2683cf",
+            "label": "简介：在导入公里数菜单中增加导入公里数和费用功能；导入字段分为：订单号、公里数、费用，三项均必填，导入后系统将按照订单号查询对应的订单，然后更新订单上的公里数和费用",
+            "parentId": "10e297ab-d3d3-4659-8873-4ec63e383804",
+            "order": 1
+          },
+          {
+            "id": "721c04e7-5d1f-4b01-8cb8-1b6da44ca822",
+            "label": "业务场景：适用于大客户订单经常修改订单公里数和费用",
+            "parentId": "10e297ab-d3d3-4659-8873-4ec63e383804",
+            "order": 2
+          },
+          {
+            "id": "d5cfc3d7-6841-4dd6-b3c8-f7faea799794",
+            "label": "运力调度询价、订单展示订单跟进信息",
+            "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+            "order": 1
+          },
+          {
+            "id": "f69b02fb-1887-4fe9-b258-9ae9aa882554",
+            "label": "需求连接：https://souche.yuque.com/gp0gfa/lg26bb/adflagyf3aqofbsf",
+            "parentId": "d5cfc3d7-6841-4dd6-b3c8-f7faea799794",
+            "order": 0
+          },
+          {
+            "id": "e2439153-aff3-4996-8f20-91c557fd5618",
+            "label": "简介：在运力调度的询价、订单展示客服在订单上设置的跟进信息（散户和大客户跟进信息结构不同，对应的订单需要取对应的跟进信息）",
+            "parentId": "d5cfc3d7-6841-4dd6-b3c8-f7faea799794",
+            "order": 1
+          },
+          {
+            "id": "74e2bc48-06fd-4ae2-9b71-3b444d7aef4d",
+            "label": "业务场景：运力与客服部门需要频繁沟通同步信息",
+            "parentId": "d5cfc3d7-6841-4dd6-b3c8-f7faea799794",
+            "order": 2
+          },
+          {
+            "id": "5b79a60d-7dd3-4f05-89de-db812a3ff825",
+            "label": "物流应收结算单发票申请修改抬头",
+            "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+            "order": 2
+          },
+          {
+            "id": "13f83d4d-99cf-431d-80ae-070690f9094d",
+            "label": "需求连接：https://souche.yuque.com/gp0gfa/lg26bb/db3x58yffkwbuir9",
+            "parentId": "5b79a60d-7dd3-4f05-89de-db812a3ff825",
+            "order": 0
+          },
+          {
+            "id": "8546c24c-9a52-4de3-a275-3eea6b65e724",
+            "label": "简介：大客户订单在申请发票的时候，会读取客户配置中的发票抬头和邮寄信息，如果邮寄信息修改，无法在此处直接修改，需要在客户配置中修改后再申请，本次在此处增加修改邮寄信息的功能，默认读取客户配置中的信息",
+            "parentId": "5b79a60d-7dd3-4f05-89de-db812a3ff825",
+            "order": 1
+          },
+          {
+            "id": "1afeb716-c1d1-48c8-bba6-ee61c6581198",
+            "label": "业务场景：申请发票时邮寄信息与客户配置中的不同",
+            "parentId": "5b79a60d-7dd3-4f05-89de-db812a3ff825",
+            "order": 2
+          },
+          {
+            "id": "d7330470-e45b-42a4-9521-2ec7ab91c8d8",
+            "label": "大客户订单批量设置中交兴路",
+            "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+            "order": 3
+          },
+          {
+            "id": "03a9d871-7e57-49dd-a958-e36106f14926",
+            "label": "需求连接：https://souche.yuque.com/gp0gfa/lg26bb/gk01scgguqkfpzui",
+            "parentId": "d7330470-e45b-42a4-9521-2ec7ab91c8d8",
+            "order": 0
+          },
+          {
+            "id": "7d4ab650-52d1-41ab-8732-52f8d9ba4cc1",
+            "label": "承运人saas、司机APP派单车牌号必填",
+            "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+            "order": 4
+          },
+          {
+            "id": "87b4b200-5380-4673-af23-82e486dd8ef8",
+            "label": "需求连接：https://souche.yuque.com/gp0gfa/lg26bb/gk01scgguqkfpzui",
+            "parentId": "7d4ab650-52d1-41ab-8732-52f8d9ba4cc1",
+            "order": 0
+          },
+          {
+            "id": "c73cf9fa-31a4-41f2-b96e-162939af289f",
+            "label": "大客户订单列表中增加公里数日志页面",
+            "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+            "order": 5
+          },
+          {
+            "id": "c197059f-7d57-46e2-b7b7-21708a5353d6",
+            "label": "需求连接：https://souche.yuque.com/gp0gfa/lg26bb/gk01scgguqkfpzui",
+            "parentId": "c73cf9fa-31a4-41f2-b96e-162939af289f",
+            "order": 0
+          },
+          {
+            "id": "26752d0b-1bdf-4f16-ab0c-9bb2e74b58cf",
+            "label": "简介：在下单、确认订单、修改订单、确认提车、要求提车时间、确认公里数这些节点查询订单公里数更新到订单公里数字段，并记录日志",
+            "parentId": "c73cf9fa-31a4-41f2-b96e-162939af289f",
+            "order": 1
+          },
+          {
+            "id": "4413e344-dc71-4854-9848-bcf698d473e6",
+            "label": "New node",
+            "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+            "order": 6
+          },
+          {
+            "id": "57d78b8c-3696-4766-9299-95752f80d3d8",
+            "label": "New node",
+            "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+            "order": 7
+          },
+          {
+            "id": "0dc8f0a2-954e-446c-8a92-1ae3498de9e3",
+            "label": "New node",
+            "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+            "order": 8
+          },
+          {
+            "id": "9340e293-b20c-4d5c-8c5c-79d4b3b76239",
+            "label": "New node",
+            "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+            "order": 9
+          },
+          {
+            "id": "94b02645-e263-480a-9c34-c798e3adbed8",
+            "label": "asss",
+            "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+            "order": 10
+          },
+          {
+            "id": "1ad45aaa-3cc7-491e-b15c-4af1dcf9933d",
+            "label": "APP",
+            "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+            "order": 11
+          },
+          {
+            "id": "a2ca1d20-9cda-486c-a6db-82b238083a31",
+            "label": "New node",
+            "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+            "order": 12
+          }
+        ],
+        "mmLayout": "right",
+        "mmNodeStyle": "plain",
+        "mmBgPattern": "none",
+        "mmEdgeStyle": "curve",
+        "mmTheme": "default",
+        "mmSlotOverrides": {},
+        "mermaidCode": "mindmap\n  物流相关需求整理\n    导入公里数和费用\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/erly0gkfgrhpnphy\n      简介：在导入公里数菜单中增加导入公里数和费用功能；导入字段分为：订单号、公里数、费用，三项均必填，导入后系统将按照订单号查询对应的订单，然后更新订单上的公里数和费用\n      业务场景：适用于大客户订单经常修改订单公里数和费用\n    运力调度询价、订单展示订单跟进信息\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/adflagyf3aqofbsf\n      简介：在运力调度的询价、订单展示客服在订单上设置的跟进信息（散户和大客户跟进信息结构不同，对应的订单需要取对应的跟进信息）\n      业务场景：运力与客服部门需要频繁沟通同步信息\n    物流应收结算单发票申请修改抬头\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/db3x58yffkwbuir9\n      简介：大客户订单在申请发票的时候，会读取客户配置中的发票抬头和邮寄信息，如果邮寄信息修改，无法在此处直接修改，需要在客户配置中修改后再申请，本次在此处增加修改邮寄信息的功能，默认读取客户配置中的信息\n      业务场景：申请发票时邮寄信息与客户配置中的不同\n    大客户订单批量设置中交兴路\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/gk01scgguqkfpzui\n    承运人saas、司机APP派单车牌号必填\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/gk01scgguqkfpzui\n    大客户订单列表中增加公里数日志页面\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/gk01scgguqkfpzui\n      简介：在下单、确认订单、修改订单、确认提车、要求提车时间、确认公里数这些节点查询订单公里数更新到订单公里数字段，并记录日志\n    New node\n    New node\n    New node\n    New node\n    asss\n    APP\n    New node\n"
+      },
+      "createdAt": 1778032289416,
+      "updatedAt": 1778051931440
     },
     {
       "id": "60cf6978-a70f-4def-8ccd-10984f35fbae",
