@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778061891904,
+  "updatedAt": 1778062010957,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778061881299
+      "updatedAt": 1778062001111
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -366,13 +366,27 @@
               "color": "#6366f1"
             },
             "id": "xy-edge__85e9cd21-9674-4376-9826-7df01b6ef5a0-1a296bdf-a37f-447c-bfb4-0e0b6ec00ac6"
+          },
+          {
+            "source": "1a296bdf-a37f-447c-bfb4-0e0b6ec00ac6",
+            "target": "747f80f0-57ab-4e5e-aa6a-257f7eb3cf52",
+            "animated": false,
+            "style": {
+              "stroke": "#6366f1",
+              "strokeWidth": 2
+            },
+            "markerEnd": {
+              "type": "arrowclosed",
+              "color": "#6366f1"
+            },
+            "id": "xy-edge__1a296bdf-a37f-447c-bfb4-0e0b6ec00ac6-747f80f0-57ab-4e5e-aa6a-257f7eb3cf52"
           }
         ],
-        "mermaidCode": "flowchart TD\n  start([\"Start\"])\n  1(\"Process\")\n  ed94df6d-27dc-4558-9ba9-f402a2bbd445(\"Process 3\")\n  4c29f9f7-41e0-4e52-b326-42d15d39ecab(\"Process 4\")\n  33c70f05-26ac-413f-9084-9897f34cde42{\"Decision 5\"}\n  13be37cb-02f9-4296-a578-43674937a2bd[\"Rect 6\"]\n  85e9cd21-9674-4376-9826-7df01b6ef5a0(\"Process 7\")\n  1a296bdf-a37f-447c-bfb4-0e0b6ec00ac6(\"Process 8\")\n  747f80f0-57ab-4e5e-aa6a-257f7eb3cf52(\"Process 9\")\n  06ec0340-97f1-436f-877c-59391d71ad22(\"Process 10\")\n  17a31538-272a-4913-9b74-d8e41456a13a(\"Process 11\")\n  2a96f7a1-b4d1-4adb-a90c-5574100b23c6(\"Process 12\")\n  start -.-> 1\n  1 --> ed94df6d-27dc-4558-9ba9-f402a2bbd445\n  ed94df6d-27dc-4558-9ba9-f402a2bbd445 --> 4c29f9f7-41e0-4e52-b326-42d15d39ecab\n  4c29f9f7-41e0-4e52-b326-42d15d39ecab --> 33c70f05-26ac-413f-9084-9897f34cde42\n  33c70f05-26ac-413f-9084-9897f34cde42 --> 13be37cb-02f9-4296-a578-43674937a2bd\n  13be37cb-02f9-4296-a578-43674937a2bd --> 85e9cd21-9674-4376-9826-7df01b6ef5a0\n  85e9cd21-9674-4376-9826-7df01b6ef5a0 --> 1a296bdf-a37f-447c-bfb4-0e0b6ec00ac6\n",
-        "flowEdgeStyle": "smooth"
+        "mermaidCode": "flowchart TD\n  start([\"Start\"])\n  1(\"Process\")\n  ed94df6d-27dc-4558-9ba9-f402a2bbd445(\"Process 3\")\n  4c29f9f7-41e0-4e52-b326-42d15d39ecab(\"Process 4\")\n  33c70f05-26ac-413f-9084-9897f34cde42{\"Decision 5\"}\n  13be37cb-02f9-4296-a578-43674937a2bd[\"Rect 6\"]\n  85e9cd21-9674-4376-9826-7df01b6ef5a0(\"Process 7\")\n  1a296bdf-a37f-447c-bfb4-0e0b6ec00ac6(\"Process 8\")\n  747f80f0-57ab-4e5e-aa6a-257f7eb3cf52(\"Process 9\")\n  06ec0340-97f1-436f-877c-59391d71ad22(\"Process 10\")\n  17a31538-272a-4913-9b74-d8e41456a13a(\"Process 11\")\n  2a96f7a1-b4d1-4adb-a90c-5574100b23c6(\"Process 12\")\n  start -.-> 1\n  1 --> ed94df6d-27dc-4558-9ba9-f402a2bbd445\n  ed94df6d-27dc-4558-9ba9-f402a2bbd445 --> 4c29f9f7-41e0-4e52-b326-42d15d39ecab\n  4c29f9f7-41e0-4e52-b326-42d15d39ecab --> 33c70f05-26ac-413f-9084-9897f34cde42\n  33c70f05-26ac-413f-9084-9897f34cde42 --> 13be37cb-02f9-4296-a578-43674937a2bd\n  13be37cb-02f9-4296-a578-43674937a2bd --> 85e9cd21-9674-4376-9826-7df01b6ef5a0\n  85e9cd21-9674-4376-9826-7df01b6ef5a0 --> 1a296bdf-a37f-447c-bfb4-0e0b6ec00ac6\n  1a296bdf-a37f-447c-bfb4-0e0b6ec00ac6 --> 747f80f0-57ab-4e5e-aa6a-257f7eb3cf52\n",
+        "flowEdgeStyle": "curve"
       },
       "createdAt": 1778054347753,
-      "updatedAt": 1778061881291
+      "updatedAt": 1778062001095
     },
     {
       "id": "9b882ae4-c4df-432b-9e50-9fb05b2c95e5",
