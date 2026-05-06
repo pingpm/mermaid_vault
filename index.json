@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778039582408,
+  "updatedAt": 1778039698989,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778039526640
+      "updatedAt": 1778039647089
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -43,7 +43,7 @@
           },
           {
             "id": "e2210d10-323c-4915-a64b-f60a012250b8",
-            "label": "3",
+            "label": "啊是大姐看辣椒素的快乐撒节点",
             "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
             "order": 2
           },
@@ -55,7 +55,7 @@
           },
           {
             "id": "9f5b9618-5179-4338-bb03-af29b987d01e",
-            "label": "我和死啊德华i收速度快睡觉啊大姐卡上了的到",
+            "label": "啊是大姐卡刷卡大姐辣椒素的快乐撒健康的理解阿斯科利大啊是大姐卡拉斯京的快乐撒的啊就是看德拉吉拉开始大姐拉屎的",
             "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
             "order": 4
           },
@@ -70,15 +70,21 @@
             "label": "新节点",
             "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
             "order": 6
+          },
+          {
+            "id": "17fa1f6e-ce57-41df-919e-5647385e056d",
+            "label": "新节点",
+            "parentId": "7be936ca-d10f-41d0-9643-225f76967233",
+            "order": 7
           }
         ],
         "mmLayout": "right",
         "mmNodeStyle": "box",
         "mmBgPattern": "none",
-        "mermaidCode": "mindmap\n  Main Topic\n    1\n    2\n    3\n    新节点\n    我和死啊德华i收速度快睡觉啊大姐卡上了的到\n    新节点\n    新节点\n"
+        "mermaidCode": "mindmap\n  Main Topic\n    1\n    2\n    啊是大姐看辣椒素的快乐撒节点\n    新节点\n    啊是大姐卡刷卡大姐辣椒素的快乐撒健康的理解阿斯科利大啊是大姐卡拉斯京的快乐撒的啊就是看德拉吉拉开始大姐拉屎的\n    新节点\n    新节点\n    新节点\n"
       },
       "createdAt": 1778032289416,
-      "updatedAt": 1778039526636
+      "updatedAt": 1778039647084
     },
     {
       "id": "3c82e5dc-80e4-4b41-a50d-f90f98ff5790",
