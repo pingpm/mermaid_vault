@@ -16,14 +16,16 @@ flowchart LR
     t_9["Process 2"]
     t_10["Code Review"]
     t_11["Process 3"]
+    t_12["Process 4"]
   end
   subgraph lane_3["Lane 4"]
-    t_12["Process 1"]
-    t_13[/"Document 2"\]
+    t_13["Process 1"]
+    t_14[/"Document 2"\]
+    t_15{"Decision 3"}
   end
   subgraph lane_4["Lane 5"]
-    t_14{"Decision 1"}
-    t_15[/"Document 2"\]
+    t_16{"Decision 1"}
+    t_17[/"Document 2"\]
   end
   t_0 -->|"Yes"| t_8
   t_8 --> t_10
