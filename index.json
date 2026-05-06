@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778039333548,
+  "updatedAt": 1778039464480,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778039279773
+      "updatedAt": 1778039454575
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -22,13 +22,39 @@
       "name": "123",
       "type": "mindmap",
       "data": {
-        "nodes": [],
-        "edges": [],
-        "mermaidCode": "graph TD\n",
-        "flowEdgeStyle": "smooth"
+        "nodes": [
+          {
+            "id": "31236885-f137-42cb-aaad-b48c48b6b3fd",
+            "label": "Main Topic",
+            "parentId": null,
+            "order": 0
+          },
+          {
+            "id": "a99cccd8-7e96-4bf9-80cd-f35c730747dd",
+            "label": "新节点",
+            "parentId": "31236885-f137-42cb-aaad-b48c48b6b3fd",
+            "order": 1
+          },
+          {
+            "id": "a4f4050d-8c12-4d1f-a9fd-43cfaffb087a",
+            "label": "新节点",
+            "parentId": "31236885-f137-42cb-aaad-b48c48b6b3fd",
+            "order": 2
+          },
+          {
+            "id": "2229a08e-256c-4477-9466-4f155d94e1d6",
+            "label": "撒大叔的",
+            "parentId": "31236885-f137-42cb-aaad-b48c48b6b3fd",
+            "order": 3
+          }
+        ],
+        "mmLayout": "right",
+        "mmNodeStyle": "box",
+        "mmBgPattern": "none",
+        "mermaidCode": "mindmap\n  Main Topic\n    新节点\n    新节点\n    撒大叔的\n"
       },
       "createdAt": 1778032289416,
-      "updatedAt": 1778039279758
+      "updatedAt": 1778039454566
     },
     {
       "id": "3c82e5dc-80e4-4b41-a50d-f90f98ff5790",
