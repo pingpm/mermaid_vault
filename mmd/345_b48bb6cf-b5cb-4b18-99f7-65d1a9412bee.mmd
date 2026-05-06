@@ -1,0 +1,18 @@
+flowchart LR
+  subgraph lane_0["Planning"]
+    t_0["Define Requirements"]
+    t_1(["Start"])
+    t_2{"Approved?"}
+    t_3["Process 4"]
+  end
+  subgraph lane_1["Development"]
+    t_4["Implement Feature"]
+  end
+  subgraph lane_2["Review"]
+    t_5["Code Review"]
+  end
+  t_1 --> t_0
+  t_0 --> t_2
+  t_2 -->|"Yes"| t_4
+  t_4 --> t_5
+  t_2 --> t_3
