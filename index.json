@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778033455526,
+  "updatedAt": 1778033816023,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778033409558
+      "updatedAt": 1778033716625
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -188,7 +188,7 @@
               "width": 807,
               "height": 311
             },
-            "selected": true,
+            "selected": false,
             "dragging": false,
             "width": 807,
             "height": 311,
@@ -375,7 +375,7 @@
         "flowEdgeStyle": "smooth"
       },
       "createdAt": 1778032152027,
-      "updatedAt": 1778033409549
+      "updatedAt": 1778033716609
     },
     {
       "id": "fd577967-5106-494e-bdae-c0afb858c4be",
