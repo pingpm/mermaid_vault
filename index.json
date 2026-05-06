@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778032505920,
+  "updatedAt": 1778032624490,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778032491209
+      "updatedAt": 1778032600420
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -36,7 +36,8 @@
             "measured": {
               "width": 100,
               "height": 40
-            }
+            },
+            "selected": false
           },
           {
             "id": "1",
@@ -68,7 +69,7 @@
               "width": 100,
               "height": 40
             },
-            "selected": false
+            "selected": true
           },
           {
             "id": "f836676b-fb2c-4936-a911-d066d325c8e0",
@@ -129,13 +130,29 @@
               "type": "arrowclosed",
               "color": "#6366f1"
             },
-            "id": "xy-edge__1-2b55b8de-e64f-48f1-a8b6-94cca48b33d2"
+            "id": "xy-edge__1-2b55b8de-e64f-48f1-a8b6-94cca48b33d2",
+            "selected": false
+          },
+          {
+            "source": "1",
+            "sourceHandle": "right",
+            "target": "f836676b-fb2c-4936-a911-d066d325c8e0",
+            "animated": false,
+            "style": {
+              "stroke": "#6366f1",
+              "strokeWidth": 2
+            },
+            "markerEnd": {
+              "type": "arrowclosed",
+              "color": "#6366f1"
+            },
+            "id": "xy-edge__1right-f836676b-fb2c-4936-a911-d066d325c8e0"
           }
         ],
-        "mermaidCode": "graph TD\n  start([\"Start\"])\n  1(\"Process\")\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2(\"Process 3\")\n  f836676b-fb2c-4936-a911-d066d325c8e0[\"Rect 4\"]\n  start -.-> 1\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2 --> 2b55b8de-e64f-48f1-a8b6-94cca48b33d2\n  1 --> 2b55b8de-e64f-48f1-a8b6-94cca48b33d2\n"
+        "mermaidCode": "graph TD\n  start([\"Start\"])\n  1(\"Process\")\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2(\"Process 3\")\n  f836676b-fb2c-4936-a911-d066d325c8e0[\"Rect 4\"]\n  start -.-> 1\n  2b55b8de-e64f-48f1-a8b6-94cca48b33d2 --> 2b55b8de-e64f-48f1-a8b6-94cca48b33d2\n  1 --> 2b55b8de-e64f-48f1-a8b6-94cca48b33d2\n  1 --> f836676b-fb2c-4936-a911-d066d325c8e0\n"
       },
       "createdAt": 1778032152027,
-      "updatedAt": 1778032491208
+      "updatedAt": 1778032600419
     },
     {
       "id": "fd577967-5106-494e-bdae-c0afb858c4be",
