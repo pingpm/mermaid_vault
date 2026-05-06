@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778046286107,
+  "updatedAt": 1778046406117,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778046276511
+      "updatedAt": 1778046284588
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -62,13 +62,13 @@
         ],
         "mmLayout": "right",
         "mmNodeStyle": "plain",
-        "mmBgPattern": "none",
+        "mmBgPattern": "lines",
         "mmEdgeStyle": "rounded",
         "mmTheme": "monochrome",
         "mermaidCode": "mindmap\n  Main Topic\n    New node\n      New node\n    New node\n    阿斯顿\n    New node\n"
       },
       "createdAt": 1778032289416,
-      "updatedAt": 1778046276500
+      "updatedAt": 1778046284583
     },
     {
       "id": "3c82e5dc-80e4-4b41-a50d-f90f98ff5790",
