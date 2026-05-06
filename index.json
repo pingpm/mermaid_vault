@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778051041575,
+  "updatedAt": 1778051297607,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778050992177
+      "updatedAt": 1778051132212
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -33,19 +33,22 @@
             "id": "b04c3fb7-9143-4e5c-869d-5b4b0bb155c1",
             "label": "撒娇的看撒谎的",
             "parentId": "2d425fa2-9121-46c3-b6b1-9cc6f5b99f63",
-            "order": 0
+            "order": 0,
+            "collapsed": true
           },
           {
             "id": "d9e410d1-beea-46dc-b68f-125093379110",
             "label": "New node",
             "parentId": "2d425fa2-9121-46c3-b6b1-9cc6f5b99f63",
-            "order": 1
+            "order": 1,
+            "collapsed": true
           },
           {
             "id": "2b1ec50a-69d9-4772-8060-c04a189afe5b",
             "label": "New node",
             "parentId": "2d425fa2-9121-46c3-b6b1-9cc6f5b99f63",
-            "order": 2
+            "order": 2,
+            "collapsed": true
           },
           {
             "id": "d9d1677e-d8c0-415e-8ab6-92a120c4c520",
@@ -76,18 +79,30 @@
             "label": "New node",
             "parentId": "2b1ec50a-69d9-4772-8060-c04a189afe5b",
             "order": 1
+          },
+          {
+            "id": "d93c6db7-9126-4dce-be56-714040b4fd7d",
+            "label": "New node",
+            "parentId": "b04c3fb7-9143-4e5c-869d-5b4b0bb155c1",
+            "order": 1
+          },
+          {
+            "id": "719a5616-3255-47d1-a9e7-f1847cbc7baf",
+            "label": "New node",
+            "parentId": "2d425fa2-9121-46c3-b6b1-9cc6f5b99f63",
+            "order": 3
           }
         ],
         "mmLayout": "right",
-        "mmNodeStyle": "plain",
-        "mmBgPattern": "dots",
+        "mmNodeStyle": "underline",
+        "mmBgPattern": "lines",
         "mmEdgeStyle": "curve",
-        "mmTheme": "default",
+        "mmTheme": "ocean",
         "mmSlotOverrides": {},
-        "mermaidCode": "mindmap\n  Main Topic\n    撒娇的看撒谎的\n      New node\n    New node\n      New node\n      New node\n    New node\n      New node\n      New node\n"
+        "mermaidCode": "mindmap\n  Main Topic\n    New node\n"
       },
       "createdAt": 1778032289416,
-      "updatedAt": 1778050992167
+      "updatedAt": 1778051132200
     },
     {
       "id": "3c82e5dc-80e4-4b41-a50d-f90f98ff5790",
