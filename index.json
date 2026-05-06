@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778034295656,
+  "updatedAt": 1778034724832,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778034248235
+      "updatedAt": 1778034631563
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -278,7 +278,8 @@
               "type": "arrowclosed",
               "color": "#6366f1"
             },
-            "id": "xy-edge__f836676b-fb2c-4936-a911-d066d325c8e0right-7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13"
+            "id": "xy-edge__f836676b-fb2c-4936-a911-d066d325c8e0right-7f7d8cb8-27fd-45d9-8d2e-dd3c2a474f13",
+            "selected": false
           },
           {
             "source": "f836676b-fb2c-4936-a911-d066d325c8e0",
@@ -353,7 +354,7 @@
               "color": "#f43f5e"
             },
             "id": "xy-edge__1right-f836676b-fb2c-4936-a911-d066d325c8e0",
-            "selected": false,
+            "selected": true,
             "data": {
               "label": "测试一下"
             }
@@ -380,7 +381,7 @@
         "flowEdgeStyle": "smooth"
       },
       "createdAt": 1778032152027,
-      "updatedAt": 1778034248231
+      "updatedAt": 1778034631551
     },
     {
       "id": "fd577967-5106-494e-bdae-c0afb858c4be",
