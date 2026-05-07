@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778138347062,
+  "updatedAt": 1778143670175,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778138229358
+      "updatedAt": 1778143625975
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -24,34 +24,42 @@
       "data": {
         "lanes": [
           {
-            "id": "173e983c-1f95-46c8-bd45-00c73cc37427",
+            "id": "e25855bb-8d15-4620-a479-3b2cbe66917d",
             "label": "Planning",
-            "order": 0
+            "order": 0,
+            "width": 1640,
+            "height": 280
           },
           {
-            "id": "4fa27cee-875a-4876-bd0f-f88487fdc2a5",
+            "id": "7b214ab7-38f4-4b69-976d-80a626c8952b",
             "label": "Development",
             "order": 1
           },
           {
-            "id": "a2cbe2de-2dff-48ec-b695-38d73843f43f",
+            "id": "c70f7784-17b8-4ab3-b2e6-461e51304ee0",
             "label": "Review",
             "order": 2
           }
         ],
         "tasks": [
           {
-            "id": "6ee3ef51-68ba-4bf6-969b-c7c6b2da1549",
-            "laneId": "173e983c-1f95-46c8-bd45-00c73cc37427",
-            "label": "Approved?",
+            "id": "0ca29f9e-f59c-420c-828c-12d2f1602d68",
+            "laneId": "e25855bb-8d15-4620-a479-3b2cbe66917d",
+            "label": "啊是假的快乐就阿斯利康大姐卡拉斯京大叔科技大厦的",
             "shape": "decision",
             "order": 0,
             "x": 491.7579092159559,
-            "y": 54
+            "y": 54,
+            "customColors": {
+              "bg": "#fff7ed",
+              "border": "#f97316",
+              "text": "#c2410c",
+              "label": "Orange"
+            }
           },
           {
-            "id": "cf6506f6-8bbd-4ebd-8636-47de2da6e4af",
-            "laneId": "173e983c-1f95-46c8-bd45-00c73cc37427",
+            "id": "eb8b7ca8-1ca8-4c23-840a-acfa32e4008f",
+            "laneId": "e25855bb-8d15-4620-a479-3b2cbe66917d",
             "label": "Start",
             "shape": "terminator",
             "order": 1,
@@ -59,17 +67,17 @@
             "y": 72
           },
           {
-            "id": "21529b67-858e-4e02-a461-a5a1c35d6e57",
-            "laneId": "173e983c-1f95-46c8-bd45-00c73cc37427",
-            "label": "Define Requirements",
+            "id": "c967ab33-e426-43d8-8cdf-228b65790fc8",
+            "laneId": "e25855bb-8d15-4620-a479-3b2cbe66917d",
+            "label": "Define Requirements撒大姐卡是假的看辣椒素的快乐就撒到了啊是大姐",
             "shape": "process",
             "order": 2,
             "x": 240,
             "y": 72
           },
           {
-            "id": "b287b1fe-b127-455c-9e6a-91e4a3ee8174",
-            "laneId": "4fa27cee-875a-4876-bd0f-f88487fdc2a5",
+            "id": "2822a1fd-9b4f-4f10-820e-1e23eaf96123",
+            "laneId": "7b214ab7-38f4-4b69-976d-80a626c8952b",
             "label": "Implement Feature",
             "shape": "process",
             "order": 0,
@@ -77,8 +85,8 @@
             "y": 72
           },
           {
-            "id": "939320ae-156d-43b6-b2cf-9bf10f56d008",
-            "laneId": "a2cbe2de-2dff-48ec-b695-38d73843f43f",
+            "id": "ad4625d2-9747-4f42-b4bc-69e8221db65b",
+            "laneId": "c70f7784-17b8-4ab3-b2e6-461e51304ee0",
             "label": "Code Review",
             "shape": "process",
             "order": 0,
@@ -88,34 +96,36 @@
         ],
         "connections": [
           {
-            "id": "cb12cf4b-e291-4e19-8da5-bdd81ce85f90",
-            "fromTaskId": "cf6506f6-8bbd-4ebd-8636-47de2da6e4af",
-            "toTaskId": "21529b67-858e-4e02-a461-a5a1c35d6e57",
+            "id": "00c3b3bc-9b75-4962-8c0e-e80a2dbc8de8",
+            "fromTaskId": "eb8b7ca8-1ca8-4c23-840a-acfa32e4008f",
+            "toTaskId": "c967ab33-e426-43d8-8cdf-228b65790fc8",
             "dashed": false,
             "sourceHandle": "right",
             "targetHandle": "left"
           },
           {
-            "id": "1ac0ae99-e6bf-4a54-9535-901e66e88051",
-            "fromTaskId": "21529b67-858e-4e02-a461-a5a1c35d6e57",
-            "toTaskId": "6ee3ef51-68ba-4bf6-969b-c7c6b2da1549",
-            "dashed": false,
+            "id": "81da847d-7ec6-4767-a3dc-9d9ab331ef50",
+            "fromTaskId": "c967ab33-e426-43d8-8cdf-228b65790fc8",
+            "toTaskId": "0ca29f9e-f59c-420c-828c-12d2f1602d68",
+            "dashed": true,
             "sourceHandle": "right",
-            "targetHandle": "left"
+            "targetHandle": "left",
+            "edgeStyle": "straight",
+            "color": "#6d5c08"
           },
           {
-            "id": "ac091808-ecab-4bf3-b435-2513a8e597b1",
-            "fromTaskId": "6ee3ef51-68ba-4bf6-969b-c7c6b2da1549",
-            "toTaskId": "b287b1fe-b127-455c-9e6a-91e4a3ee8174",
+            "id": "7a279bde-a871-4ca2-b90b-0e256714bbbd",
+            "fromTaskId": "0ca29f9e-f59c-420c-828c-12d2f1602d68",
+            "toTaskId": "2822a1fd-9b4f-4f10-820e-1e23eaf96123",
             "label": "Yes",
             "dashed": false,
             "sourceHandle": "bottom",
             "targetHandle": "top"
           },
           {
-            "id": "ff7108f4-3b73-40c4-9800-7da58925a79c",
-            "fromTaskId": "b287b1fe-b127-455c-9e6a-91e4a3ee8174",
-            "toTaskId": "939320ae-156d-43b6-b2cf-9bf10f56d008",
+            "id": "e809d27c-15af-41f9-8b7a-8da0fa4ddd68",
+            "fromTaskId": "2822a1fd-9b4f-4f10-820e-1e23eaf96123",
+            "toTaskId": "ad4625d2-9747-4f42-b4bc-69e8221db65b",
             "dashed": false,
             "sourceHandle": "bottom",
             "targetHandle": "top"
@@ -127,10 +137,10 @@
         "swTheme": "monochrome",
         "swLaneGap": 24,
         "swLaneColorOverrides": {},
-        "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_3[\"Implement Feature\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_4[\"Code Review\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 -->|\"Yes\"| t_3\n  t_3 --> t_4\n"
+        "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"啊是假的快乐就阿斯利康大姐卡拉斯京大叔科技大厦的\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements撒大姐卡是假的看辣椒素的快乐就撒到了啊是大姐\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_3[\"Implement Feature\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_4[\"Code Review\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 -->|\"Yes\"| t_3\n  t_3 --> t_4\n"
       },
       "createdAt": 1778118617612,
-      "updatedAt": 1778138229343
+      "updatedAt": 1778143625967
     },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
