@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778122283133,
+  "updatedAt": 1778122402144,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778122276905
+      "updatedAt": 1778122287602
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -68,7 +68,7 @@
             "y": 72,
             "customColors": {
               "border": "#a09088",
-              "text": "#c2410c"
+              "text": "#15803d"
             }
           },
           {
@@ -134,7 +134,7 @@
         "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_3[\"Implement Feature\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_4[\"Code Review\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 -->|\"Yes\"| t_3\n  t_3 --> t_4\n"
       },
       "createdAt": 1778118617612,
-      "updatedAt": 1778122276896
+      "updatedAt": 1778122287588
     },
     {
       "id": "9b882ae4-c4df-432b-9e50-9fb05b2c95e5",
