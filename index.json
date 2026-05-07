@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778135356416,
+  "updatedAt": 1778135943504,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778135304921
+      "updatedAt": 1778135841283
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -92,12 +92,20 @@
             "order": 5
           },
           {
+            "id": "6e0c6e58-73ad-46a1-87b4-ab27bb0f45dd",
+            "from": "user",
+            "to": "system",
+            "label": "Message",
+            "type": "sync",
+            "order": 6
+          },
+          {
             "id": "366c8b37-9c7d-4df3-b280-8745589c5f3d",
             "from": "system",
             "to": "c7482b91-6314-4c64-9531-4cd304234fcb",
             "label": "推 送：⽀付成功",
             "type": "sync",
-            "order": 6
+            "order": 7
           },
           {
             "id": "90ba5825-b99a-4adb-b284-6e066c87ea1b",
@@ -105,7 +113,7 @@
             "to": "system",
             "label": "同步：退款 (REFUND) 含退款⾦额 (refund _ fee)、退款 因",
             "type": "sync",
-            "order": 7
+            "order": 8
           },
           {
             "id": "ef80028e-fad7-42ee-a9ed-380ee380e48d",
@@ -113,7 +121,7 @@
             "to": "c7482b91-6314-4c64-9531-4cd304234fcb",
             "label": "推 送：退款处理中",
             "type": "sync",
-            "order": 8
+            "order": 9
           }
         ],
         "notes": [
@@ -156,10 +164,10 @@
         },
         "lifelineStyle": "dashed",
         "boxStyle": "rounded",
-        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 商户系统\n  participant p1 as ⽀付宝平台\n  actor p2 as 用户\n  Note over p0,p1: ⽀付单状态同步\n  p0->>p1: 同步：待支付（TO_PAY）含费用明细（order_fee,base_delivery_fee等）\n  p1->>p2: 展示待⽀付账单\n  p2-->>p1: 完成⽀付\n  p1->>p0: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)\n  p0-->>p1: 确认成功\n  p0->>p1: 同步：⽀付成功 (PAY _ SUCCESS) 含抽佣⾦额 (commission _ fee)\n  Note left of p0: 是否需要提车和送车在查价接口中没有参数，查出来的价格是干线价格？如果需要提送车，价格怎么增加？ 查价时支付宝传入openid，有什么作用吗？需要记录吗？ 在查价时， 如果未注册，是否可以自动使用客户手机号静默注册？后续在下单时就无需授权？\n  Note over p0,p1: 退款场景\n  p1->>p2: 推 送：⽀付成功\n  p0->>p1: 同步：退款 (REFUND) 含退款⾦额 (refund _ fee)、退款 因\n  p1->>p2: 推 送：退款处理中\n"
+        "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 商户系统\n  participant p1 as ⽀付宝平台\n  actor p2 as 用户\n  Note over p0,p1: ⽀付单状态同步\n  p0->>p1: 同步：待支付（TO_PAY）含费用明细（order_fee,base_delivery_fee等）\n  p1->>p2: 展示待⽀付账单\n  p2-->>p1: 完成⽀付\n  p1->>p0: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)\n  p0-->>p1: 确认成功\n  p0->>p1: 同步：⽀付成功 (PAY _ SUCCESS) 含抽佣⾦额 (commission _ fee)\n  Note left of p0: 是否需要提车和送车在查价接口中没有参数，查出来的价格是干线价格？如果需要提送车，价格怎么增加？ 查价时支付宝传入openid，有什么作用吗？需要记录吗？ 在查价时， 如果未注册，是否可以自动使用客户手机号静默注册？后续在下单时就无需授权？\n  Note over p0,p1: 退款场景\n  p0->>p1: Message\n  p1->>p2: 推 送：⽀付成功\n  p0->>p1: 同步：退款 (REFUND) 含退款⾦额 (refund _ fee)、退款 因\n  p1->>p2: 推 送：退款处理中\n"
       },
       "createdAt": 1777529989460,
-      "updatedAt": 1778135304890
+      "updatedAt": 1778135841266
     },
     {
       "id": "7732089b-c55c-4161-ad72-3b9cd41d4a31",
