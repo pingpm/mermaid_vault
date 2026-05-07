@@ -5,8 +5,8 @@ sequenceDiagram
   actor p2 as 用户
   Note over p0,p1: ⽀付单状态同步
   p0->>p1: 同步：待支付（TO_PAY）含费用明细（order_fee,base_delivery_fee等）
-  Note over p1: 是否需要提车和送车在查价接口中没有参数，查出来的价格是干线价格？如果需要提送车，价格怎么增加？ 查价时支付宝传入openid，有什么作用吗？需要记录吗？ 在查价时， 如果未注册，是否可以自动使用客户手机号静默注册？后续在下单时就无需授权？
   p1->>p2: 展示待⽀付账单
+  Note over p0,p1: 是否需要提车和送车在查价接口中没有参数，查出来的价格是干线价格？如果需要提送车，价格怎么增加？ 查价时支付宝传入openid，有什么作用吗？需要记录吗？ 在查价时， 如果未注册，是否可以自动使用客户手机号静默注册？后续在下单时就无需授权？
   p2-->>p1: 完成⽀付
   p1->>p0: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)
   Note over p0,p1: 退款场景
