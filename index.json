@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778118789248,
+  "updatedAt": 1778121038180,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778118617615
+      "updatedAt": 1778120997746
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -56,7 +56,10 @@
             "shape": "process",
             "order": 1,
             "x": 240,
-            "y": 72
+            "y": 72,
+            "customColors": {
+              "bg": "#f4f4fa"
+            }
           },
           {
             "id": "task-3",
@@ -65,7 +68,10 @@
             "shape": "decision",
             "order": 2,
             "x": 460,
-            "y": 54
+            "y": 54,
+            "customColors": {
+              "bg": "#d6d6e6"
+            }
           },
           {
             "id": "task-4",
@@ -119,10 +125,14 @@
         ],
         "swBgPattern": "none",
         "swDirection": "LR",
-        "mermaidCode": ""
+        "swEdgeStyle": "smooth",
+        "swTheme": "default",
+        "swLaneGap": 24,
+        "swLaneColorOverrides": {},
+        "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_3[\"Implement Feature\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_4[\"Code Review\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 -->|\"Yes\"| t_3\n  t_3 --> t_4\n"
       },
       "createdAt": 1778118617612,
-      "updatedAt": 1778118617612
+      "updatedAt": 1778120997718
     },
     {
       "id": "9b882ae4-c4df-432b-9e50-9fb05b2c95e5",
