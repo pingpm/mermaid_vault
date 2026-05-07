@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778134332736,
+  "updatedAt": 1778134455445,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778134285194
+      "updatedAt": 1778134427274
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -44,7 +44,7 @@
         ],
         "messages": [
           {
-            "id": "e778f6bc-185d-4a53-96c9-159e00fd89df",
+            "id": "8cf94f22-b563-477a-8269-1d4e32476610",
             "from": "user",
             "to": "system",
             "label": "同步：待支付（TO_PAY）含费用明细（order_fee,base_delivery_fee等）",
@@ -52,7 +52,7 @@
             "order": 0
           },
           {
-            "id": "32fb59f9-c4d4-4cb6-9db9-7d6167ee9f2c",
+            "id": "a06031b1-770b-41dc-85d5-5d3aedadb85d",
             "from": "system",
             "to": "c7482b91-6314-4c64-9531-4cd304234fcb",
             "label": "展示待⽀付账单",
@@ -60,7 +60,7 @@
             "order": 1
           },
           {
-            "id": "a8d89e5b-c13e-495a-be8c-f9cf13b468fc",
+            "id": "0dc73ad1-2dbc-406d-9abe-e12273c22edc",
             "from": "c7482b91-6314-4c64-9531-4cd304234fcb",
             "to": "system",
             "label": "完成⽀付",
@@ -68,7 +68,7 @@
             "order": 2
           },
           {
-            "id": "0a378f7e-aa59-4814-8f0a-8a7e234022d5",
+            "id": "74f00831-8bd3-457e-8469-415bfa7731e0",
             "from": "system",
             "to": "user",
             "label": "⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)",
@@ -76,7 +76,7 @@
             "order": 3
           },
           {
-            "id": "da402ba3-09ff-4fc2-b1a6-e27e52d3067c",
+            "id": "92c5f8b3-c786-4df1-b5be-f8631b88b60d",
             "from": "user",
             "to": "system",
             "label": "确认成功",
@@ -84,7 +84,7 @@
             "order": 4
           },
           {
-            "id": "a365ef30-e39d-438c-8f99-c05fe353a199",
+            "id": "8a30b65a-7585-4799-8851-b3d20a2f49d7",
             "from": "user",
             "to": "system",
             "label": "同步：⽀付成功 (PAY _ SUCCESS) 含抽佣⾦额 (commission _ fee)",
@@ -92,7 +92,7 @@
             "order": 5
           },
           {
-            "id": "7f3c97f7-c36a-4855-b7ef-e6171b3cd660",
+            "id": "366c8b37-9c7d-4df3-b280-8745589c5f3d",
             "from": "system",
             "to": "c7482b91-6314-4c64-9531-4cd304234fcb",
             "label": "推 送：⽀付成功",
@@ -100,7 +100,7 @@
             "order": 6
           },
           {
-            "id": "c6aa5ade-39e3-4b21-b8b9-9eac3b794971",
+            "id": "90ba5825-b99a-4adb-b284-6e066c87ea1b",
             "from": "user",
             "to": "system",
             "label": "同步：退款 (REFUND) 含退款⾦额 (refund _ fee)、退款 因",
@@ -108,7 +108,7 @@
             "order": 7
           },
           {
-            "id": "4591d01d-5248-471a-8077-914c72a54464",
+            "id": "ef80028e-fad7-42ee-a9ed-380ee380e48d",
             "from": "system",
             "to": "c7482b91-6314-4c64-9531-4cd304234fcb",
             "label": "推 送：退款处理中",
@@ -118,7 +118,7 @@
         ],
         "notes": [
           {
-            "id": "ab5c5720-b4c9-4973-b258-856bc64418cd",
+            "id": "34e0551a-4046-433a-86cb-7fe231bbdd21",
             "text": "⽀付单状态同步",
             "position": "over",
             "lifelineIds": [
@@ -128,17 +128,16 @@
             "afterOrder": -1
           },
           {
-            "id": "4bfb0de9-e707-4e0c-b225-641d796ea620",
+            "id": "8b406fb0-da70-47ba-a75d-791822547752",
             "text": "是否需要提车和送车在查价接口中没有参数，查出来的价格是干线价格？如果需要提送车，价格怎么增加？ 查价时支付宝传入openid，有什么作用吗？需要记录吗？ 在查价时， 如果未注册，是否可以自动使用客户手机号静默注册？后续在下单时就无需授权？",
             "position": "over",
             "lifelineIds": [
               "user"
             ],
-            "afterOrder": 5,
-            "textAlign": "left"
+            "afterOrder": 5
           },
           {
-            "id": "e70aa31a-633b-44a7-b290-ae2d7f75d5a5",
+            "id": "6b89b9e3-46cb-4e9c-8ada-2dfab0ff28f4",
             "text": "退款场景",
             "position": "over",
             "lifelineIds": [
@@ -160,7 +159,7 @@
         "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 商户系统\n  participant p1 as ⽀付宝平台\n  actor p2 as 用户\n  Note over p0,p1: ⽀付单状态同步\n  p0->>p1: 同步：待支付（TO_PAY）含费用明细（order_fee,base_delivery_fee等）\n  p1->>p2: 展示待⽀付账单\n  p2-->>p1: 完成⽀付\n  p1->>p0: ⽀付成功通知 (spi.alipay.commerce.logistics.carshipping.order.pay)\n  p0-->>p1: 确认成功\n  p0->>p1: 同步：⽀付成功 (PAY _ SUCCESS) 含抽佣⾦额 (commission _ fee)\n  Note over p0: 是否需要提车和送车在查价接口中没有参数，查出来的价格是干线价格？如果需要提送车，价格怎么增加？ 查价时支付宝传入openid，有什么作用吗？需要记录吗？ 在查价时， 如果未注册，是否可以自动使用客户手机号静默注册？后续在下单时就无需授权？\n  Note over p0,p1: 退款场景\n  p1->>p2: 推 送：⽀付成功\n  p0->>p1: 同步：退款 (REFUND) 含退款⾦额 (refund _ fee)、退款 因\n  p1->>p2: 推 送：退款处理中\n"
       },
       "createdAt": 1777529989460,
-      "updatedAt": 1778134285177
+      "updatedAt": 1778134427264
     },
     {
       "id": "7732089b-c55c-4161-ad72-3b9cd41d4a31",
