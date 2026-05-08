@@ -1,5 +1,19 @@
 flowchart LR
   subgraph lane_0["Lane 1"]
     t_0["Process 2"]
-    %% [tag:existing] 已有
+    %% [tag:existing] 已有 | 开启为了加快论文
+    t_1(["Start / End 2"])
   end
+  subgraph lane_1["Lane 2"]
+    t_2{"Decision 2"}
+    %% [tag:existing] 已有 | 阿斯顿撒娇看了大姐撒开
+    t_3["Process 1"]
+    %% [tag:pending] 待确认
+  end
+  subgraph lane_2["Lane 3"]
+    t_4["Process 1"]
+    %% [tag:pending] 待确认 | 123123123
+  end
+  t_1 --> t_0
+  t_0 --> t_3
+  t_3 --> t_2

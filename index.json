@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778217102241,
+  "updatedAt": 1778217222097,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778217028729
+      "updatedAt": 1778217208109
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -24,36 +24,121 @@
       "data": {
         "lanes": [
           {
-            "id": "221370bc-1939-475a-89cc-f47147a5b031",
+            "id": "42c079ac-2d14-4e04-a650-3024775efd48",
             "label": "Lane 1",
             "order": 0
+          },
+          {
+            "id": "8563b967-0b4f-4ee4-bca6-e83c64bf1a30",
+            "label": "Lane 2",
+            "order": 1
+          },
+          {
+            "id": "0db91052-d069-4c4f-9f07-706fbd21929b",
+            "label": "Lane 3",
+            "order": 2
           }
         ],
         "tasks": [
           {
-            "id": "b4e12036-46e9-4c10-aeb8-3aa2adddfc07",
-            "laneId": "221370bc-1939-475a-89cc-f47147a5b031",
+            "id": "9547d23d-2b11-46a3-8938-fe605b1828db",
+            "laneId": "42c079ac-2d14-4e04-a650-3024775efd48",
             "label": "Process 2",
             "shape": "process",
+            "order": 0,
+            "x": 379.8382882794276,
+            "y": 77.46927063580895,
+            "tag": "existing",
+            "tagNote": "开启为了加快论文",
+            "width": 156,
+            "height": 56
+          },
+          {
+            "id": "4d41c8bb-909a-49d2-8cfd-cca4da66b85c",
+            "laneId": "42c079ac-2d14-4e04-a650-3024775efd48",
+            "label": "Start / End 2",
+            "shape": "terminator",
             "order": 1,
-            "x": 284.43332960174166,
-            "y": 57.89902270192465,
+            "x": 71.7851239669422,
+            "y": 105.78512396694217,
+            "width": 156,
+            "height": 56
+          },
+          {
+            "id": "550d8c69-cbf8-4d7a-928d-eb77a0baad3a",
+            "laneId": "8563b967-0b4f-4ee4-bca6-e83c64bf1a30",
+            "label": "Decision 2",
+            "shape": "decision",
+            "order": 0,
+            "x": 771.6198347107437,
+            "y": 79.78512396694214,
+            "tag": "existing",
+            "tagNote": "阿斯顿撒娇看了大姐撒开",
+            "width": 92,
+            "height": 92
+          },
+          {
+            "id": "8db33998-6173-444a-8352-a7953f697a2f",
+            "laneId": "8563b967-0b4f-4ee4-bca6-e83c64bf1a30",
+            "label": "Process 1",
+            "shape": "process",
+            "order": 1,
+            "x": 388.57851239669424,
+            "y": 97.7851239669422,
             "width": 156,
             "height": 56,
-            "tag": "existing"
+            "tag": "pending"
+          },
+          {
+            "id": "69ecd8cc-b857-499d-8cda-c7aa92e53c01",
+            "laneId": "0db91052-d069-4c4f-9f07-706fbd21929b",
+            "label": "Process 1",
+            "shape": "process",
+            "order": 0,
+            "x": 616.0826446280993,
+            "y": 153.38842975206614,
+            "tag": "pending",
+            "tagNote": "123123123",
+            "width": 291,
+            "height": 58
           }
         ],
-        "connections": [],
+        "connections": [
+          {
+            "id": "b526e3ee-cb55-4a52-839d-243702832b5c",
+            "fromTaskId": "4d41c8bb-909a-49d2-8cfd-cca4da66b85c",
+            "toTaskId": "9547d23d-2b11-46a3-8938-fe605b1828db",
+            "dashed": false,
+            "sourceHandle": "right",
+            "targetHandle": "left"
+          },
+          {
+            "id": "9c920e17-d29d-42b7-85af-24133d6e119f",
+            "fromTaskId": "9547d23d-2b11-46a3-8938-fe605b1828db",
+            "toTaskId": "8db33998-6173-444a-8352-a7953f697a2f",
+            "dashed": false,
+            "sourceHandle": "right",
+            "targetHandle": "top"
+          },
+          {
+            "id": "8746e8e7-66d9-4509-a2ce-f4d231b877fd",
+            "fromTaskId": "8db33998-6173-444a-8352-a7953f697a2f",
+            "toTaskId": "550d8c69-cbf8-4d7a-928d-eb77a0baad3a",
+            "dashed": false,
+            "sourceHandle": "right",
+            "targetHandle": "left"
+          }
+        ],
         "swBgPattern": "none",
         "swDirection": "LR",
         "swEdgeStyle": "smooth",
         "swTheme": "default",
         "swLaneGap": 24,
         "swLaneColorOverrides": {},
-        "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Lane 1\"]\n    t_0[\"Process 2\"]\n    %% [tag:existing] 已有\n  end\n"
+        "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Lane 1\"]\n    t_0[\"Process 2\"]\n    %% [tag:existing] 已有 | 开启为了加快论文\n    t_1([\"Start / End 2\"])\n  end\n  subgraph lane_1[\"Lane 2\"]\n    t_2{\"Decision 2\"}\n    %% [tag:existing] 已有 | 阿斯顿撒娇看了大姐撒开\n    t_3[\"Process 1\"]\n    %% [tag:pending] 待确认\n  end\n  subgraph lane_2[\"Lane 3\"]\n    t_4[\"Process 1\"]\n    %% [tag:pending] 待确认 | 123123123\n  end\n  t_1 --> t_0\n  t_0 --> t_3\n  t_3 --> t_2\n"
       },
       "createdAt": 1778054009145,
-      "updatedAt": 1778217028720
+      "updatedAt": 1778217208107
     },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
