@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778158549100,
+  "updatedAt": 1778203900701,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778158498645
+      "updatedAt": 1778203823889
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -90,8 +90,14 @@
             "label": "Code Review",
             "shape": "process",
             "order": 0,
-            "x": 529.6231086657497,
-            "y": 104.97936726272349
+            "x": 602.9656121045391,
+            "y": 93.98624484181573,
+            "customColors": {
+              "bg": "#fdf2f8",
+              "border": "#ec4899",
+              "text": "#be185d",
+              "label": "Pink"
+            }
           },
           {
             "id": "3edfe264-82f7-4a6e-b89c-36d46175135a",
@@ -99,10 +105,16 @@
             "label": "Decision 2",
             "shape": "decision",
             "order": 1,
-            "x": 787.3810178817057,
-            "y": 88.63273727647868,
+            "x": 860.7235213204951,
+            "y": 77.63961485557093,
             "width": 92,
-            "height": 92
+            "height": 92,
+            "customColors": {
+              "bg": "#fdf2f8",
+              "border": "#ec4899",
+              "text": "#be185d",
+              "label": "Pink"
+            }
           },
           {
             "id": "cd4da3ec-5149-4035-b2b9-a4345e5e8b36",
@@ -110,10 +122,16 @@
             "label": "Process 3",
             "shape": "process",
             "order": 2,
-            "x": 888.5199449793673,
-            "y": 61.43878954607976,
+            "x": 961.8624484181566,
+            "y": 50.44566712517201,
             "width": 156,
-            "height": 56
+            "height": 56,
+            "customColors": {
+              "bg": "#fdf2f8",
+              "border": "#ec4899",
+              "text": "#be185d",
+              "label": "Pink"
+            }
           }
         ],
         "connections": [
@@ -162,7 +180,7 @@
         "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"啊是假的快乐就阿斯利康大姐卡拉斯京大叔科技大厦的\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements撒大姐卡是假的看辣椒素的快乐就撒到了啊是大姐\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_3[\"Implement Feature\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_4[\"Process 3\"]\n    t_5{\"Decision 2\"}\n    t_6[\"Code Review\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 -->|\"Yes\"| t_3\n  t_3 --> t_6\n"
       },
       "createdAt": 1778118617612,
-      "updatedAt": 1778158498631
+      "updatedAt": 1778203823887
     },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
