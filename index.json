@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778211584024,
+  "updatedAt": 1778212541475,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778211499326
+      "updatedAt": 1778212503210
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -22,13 +22,80 @@
       "name": "1234",
       "type": "swimlane",
       "data": {
-        "nodes": [],
-        "edges": [],
-        "mermaidCode": "flowchart TD\n",
-        "flowEdgeStyle": "smooth"
+        "lanes": [
+          {
+            "id": "0202d053-210c-4703-aa10-fe1b59adff71",
+            "label": "Lane 1",
+            "order": 0
+          },
+          {
+            "id": "727b8fde-e545-479d-a666-b0db07f20b11",
+            "label": "Lane 2",
+            "order": 1
+          },
+          {
+            "id": "c3747f8d-dc2a-4fbf-bec6-4e093086e6e9",
+            "label": "Lane 3",
+            "order": 2
+          }
+        ],
+        "tasks": [
+          {
+            "id": "1a40eed0-ce3b-406a-9050-fc4c2bb4c52e",
+            "laneId": "0202d053-210c-4703-aa10-fe1b59adff71",
+            "label": "Process 1",
+            "shape": "process",
+            "order": 0,
+            "x": 200.21487603305786,
+            "y": 125.35537190082647
+          },
+          {
+            "id": "f5ad623f-2523-4203-b42c-c556c4a648ee",
+            "laneId": "727b8fde-e545-479d-a666-b0db07f20b11",
+            "label": "Process 1",
+            "shape": "process",
+            "order": 0,
+            "x": 244.24793388429754,
+            "y": 43.966942148760324,
+            "width": 156,
+            "height": 56
+          },
+          {
+            "id": "5f56d2f6-189c-44ec-8756-a2582fcb6846",
+            "laneId": "c3747f8d-dc2a-4fbf-bec6-4e093086e6e9",
+            "label": "Process 1撒娇看大姐撒开大姐\n撒娇大姐阿斯科利大姐撒d\nd",
+            "shape": "process",
+            "order": 0,
+            "x": 309.0743801652893,
+            "y": 40.85950413223145,
+            "width": 256,
+            "height": 80,
+            "textAlign": "left"
+          },
+          {
+            "id": "412845a8-3545-46aa-8d62-22dd733e152e",
+            "laneId": "c3747f8d-dc2a-4fbf-bec6-4e093086e6e9",
+            "label": "1.啊是大姐卡数据打卡\n2.2家及撒娇的\n4.撒娇看大姐阿克琉斯大姐",
+            "shape": "document",
+            "order": 1,
+            "x": 704.1487603305785,
+            "y": 55.537190082644656,
+            "width": 275,
+            "height": 107,
+            "textAlign": "left"
+          }
+        ],
+        "connections": [],
+        "swBgPattern": "none",
+        "swDirection": "LR",
+        "swEdgeStyle": "smooth",
+        "swTheme": "default",
+        "swLaneGap": 24,
+        "swLaneColorOverrides": {},
+        "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Lane 1\"]\n    t_0[\"Process 1\"]\n  end\n  subgraph lane_1[\"Lane 2\"]\n    t_1[\"Process 1\"]\n  end\n  subgraph lane_2[\"Lane 3\"]\n    t_2[\"Process 1撒娇看大姐撒开大姐<br/>撒娇大姐阿斯科利大姐撒d<br/>d\"]\n    t_3[/\"1.啊是大姐卡数据打卡<br/>2.2家及撒娇的<br/>4.撒娇看大姐阿克琉斯大姐\"\\]\n  end\n"
       },
       "createdAt": 1778211194151,
-      "updatedAt": 1778211499274
+      "updatedAt": 1778212503208
     },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
