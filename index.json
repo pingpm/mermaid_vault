@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778216980894,
+  "updatedAt": 1778217102241,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778216969793
+      "updatedAt": 1778217028729
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -31,16 +31,16 @@
         ],
         "tasks": [
           {
-            "id": "475f547f-6fde-4f7c-b87a-ea3cb5b89bae",
+            "id": "b4e12036-46e9-4c10-aeb8-3aa2adddfc07",
             "laneId": "221370bc-1939-475a-89cc-f47147a5b031",
-            "label": "Process 1",
+            "label": "Process 2",
             "shape": "process",
-            "order": 0,
-            "x": 347.16818774445903,
-            "y": 100.82920469361147,
+            "order": 1,
+            "x": 284.43332960174166,
+            "y": 57.89902270192465,
             "width": 156,
             "height": 56,
-            "tag": "new"
+            "tag": "existing"
           }
         ],
         "connections": [],
@@ -50,10 +50,10 @@
         "swTheme": "default",
         "swLaneGap": 24,
         "swLaneColorOverrides": {},
-        "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Lane 1\"]\n    t_0[\"Process 1\"]\n    %% [tag:new] 新增\n  end\n"
+        "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Lane 1\"]\n    t_0[\"Process 2\"]\n    %% [tag:existing] 已有\n  end\n"
       },
       "createdAt": 1778054009145,
-      "updatedAt": 1778216969790
+      "updatedAt": 1778217028720
     },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
