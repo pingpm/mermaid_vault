@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778216903080,
+  "updatedAt": 1778216980894,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778216889507
+      "updatedAt": 1778216969793
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -16,6 +16,45 @@
     }
   ],
   "diagrams": [
+    {
+      "id": "9b882ae4-c4df-432b-9e50-9fb05b2c95e5",
+      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
+      "name": "123",
+      "type": "swimlane",
+      "data": {
+        "lanes": [
+          {
+            "id": "221370bc-1939-475a-89cc-f47147a5b031",
+            "label": "Lane 1",
+            "order": 0
+          }
+        ],
+        "tasks": [
+          {
+            "id": "475f547f-6fde-4f7c-b87a-ea3cb5b89bae",
+            "laneId": "221370bc-1939-475a-89cc-f47147a5b031",
+            "label": "Process 1",
+            "shape": "process",
+            "order": 0,
+            "x": 347.16818774445903,
+            "y": 100.82920469361147,
+            "width": 156,
+            "height": 56,
+            "tag": "new"
+          }
+        ],
+        "connections": [],
+        "swBgPattern": "none",
+        "swDirection": "LR",
+        "swEdgeStyle": "smooth",
+        "swTheme": "default",
+        "swLaneGap": 24,
+        "swLaneColorOverrides": {},
+        "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Lane 1\"]\n    t_0[\"Process 1\"]\n    %% [tag:new] 新增\n  end\n"
+      },
+      "createdAt": 1778054009145,
+      "updatedAt": 1778216969790
+    },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
       "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
@@ -199,20 +238,6 @@
       },
       "createdAt": 1777529989460,
       "updatedAt": 1778137988945
-    },
-    {
-      "id": "9b882ae4-c4df-432b-9e50-9fb05b2c95e5",
-      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
-      "name": "123",
-      "type": "swimlane",
-      "data": {
-        "nodes": [],
-        "edges": [],
-        "mermaidCode": "flowchart TD\n",
-        "flowEdgeStyle": "smooth"
-      },
-      "createdAt": 1778054009145,
-      "updatedAt": 1778118607781
     },
     {
       "id": "fd577967-5106-494e-bdae-c0afb858c4be",
