@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778212781851,
+  "updatedAt": 1778212901893,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778212773483
+      "updatedAt": 1778212838056
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -24,25 +24,25 @@
       "data": {
         "lanes": [
           {
-            "id": "6b85add5-ee4d-4c42-bab8-69f1bd436cd7",
+            "id": "5bd9bb68-ef34-4961-b317-94b48251839d",
             "label": "Lane 1",
             "order": 0
           },
           {
-            "id": "2b4618ba-2a21-4a65-a3af-177da7f41bda",
+            "id": "24e4b342-9dac-43c6-9197-c0f73c8a4ff9",
             "label": "Lane 2",
             "order": 1
           },
           {
-            "id": "2533adc9-a45d-430c-b801-ce26eb4f3b3e",
+            "id": "e94c6a37-6107-42d3-ae00-ece9aa524cdf",
             "label": "Lane 3",
             "order": 2
           }
         ],
         "tasks": [
           {
-            "id": "1fb923f1-5632-4a63-91ed-52a2c85a49db",
-            "laneId": "6b85add5-ee4d-4c42-bab8-69f1bd436cd7",
+            "id": "57faecc8-8683-4b54-97e8-6d86d7d41e7b",
+            "laneId": "5bd9bb68-ef34-4961-b317-94b48251839d",
             "label": "Process 1",
             "shape": "process",
             "order": 0,
@@ -50,8 +50,8 @@
             "y": 125.35537190082647
           },
           {
-            "id": "dc97f425-bd13-412c-96b5-bbeabc5d828a",
-            "laneId": "2b4618ba-2a21-4a65-a3af-177da7f41bda",
+            "id": "796e603c-23aa-4f38-9033-23bc50c6d7d2",
+            "laneId": "24e4b342-9dac-43c6-9197-c0f73c8a4ff9",
             "label": "Process 1",
             "shape": "process",
             "order": 0,
@@ -59,8 +59,24 @@
             "y": 43.966942148760324
           },
           {
-            "id": "14c33952-d908-4167-aa99-d62ce4c5f150",
-            "laneId": "2533adc9-a45d-430c-b801-ce26eb4f3b3e",
+            "id": "47811a99-0a33-45b9-836d-51c55affba6d",
+            "laneId": "24e4b342-9dac-43c6-9197-c0f73c8a4ff9",
+            "label": "Decision 2",
+            "shape": "decision",
+            "order": 1,
+            "x": 651.7520661157025,
+            "y": 55.04132231404964,
+            "width": 151,
+            "height": 66,
+            "customColors": {
+              "bg": "#ec4899",
+              "text": "#ec4899",
+              "border": "#ec4899"
+            }
+          },
+          {
+            "id": "858b1c5d-8d9d-4edb-ab49-88d8ed3534b8",
+            "laneId": "e94c6a37-6107-42d3-ae00-ece9aa524cdf",
             "label": "1撒的",
             "shape": "document",
             "order": 0,
@@ -71,8 +87,8 @@
             "textAlign": "left"
           },
           {
-            "id": "7803cf4e-090f-485a-aee2-a84454266f15",
-            "laneId": "2533adc9-a45d-430c-b801-ce26eb4f3b3e",
+            "id": "3abc10d3-1d69-4f1b-b6be-77d6531e9523",
+            "laneId": "e94c6a37-6107-42d3-ae00-ece9aa524cdf",
             "label": "1 3",
             "shape": "document",
             "order": 1,
@@ -82,38 +98,37 @@
             "height": 56
           },
           {
-            "id": "05a01c3a-f3c4-4d84-a666-b3b9bdf47582",
-            "laneId": "2533adc9-a45d-430c-b801-ce26eb4f3b3e",
+            "id": "53ae1c7a-64c7-435c-9110-bfd851b9150b",
+            "laneId": "e94c6a37-6107-42d3-ae00-ece9aa524cdf",
             "label": "Process 1撒娇看大姐撒开大姐\n撒娇大姐阿斯科利大姐撒d\nd",
             "shape": "process",
             "order": 2,
             "x": 309.0743801652893,
             "y": 40.85950413223145,
             "textAlign": "left"
-          },
-          {
-            "id": "74b827f4-e157-404d-98c7-84b9ada36b0b",
-            "laneId": "2b4618ba-2a21-4a65-a3af-177da7f41bda",
-            "label": "Decision 2",
-            "shape": "decision",
-            "order": 1,
-            "x": 763.0578512396695,
-            "y": 0,
-            "width": 92,
-            "height": 92
           }
         ],
-        "connections": [],
+        "connections": [
+          {
+            "id": "7ae4ecad-1b61-4c10-b458-0237a0781709",
+            "fromTaskId": "796e603c-23aa-4f38-9033-23bc50c6d7d2",
+            "toTaskId": "47811a99-0a33-45b9-836d-51c55affba6d",
+            "dashed": true,
+            "sourceHandle": "right",
+            "targetHandle": "left",
+            "color": "#ec4899"
+          }
+        ],
         "swBgPattern": "none",
         "swDirection": "LR",
         "swEdgeStyle": "smooth",
         "swTheme": "default",
         "swLaneGap": 24,
         "swLaneColorOverrides": {},
-        "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Lane 1\"]\n    t_0[\"Process 1\"]\n  end\n  subgraph lane_1[\"Lane 2\"]\n    t_1{\"Decision 2\"}\n    t_2[\"Process 1\"]\n  end\n  subgraph lane_2[\"Lane 3\"]\n    t_3[/\"1撒的\"\\]\n    t_4[/\"1 3\"\\]\n    t_5[\"Process 1撒娇看大姐撒开大姐<br/>撒娇大姐阿斯科利大姐撒d<br/>d\"]\n  end\n"
+        "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Lane 1\"]\n    t_0[\"Process 1\"]\n  end\n  subgraph lane_1[\"Lane 2\"]\n    t_1[\"Process 1\"]\n    t_2{\"Decision 2\"}\n  end\n  subgraph lane_2[\"Lane 3\"]\n    t_3[/\"1撒的\"\\]\n    t_4[/\"1 3\"\\]\n    t_5[\"Process 1撒娇看大姐撒开大姐<br/>撒娇大姐阿斯科利大姐撒d<br/>d\"]\n  end\n  t_1 --> t_2\n"
       },
       "createdAt": 1778211194151,
-      "updatedAt": 1778212773481
+      "updatedAt": 1778212838048
     },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
