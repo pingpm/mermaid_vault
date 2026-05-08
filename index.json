@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778210382357,
+  "updatedAt": 1778210502063,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778210376435
+      "updatedAt": 1778210450408
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -95,7 +95,10 @@
             "shape": "process",
             "order": 1,
             "x": 1291.4745529573586,
-            "y": 141.72214580467664
+            "y": 141.72214580467664,
+            "customColors": {
+              "text": "#040d1b"
+            }
           },
           {
             "id": "015f957c-9382-40de-9072-10eae9fc939a",
@@ -103,8 +106,8 @@
             "label": "Process 3",
             "shape": "process",
             "order": 0,
-            "x": 1041.463548830811,
-            "y": 88.33012379642366,
+            "x": 1026.963548830811,
+            "y": 106.33012379642366,
             "customColors": {
               "bg": "#fdf2f8",
               "border": "#ec4899",
@@ -224,7 +227,7 @@
         "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"啊是假的快乐就阿斯利康大姐卡拉斯京大叔科技大厦的\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements撒大姐卡是假的看辣椒素的快乐就撒到了啊是大姐\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_3[\"Implement Feature\"]\n    t_4[\"撒大叔的\"]\n    t_5[\"撒大叔的\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_6{\"Decision 2\"}\n    t_7[\"Process 3\"]\n    t_8[\"Code Review\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 -->|\"Yes\"| t_3\n  t_3 --> t_8\n  t_7 --> t_4\n  t_6 --> t_7\n  t_8 --> t_6\n"
       },
       "createdAt": 1778118617612,
-      "updatedAt": 1778210376403
+      "updatedAt": 1778210450401
     },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
