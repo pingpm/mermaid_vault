@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778217849152,
+  "updatedAt": 1778217972405,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778217831828
+      "updatedAt": 1778217902818
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -94,7 +94,6 @@
             "order": 0,
             "x": 616.0826446280993,
             "y": 153.38842975206614,
-            "tag": "pending",
             "width": 291,
             "height": 58
           }
@@ -138,10 +137,10 @@
         "swTheme": "default",
         "swLaneGap": 24,
         "swLaneColorOverrides": {},
-        "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Lane 1\"]\n    t_0[\"Process 2\"]\n    t_1([\"Start / End 2\"])\n  end\n  subgraph lane_1[\"Lane 2\"]\n    t_2{\"Decision 2\"}\n    %% [tag:existing] 已有 | 阿斯顿撒娇看了大姐撒开\n    t_3[\"Process 1\"]\n  end\n  subgraph lane_2[\"Lane 3\"]\n    t_4[\"Process 1\"]\n    %% [tag:pending] 待确认\n  end\n  t_1 --> t_0\n  t_0 --> t_3\n  t_3 --> t_2\n  t_3 --> t_4\n"
+        "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Lane 1\"]\n    t_0[\"Process 2\"]\n    t_1([\"Start / End 2\"])\n  end\n  subgraph lane_1[\"Lane 2\"]\n    t_2{\"Decision 2\"}\n    %% [tag:existing] 已有 | 阿斯顿撒娇看了大姐撒开\n    t_3[\"Process 1\"]\n  end\n  subgraph lane_2[\"Lane 3\"]\n    t_4[\"Process 1\"]\n  end\n  t_1 --> t_0\n  t_0 --> t_3\n  t_3 --> t_2\n  t_3 --> t_4\n"
       },
       "createdAt": 1778054009145,
-      "updatedAt": 1778217831815
+      "updatedAt": 1778217902804
     },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
