@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778216867813,
+  "updatedAt": 1778216903080,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778216858583
+      "updatedAt": 1778216889507
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -16,20 +16,6 @@
     }
   ],
   "diagrams": [
-    {
-      "id": "11d49e6a-0c1b-4df3-b4f5-9ab289d58d01",
-      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
-      "name": "1234",
-      "type": "swimlane",
-      "data": {
-        "nodes": [],
-        "edges": [],
-        "mermaidCode": "flowchart TD\n",
-        "flowEdgeStyle": "smooth"
-      },
-      "createdAt": 1778211194151,
-      "updatedAt": 1778216858520
-    },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
       "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
