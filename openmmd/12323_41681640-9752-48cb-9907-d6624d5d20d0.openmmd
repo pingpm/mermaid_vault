@@ -1,0 +1,140 @@
+{
+  "lanes": [
+    {
+      "id": "lane-1",
+      "label": "Planning",
+      "order": 0
+    },
+    {
+      "id": "lane-2",
+      "label": "Development",
+      "order": 1
+    },
+    {
+      "id": "lane-3",
+      "label": "Review",
+      "order": 2
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "laneId": "lane-1",
+      "label": "Start",
+      "shape": "terminator",
+      "order": 0,
+      "x": 40,
+      "y": 72
+    },
+    {
+      "id": "task-2",
+      "laneId": "lane-1",
+      "label": "Define Requirements",
+      "shape": "process",
+      "order": 1,
+      "x": 240,
+      "y": 72
+    },
+    {
+      "id": "task-3",
+      "laneId": "lane-1",
+      "label": "Approved?",
+      "shape": "decision",
+      "order": 2,
+      "x": 460,
+      "y": 54
+    },
+    {
+      "id": "task-4",
+      "laneId": "lane-2",
+      "label": "Implement Feature",
+      "shape": "process",
+      "order": 0,
+      "x": 460,
+      "y": 72
+    },
+    {
+      "id": "task-5",
+      "laneId": "lane-3",
+      "label": "Code Review",
+      "shape": "process",
+      "order": 0,
+      "x": 460,
+      "y": 72
+    },
+    {
+      "id": "1036cb8c-47df-4075-aed3-be0940689bdd",
+      "laneId": "lane-2",
+      "label": "流程 2",
+      "shape": "process",
+      "order": 1,
+      "x": 847.3367088607595,
+      "y": 141.95443037974678,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "074b2fb4-26f4-4135-b1cb-f9916aba874d",
+      "laneId": "lane-3",
+      "label": "流程 2",
+      "shape": "process",
+      "order": 1,
+      "x": 876.5620253164557,
+      "y": 78.50126582278483,
+      "width": 156,
+      "height": 56
+    }
+  ],
+  "connections": [
+    {
+      "id": "c1",
+      "fromTaskId": "task-1",
+      "toTaskId": "task-2",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "c2",
+      "fromTaskId": "task-2",
+      "toTaskId": "task-3",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "c3",
+      "fromTaskId": "task-3",
+      "toTaskId": "task-4",
+      "label": "Yes",
+      "sourceHandle": "bottom",
+      "targetHandle": "top"
+    },
+    {
+      "id": "c4",
+      "fromTaskId": "task-4",
+      "toTaskId": "task-5",
+      "sourceHandle": "bottom",
+      "targetHandle": "top"
+    },
+    {
+      "id": "e72860aa-b1a1-4834-b05c-38840954e6bd",
+      "fromTaskId": "task-5",
+      "toTaskId": "074b2fb4-26f4-4135-b1cb-f9916aba874d",
+      "sourceHandle": "right",
+      "targetHandle": "top"
+    },
+    {
+      "id": "3ace15a7-eb28-4293-91e2-df7354df237a",
+      "fromTaskId": "1036cb8c-47df-4075-aed3-be0940689bdd",
+      "toTaskId": "074b2fb4-26f4-4135-b1cb-f9916aba874d",
+      "sourceHandle": "right",
+      "targetHandle": "right"
+    }
+  ],
+  "swBgPattern": "none",
+  "swDirection": "LR",
+  "swEdgeStyle": "smooth",
+  "swTheme": "default",
+  "swLaneGap": 24,
+  "swLaneColorOverrides": {},
+  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_3[\"Implement Feature\"]\n    t_4[\"流程 2\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_5[\"Code Review\"]\n    t_6[\"流程 2\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 -->|\"Yes\"| t_3\n  t_3 --> t_5\n  t_5 --> t_6\n  t_4 --> t_6\n"
+}
