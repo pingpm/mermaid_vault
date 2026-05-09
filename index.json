@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778320265830,
+  "updatedAt": 1778320290079,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778320255558
+      "updatedAt": 1778320282352
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -17,13 +17,22 @@
   ],
   "diagrams": [
     {
+      "id": "fd577967-5106-494e-bdae-c0afb858c4be",
+      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
+      "name": "123",
+      "type": "mindmap",
+      "createdAt": 1778032289416,
+      "updatedAt": 1778320282349,
+      "version": 1
+    },
+    {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
       "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "支付单状态同步时序",
       "type": "sequence",
       "createdAt": 1777529989460,
       "updatedAt": 1778320231180,
-      "version": 2
+      "version": 1
     },
     {
       "id": "41681640-9752-48cb-9907-d6624d5d20d0",
@@ -32,7 +41,7 @@
       "type": "swimlane",
       "createdAt": 1778313820746,
       "updatedAt": 1778320099501,
-      "version": 10
+      "version": 9
     },
     {
       "id": "9b882ae4-c4df-432b-9e50-9fb05b2c95e5",
@@ -41,15 +50,6 @@
       "type": "swimlane",
       "createdAt": 1778054009145,
       "updatedAt": 1778313084696,
-      "version": 0
-    },
-    {
-      "id": "fd577967-5106-494e-bdae-c0afb858c4be",
-      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
-      "name": "123",
-      "type": "mindmap",
-      "createdAt": 1778032289416,
-      "updatedAt": 1778117057099,
       "version": 0
     },
     {
