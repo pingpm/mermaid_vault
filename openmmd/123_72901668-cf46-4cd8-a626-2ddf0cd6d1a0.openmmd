@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "4151ff1a-60eb-4a61-abcf-6f4f01dcbd61",
+      "label": "Main Topic",
+      "parentId": null,
+      "order": 0
+    },
+    {
+      "id": "1cf14791-9669-4159-99fa-93ed5ff6cc1e",
+      "label": "New node",
+      "parentId": "4151ff1a-60eb-4a61-abcf-6f4f01dcbd61",
+      "order": 0
+    },
+    {
+      "id": "72aa9ba1-f853-4ebc-a3c1-780cd19b9ffd",
+      "label": "New node",
+      "parentId": "4151ff1a-60eb-4a61-abcf-6f4f01dcbd61",
+      "order": 1
+    },
+    {
+      "id": "c5a2513b-c1b8-433b-93ff-a68f8a3543c8",
+      "label": "New node",
+      "parentId": "4151ff1a-60eb-4a61-abcf-6f4f01dcbd61",
+      "order": 3
+    },
+    {
+      "id": "23966f19-fde7-4d4e-b4a0-084bc31daa10",
+      "label": "是大姐卡好看接电话撒点回家啊可是大姐卡和思考觉得哈数据库和大姐啊是大姐啊哈数据库等哈数据库和大姐卡是大姐看哈数据德华将阿克苏河大姐卡上打死的",
+      "parentId": "4151ff1a-60eb-4a61-abcf-6f4f01dcbd61",
+      "order": 2
+    },
+    {
+      "id": "6b9906fa-cea5-4253-aa84-c8a0b6b95a16",
+      "label": "New node",
+      "parentId": "4151ff1a-60eb-4a61-abcf-6f4f01dcbd61",
+      "order": 4
+    },
+    {
+      "id": "78c35105-4bfb-40c3-a9f1-3d0a1507243b",
+      "label": "(business_order_no\n, alipay_trade_no)",
+      "parentId": "4151ff1a-60eb-4a61-abcf-6f4f01dcbd61",
+      "order": 5
+    },
+    {
+      "id": "0d38c953-c2c1-4fed-9aef-57e6c4561819",
+      "label": "New node",
+      "parentId": "4151ff1a-60eb-4a61-abcf-6f4f01dcbd61",
+      "order": 6
+    },
+    {
+      "id": "d8d3634d-ef96-4e34-af6e-46b300ecde38",
+      "label": "New node",
+      "parentId": "4151ff1a-60eb-4a61-abcf-6f4f01dcbd61",
+      "order": 7
+    },
+    {
+      "id": "ad7cb124-027a-4c1d-a57e-d1db6d9f2f01",
+      "label": "New node",
+      "parentId": "4151ff1a-60eb-4a61-abcf-6f4f01dcbd61",
+      "order": 8
+    },
+    {
+      "id": "91b41830-1754-48c9-85a3-069dc9af1f57",
+      "label": "New node",
+      "parentId": "4151ff1a-60eb-4a61-abcf-6f4f01dcbd61",
+      "order": 9
+    },
+    {
+      "id": "e61f4a1e-93b2-4c46-bb60-d5f3c3965668",
+      "label": "New node",
+      "parentId": "4151ff1a-60eb-4a61-abcf-6f4f01dcbd61",
+      "order": 10
+    },
+    {
+      "id": "205aa9f7-ac2e-4712-b252-04dcf0549486",
+      "label": "New node",
+      "parentId": "4151ff1a-60eb-4a61-abcf-6f4f01dcbd61",
+      "order": 11
+    },
+    {
+      "id": "3207f3ab-9dc3-4b07-8873-b14b58fa8284",
+      "label": "New node",
+      "parentId": "c5a2513b-c1b8-433b-93ff-a68f8a3543c8",
+      "order": 0
+    }
+  ],
+  "mmLayout": "right",
+  "mmNodeStyle": "box",
+  "mmBgPattern": "lines",
+  "mermaidCode": "mindmap\n  Main Topic\n    New node\n    New node\n    是大姐卡好看接电话撒点回家啊可是大姐卡和思考觉得哈数据库和大姐啊是大姐啊哈数据库等哈数据库和大姐卡是大姐看哈数据德华将阿克苏河大姐卡上打死的\n    New node\n      New node\n    New node\n    (business_order_no\n, alipay_trade_no)\n    New node\n    New node\n    New node\n    New node\n    New node\n    New node\n"
+}

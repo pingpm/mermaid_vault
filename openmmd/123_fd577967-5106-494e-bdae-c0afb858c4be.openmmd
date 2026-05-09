@@ -1,0 +1,203 @@
+{
+  "nodes": [
+    {
+      "id": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "label": "物流相关需求整理",
+      "parentId": null,
+      "order": 0
+    },
+    {
+      "id": "10e297ab-d3d3-4659-8873-4ec63e383804",
+      "label": "导入公里数和费用",
+      "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "order": 0
+    },
+    {
+      "id": "ffb594b8-c5e7-49d3-8ffc-9021edb18beb",
+      "label": "需求连接：https://souche.yuque.com/gp0gfa/lg26bb/erly0gkfgrhpnphy",
+      "parentId": "10e297ab-d3d3-4659-8873-4ec63e383804",
+      "order": 0
+    },
+    {
+      "id": "aabb1208-0c2c-44fb-a63e-4dbd9f2683cf",
+      "label": "简介：在导入公里数菜单中增加导入公里数和费用功能；导入字段分为：订单号、公里数、费用，三项均必填，导入后系统将按照订单号查询对应的订单，然后更新订单上的公里数和费用",
+      "parentId": "10e297ab-d3d3-4659-8873-4ec63e383804",
+      "order": 1
+    },
+    {
+      "id": "721c04e7-5d1f-4b01-8cb8-1b6da44ca822",
+      "label": "业务场景：适用于大客户订单经常修改订单公里数和费用",
+      "parentId": "10e297ab-d3d3-4659-8873-4ec63e383804",
+      "order": 2
+    },
+    {
+      "id": "d5cfc3d7-6841-4dd6-b3c8-f7faea799794",
+      "label": "运力调度询价、订单展示订单跟进信息",
+      "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "order": 1
+    },
+    {
+      "id": "f69b02fb-1887-4fe9-b258-9ae9aa882554",
+      "label": "需求连接：https://souche.yuque.com/gp0gfa/lg26bb/adflagyf3aqofbsf",
+      "parentId": "d5cfc3d7-6841-4dd6-b3c8-f7faea799794",
+      "order": 0
+    },
+    {
+      "id": "e2439153-aff3-4996-8f20-91c557fd5618",
+      "label": "简介：在运力调度的询价、订单展示客服在订单上设置的跟进信息（散户和大客户跟进信息结构不同，对应的订单需要取对应的跟进信息）",
+      "parentId": "d5cfc3d7-6841-4dd6-b3c8-f7faea799794",
+      "order": 1
+    },
+    {
+      "id": "74e2bc48-06fd-4ae2-9b71-3b444d7aef4d",
+      "label": "业务场景：运力与客服部门需要频繁沟通同步信息",
+      "parentId": "d5cfc3d7-6841-4dd6-b3c8-f7faea799794",
+      "order": 2
+    },
+    {
+      "id": "5b79a60d-7dd3-4f05-89de-db812a3ff825",
+      "label": "物流应收结算单发票申请修改抬头",
+      "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "order": 2
+    },
+    {
+      "id": "13f83d4d-99cf-431d-80ae-070690f9094d",
+      "label": "需求连接：https://souche.yuque.com/gp0gfa/lg26bb/db3x58yffkwbuir9",
+      "parentId": "5b79a60d-7dd3-4f05-89de-db812a3ff825",
+      "order": 0
+    },
+    {
+      "id": "8546c24c-9a52-4de3-a275-3eea6b65e724",
+      "label": "简介：大客户订单在申请发票的时候，会读取客户配置中的发票抬头和邮寄信息，如果邮寄信息修改，无法在此处直接修改，需要在客户配置中修改后再申请，本次在此处增加修改邮寄信息的功能，默认读取客户配置中的信息",
+      "parentId": "5b79a60d-7dd3-4f05-89de-db812a3ff825",
+      "order": 1
+    },
+    {
+      "id": "1afeb716-c1d1-48c8-bba6-ee61c6581198",
+      "label": "业务场景：申请发票时邮寄信息与客户配置中的不同",
+      "parentId": "5b79a60d-7dd3-4f05-89de-db812a3ff825",
+      "order": 2
+    },
+    {
+      "id": "d7330470-e45b-42a4-9521-2ec7ab91c8d8",
+      "label": "大客户订单批量设置中交兴路",
+      "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "order": 3
+    },
+    {
+      "id": "03a9d871-7e57-49dd-a958-e36106f14926",
+      "label": "需求连接：https://souche.yuque.com/gp0gfa/lg26bb/gk01scgguqkfpzui",
+      "parentId": "d7330470-e45b-42a4-9521-2ec7ab91c8d8",
+      "order": 0
+    },
+    {
+      "id": "7d4ab650-52d1-41ab-8732-52f8d9ba4cc1",
+      "label": "承运人saas、司机APP派单车牌号必填",
+      "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "order": 4
+    },
+    {
+      "id": "87b4b200-5380-4673-af23-82e486dd8ef8",
+      "label": "需求连接：https://souche.yuque.com/gp0gfa/lg26bb/gk01scgguqkfpzui",
+      "parentId": "7d4ab650-52d1-41ab-8732-52f8d9ba4cc1",
+      "order": 0
+    },
+    {
+      "id": "c73cf9fa-31a4-41f2-b96e-162939af289f",
+      "label": "大客户订单列表中增加公里数日志页面",
+      "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "order": 5
+    },
+    {
+      "id": "c197059f-7d57-46e2-b7b7-21708a5353d6",
+      "label": "需求连接：https://souche.yuque.com/gp0gfa/lg26bb/gk01scgguqkfpzui",
+      "parentId": "c73cf9fa-31a4-41f2-b96e-162939af289f",
+      "order": 0
+    },
+    {
+      "id": "26752d0b-1bdf-4f16-ab0c-9bb2e74b58cf",
+      "label": "简介：在下单、确认订单、修改订单、确认提车、要求提车时间、确认公里数这些节点查询订单公里数更新到订单公里数字段，并记录日志",
+      "parentId": "c73cf9fa-31a4-41f2-b96e-162939af289f",
+      "order": 1
+    },
+    {
+      "id": "4413e344-dc71-4854-9848-bcf698d473e6",
+      "label": "啊是大姐卡是假的快乐就撒开大姐看撒拉家带口撒了",
+      "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "order": 6
+    },
+    {
+      "id": "57d78b8c-3696-4766-9299-95752f80d3d8",
+      "label": "啊是看见大姐看是大姐是大姐看手机打开啊撒大姐卡拉斯京的拉伸的啊是假的空间啊是老大说的",
+      "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "order": 7
+    },
+    {
+      "id": "0dc8f0a2-954e-446c-8a92-1ae3498de9e3",
+      "label": "啊数据库大姐啊可是大姐啦看手机打开拉屎啊是大姐卡拉斯京的拉萨的",
+      "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "order": 8
+    },
+    {
+      "id": "9340e293-b20c-4d5c-8c5c-79d4b3b76239",
+      "label": "啊数据库大姐啊死了大姐撒开的",
+      "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "order": 9
+    },
+    {
+      "id": "94b02645-e263-480a-9c34-c798e3adbed8",
+      "label": "啊是看大姐撒开了大姐来师大",
+      "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "order": 10
+    },
+    {
+      "id": "1ad45aaa-3cc7-491e-b15c-4af1dcf9933d",
+      "label": "APP",
+      "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "order": 11
+    },
+    {
+      "id": "a2ca1d20-9cda-486c-a6db-82b238083a31",
+      "label": "asd",
+      "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "order": 12
+    },
+    {
+      "id": "6c97e0e8-2937-4585-9532-1aac05ea37ca",
+      "label": "New node",
+      "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "order": 13
+    },
+    {
+      "id": "2de9d175-7a3c-4299-8fa4-d947ea2123e4",
+      "label": "New node",
+      "parentId": "fefd140f-8933-45d3-b77e-9ac249d80056",
+      "order": 14
+    },
+    {
+      "id": "7b74b8ef-8214-4b28-8a33-014b422ef8dc",
+      "label": "New node",
+      "parentId": "9340e293-b20c-4d5c-8c5c-79d4b3b76239",
+      "order": 0
+    },
+    {
+      "id": "43b3255b-f08e-4348-a75f-07d6dc436aea",
+      "label": "啊就是打开就撒的快乐",
+      "parentId": "94b02645-e263-480a-9c34-c798e3adbed8",
+      "order": 0
+    },
+    {
+      "id": "ce438cb5-fb0f-4076-a65c-6a1ecee4aabd",
+      "label": "啊就是看大姐啊可是的",
+      "parentId": "43b3255b-f08e-4348-a75f-07d6dc436aea",
+      "order": 0
+    }
+  ],
+  "mmLayout": "right",
+  "mmNodeStyle": "plain",
+  "mmBgPattern": "none",
+  "mmEdgeStyle": "curve",
+  "mmTheme": "default",
+  "mmSlotOverrides": {},
+  "mermaidCode": "mindmap\n  物流相关需求整理\n    导入公里数和费用\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/erly0gkfgrhpnphy\n      简介：在导入公里数菜单中增加导入公里数和费用功能；导入字段分为：订单号、公里数、费用，三项均必填，导入后系统将按照订单号查询对应的订单，然后更新订单上的公里数和费用\n      业务场景：适用于大客户订单经常修改订单公里数和费用\n    运力调度询价、订单展示订单跟进信息\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/adflagyf3aqofbsf\n      简介：在运力调度的询价、订单展示客服在订单上设置的跟进信息（散户和大客户跟进信息结构不同，对应的订单需要取对应的跟进信息）\n      业务场景：运力与客服部门需要频繁沟通同步信息\n    物流应收结算单发票申请修改抬头\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/db3x58yffkwbuir9\n      简介：大客户订单在申请发票的时候，会读取客户配置中的发票抬头和邮寄信息，如果邮寄信息修改，无法在此处直接修改，需要在客户配置中修改后再申请，本次在此处增加修改邮寄信息的功能，默认读取客户配置中的信息\n      业务场景：申请发票时邮寄信息与客户配置中的不同\n    大客户订单批量设置中交兴路\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/gk01scgguqkfpzui\n    承运人saas、司机APP派单车牌号必填\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/gk01scgguqkfpzui\n    大客户订单列表中增加公里数日志页面\n      需求连接：https://souche.yuque.com/gp0gfa/lg26bb/gk01scgguqkfpzui\n      简介：在下单、确认订单、修改订单、确认提车、要求提车时间、确认公里数这些节点查询订单公里数更新到订单公里数字段，并记录日志\n    啊是大姐卡是假的快乐就撒开大姐看撒拉家带口撒了\n    啊是看见大姐看是大姐是大姐看手机打开啊撒大姐卡拉斯京的拉伸的啊是假的空间啊是老大说的\n    啊数据库大姐啊可是大姐啦看手机打开拉屎啊是大姐卡拉斯京的拉萨的\n    啊数据库大姐啊死了大姐撒开的\n      New node\n    啊是看大姐撒开了大姐来师大\n      啊就是打开就撒的快乐\n        啊就是看大姐啊可是的\n    APP\n    asd\n    New node\n    New node\n"
+}

@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "type": "flow-terminator",
+      "position": {
+        "x": 250,
+        "y": 50
+      },
+      "data": {
+        "label": "Start"
+      },
+      "measured": {
+        "width": 140,
+        "height": 52
+      }
+    },
+    {
+      "id": "1",
+      "type": "flow-process",
+      "position": {
+        "x": 250,
+        "y": 150
+      },
+      "data": {
+        "label": "Process"
+      },
+      "measured": {
+        "width": 140,
+        "height": 52
+      },
+      "selected": true
+    },
+    {
+      "id": "8c6533b4-1491-42b6-8429-e5650ae68c24",
+      "type": "flow-process",
+      "position": {
+        "x": 700,
+        "y": 582
+      },
+      "data": {
+        "label": "Process 3",
+        "width": 140,
+        "height": 52
+      },
+      "measured": {
+        "width": 140,
+        "height": 52
+      }
+    },
+    {
+      "id": "26a173d8-dfef-4098-b775-d7b68b075127",
+      "type": "flow-process-rect",
+      "position": {
+        "x": 687,
+        "y": 477
+      },
+      "data": {
+        "label": "Rect 4",
+        "width": 140,
+        "height": 52
+      },
+      "measured": {
+        "width": 140,
+        "height": 52
+      },
+      "selected": false
+    },
+    {
+      "id": "e01af272-47a0-41ac-acff-df6d8777e188",
+      "type": "flow-decision",
+      "position": {
+        "x": 973,
+        "y": 538
+      },
+      "data": {
+        "label": "Decision 5",
+        "width": 120,
+        "height": 70
+      },
+      "measured": {
+        "width": 120,
+        "height": 70
+      },
+      "selected": false
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-1",
+      "source": "start",
+      "target": "1",
+      "animated": true,
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      }
+    }
+  ],
+  "mermaidCode": "graph TD\n  start([\"Start\"])\n  1(\"Process\")\n  8c6533b4-1491-42b6-8429-e5650ae68c24(\"Process 3\")\n  26a173d8-dfef-4098-b775-d7b68b075127[\"Rect 4\"]\n  e01af272-47a0-41ac-acff-df6d8777e188{\"Decision 5\"}\n  start -.-> 1\n"
+}

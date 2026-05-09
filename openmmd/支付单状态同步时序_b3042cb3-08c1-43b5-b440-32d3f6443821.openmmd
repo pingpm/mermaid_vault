@@ -1,0 +1,176 @@
+{
+  "lifelines": [
+    {
+      "id": "4ed0077d-bc02-4ebf-8905-eb73ec9b3f40",
+      "label": "商户系统",
+      "kind": "entity",
+      "order": 0
+    },
+    {
+      "id": "483793ca-ab45-4ebc-886c-8536ca834100",
+      "label": "支付宝平台",
+      "kind": "entity",
+      "order": 1
+    },
+    {
+      "id": "120bd0df-0564-4757-9953-e39027feff07",
+      "label": "用户",
+      "kind": "actor",
+      "order": 2
+    }
+  ],
+  "messages": [
+    {
+      "id": "7872e996-3f35-4db8-ba26-f6bab49ad39b",
+      "from": "4ed0077d-bc02-4ebf-8905-eb73ec9b3f40",
+      "to": "483793ca-ab45-4ebc-886c-8536ca834100",
+      "label": "状态同步接⼝ (alipay.commerce.logistics.waybill.status.sync)",
+      "type": "sync",
+      "order": 0
+    },
+    {
+      "id": "f77f0d34-21c7-4352-a154-1809f996580a",
+      "from": "483793ca-ab45-4ebc-886c-8536ca834100",
+      "to": "4ed0077d-bc02-4ebf-8905-eb73ec9b3f40",
+      "label": "同步成功",
+      "type": "return",
+      "order": 1
+    },
+    {
+      "id": "c95dbda3-9732-4da5-b390-06b4bf7be792",
+      "from": "4ed0077d-bc02-4ebf-8905-eb73ec9b3f40",
+      "to": "483793ca-ab45-4ebc-886c-8536ca834100",
+      "label": "同步：已接单 (CS TAKE _  ORDER) 含司机姓名、电话、⻋架号",
+      "type": "sync",
+      "order": 2
+    },
+    {
+      "id": "92e8f667-5ce9-4956-9244-4bf5e3c247db",
+      "from": "483793ca-ab45-4ebc-886c-8536ca834100",
+      "to": "120bd0df-0564-4757-9953-e39027feff07",
+      "label": "推 送：司机已接单，正在赶往取⻋地",
+      "type": "sync",
+      "order": 3
+    },
+    {
+      "id": "e81dc3b3-988d-483d-b0e9-da1c3d969aa9",
+      "from": "4ed0077d-bc02-4ebf-8905-eb73ec9b3f40",
+      "to": "483793ca-ab45-4ebc-886c-8536ca834100",
+      "label": "同步：已取⻋ (CS PICKED _ _ 含⻋辆照⽚、VIN 码 UP)",
+      "type": "sync",
+      "order": 4
+    },
+    {
+      "id": "9a285e31-d858-43e7-bd1d-cbd7b6d62476",
+      "from": "483793ca-ab45-4ebc-886c-8536ca834100",
+      "to": "120bd0df-0564-4757-9953-e39027feff07",
+      "label": "推 送：司机已取⻋，运输中",
+      "type": "sync",
+      "order": 5
+    },
+    {
+      "id": "2cba7351-4852-4f90-8186-75c834b5721a",
+      "from": "4ed0077d-bc02-4ebf-8905-eb73ec9b3f40",
+      "to": "483793ca-ab45-4ebc-886c-8536ca834100",
+      "label": "同步：运送 中 (CS _ DELIVERING)",
+      "type": "sync",
+      "order": 6
+    },
+    {
+      "id": "c32362eb-6c64-49c5-b508-0f230b4d540e",
+      "from": "483793ca-ab45-4ebc-886c-8536ca834100",
+      "to": "120bd0df-0564-4757-9953-e39027feff07",
+      "label": "推 送：⻋辆在运输途中",
+      "type": "sync",
+      "order": 7
+    },
+    {
+      "id": "e3767202-30db-43bf-9edc-3595a7433fdc",
+      "from": "4ed0077d-bc02-4ebf-8905-eb73ec9b3f40",
+      "to": "483793ca-ab45-4ebc-886c-8536ca834100",
+      "label": "同步：已送达 (CS _ ARRIVED)",
+      "type": "sync",
+      "order": 8
+    },
+    {
+      "id": "76979e66-9564-47bc-b294-aaffcc09f492",
+      "from": "483793ca-ab45-4ebc-886c-8536ca834100",
+      "to": "120bd0df-0564-4757-9953-e39027feff07",
+      "label": "推 送：⻋辆已送达⽬的地",
+      "type": "sync",
+      "order": 9
+    },
+    {
+      "id": "93a17fac-e988-4f0a-8653-e77dc0328d81",
+      "from": "4ed0077d-bc02-4ebf-8905-eb73ec9b3f40",
+      "to": "483793ca-ab45-4ebc-886c-8536ca834100",
+      "label": "同步：服务完成 (CS SERVICE _ _ COMPLETED)",
+      "type": "sync",
+      "order": 10
+    },
+    {
+      "id": "9526aacf-a836-4a90-9ee6-2d2cb21d159f",
+      "from": "483793ca-ab45-4ebc-886c-8536ca834100",
+      "to": "120bd0df-0564-4757-9953-e39027feff07",
+      "label": "推 送：服务完成",
+      "type": "sync",
+      "order": 11
+    },
+    {
+      "id": "0a9578ca-c0ba-4a5d-949c-41d1bb66d81f",
+      "from": "4ed0077d-bc02-4ebf-8905-eb73ec9b3f40",
+      "to": "483793ca-ab45-4ebc-886c-8536ca834100",
+      "label": "同步：订单完成 (CS _ SUCCESS)",
+      "type": "sync",
+      "order": 12
+    },
+    {
+      "id": "1338ced9-cc30-482e-8308-da7a60e0a790",
+      "from": "483793ca-ab45-4ebc-886c-8536ca834100",
+      "to": "120bd0df-0564-4757-9953-e39027feff07",
+      "label": "推 送：订单完成",
+      "type": "sync",
+      "order": 13
+    }
+  ],
+  "notes": [
+    {
+      "id": "899b0509-8fac-4700-bc94-a68f78459632",
+      "text": "scene=CAR_SHIPPING_ORDER_ALIPAY_data 包含订单状态信息\n撒大叔大叔的",
+      "position": "over",
+      "lifelineIds": [
+        "483793ca-ab45-4ebc-886c-8536ca834100"
+      ],
+      "afterOrder": 0
+    },
+    {
+      "id": "14f6c46f-d64f-42ee-bc55-2399c4a26be0",
+      "text": "核⼼状态节点：",
+      "position": "over",
+      "lifelineIds": [
+        "4ed0077d-bc02-4ebf-8905-eb73ec9b3f40",
+        "120bd0df-0564-4757-9953-e39027feff07"
+      ],
+      "afterOrder": 1
+    },
+    {
+      "id": "e0717ffa-a1b7-44f1-bfb4-017eb72a83cf",
+      "text": "CS_TOPICK_UP 待接单",
+      "position": "over",
+      "lifelineIds": [
+        "4ed0077d-bc02-4ebf-8905-eb73ec9b3f40"
+      ],
+      "afterOrder": 1
+    }
+  ],
+  "fragments": [],
+  "links": [],
+  "colWidths": {},
+  "gaps": {
+    "4ed0077d-bc02-4ebf-8905-eb73ec9b3f40": 327,
+    "483793ca-ab45-4ebc-886c-8536ca834100": 299
+  },
+  "lifelineStyle": "dashed",
+  "boxStyle": "rounded",
+  "mermaidCode": "sequenceDiagram\n  autonumber\n  participant p0 as 商户系统\n  participant p1 as 支付宝平台\n  actor p2 as 用户\n  p0->>p1: 状态同步接⼝ (alipay.commerce.logistics.waybill.status.sync)\n  Note over p1: scene=CAR_SHIPPING_ORDER_ALIPAY_data 包含订单状态信息<br/>撒大叔大叔的\n  p1-->>p0: 同步成功\n  Note over p0,p2: 核⼼状态节点：\n  Note over p0: CS_TOPICK_UP 待接单\n  p0->>p1: 同步：已接单 (CS TAKE _  ORDER) 含司机姓名、电话、⻋架号\n  p1->>p2: 推 送：司机已接单，正在赶往取⻋地\n  p0->>p1: 同步：已取⻋ (CS PICKED _ _ 含⻋辆照⽚、VIN 码 UP)\n  p1->>p2: 推 送：司机已取⻋，运输中\n  p0->>p1: 同步：运送 中 (CS _ DELIVERING)\n  p1->>p2: 推 送：⻋辆在运输途中\n  p0->>p1: 同步：已送达 (CS _ ARRIVED)\n  p1->>p2: 推 送：⻋辆已送达⽬的地\n  p0->>p1: 同步：服务完成 (CS SERVICE _ _ COMPLETED)\n  p1->>p2: 推 送：服务完成\n  p0->>p1: 同步：订单完成 (CS _ SUCCESS)\n  p1->>p2: 推 送：订单完成\n"
+}
