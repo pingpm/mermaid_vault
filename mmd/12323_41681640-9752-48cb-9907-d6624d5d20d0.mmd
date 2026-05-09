@@ -11,19 +11,21 @@ flowchart LR
     t_6["流程 4"]
     t_7["Implement Feature"]
     t_8{"判断 3"}
-    t_9["流程 2"]
+    t_9["流程 5"]
+    t_10["流程 2"]
   end
   subgraph lane_2["Review"]
-    t_10["Code Review"]
-    t_11["流程 2"]
+    t_11["Code Review"]
+    t_12["流程 2"]
   end
   t_1 --> t_2
   t_2 --> t_0
   t_0 -->|"Yes"| t_7
-  t_7 --> t_10
-  t_10 --> t_11
-  t_9 --> t_11
+  t_7 --> t_11
+  t_11 --> t_12
+  t_10 --> t_12
   t_3 --> t_4
   t_4 --> t_5
   t_5 --> t_8
   t_6 --> t_8
+  t_8 --> t_12
