@@ -41,8 +41,8 @@
       "label": "Approved?",
       "shape": "decision",
       "order": 2,
-      "x": 460,
-      "y": 54
+      "x": 492.59746835443036,
+      "y": 52.875949367088594
     },
     {
       "id": "task-4",
@@ -85,15 +85,81 @@
       "height": 56
     },
     {
-      "id": "728c7b17-58ce-4d9f-ab41-92dabb1224d3",
-      "laneId": "lane-1",
-      "label": "Process 4",
-      "shape": "process",
+      "id": "6022b716-cc22-43b7-84fe-19ce283aced9",
+      "laneId": "lane-2",
+      "label": "判断 3",
+      "shape": "decision",
+      "order": 2,
+      "x": 1150.2329113924052,
+      "y": 40.7746835443038,
+      "width": 92,
+      "height": 92
+    },
+    {
+      "id": "bb7f45a0-a1e2-43e8-95f2-054a1c18051d",
+      "laneId": "lane-2",
+      "label": "判断 4",
+      "shape": "decision",
       "order": 3,
-      "x": 863.073417721519,
-      "y": 143.58481012658228,
+      "x": 796.1569620253165,
+      "y": 0,
+      "width": 92,
+      "height": 92
+    },
+    {
+      "id": "ff662e04-1094-4871-b292-714dda1757e2",
+      "laneId": "lane-2",
+      "label": "开始/结束 5",
+      "shape": "terminator",
+      "order": 4,
+      "x": 1372,
+      "y": 100.36455696202529,
       "width": 156,
       "height": 56
+    },
+    {
+      "id": "c7d18406-8048-401f-b1a3-0bd4af18f3a4",
+      "laneId": "lane-3",
+      "label": "流程 3",
+      "shape": "process",
+      "order": 2,
+      "x": 1185.6759493670886,
+      "y": 74.00506329113921,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "7783f131-ff0c-42df-95d9-7feb10963f02",
+      "laneId": "lane-1",
+      "label": "判断 4",
+      "shape": "decision",
+      "order": 3,
+      "x": 1070.4253164556962,
+      "y": 77.25063291139242,
+      "width": 92,
+      "height": 92
+    },
+    {
+      "id": "c596ee66-8385-481a-a9a8-9faf577dc3bc",
+      "laneId": "lane-1",
+      "label": "判断 5",
+      "shape": "decision",
+      "order": 4,
+      "x": 1307.6000000000001,
+      "y": 85.11898734177214,
+      "width": 92,
+      "height": 92
+    },
+    {
+      "id": "178002bd-1309-45b1-8185-7d757acf83d9",
+      "laneId": "lane-2",
+      "label": "判断 6",
+      "shape": "decision",
+      "order": 5,
+      "x": 670.2632911392406,
+      "y": 61.00759493670887,
+      "width": 92,
+      "height": 92
     }
   ],
   "connections": [
@@ -147,5 +213,5 @@
   "swTheme": "default",
   "swLaneGap": 24,
   "swLaneColorOverrides": {},
-  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements\"]\n    t_3[\"Process 4\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_4[\"Implement Feature\"]\n    t_5[\"流程 2\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_6[\"Code Review\"]\n    t_7[\"流程 2\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 -->|\"Yes\"| t_4\n  t_4 --> t_6\n  t_6 --> t_7\n  t_5 --> t_7\n"
+  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements\"]\n    t_3{\"判断 4\"}\n    t_4{\"判断 5\"}\n  end\n  subgraph lane_1[\"Development\"]\n    t_5{\"判断 4\"}\n    t_6{\"判断 3\"}\n    t_7{\"判断 6\"}\n    t_8[\"Implement Feature\"]\n    t_9([\"开始/结束 5\"])\n    t_10[\"流程 2\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_11[\"Code Review\"]\n    t_12[\"流程 3\"]\n    t_13[\"流程 2\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 -->|\"Yes\"| t_8\n  t_8 --> t_11\n  t_11 --> t_13\n  t_10 --> t_13\n"
 }
