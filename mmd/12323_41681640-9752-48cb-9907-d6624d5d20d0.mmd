@@ -3,18 +3,24 @@ flowchart LR
     t_0{"Approved?"}
     t_1(["Start"])
     t_2["Define Requirements"]
+    t_3{"判断 4"}
+    t_4{"判断 5"}
   end
   subgraph lane_1["Development"]
-    t_3["Implement Feature"]
-    t_4["流程 2"]
+    t_5{"判断 4"}
+    t_6{"判断 3"}
+    t_7["Implement Feature"]
+    t_8(["开始/结束 5"])
+    t_9["流程 2"]
   end
   subgraph lane_2["Review"]
-    t_5["Code Review"]
-    t_6["流程 2"]
+    t_10["Code Review"]
+    t_11["流程 3"]
+    t_12["流程 2"]
   end
   t_1 --> t_2
   t_2 --> t_0
-  t_0 -->|"Yes"| t_3
-  t_3 --> t_5
-  t_5 --> t_6
-  t_4 --> t_6
+  t_0 -->|"Yes"| t_7
+  t_7 --> t_10
+  t_10 --> t_12
+  t_9 --> t_12
