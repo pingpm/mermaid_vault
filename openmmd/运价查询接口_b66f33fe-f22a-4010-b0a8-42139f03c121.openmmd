@@ -15,7 +15,7 @@
   ],
   "messages": [
     {
-      "id": "a21a4e77-b836-4ddb-8645-ffacdd331f6c",
+      "id": "14d77c0c-fc69-4fb3-9c91-81d0dc3d3447",
       "from": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "请求查询",
@@ -23,7 +23,7 @@
       "order": 0
     },
     {
-      "id": "8cf0a895-aaa4-4370-a22a-87767a54f29f",
+      "id": "2ead5191-4ad9-41bd-b15f-523078e31a40",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "label": "Response：available=false",
@@ -31,7 +31,7 @@
       "order": 1
     },
     {
-      "id": "ed2fae8b-3602-4027-bf8e-3b224983a186",
+      "id": "b0199edf-3fca-474b-9c71-74cd8eb7aad0",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "查询大板价格库",
@@ -39,7 +39,7 @@
       "order": 2
     },
     {
-      "id": "c7d7bf44-e335-4e4e-9de9-c67415db5d6a",
+      "id": "6366dba3-538a-46c2-9f6d-e1b2c126a3e1",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "查询小板价格库",
@@ -47,7 +47,7 @@
       "order": 3
     },
     {
-      "id": "f155eecc-46ca-4523-8303-99219ddfe6a3",
+      "id": "7ff20542-a0bb-4a00-9f9c-d81b0b975f24",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "加价规则",
@@ -55,7 +55,7 @@
       "order": 4
     },
     {
-      "id": "accda967-68ec-4110-b8f1-5422ace8ac70",
+      "id": "6d647e46-03ce-4e05-824b-24b7f3e9876b",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "label": "Response：available=false",
@@ -63,7 +63,7 @@
       "order": 5
     },
     {
-      "id": "9aa75f12-88fe-4135-b8a8-fcc05acc6650",
+      "id": "340cb59d-4b14-432f-a945-2f8ef154aa16",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "label": "Response：available=true",
@@ -73,7 +73,7 @@
   ],
   "notes": [
     {
-      "id": "280481a6-8b32-4fac-bb70-e95252ea3849",
+      "id": "d1e7b62d-4e73-453b-a2ad-9bf8ba346bd5",
       "text": "关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id",
       "position": "over",
       "lifelineIds": [
@@ -84,13 +84,18 @@
   ],
   "fragments": [
     {
-      "id": "d601eb52-d282-4310-8d8c-e4b6df06eb4c",
+      "id": "9ac2a24f-84c4-4179-9ccc-097a293d9347",
       "kind": "alt",
       "label": "有大板或小板价格",
       "startOrder": 5,
       "endOrder": 6,
       "altFirstEndOrder": 5,
       "branches": [
+        {
+          "condition": "vehicle_type!=MOTORCYCLE",
+          "startOrder": 6,
+          "endOrder": 6
+        },
         {
           "condition": "没有大板或小板价格",
           "startOrder": 6,
@@ -99,16 +104,16 @@
       ]
     },
     {
-      "id": "c630f803-617d-4140-94bb-dfb28ee66f18",
+      "id": "3ca838e0-d17e-4275-8042-691c469b45a6",
       "kind": "alt",
       "label": "vehicle_type=MOTORCYCLE",
       "startOrder": 1,
       "endOrder": 6,
-      "altFirstEndOrder": 5,
+      "altFirstEndOrder": 1,
       "branches": [
         {
-          "condition": "vehicle_type!=MOTORCYCLE",
-          "startOrder": 6,
+          "condition": "vehicle_type！=MOTORCYCLE",
+          "startOrder": 2,
           "endOrder": 6
         }
       ]
@@ -119,5 +124,5 @@
   "gaps": {},
   "lifelineStyle": "dashed",
   "boxStyle": "rounded",
-  "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 支付宝\n  participant p1 as 运车管家\n  p0->>p1: 请求查询\n  Note over p0: 关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id\n  alt vehicle_type=MOTORCYCLE\n  p1-->>p0: Response：available=false\n  p1->>p1: 查询大板价格库\n  p1->>p1: 查询小板价格库\n  p1->>p1: 加价规则\n  alt 有大板或小板价格\n  p1-->>p0: Response：available=false\n  else vehicle_type!=MOTORCYCLE\n  else 没有大板或小板价格\n  p1->>p0: Response：available=true\n  end\n  end\n"
+  "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 支付宝\n  participant p1 as 运车管家\n  p0->>p1: 请求查询\n  Note over p0: 关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id\n  alt vehicle_type=MOTORCYCLE\n  p1-->>p0: Response：available=false\n  else vehicle_type！=MOTORCYCLE\n  p1->>p1: 查询大板价格库\n  p1->>p1: 查询小板价格库\n  p1->>p1: 加价规则\n  alt 有大板或小板价格\n  p1-->>p0: Response：available=false\n  else vehicle_type!=MOTORCYCLE\n  else 没有大板或小板价格\n  p1->>p0: Response：available=true\n  end\n  end\n"
 }
