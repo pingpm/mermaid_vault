@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1778488298823,
+  "updatedAt": 1778488856517,
   "projects": [
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778488228073
+      "updatedAt": 1778488782021
     },
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -22,8 +22,8 @@
       "name": "运价查询接口",
       "type": "sequence",
       "createdAt": 1778483764348,
-      "updatedAt": 1778488228059,
-      "version": 6
+      "updatedAt": 1778488782003,
+      "version": 7
     },
     {
       "id": "b3042cb3-08c1-43b5-b440-32d3f6443821",
