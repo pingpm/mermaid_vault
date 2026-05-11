@@ -1,0 +1,65 @@
+{
+  "lifelines": [
+    {
+      "id": "user",
+      "label": "User",
+      "kind": "actor",
+      "order": 0
+    },
+    {
+      "id": "system",
+      "label": "System",
+      "kind": "entity",
+      "order": 1
+    }
+  ],
+  "messages": [
+    {
+      "id": "2ab0ab4a-f2e9-4997-9143-4bfe4e953b7c",
+      "from": "user",
+      "to": "system",
+      "label": "Request",
+      "type": "sync",
+      "order": 0
+    },
+    {
+      "id": "7f604fc6-ead1-4025-b0c3-487e7003e9c9",
+      "from": "system",
+      "to": "user",
+      "label": "Response",
+      "type": "return",
+      "order": 1
+    },
+    {
+      "id": "8fcc3877-2729-4e6b-aa19-0106a1dd43ff",
+      "from": "user",
+      "to": "system",
+      "label": "Message",
+      "type": "sync",
+      "order": 2
+    }
+  ],
+  "notes": [],
+  "fragments": [
+    {
+      "kind": "alt",
+      "label": "1",
+      "startOrder": 0,
+      "endOrder": 2,
+      "branches": [
+        {
+          "condition": "2",
+          "startOrder": 1,
+          "endOrder": 2
+        }
+      ],
+      "id": "4ab5f811-f1b4-4555-8be2-dd754169452c"
+    }
+  ],
+  "links": [],
+  "colWidths": {},
+  "gaps": {},
+  "lifelineStyle": "dashed",
+  "boxStyle": "rounded",
+  "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as User\n  participant p1 as System\n  alt 1\n  p0->>p1: Request\n  else 2\n  p1-->>p0: Response\n  p0->>p1: Message\n  end\n"
+}
