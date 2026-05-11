@@ -15,7 +15,7 @@
   ],
   "messages": [
     {
-      "id": "702c121c-a0cb-46d4-b9da-aaaf20fc0260",
+      "id": "c8a4d866-bd4c-4a64-8454-1b91dd31b718",
       "from": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "请求查询",
@@ -23,7 +23,7 @@
       "order": 0
     },
     {
-      "id": "010b9477-5617-4b69-a170-d9c6f8f37e17",
+      "id": "9d19b5c6-b054-407e-b5ae-bd5d9ff303e0",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "label": "Response：available=false",
@@ -31,7 +31,7 @@
       "order": 1
     },
     {
-      "id": "c54e865a-2108-4083-b15f-6f950dbddeb6",
+      "id": "18476ea6-1320-4910-ba86-80ece5700912",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "查询大板价格库",
@@ -39,7 +39,7 @@
       "order": 2
     },
     {
-      "id": "5ecc1ec9-530d-4fc1-816e-023c75aebd69",
+      "id": "a31c1c14-a26a-4e78-8957-418143886ac3",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "查询小板价格库",
@@ -47,7 +47,7 @@
       "order": 3
     },
     {
-      "id": "03c8ac9c-efe8-4ee3-9ca6-67f99d2c53f5",
+      "id": "03da9cf2-5615-439e-b5d6-b39772f6625a",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "加价规则",
@@ -55,7 +55,7 @@
       "order": 4
     },
     {
-      "id": "d435596e-eff7-4523-8996-9815078d1cc7",
+      "id": "6042a72c-7a88-478d-b0ec-3cfcd96ccd2f",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "记录查价记录",
@@ -63,7 +63,7 @@
       "order": 5
     },
     {
-      "id": "28f446e7-b604-43dd-a087-2bb38d980778",
+      "id": "90ae9284-3736-4e12-a4b7-dab895ada723",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "label": "不返回价格数据available=false",
@@ -71,7 +71,7 @@
       "order": 6
     },
     {
-      "id": "948b195a-0fed-4dd2-a57e-7912c7d47bc8",
+      "id": "0e2cd477-5eee-4d01-b772-d05e16bbf7cc",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "label": "返回价格数据",
@@ -81,7 +81,7 @@
   ],
   "notes": [
     {
-      "id": "55f80eff-2111-458c-bc4c-a7c8e9b96ac7",
+      "id": "edf4f3cb-d5b5-4353-ab84-93894ae36338",
       "text": "，关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id",
       "position": "over",
       "lifelineIds": [
@@ -90,7 +90,7 @@
       "afterOrder": 0
     },
     {
-      "id": "e00c53e3-b785-4a3c-a967-f07cc0316f0b",
+      "id": "0c09d2c1-3348-420e-8b19-88c2e557a90c",
       "text": "使用起始地+目的地查询，根据取价规则支持中转线路",
       "position": "over",
       "lifelineIds": [
@@ -99,7 +99,7 @@
       "afterOrder": 2
     },
     {
-      "id": "283cf139-6d28-4cca-aee7-61110af3d3ec",
+      "id": "7295c6d1-e42c-4692-bbeb-382c04f992e5",
       "text": "根据报价规则设置，决定是否返回小板线路价格",
       "position": "over",
       "lifelineIds": [
@@ -108,7 +108,7 @@
       "afterOrder": 3
     },
     {
-      "id": "82dd6379-8b4e-4af6-97aa-4248bae4ecdc",
+      "id": "d8b0f795-685b-4ea7-8152-e977a0365026",
       "text": "使用现有的加价规则",
       "position": "over",
       "lifelineIds": [
@@ -117,7 +117,7 @@
       "afterOrder": 4
     },
     {
-      "id": "c7be0d4a-e25c-411b-a87c-47705b3df154",
+      "id": "2b3fe4be-2692-46ba-b67a-c0f22f28be11",
       "text": "available=true，大板价格（若有）、小板价格（若有），price_id=查价记录单号、mileage_fee=运输价格，order_fee=运输价格，before_discount _fee=运输价格",
       "position": "over",
       "lifelineIds": [
@@ -128,7 +128,7 @@
   ],
   "fragments": [
     {
-      "id": "db46a53d-a82e-438b-b045-9f5449416d92",
+      "id": "acff2395-d530-4678-83e0-bfdc784900c2",
       "kind": "alt",
       "label": "没有大板或小板价格",
       "startOrder": 6,
@@ -142,7 +142,7 @@
       ]
     },
     {
-      "id": "34ee8f06-71c4-4811-92ca-6501b96c5ed5",
+      "id": "a1bebb02-be0b-48dd-9891-b4c287f3ec76",
       "kind": "alt",
       "label": "vehicle_type=MOTORCYCLE",
       "startOrder": 1,
