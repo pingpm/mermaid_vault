@@ -3,16 +3,21 @@ sequenceDiagram
   actor p0 as 支付宝
   participant p1 as 运车管家
   p0->>p1: 请求查询
-  Note over p0: 关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id
+  Note over p0: ，关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id
   alt vehicle_type=MOTORCYCLE
   p1-->>p0: Response：available=false
   else vehicle_type！=MOTORCYCLE
   p1->>p1: 查询大板价格库
+  Note over p1: 使用起始地+目的地查询，根据取价规则支持中转线路
   p1->>p1: 查询小板价格库
+  Note over p1: 根据报价规则设置，决定是否返回小板线路价格
   p1->>p1: 加价规则
-  alt 有大板或小板价格
-  p1-->>p0: Response：available=false
-  else 没有大板或小板价格
-  p1->>p0: Response：available=true
+  Note over p1: 使用现有的加价规则
+  p1->>p1: 记录查价记录
+  alt 没有大板或小板价格
+  p1-->>p0: 不返回价格数据available=false
+  Note over p1: available=true，大板价格（若有）、小板价格（若有），price_id=查价记录单号、mileage_fee=运输价格，order_fee=运输价格，before_discount _fee=运输价格
   end
+  else 有大板和小板价格
+  p1-->>p0: 返回价格数据
   end

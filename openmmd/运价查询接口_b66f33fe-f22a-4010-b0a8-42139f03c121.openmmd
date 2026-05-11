@@ -15,7 +15,7 @@
   ],
   "messages": [
     {
-      "id": "35c29736-c907-4298-9eed-77f70190b1f2",
+      "id": "8cf36d22-e4da-495e-afec-ccf4dbd48d01",
       "from": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "请求查询",
@@ -23,7 +23,7 @@
       "order": 0
     },
     {
-      "id": "ea649ce9-6ed4-415a-9fe5-16299abc34a4",
+      "id": "219c2456-02c4-4602-a72b-9ebaa4a8b73e",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "label": "Response：available=false",
@@ -31,7 +31,7 @@
       "order": 1
     },
     {
-      "id": "a5765d8e-e2b6-4384-844c-377393e5b08d",
+      "id": "313d35c1-3275-4c2c-9e86-a56133d6a53b",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "查询大板价格库",
@@ -39,7 +39,7 @@
       "order": 2
     },
     {
-      "id": "ea563755-c208-4040-9fd4-0240a39a4910",
+      "id": "3ac791d2-5c01-43dc-8f66-25ccc01bd212",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "查询小板价格库",
@@ -47,7 +47,7 @@
       "order": 3
     },
     {
-      "id": "ebd2f7a4-9e87-43a2-8c9a-b691cf091c18",
+      "id": "2151e32b-207f-4f49-8cf2-f94f7bb1ebdd",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "加价规则",
@@ -55,59 +55,102 @@
       "order": 4
     },
     {
-      "id": "41381cdd-4c0a-4347-8f98-830ad3c49d37",
+      "id": "e56193f7-0e74-44b9-9b49-f5b33abc6be9",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
-      "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
-      "label": "Response：available=false",
-      "type": "return",
+      "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
+      "label": "记录查价记录",
+      "type": "sync",
       "order": 5
     },
     {
-      "id": "15e95888-3798-40fc-bf49-1b59049076f5",
+      "id": "73d2a201-b294-4fed-b345-1668eeaddfe3",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
-      "label": "Response：available=true",
-      "type": "sync",
+      "label": "不返回价格数据available=false",
+      "type": "return",
       "order": 6
+    },
+    {
+      "id": "f2022d38-cb4f-4f8c-a442-e0332bc2fb95",
+      "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
+      "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
+      "label": "返回价格数据",
+      "type": "return",
+      "order": 7
     }
   ],
   "notes": [
     {
-      "id": "6c07a847-9e85-4f67-aa5e-0e602fb1c01b",
-      "text": "关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id",
+      "id": "33396edc-16a3-4895-8a74-d85064ce96a7",
+      "text": "，关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id",
       "position": "over",
       "lifelineIds": [
         "95aa9f4f-03e0-450d-94ad-6ea866fc41b6"
       ],
       "afterOrder": 0
+    },
+    {
+      "id": "4c93f8cf-bf5c-4858-9830-e8ef9da1a955",
+      "text": "使用起始地+目的地查询，根据取价规则支持中转线路",
+      "position": "over",
+      "lifelineIds": [
+        "2e48c8fb-a9b0-4d58-a558-790f4e57637c"
+      ],
+      "afterOrder": 2
+    },
+    {
+      "id": "ba8747c1-f3ad-4bf3-8d16-a0322592f599",
+      "text": "根据报价规则设置，决定是否返回小板线路价格",
+      "position": "over",
+      "lifelineIds": [
+        "2e48c8fb-a9b0-4d58-a558-790f4e57637c"
+      ],
+      "afterOrder": 3
+    },
+    {
+      "id": "c3e3ad70-5888-49d8-a460-a4e4435d41ec",
+      "text": "使用现有的加价规则",
+      "position": "over",
+      "lifelineIds": [
+        "2e48c8fb-a9b0-4d58-a558-790f4e57637c"
+      ],
+      "afterOrder": 4
+    },
+    {
+      "id": "d50a4707-4349-4a33-b45b-daba0aefb522",
+      "text": "available=true，大板价格（若有）、小板价格（若有），price_id=查价记录单号、mileage_fee=运输价格，order_fee=运输价格，before_discount _fee=运输价格",
+      "position": "over",
+      "lifelineIds": [
+        "2e48c8fb-a9b0-4d58-a558-790f4e57637c"
+      ],
+      "afterOrder": 6
     }
   ],
   "fragments": [
     {
-      "id": "f90f67d2-b1b6-4d02-b45f-37389471027b",
+      "id": "46d09120-1652-46c2-92c5-01610e561bae",
       "kind": "alt",
-      "label": "有大板或小板价格",
-      "startOrder": 5,
+      "label": "没有大板或小板价格",
+      "startOrder": 6,
       "endOrder": 6,
-      "branches": [
-        {
-          "condition": "没有大板或小板价格",
-          "startOrder": 6,
-          "endOrder": 6
-        }
-      ]
+      "branches": []
     },
     {
-      "id": "3a866d8e-f3dd-4a06-a0b6-99481b774ced",
+      "id": "e672632a-f787-432f-a00b-dedc57c56ff4",
       "kind": "alt",
       "label": "vehicle_type=MOTORCYCLE",
       "startOrder": 1,
-      "endOrder": 6,
+      "endOrder": 7,
       "branches": [
         {
           "condition": "vehicle_type！=MOTORCYCLE",
           "startOrder": 2,
-          "endOrder": 6
+          "endOrder": 2
+        },
+        {
+          "condition": "有大板和小板价格",
+          "startOrder": 7,
+          "endOrder": 7
         }
       ]
     }
@@ -119,5 +162,5 @@
   },
   "lifelineStyle": "dashed",
   "boxStyle": "rounded",
-  "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 支付宝\n  participant p1 as 运车管家\n  p0->>p1: 请求查询\n  Note over p0: 关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id\n  alt vehicle_type=MOTORCYCLE\n  p1-->>p0: Response：available=false\n  else vehicle_type！=MOTORCYCLE\n  p1->>p1: 查询大板价格库\n  p1->>p1: 查询小板价格库\n  p1->>p1: 加价规则\n  alt 有大板或小板价格\n  p1-->>p0: Response：available=false\n  else 没有大板或小板价格\n  p1->>p0: Response：available=true\n  end\n  end\n"
+  "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 支付宝\n  participant p1 as 运车管家\n  p0->>p1: 请求查询\n  Note over p0: ，关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id\n  alt vehicle_type=MOTORCYCLE\n  p1-->>p0: Response：available=false\n  else vehicle_type！=MOTORCYCLE\n  p1->>p1: 查询大板价格库\n  Note over p1: 使用起始地+目的地查询，根据取价规则支持中转线路\n  p1->>p1: 查询小板价格库\n  Note over p1: 根据报价规则设置，决定是否返回小板线路价格\n  p1->>p1: 加价规则\n  Note over p1: 使用现有的加价规则\n  p1->>p1: 记录查价记录\n  alt 没有大板或小板价格\n  p1-->>p0: 不返回价格数据available=false\n  Note over p1: available=true，大板价格（若有）、小板价格（若有），price_id=查价记录单号、mileage_fee=运输价格，order_fee=运输价格，before_discount _fee=运输价格\n  end\n  else 有大板和小板价格\n  p1-->>p0: 返回价格数据\n  end\n"
 }
