@@ -1,6 +1,100 @@
 {
-  "nodes": [],
-  "edges": [],
-  "mermaidCode": "flowchart TD\n",
-  "flowEdgeStyle": "smooth"
+  "lifelines": [
+    {
+      "id": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
+      "label": "支付宝",
+      "kind": "actor",
+      "order": 0
+    },
+    {
+      "id": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
+      "label": "运车管家",
+      "kind": "entity",
+      "order": 1
+    }
+  ],
+  "messages": [
+    {
+      "id": "62f426b4-78be-41ad-ad94-8b5bc36e15b7",
+      "from": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
+      "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
+      "label": "请求查询",
+      "type": "sync",
+      "order": 0
+    },
+    {
+      "id": "ccce4c29-47c5-4589-9e86-0b63d1d7a870",
+      "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
+      "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
+      "label": "Response：available=false",
+      "type": "return",
+      "order": 1
+    },
+    {
+      "id": "36cd415e-ab1c-4926-8b4b-1ab1346b3015",
+      "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
+      "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
+      "label": "查询大板价格库",
+      "type": "sync",
+      "order": 2
+    },
+    {
+      "id": "a64e3dbe-758f-40dd-9cc2-116ebf891d67",
+      "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
+      "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
+      "label": "查询小板价格库",
+      "type": "sync",
+      "order": 3
+    },
+    {
+      "id": "32419788-c860-45b9-b733-082599621ac6",
+      "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
+      "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
+      "label": "加价规则",
+      "type": "sync",
+      "order": 4
+    },
+    {
+      "id": "58ac4b39-1114-4250-86bd-d50d7823c103",
+      "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
+      "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
+      "label": "Response：available=false",
+      "type": "return",
+      "order": 5
+    }
+  ],
+  "notes": [
+    {
+      "id": "849d5d13-8b36-4d3f-98f9-79826e611c33",
+      "text": "关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id",
+      "position": "over",
+      "lifelineIds": [
+        "95aa9f4f-03e0-450d-94ad-6ea866fc41b6"
+      ],
+      "afterOrder": 0
+    }
+  ],
+  "fragments": [
+    {
+      "id": "4b86cef3-4845-4f7b-9e55-8f4c66223219",
+      "kind": "alt",
+      "label": "vehicle_type=MOTORCYCLE",
+      "startOrder": 1,
+      "endOrder": 4,
+      "altFirstEndOrder": 1,
+      "branches": [
+        {
+          "condition": "vehicle_type!=MOTORCYCLE",
+          "startOrder": 2,
+          "endOrder": 4
+        }
+      ]
+    }
+  ],
+  "links": [],
+  "colWidths": {},
+  "gaps": {},
+  "lifelineStyle": "dashed",
+  "boxStyle": "rounded",
+  "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 支付宝\n  participant p1 as 运车管家\n  p0->>p1: 请求查询\n  Note over p0: 关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id\n  alt vehicle_type=MOTORCYCLE\n  p1-->>p0: Response：available=false\n  else vehicle_type!=MOTORCYCLE\n  p1->>p1: 查询大板价格库\n  p1->>p1: 查询小板价格库\n  p1->>p1: 加价规则\n  end\n  p1-->>p0: Response：available=false\n"
 }
