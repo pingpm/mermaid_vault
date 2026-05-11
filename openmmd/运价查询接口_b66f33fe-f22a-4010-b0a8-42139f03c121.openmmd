@@ -15,7 +15,7 @@
   ],
   "messages": [
     {
-      "id": "62f426b4-78be-41ad-ad94-8b5bc36e15b7",
+      "id": "e273ec22-4beb-4c64-bce7-f108694f977a",
       "from": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "请求查询",
@@ -23,7 +23,7 @@
       "order": 0
     },
     {
-      "id": "ccce4c29-47c5-4589-9e86-0b63d1d7a870",
+      "id": "d0d9c45c-19cc-449e-8cfb-4a089a0a4277",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "label": "Response：available=false",
@@ -31,7 +31,7 @@
       "order": 1
     },
     {
-      "id": "36cd415e-ab1c-4926-8b4b-1ab1346b3015",
+      "id": "507ea9e8-b85f-4335-8972-bd02a7bebb1b",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "查询大板价格库",
@@ -39,7 +39,7 @@
       "order": 2
     },
     {
-      "id": "a64e3dbe-758f-40dd-9cc2-116ebf891d67",
+      "id": "ab620da8-5774-4326-8c1a-0838d53478af",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "查询小板价格库",
@@ -47,7 +47,7 @@
       "order": 3
     },
     {
-      "id": "32419788-c860-45b9-b733-082599621ac6",
+      "id": "88e0a2d7-ee91-4c55-b3b5-275abca135c8",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "加价规则",
@@ -55,17 +55,25 @@
       "order": 4
     },
     {
-      "id": "58ac4b39-1114-4250-86bd-d50d7823c103",
+      "id": "256ddcb9-6929-4eb6-9c27-ec62af95daec",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "label": "Response：available=false",
       "type": "return",
       "order": 5
+    },
+    {
+      "id": "39e3d004-dea8-40c0-8c8d-d8abe88ee47d",
+      "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
+      "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
+      "label": "Message",
+      "type": "sync",
+      "order": 6
     }
   ],
   "notes": [
     {
-      "id": "849d5d13-8b36-4d3f-98f9-79826e611c33",
+      "id": "44877b60-9caa-4081-bdb7-451614d16dfa",
       "text": "关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id",
       "position": "over",
       "lifelineIds": [
@@ -76,10 +84,10 @@
   ],
   "fragments": [
     {
-      "id": "4b86cef3-4845-4f7b-9e55-8f4c66223219",
+      "id": "d655c163-ba2f-4e83-bfac-fdea5a68fc87",
       "kind": "alt",
-      "label": "vehicle_type=MOTORCYCLE",
-      "startOrder": 1,
+      "label": "有大板或小板价格",
+      "startOrder": 2,
       "endOrder": 4,
       "altFirstEndOrder": 1,
       "branches": [
@@ -89,6 +97,21 @@
           "endOrder": 4
         }
       ]
+    },
+    {
+      "id": "b09f0b98-bbb6-49c9-b235-86da14887c15",
+      "kind": "alt",
+      "label": "vehicle_type=MOTORCYCLE",
+      "startOrder": 1,
+      "endOrder": 5,
+      "altFirstEndOrder": 4,
+      "branches": [
+        {
+          "condition": "没有大板或小板价格",
+          "startOrder": 5,
+          "endOrder": 5
+        }
+      ]
     }
   ],
   "links": [],
@@ -96,5 +119,5 @@
   "gaps": {},
   "lifelineStyle": "dashed",
   "boxStyle": "rounded",
-  "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 支付宝\n  participant p1 as 运车管家\n  p0->>p1: 请求查询\n  Note over p0: 关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id\n  alt vehicle_type=MOTORCYCLE\n  p1-->>p0: Response：available=false\n  else vehicle_type!=MOTORCYCLE\n  p1->>p1: 查询大板价格库\n  p1->>p1: 查询小板价格库\n  p1->>p1: 加价规则\n  end\n  p1-->>p0: Response：available=false\n"
+  "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 支付宝\n  participant p1 as 运车管家\n  p0->>p1: 请求查询\n  Note over p0: 关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id\n  alt vehicle_type=MOTORCYCLE\n  p1-->>p0: Response：available=false\n  alt 有大板或小板价格\n  else vehicle_type!=MOTORCYCLE\n  p1->>p1: 查询大板价格库\n  p1->>p1: 查询小板价格库\n  p1->>p1: 加价规则\n  end\n  else 没有大板或小板价格\n  p1-->>p0: Response：available=false\n  end\n  p1->>p0: Message\n"
 }
