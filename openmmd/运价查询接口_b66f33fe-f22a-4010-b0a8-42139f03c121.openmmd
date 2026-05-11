@@ -15,7 +15,7 @@
   ],
   "messages": [
     {
-      "id": "f1e46bde-0425-4be6-b2e5-3b6ba7315e28",
+      "id": "91621693-41f2-4f62-ade5-567d6b74692b",
       "from": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "请求查询",
@@ -23,7 +23,7 @@
       "order": 0
     },
     {
-      "id": "975c37e0-5e97-445b-826d-0aee5d8d4200",
+      "id": "4b4a62e7-093f-4f77-bd4f-c8429ee05d86",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "label": "Response：available=false",
@@ -31,7 +31,7 @@
       "order": 1
     },
     {
-      "id": "2e75cac9-c5c1-4471-aa3c-8699a8a33136",
+      "id": "59d214a6-ca12-4bc6-8598-c8c5e7b37e15",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "查询大板价格库",
@@ -39,7 +39,7 @@
       "order": 2
     },
     {
-      "id": "20a95f00-70b2-4bce-bcba-45ffdf3187e9",
+      "id": "20743eba-508c-430c-878b-09a23222f5d3",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "查询小板价格库",
@@ -47,7 +47,7 @@
       "order": 3
     },
     {
-      "id": "24f019dc-5c85-4065-98ca-c99c0185218a",
+      "id": "5d0b4073-0826-46f1-93d3-67c3253a2d52",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "label": "加价规则",
@@ -55,7 +55,7 @@
       "order": 4
     },
     {
-      "id": "4d6ce2c7-90ef-4437-bef7-f7e7f2fbf59d",
+      "id": "3a846b96-83bf-4162-b02a-ffad67d4987a",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "label": "Response：available=false",
@@ -63,7 +63,7 @@
       "order": 5
     },
     {
-      "id": "f241b4e4-971b-41d7-9cab-5e06c45e1d47",
+      "id": "a16615ec-26fc-4fd2-a408-c035fbdbd903",
       "from": "2e48c8fb-a9b0-4d58-a558-790f4e57637c",
       "to": "95aa9f4f-03e0-450d-94ad-6ea866fc41b6",
       "label": "Response：available=true",
@@ -73,7 +73,7 @@
   ],
   "notes": [
     {
-      "id": "aa574d3b-0eb0-437b-9fc9-a6b4eb2e4fd6",
+      "id": "b02b0b3f-b564-46ec-8426-ed4714393fae",
       "text": "关键参数：sender_address、receiver_address、vehicle_type、creator_phone、user_id、open_id",
       "position": "over",
       "lifelineIds": [
@@ -84,7 +84,7 @@
   ],
   "fragments": [
     {
-      "id": "a78d5ed3-5f27-4bff-95c9-5152a5d3faeb",
+      "id": "f1526761-a5fc-413b-a804-62b9131220b1",
       "kind": "alt",
       "label": "有大板或小板价格",
       "startOrder": 5,
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "id": "9b487194-a855-4e3e-8eb6-8e4a2064ee8a",
+      "id": "6fb55705-1cd0-4bfa-a80a-7a15cfaf25f6",
       "kind": "alt",
       "label": "vehicle_type=MOTORCYCLE",
       "startOrder": 1,
