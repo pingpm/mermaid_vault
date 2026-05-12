@@ -8,11 +8,13 @@
         "y": 50
       },
       "data": {
-        "label": "Start"
+        "label": "Start",
+        "width": 100,
+        "height": 40
       },
       "measured": {
-        "width": 140,
-        "height": 52
+        "width": 100,
+        "height": 40
       }
     },
     {
@@ -23,13 +25,14 @@
         "y": 150
       },
       "data": {
-        "label": "Process"
+        "label": "Process",
+        "width": 100,
+        "height": 40
       },
       "measured": {
-        "width": 140,
-        "height": 52
-      },
-      "selected": true
+        "width": 100,
+        "height": 40
+      }
     },
     {
       "id": "8c6533b4-1491-42b6-8429-e5650ae68c24",
@@ -40,12 +43,12 @@
       },
       "data": {
         "label": "Process 3",
-        "width": 140,
-        "height": 52
+        "width": 100,
+        "height": 40
       },
       "measured": {
-        "width": 140,
-        "height": 52
+        "width": 100,
+        "height": 40
       }
     },
     {
@@ -57,14 +60,13 @@
       },
       "data": {
         "label": "Rect 4",
-        "width": 140,
-        "height": 52
+        "width": 100,
+        "height": 40
       },
       "measured": {
-        "width": 140,
-        "height": 52
-      },
-      "selected": false
+        "width": 100,
+        "height": 40
+      }
     },
     {
       "id": "e01af272-47a0-41ac-acff-df6d8777e188",
@@ -75,31 +77,66 @@
       },
       "data": {
         "label": "Decision 5",
-        "width": 120,
-        "height": 70
+        "width": 141,
+        "height": 67
       },
       "measured": {
-        "width": 120,
-        "height": 70
+        "width": 141,
+        "height": 67
+      }
+    },
+    {
+      "id": "f29fc584-bcde-434a-abf3-083829181fbd",
+      "type": "flow-process",
+      "position": {
+        "x": 716,
+        "y": 279
       },
-      "selected": false
+      "data": {
+        "label": "Process 6",
+        "width": 100,
+        "height": 40
+      },
+      "measured": {
+        "width": 100,
+        "height": 40
+      }
+    },
+    {
+      "id": "4d611947-662d-4947-896d-a6d85957e1b8",
+      "type": "flow-process",
+      "position": {
+        "x": 965,
+        "y": 291
+      },
+      "data": {
+        "label": "Process 7",
+        "width": 100,
+        "height": 40
+      },
+      "measured": {
+        "width": 100,
+        "height": 40
+      }
     }
   ],
   "edges": [
     {
-      "id": "e-start-1",
+      "id": "e-0",
       "source": "start",
       "target": "1",
       "animated": true,
       "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
+        "strokeDasharray": "6 3",
+        "stroke": "#6366f1"
       },
+      "data": {},
       "markerEnd": {
         "type": "arrowclosed",
         "color": "#6366f1"
       }
     }
   ],
-  "mermaidCode": "graph TD\n  start([\"Start\"])\n  1(\"Process\")\n  8c6533b4-1491-42b6-8429-e5650ae68c24(\"Process 3\")\n  26a173d8-dfef-4098-b775-d7b68b075127[\"Rect 4\"]\n  e01af272-47a0-41ac-acff-df6d8777e188{\"Decision 5\"}\n  start -.-> 1\n"
+  "mermaidCode": "flowchart TD\n  start([\"Start\"])\n  1(\"Process\")\n  8c6533b4-1491-42b6-8429-e5650ae68c24(\"Process 3\")\n  26a173d8-dfef-4098-b775-d7b68b075127[\"Rect 4\"]\n  e01af272-47a0-41ac-acff-df6d8777e188{\"Decision 5\"}\n  f29fc584-bcde-434a-abf3-083829181fbd(\"Process 6\")\n  4d611947-662d-4947-896d-a6d85957e1b8(\"Process 7\")\n  start -.-> 1\n",
+  "flowEdgeStyle": "smooth"
 }
