@@ -41,6 +41,52 @@
         "width": 160,
         "height": 56
       }
+    },
+    {
+      "id": "4e33fcd3-6a12-4caa-a38c-506af4685b20",
+      "type": "flow-process",
+      "position": {
+        "x": 668,
+        "y": 473
+      },
+      "data": {
+        "label": "Process 3",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "measured": {
+        "width": 160,
+        "height": 56
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "7a9e4fb7-a85d-4a37-a8be-fd6af95c9491",
+      "type": "flow-process",
+      "position": {
+        "x": 877,
+        "y": 542
+      },
+      "data": {
+        "label": "Process 4",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "measured": {
+        "width": 160,
+        "height": 56
+      },
+      "selected": true,
+      "dragging": false
     }
   ],
   "edges": [
@@ -57,8 +103,40 @@
         "type": "arrowclosed",
         "color": "#6366f1"
       }
+    },
+    {
+      "source": "4e33fcd3-6a12-4caa-a38c-506af4685b20",
+      "sourceHandle": "bottom",
+      "target": "7a9e4fb7-a85d-4a37-a8be-fd6af95c9491",
+      "targetHandle": "top",
+      "animated": false,
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      },
+      "id": "xy-edge__4e33fcd3-6a12-4caa-a38c-506af4685b20bottom-7a9e4fb7-a85d-4a37-a8be-fd6af95c9491top"
+    },
+    {
+      "source": "1",
+      "sourceHandle": "bottom",
+      "target": "4e33fcd3-6a12-4caa-a38c-506af4685b20",
+      "targetHandle": "top",
+      "animated": false,
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      },
+      "id": "xy-edge__1bottom-4e33fcd3-6a12-4caa-a38c-506af4685b20top"
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_0 --> n_1\n",
+  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4\")\n  n_0 --> n_1\n  n_2 --> n_3\n  n_1 --> n_2\n",
   "flowEdgeStyle": "smooth"
 }
