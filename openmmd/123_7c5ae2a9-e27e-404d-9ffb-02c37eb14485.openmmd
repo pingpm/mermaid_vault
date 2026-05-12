@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "type": "flow-terminator",
+      "position": {
+        "x": 250,
+        "y": 50
+      },
+      "data": {
+        "label": "Start",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "measured": {
+        "width": 160,
+        "height": 56
+      }
+    },
+    {
+      "id": "1",
+      "type": "flow-process",
+      "position": {
+        "x": 1011,
+        "y": 475
+      },
+      "data": {
+        "label": "Process",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "measured": {
+        "width": 160,
+        "height": 56
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "f8ea7a0f-fa83-46c7-8c57-e6c705c1d592",
+      "type": "flow-process",
+      "position": {
+        "x": 561,
+        "y": 584
+      },
+      "data": {
+        "label": "Process 3",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "measured": {
+        "width": 160,
+        "height": 56
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "1",
+      "sourceHandle": "left",
+      "target": "f8ea7a0f-fa83-46c7-8c57-e6c705c1d592",
+      "targetHandle": "left",
+      "animated": false,
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      },
+      "id": "xy-edge__1left-f8ea7a0f-fa83-46c7-8c57-e6c705c1d592left"
+    },
+    {
+      "source": "1",
+      "sourceHandle": "top",
+      "target": "f8ea7a0f-fa83-46c7-8c57-e6c705c1d592",
+      "targetHandle": "top",
+      "animated": false,
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      },
+      "id": "xy-edge__1top-f8ea7a0f-fa83-46c7-8c57-e6c705c1d592top"
+    },
+    {
+      "source": "1",
+      "sourceHandle": "bottom",
+      "target": "f8ea7a0f-fa83-46c7-8c57-e6c705c1d592",
+      "targetHandle": "top",
+      "animated": false,
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      },
+      "id": "xy-edge__1bottom-f8ea7a0f-fa83-46c7-8c57-e6c705c1d592top"
+    }
+  ],
+  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2(\"Process 3\")\n  n_1 --> n_2\n  n_1 --> n_2\n  n_1 --> n_2\n",
+  "flowEdgeStyle": "smooth"
+}
