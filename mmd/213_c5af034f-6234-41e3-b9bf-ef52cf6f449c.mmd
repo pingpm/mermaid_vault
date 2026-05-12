@@ -5,9 +5,10 @@ flowchart TD
   n_3("Process 4")
   n_4("Process 5")
   n_5[/"Document 6"\]
+  n_6("Process 7")
   n_0 --> n_1
-  n_2 --> n_3
   n_4 --> n_3
   n_5 --> n_4
-  n_2 --> n_3
   n_1 --> n_2
+  n_1 --> n_6
+  n_6 --> n_3
