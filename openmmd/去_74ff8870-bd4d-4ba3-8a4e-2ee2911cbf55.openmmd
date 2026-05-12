@@ -1,0 +1,47 @@
+{
+  "nodes": [
+    {
+      "id": "9a133c07-0d4a-4053-8092-9b42e0f203a5",
+      "label": "Main Topic",
+      "parentId": null,
+      "order": 0
+    },
+    {
+      "id": "b2a8d36c-1a74-46bc-bc38-113e336e0e58",
+      "label": "Topic 1",
+      "parentId": "9a133c07-0d4a-4053-8092-9b42e0f203a5",
+      "order": 0
+    },
+    {
+      "id": "9398d706-a9f5-42d6-9707-d1f472257e1d",
+      "label": "Subtopic",
+      "parentId": "b2a8d36c-1a74-46bc-bc38-113e336e0e58",
+      "order": 0
+    },
+    {
+      "id": "ded22ff6-01ae-4120-b271-0c5b1577bf07",
+      "label": "Topic 2",
+      "parentId": "9a133c07-0d4a-4053-8092-9b42e0f203a5",
+      "order": 1
+    },
+    {
+      "id": "645eae4c-c83e-475f-b367-066fc2e711a5",
+      "label": "Topic 3",
+      "parentId": "9a133c07-0d4a-4053-8092-9b42e0f203a5",
+      "order": 2
+    },
+    {
+      "id": "e5de77f6-1b97-4e0a-a03b-f94fc5873b73",
+      "label": "123123",
+      "parentId": "9a133c07-0d4a-4053-8092-9b42e0f203a5",
+      "order": 3
+    }
+  ],
+  "mmLayout": "right",
+  "mmNodeStyle": "plain",
+  "mmBgPattern": "none",
+  "mmEdgeStyle": "curve",
+  "mmTheme": "default",
+  "mmSlotOverrides": {},
+  "mermaidCode": "mindmap\n  Main Topic\n    Topic 1\n      Subtopic\n    Topic 2\n    Topic 3\n    123123\n"
+}
