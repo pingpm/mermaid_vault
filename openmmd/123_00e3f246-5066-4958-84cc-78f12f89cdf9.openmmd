@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "id": "eeeb18f4-a325-4b9e-a748-97cb3fd886c1",
+      "id": "29548003-aa0b-4cc6-9d63-70f4ddff0f6a",
       "type": "flow-terminator",
       "position": {
         "x": 250,
@@ -24,7 +24,7 @@
       }
     },
     {
-      "id": "aacacbc4-b39d-46cb-8c06-0548875782bc",
+      "id": "459fa3e7-b6ae-42d8-9725-f2d8c2b8c160",
       "type": "flow-process",
       "position": {
         "x": 250,
@@ -47,7 +47,7 @@
       }
     },
     {
-      "id": "b50bca81-679c-48c7-9325-bfcfbe207bba",
+      "id": "2075c0cd-85d5-456d-87fd-1991da9965eb",
       "type": "flow-process",
       "position": {
         "x": 446.9723375980566,
@@ -67,22 +67,19 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false,
-      "dragging": false
+      }
     },
     {
-      "id": "a0dedfb6-d6a3-4282-86a0-4ea99e5e054b",
+      "id": "0659dc75-039b-4de1-8393-5a446bfdedd8",
       "type": "flow-process",
       "position": {
-        "x": 790.3347321260594,
+        "x": 699.3347321260594,
         "y": 383.15462694792836
       },
       "data": {
         "label": "Process 4\nasdjklajsdkljsa\nasjdkajskldjsakld",
         "width": 230,
-        "height": 100,
-        "textAlign": "center"
+        "height": 100
       },
       "style": {
         "width": 230,
@@ -93,58 +90,45 @@
       "measured": {
         "width": 230,
         "height": 100
-      },
-      "selected": false,
-      "dragging": false
+      }
     }
   ],
   "edges": [
     {
       "id": "e-0",
-      "source": "eeeb18f4-a325-4b9e-a748-97cb3fd886c1",
-      "target": "aacacbc4-b39d-46cb-8c06-0548875782bc",
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
-      "data": {},
-      "markerEnd": {
-        "type": "arrowclosed",
+      "source": "29548003-aa0b-4cc6-9d63-70f4ddff0f6a",
+      "target": "459fa3e7-b6ae-42d8-9725-f2d8c2b8c160",
+      "data": {
         "color": "#6366f1"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
       }
     },
     {
       "id": "e-1",
-      "source": "aacacbc4-b39d-46cb-8c06-0548875782bc",
-      "target": "b50bca81-679c-48c7-9325-bfcfbe207bba",
-      "style": {
-        "stroke": "#10b981",
-        "strokeWidth": 2,
-        "strokeDasharray": "6 3"
-      },
-      "data": {},
-      "markerEnd": {
-        "type": "arrowclosed",
+      "source": "459fa3e7-b6ae-42d8-9725-f2d8c2b8c160",
+      "target": "2075c0cd-85d5-456d-87fd-1991da9965eb",
+      "data": {
+        "dashed": true,
         "color": "#10b981"
       },
-      "selected": false
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
     },
     {
       "id": "e-2",
-      "source": "b50bca81-679c-48c7-9325-bfcfbe207bba",
-      "target": "a0dedfb6-d6a3-4282-86a0-4ea99e5e054b",
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
-      "data": {},
-      "markerEnd": {
-        "type": "arrowclosed",
+      "source": "2075c0cd-85d5-456d-87fd-1991da9965eb",
+      "target": "0659dc75-039b-4de1-8393-5a446bfdedd8",
+      "data": {
         "color": "#6366f1"
       },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
       "sourceHandle": "right",
-      "targetHandle": "left",
-      "selected": false
+      "targetHandle": "left"
     }
   ],
   "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4<br/>asdjklajsdkljsa<br/>asjdkajskldjsakld\")\n  n_0 --> n_1\n  n_1 --> n_2\n  n_2 --> n_3\n",

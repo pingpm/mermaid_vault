@@ -1,0 +1,110 @@
+{
+  "lanes": [
+    {
+      "id": "80816833-c0c2-47e4-8252-50a952c616ff",
+      "label": "Planning",
+      "order": 0
+    },
+    {
+      "id": "1f80425e-b47a-4716-965e-bf4d5ba3bc95",
+      "label": "Development",
+      "order": 1
+    },
+    {
+      "id": "7c10ddc8-4b85-4a92-88bf-5e96732a63ff",
+      "label": "Review",
+      "order": 2
+    }
+  ],
+  "tasks": [
+    {
+      "id": "83d37b29-9932-43aa-a816-b2da38c18b38",
+      "laneId": "80816833-c0c2-47e4-8252-50a952c616ff",
+      "label": "Approved?",
+      "shape": "decision",
+      "order": 0,
+      "x": 460,
+      "y": 54
+    },
+    {
+      "id": "80e7737c-ea13-42f8-a873-6006483582dc",
+      "laneId": "80816833-c0c2-47e4-8252-50a952c616ff",
+      "label": "Start",
+      "shape": "terminator",
+      "order": 1,
+      "x": 40,
+      "y": 72
+    },
+    {
+      "id": "2c6ef82d-7934-424d-9fb5-eb7b11731c89",
+      "laneId": "80816833-c0c2-47e4-8252-50a952c616ff",
+      "label": "Define Requirements",
+      "shape": "process",
+      "order": 2,
+      "x": 240,
+      "y": 72
+    },
+    {
+      "id": "d6a95ae4-728e-4307-b00f-396ebb38d06e",
+      "laneId": "1f80425e-b47a-4716-965e-bf4d5ba3bc95",
+      "label": "Implement Feature",
+      "shape": "process",
+      "order": 0,
+      "x": 460,
+      "y": 72,
+      "width": 256,
+      "height": 119
+    },
+    {
+      "id": "4fff340d-fd69-42e9-ace3-a2dd2daaca47",
+      "laneId": "7c10ddc8-4b85-4a92-88bf-5e96732a63ff",
+      "label": "Code Review",
+      "shape": "process",
+      "order": 0,
+      "x": 460,
+      "y": 72
+    }
+  ],
+  "connections": [
+    {
+      "id": "0d0a3c1e-a87e-497e-8a86-0632a8050d90",
+      "fromTaskId": "80e7737c-ea13-42f8-a873-6006483582dc",
+      "toTaskId": "2c6ef82d-7934-424d-9fb5-eb7b11731c89",
+      "dashed": false,
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "d4cb6442-7a79-4a82-ac52-c199d0c33d27",
+      "fromTaskId": "2c6ef82d-7934-424d-9fb5-eb7b11731c89",
+      "toTaskId": "83d37b29-9932-43aa-a816-b2da38c18b38",
+      "dashed": false,
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "0f482200-c31d-4c2f-be4c-051aa32acf4e",
+      "fromTaskId": "83d37b29-9932-43aa-a816-b2da38c18b38",
+      "toTaskId": "d6a95ae4-728e-4307-b00f-396ebb38d06e",
+      "label": "Yes",
+      "dashed": false,
+      "sourceHandle": "bottom",
+      "targetHandle": "top"
+    },
+    {
+      "id": "2b5be90f-5109-402c-b281-0343639299ff",
+      "fromTaskId": "d6a95ae4-728e-4307-b00f-396ebb38d06e",
+      "toTaskId": "4fff340d-fd69-42e9-ace3-a2dd2daaca47",
+      "dashed": false,
+      "sourceHandle": "bottom",
+      "targetHandle": "top"
+    }
+  ],
+  "swBgPattern": "none",
+  "swDirection": "LR",
+  "swEdgeStyle": "smooth",
+  "swTheme": "default",
+  "swLaneGap": 24,
+  "swLaneColorOverrides": {},
+  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_3[\"Implement Feature\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_4[\"Code Review\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 -->|\"Yes\"| t_3\n  t_3 --> t_4\n"
+}
