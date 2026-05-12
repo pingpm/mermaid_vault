@@ -23,8 +23,8 @@
       "id": "1",
       "type": "flow-process",
       "position": {
-        "x": 623,
-        "y": 333
+        "x": 543,
+        "y": 282
       },
       "data": {
         "label": "Process",
@@ -35,7 +35,7 @@
         "width": 100,
         "height": 40
       },
-      "selected": false,
+      "selected": true,
       "dragging": false
     },
     {
@@ -121,8 +121,10 @@
       "id": "xy-edge__start-1"
     },
     {
-      "source": "d3653e47-ad24-45cb-b560-7b93193a8447",
+      "source": "1",
+      "sourceHandle": "right",
       "target": "c0fc2943-57bf-4835-bf2b-80b885d7e8b4",
+      "targetHandle": "top",
       "animated": false,
       "style": {
         "stroke": "#6366f1",
@@ -132,26 +134,13 @@
         "type": "arrowclosed",
         "color": "#6366f1"
       },
-      "id": "xy-edge__d3653e47-ad24-45cb-b560-7b93193a8447-c0fc2943-57bf-4835-bf2b-80b885d7e8b4"
-    },
-    {
-      "source": "c0fc2943-57bf-4835-bf2b-80b885d7e8b4",
-      "target": "d3653e47-ad24-45cb-b560-7b93193a8447",
-      "animated": false,
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
-      "markerEnd": {
-        "type": "arrowclosed",
-        "color": "#6366f1"
-      },
-      "id": "xy-edge__c0fc2943-57bf-4835-bf2b-80b885d7e8b4-d3653e47-ad24-45cb-b560-7b93193a8447"
+      "id": "xy-edge__1right-c0fc2943-57bf-4835-bf2b-80b885d7e8b4top"
     },
     {
       "source": "3e62a1b6-91d5-42ce-99fc-5cad4a536e42",
+      "sourceHandle": "bottom",
       "target": "c0fc2943-57bf-4835-bf2b-80b885d7e8b4",
-      "targetHandle": "left",
+      "targetHandle": "bottom",
       "animated": false,
       "style": {
         "stroke": "#6366f1",
@@ -161,9 +150,9 @@
         "type": "arrowclosed",
         "color": "#6366f1"
       },
-      "id": "xy-edge__3e62a1b6-91d5-42ce-99fc-5cad4a536e42-c0fc2943-57bf-4835-bf2b-80b885d7e8b4left"
+      "id": "xy-edge__3e62a1b6-91d5-42ce-99fc-5cad4a536e42bottom-c0fc2943-57bf-4835-bf2b-80b885d7e8b4bottom"
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2[\"Rect 3\"]\n  n_3>\"Note 4\"]\n  n_4[/\"Document 5\"\\]\n  n_0 --> n_1\n  n_4 --> n_3\n  n_3 --> n_4\n  n_2 --> n_3\n",
+  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2[\"Rect 3\"]\n  n_3>\"Note 4\"]\n  n_4[/\"Document 5\"\\]\n  n_0 --> n_1\n  n_1 --> n_3\n  n_2 --> n_3\n",
   "flowEdgeStyle": "smooth"
 }
