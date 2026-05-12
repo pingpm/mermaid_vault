@@ -1,0 +1,218 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "type": "flow-terminator",
+      "position": {
+        "x": 250,
+        "y": 50
+      },
+      "data": {
+        "label": "Start",
+        "width": 100,
+        "height": 40
+      },
+      "measured": {
+        "width": 100,
+        "height": 40
+      }
+    },
+    {
+      "id": "login",
+      "type": "flow-process",
+      "position": {
+        "x": 250,
+        "y": 160
+      },
+      "data": {
+        "label": "Login",
+        "width": 100,
+        "height": 40
+      },
+      "measured": {
+        "width": 100,
+        "height": 40
+      }
+    },
+    {
+      "id": "validate",
+      "type": "flow-decision",
+      "position": {
+        "x": 250,
+        "y": 290
+      },
+      "data": {
+        "label": "Valid?",
+        "width": 111,
+        "height": 67
+      },
+      "measured": {
+        "width": 111,
+        "height": 67
+      }
+    },
+    {
+      "id": "dashboard",
+      "type": "flow-process",
+      "position": {
+        "x": 993,
+        "y": 252
+      },
+      "data": {
+        "label": "Dashboard",
+        "width": 100,
+        "height": 40
+      },
+      "measured": {
+        "width": 100,
+        "height": 40
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "error",
+      "type": "flow-process",
+      "position": {
+        "x": 70,
+        "y": 290
+      },
+      "data": {
+        "label": "Show Error",
+        "width": 101,
+        "height": 40
+      },
+      "measured": {
+        "width": 101,
+        "height": 40
+      }
+    },
+    {
+      "id": "end",
+      "type": "flow-terminator",
+      "position": {
+        "x": 430,
+        "y": 410
+      },
+      "data": {
+        "label": "End",
+        "width": 100,
+        "height": 40
+      },
+      "measured": {
+        "width": 100,
+        "height": 40
+      }
+    },
+    {
+      "id": "a5add59e-0d9c-4a0f-9e48-895df5e468bb",
+      "type": "flow-terminator",
+      "position": {
+        "x": 837,
+        "y": 544
+      },
+      "data": {
+        "label": "Start/End 7",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "measured": {
+        "width": 160,
+        "height": 56
+      },
+      "selected": true
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-login",
+      "source": "start",
+      "target": "login",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      }
+    },
+    {
+      "id": "e-login-validate",
+      "source": "login",
+      "target": "validate",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      }
+    },
+    {
+      "id": "e-validate-dashboard",
+      "source": "validate",
+      "target": "dashboard",
+      "data": {
+        "label": "Yes"
+      },
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      }
+    },
+    {
+      "id": "e-validate-error",
+      "source": "validate",
+      "target": "error",
+      "data": {
+        "label": "No"
+      },
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      }
+    },
+    {
+      "id": "e-error-login",
+      "source": "error",
+      "target": "login",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      }
+    },
+    {
+      "id": "e-dashboard-end",
+      "source": "dashboard",
+      "target": "end",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      }
+    }
+  ],
+  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Login\")\n  n_2{\"Valid?\"}\n  n_3(\"Dashboard\")\n  n_4(\"Show Error\")\n  n_5([\"End\"])\n  n_6([\"Start/End 7\"])\n  n_0 --> n_1\n  n_1 --> n_2\n  n_2 -->|\"Yes\"| n_3\n  n_2 -->|\"No\"| n_4\n  n_4 --> n_1\n  n_3 --> n_5\n",
+  "flowEdgeStyle": "smooth"
+}
