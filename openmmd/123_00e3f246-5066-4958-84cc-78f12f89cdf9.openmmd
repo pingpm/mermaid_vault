@@ -50,8 +50,8 @@
       "id": "b50bca81-679c-48c7-9325-bfcfbe207bba",
       "type": "flow-process",
       "position": {
-        "x": 423.9723375980566,
-        "y": 463.1230236061194
+        "x": 446.9723375980566,
+        "y": 401.1230236061194
       },
       "data": {
         "label": "Process 3",
@@ -75,8 +75,8 @@
       "id": "a0dedfb6-d6a3-4282-86a0-4ea99e5e054b",
       "type": "flow-process",
       "position": {
-        "x": 767.3347321260594,
-        "y": 445.15462694792836
+        "x": 790.3347321260594,
+        "y": 383.15462694792836
       },
       "data": {
         "label": "Process 4\nasdjklajsdkljsa\nasjdkajskldjsakld",
@@ -94,7 +94,7 @@
         "width": 230,
         "height": 100
       },
-      "selected": true,
+      "selected": false,
       "dragging": false
     }
   ],
@@ -126,7 +126,8 @@
       "markerEnd": {
         "type": "arrowclosed",
         "color": "#10b981"
-      }
+      },
+      "selected": false
     },
     {
       "id": "e-2",
