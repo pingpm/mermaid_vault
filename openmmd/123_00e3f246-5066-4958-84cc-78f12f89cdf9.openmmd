@@ -67,14 +67,15 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false
     },
     {
       "id": "0659dc75-039b-4de1-8393-5a446bfdedd8",
       "type": "flow-process",
       "position": {
-        "x": 699.3347321260594,
-        "y": 383.15462694792836
+        "x": 752.3347321260594,
+        "y": 336.15462694792836
       },
       "data": {
         "label": "Process 4\nasdjklajsdkljsa\nasjdkajskldjsakld",
@@ -90,7 +91,9 @@
       "measured": {
         "width": 230,
         "height": 100
-      }
+      },
+      "selected": true,
+      "dragging": false
     }
   ],
   "edges": [
