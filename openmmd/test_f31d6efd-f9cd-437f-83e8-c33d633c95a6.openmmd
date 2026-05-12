@@ -127,8 +127,9 @@
       "target": "1",
       "animated": true,
       "style": {
-        "strokeDasharray": "6 3",
-        "stroke": "#6366f1"
+        "stroke": "#6366f1",
+        "strokeWidth": 2,
+        "strokeDasharray": "6 3"
       },
       "data": {},
       "markerEnd": {
