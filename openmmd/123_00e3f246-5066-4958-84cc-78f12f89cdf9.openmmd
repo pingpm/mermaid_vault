@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "id": "b1937cd8-eb35-45af-90fa-cbe0349ee532",
+      "id": "707af895-8dc6-4716-889e-0370c2a19d81",
       "type": "flow-terminator",
       "position": {
         "x": 250,
@@ -12,13 +12,17 @@
         "width": 100,
         "height": 40
       },
+      "style": {
+        "width": 100,
+        "height": 40
+      },
       "measured": {
         "width": 100,
         "height": 40
       }
     },
     {
-      "id": "ec9061cb-8837-4507-b0af-bc7be72348fe",
+      "id": "a977e198-0068-46aa-a25c-3267b022b567",
       "type": "flow-process",
       "position": {
         "x": 250,
@@ -29,13 +33,17 @@
         "width": 100,
         "height": 40
       },
+      "style": {
+        "width": 100,
+        "height": 40
+      },
       "measured": {
         "width": 100,
         "height": 40
       }
     },
     {
-      "id": "6fe07884-b371-4de6-8676-7b53ad9171b1",
+      "id": "12fd7c6e-012e-47af-83d8-ee4dc0d4bf23",
       "type": "flow-process",
       "position": {
         "x": 328.9723375980566,
@@ -56,119 +64,32 @@
       }
     },
     {
-      "id": "149ede7d-dd4a-40ff-8410-029a58983be4",
+      "id": "e3bd490d-1a3f-4866-bac3-223accba61e3",
       "type": "flow-process",
       "position": {
-        "x": 841.3347321260594,
-        "y": 251.1546269479284
+        "x": 656.3347321260594,
+        "y": 369.15462694792836
       },
       "data": {
         "label": "Process 4\nasdjklajsdkljsa\nasjdkajskldjsakld",
-        "width": 160,
-        "height": 56
+        "width": 462,
+        "height": 184
       },
       "style": {
-        "width": 160,
-        "height": 56
+        "width": 462,
+        "height": 184
       },
       "measured": {
-        "width": 160,
-        "height": 56
-      },
-      "selected": false
-    },
-    {
-      "id": "4b08dbaf-588d-4c08-bb6b-ccc472f2de0f",
-      "type": "flow-decision",
-      "position": {
-        "x": 815,
-        "y": 534
-      },
-      "data": {
-        "label": "Decision 5",
-        "width": 160,
-        "height": 56
-      },
-      "style": {
-        "width": 160,
-        "height": 56
-      },
-      "measured": {
-        "width": 160,
-        "height": 56
+        "width": 462,
+        "height": 184
       }
-    },
-    {
-      "id": "88eabfce-d580-470c-9224-08506120da47",
-      "type": "flow-terminator",
-      "position": {
-        "x": 719,
-        "y": 590
-      },
-      "data": {
-        "label": "Start/End 6",
-        "width": 160,
-        "height": 56
-      },
-      "style": {
-        "width": 160,
-        "height": 56
-      },
-      "measured": {
-        "width": 160,
-        "height": 56
-      }
-    },
-    {
-      "id": "12fe393f-38df-4e5e-a5b9-0cae6393c4e5",
-      "type": "flow-database",
-      "position": {
-        "x": 947.0452248272522,
-        "y": 430.92730047440205
-      },
-      "data": {
-        "label": "Database 7",
-        "width": 160,
-        "height": 56
-      },
-      "style": {
-        "width": 160,
-        "height": 56
-      },
-      "measured": {
-        "width": 160,
-        "height": 56
-      }
-    },
-    {
-      "id": "9b5365bb-82c4-4366-846d-b0ea87abc14f",
-      "type": "flow-document",
-      "position": {
-        "x": 1039,
-        "y": 684
-      },
-      "data": {
-        "label": "Document 8",
-        "width": 160,
-        "height": 56
-      },
-      "style": {
-        "width": 160,
-        "height": 56
-      },
-      "measured": {
-        "width": 160,
-        "height": 56
-      },
-      "selected": true,
-      "dragging": false
     }
   ],
   "edges": [
     {
       "id": "e-0",
-      "source": "b1937cd8-eb35-45af-90fa-cbe0349ee532",
-      "target": "ec9061cb-8837-4507-b0af-bc7be72348fe",
+      "source": "707af895-8dc6-4716-889e-0370c2a19d81",
+      "target": "a977e198-0068-46aa-a25c-3267b022b567",
       "style": {
         "stroke": "#6366f1"
       },
@@ -180,23 +101,8 @@
     },
     {
       "id": "e-1",
-      "source": "6fe07884-b371-4de6-8676-7b53ad9171b1",
-      "target": "149ede7d-dd4a-40ff-8410-029a58983be4",
-      "style": {
-        "stroke": "#f43f5e"
-      },
-      "data": {},
-      "markerEnd": {
-        "type": "arrowclosed",
-        "color": "#f43f5e"
-      },
-      "sourceHandle": "right",
-      "targetHandle": "left"
-    },
-    {
-      "id": "e-2",
-      "source": "ec9061cb-8837-4507-b0af-bc7be72348fe",
-      "target": "6fe07884-b371-4de6-8676-7b53ad9171b1",
+      "source": "a977e198-0068-46aa-a25c-3267b022b567",
+      "target": "12fd7c6e-012e-47af-83d8-ee4dc0d4bf23",
       "style": {
         "strokeDasharray": "6 3",
         "stroke": "#10b981"
@@ -208,48 +114,21 @@
       }
     },
     {
-      "source": "149ede7d-dd4a-40ff-8410-029a58983be4",
-      "target": "12fe393f-38df-4e5e-a5b9-0cae6393c4e5",
-      "animated": false,
+      "id": "e-2",
+      "source": "12fd7c6e-012e-47af-83d8-ee4dc0d4bf23",
+      "target": "e3bd490d-1a3f-4866-bac3-223accba61e3",
       "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
+        "stroke": "#6366f1"
       },
+      "data": {},
       "markerEnd": {
         "type": "arrowclosed",
         "color": "#6366f1"
       },
-      "id": "xy-edge__149ede7d-dd4a-40ff-8410-029a58983be4-12fe393f-38df-4e5e-a5b9-0cae6393c4e5"
-    },
-    {
-      "source": "12fe393f-38df-4e5e-a5b9-0cae6393c4e5",
-      "target": "4b08dbaf-588d-4c08-bb6b-ccc472f2de0f",
-      "animated": false,
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
-      "markerEnd": {
-        "type": "arrowclosed",
-        "color": "#6366f1"
-      },
-      "id": "xy-edge__12fe393f-38df-4e5e-a5b9-0cae6393c4e5-4b08dbaf-588d-4c08-bb6b-ccc472f2de0f"
-    },
-    {
-      "source": "12fe393f-38df-4e5e-a5b9-0cae6393c4e5",
-      "target": "9b5365bb-82c4-4366-846d-b0ea87abc14f",
-      "animated": false,
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
-      "markerEnd": {
-        "type": "arrowclosed",
-        "color": "#6366f1"
-      },
-      "id": "xy-edge__12fe393f-38df-4e5e-a5b9-0cae6393c4e5-9b5365bb-82c4-4366-846d-b0ea87abc14f"
+      "sourceHandle": "right",
+      "targetHandle": "left"
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4<br/>asdjklajsdkljsa<br/>asjdkajskldjsakld\")\n  n_4{\"Decision 5\"}\n  n_5([\"Start/End 6\"])\n  n_6[(\"Database 7\")]\n  n_7[/\"Document 8\"\\]\n  n_0 --> n_1\n  n_2 --> n_3\n  n_1 --> n_2\n  n_3 --> n_6\n  n_6 --> n_4\n  n_6 --> n_7\n",
+  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4<br/>asdjklajsdkljsa<br/>asjdkajskldjsakld\")\n  n_0 --> n_1\n  n_1 --> n_2\n  n_2 --> n_3\n",
   "flowEdgeStyle": "straight"
 }
