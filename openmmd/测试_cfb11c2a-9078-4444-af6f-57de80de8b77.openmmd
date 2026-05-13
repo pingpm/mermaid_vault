@@ -116,7 +116,8 @@
         "type": "arrowclosed",
         "color": "#6366f1"
       },
-      "id": "xy-edge__9fc8f32f-ced0-45f0-a89b-bd76555d56cftop-892c1b23-9033-481c-ba5a-f229550c1c43bottom"
+      "id": "xy-edge__9fc8f32f-ced0-45f0-a89b-bd76555d56cftop-892c1b23-9033-481c-ba5a-f229550c1c43bottom",
+      "selected": true
     }
   ],
   "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2(\"Process 3\")\n  n_3[/\"Document 4\"\\]\n  n_0 --> n_1\n  n_3 --> n_2\n",
