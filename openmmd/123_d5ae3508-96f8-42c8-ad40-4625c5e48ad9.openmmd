@@ -1,52 +1,52 @@
 {
   "lanes": [
     {
-      "id": "lane-1",
+      "id": "695db3fb-59d2-4f04-b089-3f1185c14aeb",
       "label": "Planning",
       "order": 0
     },
     {
-      "id": "lane-2",
+      "id": "735d62e7-9a24-4ccd-a072-1af16fa14925",
       "label": "Development",
       "order": 1
     },
     {
-      "id": "lane-3",
+      "id": "c03c25e2-f8e5-487a-bfc2-6d14a74c4c87",
       "label": "Review",
       "order": 2
     }
   ],
   "tasks": [
     {
-      "id": "task-1",
-      "laneId": "lane-1",
-      "label": "Start",
-      "shape": "terminator",
-      "order": 0,
-      "x": 40,
-      "y": 72
-    },
-    {
-      "id": "task-2",
-      "laneId": "lane-1",
-      "label": "Define Requirements",
-      "shape": "process",
-      "order": 1,
-      "x": 240,
-      "y": 72
-    },
-    {
-      "id": "task-3",
-      "laneId": "lane-1",
+      "id": "3dddacf9-d3cc-4af5-a463-7e6c1f409d40",
+      "laneId": "695db3fb-59d2-4f04-b089-3f1185c14aeb",
       "label": "Approved?",
       "shape": "decision",
-      "order": 2,
+      "order": 0,
       "x": 460,
       "y": 54
     },
     {
-      "id": "task-4",
-      "laneId": "lane-2",
+      "id": "a4bcacde-d322-4bdc-b99a-f90180ca592f",
+      "laneId": "695db3fb-59d2-4f04-b089-3f1185c14aeb",
+      "label": "Start",
+      "shape": "terminator",
+      "order": 1,
+      "x": 40,
+      "y": 72
+    },
+    {
+      "id": "45cbeebb-8111-4216-8207-2e6dbbbae4c1",
+      "laneId": "695db3fb-59d2-4f04-b089-3f1185c14aeb",
+      "label": "Define Requirements",
+      "shape": "process",
+      "order": 2,
+      "x": 240,
+      "y": 72
+    },
+    {
+      "id": "f945e8bc-b5e6-43e5-9ac5-95e6b6973b7d",
+      "laneId": "735d62e7-9a24-4ccd-a072-1af16fa14925",
       "label": "Implement Feature",
       "shape": "process",
       "order": 0,
@@ -54,8 +54,8 @@
       "y": 72
     },
     {
-      "id": "task-5",
-      "laneId": "lane-3",
+      "id": "1b2af6f2-af08-4a15-afea-1371a7bd6058",
+      "laneId": "c03c25e2-f8e5-487a-bfc2-6d14a74c4c87",
       "label": "Code Review",
       "shape": "process",
       "order": 0,
@@ -65,33 +65,39 @@
   ],
   "connections": [
     {
-      "id": "c1",
-      "fromTaskId": "task-1",
-      "toTaskId": "task-2",
+      "id": "8174a90e-1a68-40dd-a1f3-096f642fd42a",
+      "fromTaskId": "a4bcacde-d322-4bdc-b99a-f90180ca592f",
+      "toTaskId": "45cbeebb-8111-4216-8207-2e6dbbbae4c1",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
       "sourceHandle": "right",
       "targetHandle": "left"
     },
     {
-      "id": "c2",
-      "fromTaskId": "task-2",
-      "toTaskId": "task-3",
+      "id": "64250d7f-007e-463e-8115-38ac5fb3892e",
+      "fromTaskId": "45cbeebb-8111-4216-8207-2e6dbbbae4c1",
+      "toTaskId": "3dddacf9-d3cc-4af5-a463-7e6c1f409d40",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
       "sourceHandle": "right",
       "targetHandle": "left"
     },
     {
-      "id": "c3",
-      "fromTaskId": "task-3",
-      "toTaskId": "task-4",
+      "id": "62a6d1ce-03ad-40f0-9f36-62bd249f80f2",
+      "fromTaskId": "3dddacf9-d3cc-4af5-a463-7e6c1f409d40",
+      "toTaskId": "f945e8bc-b5e6-43e5-9ac5-95e6b6973b7d",
       "label": "Yes",
+      "lineStyle": "solid",
+      "arrowHead": "double",
       "sourceHandle": "bottom",
-      "targetHandle": "top",
-      "arrowHead": "cross",
-      "lineStyle": "solid"
+      "targetHandle": "top"
     },
     {
-      "id": "c4",
-      "fromTaskId": "task-4",
-      "toTaskId": "task-5",
+      "id": "8a5d3b85-2003-47eb-87a5-17cd58c25deb",
+      "fromTaskId": "f945e8bc-b5e6-43e5-9ac5-95e6b6973b7d",
+      "toTaskId": "1b2af6f2-af08-4a15-afea-1371a7bd6058",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
       "sourceHandle": "bottom",
       "targetHandle": "top"
     }
@@ -102,5 +108,5 @@
   "swTheme": "default",
   "swLaneGap": 24,
   "swLaneColorOverrides": {},
-  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_3[\"Implement Feature\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_4[\"Code Review\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 --x|\"Yes\"| t_3\n  t_3 --> t_4\n"
+  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_3[\"Implement Feature\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_4[\"Code Review\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 <-->|\"Yes\"| t_3\n  t_3 --> t_4\n"
 }
