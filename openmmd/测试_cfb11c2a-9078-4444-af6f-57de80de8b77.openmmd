@@ -41,6 +41,50 @@
         "width": 160,
         "height": 56
       }
+    },
+    {
+      "id": "892c1b23-9033-481c-ba5a-f229550c1c43",
+      "type": "flow-process",
+      "position": {
+        "x": 847,
+        "y": 479
+      },
+      "data": {
+        "label": "Process 3",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "measured": {
+        "width": 160,
+        "height": 56
+      }
+    },
+    {
+      "id": "9fc8f32f-ced0-45f0-a89b-bd76555d56cf",
+      "type": "flow-document",
+      "position": {
+        "x": 853,
+        "y": 674
+      },
+      "data": {
+        "label": "Document 4",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "measured": {
+        "width": 160,
+        "height": 56
+      },
+      "selected": false,
+      "dragging": false
     }
   ],
   "edges": [
@@ -57,8 +101,24 @@
         "type": "arrowclosed",
         "color": "#6366f1"
       }
+    },
+    {
+      "source": "9fc8f32f-ced0-45f0-a89b-bd76555d56cf",
+      "sourceHandle": "top",
+      "target": "892c1b23-9033-481c-ba5a-f229550c1c43",
+      "targetHandle": "bottom",
+      "animated": false,
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      },
+      "id": "xy-edge__9fc8f32f-ced0-45f0-a89b-bd76555d56cftop-892c1b23-9033-481c-ba5a-f229550c1c43bottom"
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_0 --> n_1\n",
+  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2(\"Process 3\")\n  n_3[/\"Document 4\"\\]\n  n_0 --> n_1\n  n_3 --> n_2\n",
   "flowEdgeStyle": "smooth"
 }
