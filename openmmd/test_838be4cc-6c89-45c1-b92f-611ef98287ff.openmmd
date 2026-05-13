@@ -62,12 +62,13 @@
         "color": "#6366f1"
       },
       "id": "xy-edge__startbottom-1top",
-      "selected": false,
+      "selected": true,
       "data": {
-        "dashed": true
+        "dashed": true,
+        "arrowHead": "double"
       }
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_0 --> n_1\n",
+  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_0 <--> n_1\n",
   "flowEdgeStyle": "smooth"
 }
