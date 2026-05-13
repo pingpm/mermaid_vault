@@ -1,11 +1,11 @@
 {
   "nodes": [
     {
-      "id": "e101e5d4-1d64-476e-9f3a-8763474ebfb0",
+      "id": "83edb41b-1d43-4243-822e-e1183cda5cce",
       "type": "flow-process-rect",
       "position": {
-        "x": 457,
-        "y": -225
+        "x": 470,
+        "y": -277
       },
       "data": {
         "label": "黄金/金币<br>终极价值锚点",
@@ -21,14 +21,16 @@
       "measured": {
         "width": 204,
         "height": 40
-      }
+      },
+      "selected": true,
+      "dragging": false
     },
     {
-      "id": "ecac5bd0-abea-4b9b-8ea4-4c328a8fc643",
+      "id": "cff9db52-8c6d-4577-a778-c6075849743c",
       "type": "flow-process-rect",
       "position": {
-        "x": 673,
-        "y": 10.625
+        "x": 649,
+        "y": -103.375
       },
       "data": {
         "label": "绿背美元<br>联邦信用货币",
@@ -44,10 +46,12 @@
       "measured": {
         "width": 200,
         "height": 40
-      }
+      },
+      "selected": false,
+      "dragging": false
     },
     {
-      "id": "f645c747-94cd-4c40-b76a-3815b2044b5d",
+      "id": "2177a5d0-2fb5-4077-b213-8ce3c37ca8c1",
       "type": "flow-process-rect",
       "position": {
         "x": 124,
@@ -70,7 +74,7 @@
       }
     },
     {
-      "id": "4940cdc6-3ae9-4d98-91fc-ceb34c96e6f3",
+      "id": "88732bdc-3109-495c-a36c-95efd4c8715a",
       "type": "flow-process-rect",
       "position": {
         "x": 1239,
@@ -93,11 +97,11 @@
       }
     },
     {
-      "id": "0997d0a7-af49-4bce-b426-c45b99512807",
+      "id": "b3d05175-da34-4e92-af64-27f30365aef8",
       "type": "flow-process-rect",
       "position": {
-        "x": 567,
-        "y": 470
+        "x": 611,
+        "y": 411
       },
       "data": {
         "label": "商人/个人",
@@ -113,10 +117,12 @@
       "measured": {
         "width": 100,
         "height": 40
-      }
+      },
+      "selected": false,
+      "dragging": false
     },
     {
-      "id": "c3de60c0-91cd-44fa-b1e1-af5c44bd1a3a",
+      "id": "71a213b1-39c3-44fe-b534-0a5d8c2468c4",
       "type": "flow-process-rect",
       "position": {
         "x": 354,
@@ -139,11 +145,11 @@
       }
     },
     {
-      "id": "a184ce40-ccc1-4c48-a53e-26773bf9fe53",
+      "id": "cc4edf72-1914-4ed6-a8f9-67287b69900b",
       "type": "flow-process-rect",
       "position": {
-        "x": 787,
-        "y": 495
+        "x": 1014,
+        "y": 472
       },
       "data": {
         "label": "内战代币<br>私人商业信用",
@@ -159,10 +165,12 @@
       "measured": {
         "width": 200,
         "height": 40
-      }
+      },
+      "selected": false,
+      "dragging": false
     },
     {
-      "id": "a6b420b1-4083-4407-8a3e-b7ebc246383a",
+      "id": "f33ffd2d-d070-4152-9e8c-d7973919d8ff",
       "type": "flow-process-rect",
       "position": {
         "x": 1022,
@@ -188,30 +196,20 @@
   "edges": [
     {
       "id": "e-0",
-      "source": "e101e5d4-1d64-476e-9f3a-8763474ebfb0",
-      "target": "ecac5bd0-abea-4b9b-8ea4-4c328a8fc643",
+      "source": "83edb41b-1d43-4243-822e-e1183cda5cce",
+      "target": "cff9db52-8c6d-4577-a778-c6075849743c",
       "data": {
         "label": "决定价值"
       },
       "markerEnd": {
         "type": "arrowclosed"
-      }
+      },
+      "selected": false
     },
     {
       "id": "e-1",
-      "source": "ecac5bd0-abea-4b9b-8ea4-4c328a8fc643",
-      "target": "f645c747-94cd-4c40-b76a-3815b2044b5d",
-      "data": {
-        "label": "决定“汇率”基准<br>市场信心与风险对冲"
-      },
-      "markerEnd": {
-        "type": "arrowclosed"
-      }
-    },
-    {
-      "id": "e-2",
-      "source": "ecac5bd0-abea-4b9b-8ea4-4c328a8fc643",
-      "target": "4940cdc6-3ae9-4d98-91fc-ceb34c96e6f3",
+      "source": "cff9db52-8c6d-4577-a778-c6075849743c",
+      "target": "2177a5d0-2fb5-4077-b213-8ce3c37ca8c1",
       "data": {
         "label": "决定“汇率”基准<br>市场信心与风险对冲"
       },
@@ -221,8 +219,8 @@
     },
     {
       "id": "e-3",
-      "source": "f645c747-94cd-4c40-b76a-3815b2044b5d",
-      "target": "0997d0a7-af49-4bce-b426-c45b99512807",
+      "source": "2177a5d0-2fb5-4077-b213-8ce3c37ca8c1",
+      "target": "b3d05175-da34-4e92-af64-27f30365aef8",
       "data": {
         "label": "发行/接受"
       },
@@ -232,8 +230,8 @@
     },
     {
       "id": "e-4",
-      "source": "4940cdc6-3ae9-4d98-91fc-ceb34c96e6f3",
-      "target": "0997d0a7-af49-4bce-b426-c45b99512807",
+      "source": "88732bdc-3109-495c-a36c-95efd4c8715a",
+      "target": "b3d05175-da34-4e92-af64-27f30365aef8",
       "data": {
         "label": "发行/接受"
       },
@@ -243,8 +241,8 @@
     },
     {
       "id": "e-5",
-      "source": "f645c747-94cd-4c40-b76a-3815b2044b5d",
-      "target": "c3de60c0-91cd-44fa-b1e1-af5c44bd1a3a",
+      "source": "2177a5d0-2fb5-4077-b213-8ce3c37ca8c1",
+      "target": "71a213b1-39c3-44fe-b534-0a5d8c2468c4",
       "data": {
         "label": "基于信誉的贴现率"
       },
@@ -254,8 +252,8 @@
     },
     {
       "id": "e-6",
-      "source": "4940cdc6-3ae9-4d98-91fc-ceb34c96e6f3",
-      "target": "c3de60c0-91cd-44fa-b1e1-af5c44bd1a3a",
+      "source": "88732bdc-3109-495c-a36c-95efd4c8715a",
+      "target": "71a213b1-39c3-44fe-b534-0a5d8c2468c4",
       "data": {
         "label": "基于信誉的贴现率"
       },
@@ -265,8 +263,8 @@
     },
     {
       "id": "e-7",
-      "source": "c3de60c0-91cd-44fa-b1e1-af5c44bd1a3a",
-      "target": "0997d0a7-af49-4bce-b426-c45b99512807",
+      "source": "71a213b1-39c3-44fe-b534-0a5d8c2468c4",
+      "target": "b3d05175-da34-4e92-af64-27f30365aef8",
       "data": {
         "label": "提供流动性"
       },
@@ -276,8 +274,8 @@
     },
     {
       "id": "e-8",
-      "source": "a184ce40-ccc1-4c48-a53e-26773bf9fe53",
-      "target": "0997d0a7-af49-4bce-b426-c45b99512807",
+      "source": "cc4edf72-1914-4ed6-a8f9-67287b69900b",
+      "target": "b3d05175-da34-4e92-af64-27f30365aef8",
       "data": {
         "label": "直接用于消费"
       },
@@ -287,16 +285,32 @@
     },
     {
       "id": "e-9",
-      "source": "a6b420b1-4083-4407-8a3e-b7ebc246383a",
-      "target": "0997d0a7-af49-4bce-b426-c45b99512807",
+      "source": "f33ffd2d-d070-4152-9e8c-d7973919d8ff",
+      "target": "b3d05175-da34-4e92-af64-27f30365aef8",
       "data": {
         "label": "直接用于消费"
       },
       "markerEnd": {
         "type": "arrowclosed"
       }
+    },
+    {
+      "source": "cff9db52-8c6d-4577-a778-c6075849743c",
+      "sourceHandle": "bottom",
+      "target": "88732bdc-3109-495c-a36c-95efd4c8715a",
+      "targetHandle": "top",
+      "animated": false,
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      },
+      "id": "xy-edge__cff9db52-8c6d-4577-a778-c6075849743cbottom-88732bdc-3109-495c-a36c-95efd4c8715atop"
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0[\"黄金/金币<br>终极价值锚点\"]\n  n_1[\"绿背美元<br>联邦信用货币\"]\n  n_2[\"私人银行票据<br>州级信用\"]\n  n_3[\"邦联货币<br>敌方信用\"]\n  n_4[\"商人/个人\"]\n  n_5[\"银行票据经纪人\"]\n  n_6[\"内战代币<br>私人商业信用\"]\n  n_7[\"邮票<br>准货币\"]\n  n_0 -->|\"决定价值\"| n_1\n  n_1 -->|\"决定“汇率”基准<br>市场信心与风险对冲\"| n_2\n  n_1 -->|\"决定“汇率”基准<br>市场信心与风险对冲\"| n_3\n  n_2 -->|\"发行/接受\"| n_4\n  n_3 -->|\"发行/接受\"| n_4\n  n_2 -->|\"基于信誉的贴现率\"| n_5\n  n_3 -->|\"基于信誉的贴现率\"| n_5\n  n_5 -->|\"提供流动性\"| n_4\n  n_6 -->|\"直接用于消费\"| n_4\n  n_7 -->|\"直接用于消费\"| n_4\n",
+  "mermaidCode": "flowchart TD\n  n_0[\"黄金/金币<br>终极价值锚点\"]\n  n_1[\"绿背美元<br>联邦信用货币\"]\n  n_2[\"私人银行票据<br>州级信用\"]\n  n_3[\"邦联货币<br>敌方信用\"]\n  n_4[\"商人/个人\"]\n  n_5[\"银行票据经纪人\"]\n  n_6[\"内战代币<br>私人商业信用\"]\n  n_7[\"邮票<br>准货币\"]\n  n_0 -->|\"决定价值\"| n_1\n  n_1 -->|\"决定“汇率”基准<br>市场信心与风险对冲\"| n_2\n  n_2 -->|\"发行/接受\"| n_4\n  n_3 -->|\"发行/接受\"| n_4\n  n_2 -->|\"基于信誉的贴现率\"| n_5\n  n_3 -->|\"基于信誉的贴现率\"| n_5\n  n_5 -->|\"提供流动性\"| n_4\n  n_6 -->|\"直接用于消费\"| n_4\n  n_7 -->|\"直接用于消费\"| n_4\n  n_1 --> n_3\n",
   "flowEdgeStyle": "smooth"
 }
