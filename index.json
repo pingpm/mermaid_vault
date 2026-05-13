@@ -1,12 +1,12 @@
 {
-  "updatedAt": 1778652147320,
+  "updatedAt": 1778652388290,
   "projects": [
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
       "name": "测试的",
       "description": "撒大叔大叔的撒觉得卡拉斯京的卡拉斯的",
       "createdAt": 1777443794192,
-      "updatedAt": 1778652077661
+      "updatedAt": 1778652342664
     },
     {
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
@@ -103,8 +103,8 @@
       "name": "123",
       "type": "sequence",
       "createdAt": 1777470305130,
-      "updatedAt": 1777471014002,
-      "version": 0
+      "updatedAt": 1778652342659,
+      "version": 1
     },
     {
       "id": "b66f33fe-f22a-4010-b0a8-42139f03c121",
