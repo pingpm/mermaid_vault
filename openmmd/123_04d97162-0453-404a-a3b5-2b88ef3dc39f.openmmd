@@ -1,14 +1,14 @@
 {
   "nodes": [
     {
-      "id": "start",
-      "type": "flow-terminator",
+      "id": "de6d64f4-fd17-49b2-b4bf-cef4fed8fc2e",
+      "type": "flow-process",
       "position": {
-        "x": 250,
-        "y": 50
+        "x": 660,
+        "y": 559
       },
       "data": {
-        "label": "Start",
+        "label": "Process 1",
         "width": 160,
         "height": 56
       },
@@ -16,20 +16,22 @@
         "width": 160,
         "height": 56
       },
+      "width": 160,
+      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "1",
+      "id": "b6e3f5b8-fe34-490b-af45-b062afe91d71",
       "type": "flow-process",
       "position": {
-        "x": 250,
-        "y": 150
+        "x": 1070,
+        "y": 559
       },
       "data": {
-        "label": "Process",
+        "label": "Process 2",
         "width": 160,
         "height": 56
       },
@@ -37,6 +39,54 @@
         "width": 160,
         "height": 56
       },
+      "width": 160,
+      "height": 56,
+      "measured": {
+        "width": 160,
+        "height": 56
+      }
+    },
+    {
+      "id": "6c7abdde-becf-423c-b63f-53c9eee22690",
+      "type": "flow-process",
+      "position": {
+        "x": 1069,
+        "y": 747
+      },
+      "data": {
+        "label": "Process 3",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "width": 160,
+      "height": 56,
+      "measured": {
+        "width": 160,
+        "height": 56
+      }
+    },
+    {
+      "id": "b3023bbc-25c3-446f-81df-34e50a9b9cd6",
+      "type": "flow-process",
+      "position": {
+        "x": 660,
+        "y": 761
+      },
+      "data": {
+        "label": "Process 4",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "width": 160,
+      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
@@ -45,20 +95,66 @@
   ],
   "edges": [
     {
-      "id": "e-start-1",
-      "source": "start",
-      "target": "1",
-      "animated": true,
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
+      "id": "e-0",
+      "source": "de6d64f4-fd17-49b2-b4bf-cef4fed8fc2e",
+      "target": "b6e3f5b8-fe34-490b-af45-b062afe91d71",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "double",
+        "color": "#6366f1"
       },
       "markerEnd": {
-        "type": "arrowclosed",
+        "type": "arrowclosed"
+      },
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "e-1",
+      "source": "b6e3f5b8-fe34-490b-af45-b062afe91d71",
+      "target": "6c7abdde-becf-423c-b63f-53c9eee22690",
+      "data": {
+        "lineStyle": "dashed",
+        "arrowHead": "arrow",
         "color": "#6366f1"
-      }
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "sourceHandle": "bottom",
+      "targetHandle": "top"
+    },
+    {
+      "id": "e-2",
+      "source": "6c7abdde-becf-423c-b63f-53c9eee22690",
+      "target": "b3023bbc-25c3-446f-81df-34e50a9b9cd6",
+      "data": {
+        "lineStyle": "thick",
+        "arrowHead": "arrow",
+        "color": "#6366f1"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "sourceHandle": "bottom",
+      "targetHandle": "bottom"
+    },
+    {
+      "id": "e-3",
+      "source": "b3023bbc-25c3-446f-81df-34e50a9b9cd6",
+      "target": "de6d64f4-fd17-49b2-b4bf-cef4fed8fc2e",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "cross",
+        "color": "#6366f1"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "sourceHandle": "top",
+      "targetHandle": "bottom"
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_0 --> n_1\n",
+  "mermaidCode": "flowchart TD\n  n_0(\"Process 1\")\n  n_1(\"Process 2\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4\")\n  n_0 <--> n_1\n  n_1 -.-> n_2\n  n_2 ==> n_3\n  n_3 --x n_0\n",
   "flowEdgeStyle": "smooth"
 }
