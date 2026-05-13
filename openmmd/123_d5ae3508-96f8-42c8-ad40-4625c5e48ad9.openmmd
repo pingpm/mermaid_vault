@@ -84,7 +84,9 @@
       "toTaskId": "task-4",
       "label": "Yes",
       "sourceHandle": "bottom",
-      "targetHandle": "top"
+      "targetHandle": "top",
+      "arrowHead": "cross",
+      "lineStyle": "solid"
     },
     {
       "id": "c4",
@@ -96,5 +98,9 @@
   ],
   "swBgPattern": "none",
   "swDirection": "LR",
-  "mermaidCode": ""
+  "swEdgeStyle": "smooth",
+  "swTheme": "default",
+  "swLaneGap": 24,
+  "swLaneColorOverrides": {},
+  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_3[\"Implement Feature\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_4[\"Code Review\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 --x|\"Yes\"| t_3\n  t_3 --> t_4\n"
 }
