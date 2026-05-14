@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "id": "573a74c9-6db9-4521-82f4-a6cd1e3accb7",
+      "id": "c40e7a7b-279f-4631-af9d-35aaa5d7e379",
       "type": "flow-terminator",
       "position": {
         "x": 250,
@@ -24,7 +24,7 @@
       }
     },
     {
-      "id": "192b280a-6d61-4e49-8288-be4422e79ce3",
+      "id": "a0138135-01b3-4c84-9d2d-ef8148f0dc89",
       "type": "flow-process",
       "position": {
         "x": 250,
@@ -47,7 +47,7 @@
       }
     },
     {
-      "id": "fd291a8a-7ed0-479a-b378-620dbbcb4963",
+      "id": "b0397385-4a19-4ac8-9edf-a41cff7f3f55",
       "type": "flow-process",
       "position": {
         "x": 637,
@@ -70,7 +70,7 @@
       }
     },
     {
-      "id": "203c3b5d-5e82-4844-89dd-a08bab5042dd",
+      "id": "e65e532c-7427-4d8f-b735-9089be4efa9d",
       "type": "flow-process",
       "position": {
         "x": 989,
@@ -93,7 +93,7 @@
       }
     },
     {
-      "id": "08eaf418-5fa1-4f36-aa24-0000078e1ec5",
+      "id": "4328d124-69fa-4f18-b820-63c74de8e723",
       "type": "flow-process",
       "position": {
         "x": 818,
@@ -116,11 +116,57 @@
       }
     },
     {
-      "id": "8fc79a80-c856-40fb-85a1-0ad5b6cd4943",
+      "id": "faa723b6-d186-47d7-a7fe-9a870831bd32",
       "type": "flow-process",
       "position": {
         "x": 1170,
         "y": 350
+      },
+      "data": {
+        "label": "Process 4",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "width": 160,
+      "height": 56,
+      "measured": {
+        "width": 160,
+        "height": 56
+      }
+    },
+    {
+      "id": "3211ac87-bb75-443f-9ce8-ba040ce46b1b",
+      "type": "flow-process",
+      "position": {
+        "x": 866,
+        "y": 124
+      },
+      "data": {
+        "label": "Process 3",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "width": 160,
+      "height": 56,
+      "measured": {
+        "width": 160,
+        "height": 56
+      }
+    },
+    {
+      "id": "491b0dc6-8df7-4af8-b2f2-b11439e6e45c",
+      "type": "flow-process",
+      "position": {
+        "x": 1218,
+        "y": 142
       },
       "data": {
         "label": "Process 4",
@@ -142,8 +188,8 @@
   "edges": [
     {
       "id": "e-0",
-      "source": "573a74c9-6db9-4521-82f4-a6cd1e3accb7",
-      "target": "192b280a-6d61-4e49-8288-be4422e79ce3",
+      "source": "c40e7a7b-279f-4631-af9d-35aaa5d7e379",
+      "target": "a0138135-01b3-4c84-9d2d-ef8148f0dc89",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow",
@@ -155,8 +201,8 @@
     },
     {
       "id": "e-1",
-      "source": "fd291a8a-7ed0-479a-b378-620dbbcb4963",
-      "target": "203c3b5d-5e82-4844-89dd-a08bab5042dd",
+      "source": "b0397385-4a19-4ac8-9edf-a41cff7f3f55",
+      "target": "e65e532c-7427-4d8f-b735-9089be4efa9d",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow",
@@ -170,8 +216,23 @@
     },
     {
       "id": "e-2",
-      "source": "08eaf418-5fa1-4f36-aa24-0000078e1ec5",
-      "target": "8fc79a80-c856-40fb-85a1-0ad5b6cd4943",
+      "source": "4328d124-69fa-4f18-b820-63c74de8e723",
+      "target": "faa723b6-d186-47d7-a7fe-9a870831bd32",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "arrow",
+        "color": "#6366f1"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "e-3",
+      "source": "3211ac87-bb75-443f-9ce8-ba040ce46b1b",
+      "target": "491b0dc6-8df7-4af8-b2f2-b11439e6e45c",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow",
@@ -184,6 +245,6 @@
       "targetHandle": "left"
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4\")\n  n_4(\"Process 3\")\n  n_5(\"Process 4\")\n  n_0 --> n_1\n  n_2 --> n_3\n  n_4 --> n_5\n",
+  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4\")\n  n_4(\"Process 3\")\n  n_5(\"Process 4\")\n  n_6(\"Process 3\")\n  n_7(\"Process 4\")\n  n_0 --> n_1\n  n_2 --> n_3\n  n_4 --> n_5\n  n_6 --> n_7\n",
   "flowEdgeStyle": "smooth"
 }
