@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "id": "de6d64f4-fd17-49b2-b4bf-cef4fed8fc2e",
+      "id": "06051377-654d-4db5-82ea-e8cc528469bc",
       "type": "flow-process",
       "position": {
         "x": 654,
@@ -22,11 +22,10 @@
         "width": 160,
         "height": 56
       },
-      "selected": false,
-      "dragging": false
+      "selected": false
     },
     {
-      "id": "b6e3f5b8-fe34-490b-af45-b062afe91d71",
+      "id": "5037b614-cf48-4dbf-b12f-55487990b197",
       "type": "flow-process",
       "position": {
         "x": 1064,
@@ -47,11 +46,10 @@
         "width": 160,
         "height": 56
       },
-      "selected": true,
-      "dragging": false
+      "selected": false
     },
     {
-      "id": "6c7abdde-becf-423c-b63f-53c9eee22690",
+      "id": "f71bf296-168b-47cb-9089-66431f0cec4f",
       "type": "flow-process",
       "position": {
         "x": 1069,
@@ -71,11 +69,10 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false
+      }
     },
     {
-      "id": "b3023bbc-25c3-446f-81df-34e50a9b9cd6",
+      "id": "37b70b0f-eb2a-4db3-aae6-31b87e6eaaa1",
       "type": "flow-process",
       "position": {
         "x": 660,
@@ -95,11 +92,10 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false
+      }
     },
     {
-      "id": "8401fbdf-0c92-4288-a200-c9e7317da08b",
+      "id": "222cb28d-929b-41ad-b285-20fa970fb4ec",
       "type": "flow-process",
       "position": {
         "x": 930,
@@ -119,16 +115,14 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": true,
-      "dragging": false
+      }
     },
     {
-      "id": "f1382452-b99f-4d7c-b6d5-e49aef0921c6",
+      "id": "cf447e32-5519-48d6-914c-3deed55be3c4",
       "type": "flow-process",
       "position": {
-        "x": 1094,
-        "y": 491
+        "x": 1213,
+        "y": 365
       },
       "data": {
         "label": "Process 2",
@@ -144,16 +138,37 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false,
-      "dragging": false
+      }
     },
     {
-      "id": "9e470f9f-c24d-41d5-9c25-6bd3248a7ab6",
+      "id": "bf7a6239-40de-4c66-bf18-924b66a8c704",
       "type": "flow-process",
       "position": {
-        "x": 960,
-        "y": 343
+        "x": 1117,
+        "y": 212
+      },
+      "data": {
+        "label": "Process 1",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "width": 160,
+      "height": 56,
+      "measured": {
+        "width": 160,
+        "height": 56
+      }
+    },
+    {
+      "id": "2d0e79cf-7994-484e-a639-337973311876",
+      "type": "flow-process",
+      "position": {
+        "x": 600,
+        "y": 302
       },
       "data": {
         "label": "Process 1",
@@ -170,19 +185,15 @@
         "width": 160,
         "height": 56
       },
-      "selected": false,
+      "selected": true,
       "dragging": false
     }
   ],
   "edges": [
     {
       "id": "e-0",
-      "source": "de6d64f4-fd17-49b2-b4bf-cef4fed8fc2e",
-      "target": "b6e3f5b8-fe34-490b-af45-b062afe91d71",
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
+      "source": "06051377-654d-4db5-82ea-e8cc528469bc",
+      "target": "5037b614-cf48-4dbf-b12f-55487990b197",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "double",
@@ -196,12 +207,8 @@
     },
     {
       "id": "e-1",
-      "source": "b6e3f5b8-fe34-490b-af45-b062afe91d71",
-      "target": "6c7abdde-becf-423c-b63f-53c9eee22690",
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
+      "source": "5037b614-cf48-4dbf-b12f-55487990b197",
+      "target": "f71bf296-168b-47cb-9089-66431f0cec4f",
       "data": {
         "lineStyle": "dashed",
         "arrowHead": "arrow",
@@ -215,12 +222,8 @@
     },
     {
       "id": "e-2",
-      "source": "6c7abdde-becf-423c-b63f-53c9eee22690",
-      "target": "b3023bbc-25c3-446f-81df-34e50a9b9cd6",
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
+      "source": "f71bf296-168b-47cb-9089-66431f0cec4f",
+      "target": "37b70b0f-eb2a-4db3-aae6-31b87e6eaaa1",
       "data": {
         "lineStyle": "thick",
         "arrowHead": "arrow",
@@ -234,12 +237,8 @@
     },
     {
       "id": "e-3",
-      "source": "b3023bbc-25c3-446f-81df-34e50a9b9cd6",
-      "target": "de6d64f4-fd17-49b2-b4bf-cef4fed8fc2e",
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
+      "source": "37b70b0f-eb2a-4db3-aae6-31b87e6eaaa1",
+      "target": "06051377-654d-4db5-82ea-e8cc528469bc",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "cross",
@@ -252,6 +251,6 @@
       "targetHandle": "bottom"
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0(\"Process 1\")\n  n_1(\"Process 2\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4\")\n  n_4(\"Process 1\")\n  n_5(\"Process 2\")\n  n_6(\"Process 1\")\n  n_0 <--> n_1\n  n_1 -.-> n_2\n  n_2 ==> n_3\n  n_3 --x n_0\n",
+  "mermaidCode": "flowchart TD\n  n_0(\"Process 1\")\n  n_1(\"Process 2\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4\")\n  n_4(\"Process 1\")\n  n_5(\"Process 2\")\n  n_6(\"Process 1\")\n  n_7(\"Process 1\")\n  n_0 <--> n_1\n  n_1 -.-> n_2\n  n_2 ==> n_3\n  n_3 --x n_0\n",
   "flowEdgeStyle": "smooth"
 }
