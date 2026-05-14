@@ -23,8 +23,8 @@
       "label": "Approved?",
       "shape": "decision",
       "order": 0,
-      "x": 460,
-      "y": 54
+      "x": 491.2361809045226,
+      "y": 49.53768844221105
     },
     {
       "id": "0cf0a619-167c-4de7-8039-f92bc08255ab",
@@ -45,39 +45,6 @@
       "y": 72
     },
     {
-      "id": "d1542b36-eb37-419c-bf5e-b1a6a85f2b36",
-      "laneId": "b1a803fd-08f9-4c4c-85a4-1f4c59bd34d0",
-      "label": "Approved?",
-      "shape": "decision",
-      "order": 3,
-      "x": 1044.4824120603016,
-      "y": 87.38693467336682,
-      "width": 156,
-      "height": 92
-    },
-    {
-      "id": "0cb60eec-233d-4a9b-9f04-6452e2a088ab",
-      "laneId": "b1a803fd-08f9-4c4c-85a4-1f4c59bd34d0",
-      "label": "Define Requirements",
-      "shape": "process",
-      "order": 4,
-      "x": 824.4824120603015,
-      "y": 105.38693467336682,
-      "width": 156,
-      "height": 56
-    },
-    {
-      "id": "cc1f1a98-0ef1-4669-b57d-1485bd0daf36",
-      "laneId": "3d74d91c-823d-4abf-b926-ea6ec7985a74",
-      "label": "Approved?",
-      "shape": "decision",
-      "order": 0,
-      "x": 1015.3969849246232,
-      "y": 58.8542713567839,
-      "width": 156,
-      "height": 92
-    },
-    {
       "id": "56d5064c-e61b-4519-a0e2-834d2555b0e0",
       "laneId": "3d74d91c-823d-4abf-b926-ea6ec7985a74",
       "label": "Implement Feature",
@@ -87,17 +54,6 @@
       "y": 72
     },
     {
-      "id": "c58ecf88-2171-4da3-aa8d-97e6e69da91f",
-      "laneId": "3d74d91c-823d-4abf-b926-ea6ec7985a74",
-      "label": "Define Requirements",
-      "shape": "process",
-      "order": 2,
-      "x": 795.3969849246231,
-      "y": 76.8542713567839,
-      "width": 156,
-      "height": 56
-    },
-    {
       "id": "47716c29-5998-47ab-852a-511ddeda511c",
       "laneId": "e5384d14-2942-46ae-8428-4fd7fe824bd4",
       "label": "Code Review",
@@ -105,6 +61,28 @@
       "order": 1,
       "x": 460,
       "y": 72
+    },
+    {
+      "id": "2d082488-33e0-4d94-a9b3-f5582e7044e1",
+      "laneId": "b1a803fd-08f9-4c4c-85a4-1f4c59bd34d0",
+      "label": "Approved?",
+      "shape": "decision",
+      "order": 3,
+      "x": 556.9748743718593,
+      "y": 134.24120603015075,
+      "width": 156,
+      "height": 92
+    },
+    {
+      "id": "6988673b-9daf-4b6a-9409-606ea399ac0a",
+      "laneId": "b1a803fd-08f9-4c4c-85a4-1f4c59bd34d0",
+      "label": "Define Requirements",
+      "shape": "process",
+      "order": 4,
+      "x": 305.7386934673367,
+      "y": 156.7035175879397,
+      "width": 156,
+      "height": 56
     }
   ],
   "connections": [
@@ -152,5 +130,5 @@
   "swTheme": "default",
   "swLaneGap": 24,
   "swLaneColorOverrides": {},
-  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements\"]\n    t_3{\"Approved?\"}\n    t_4[\"Define Requirements\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_5{\"Approved?\"}\n    t_6[\"Implement Feature\"]\n    t_7[\"Define Requirements\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_8[\"Code Review\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 -->|\"Yes\"| t_6\n  t_6 --> t_8\n"
+  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements\"]\n    t_3{\"Approved?\"}\n    t_4[\"Define Requirements\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_5[\"Implement Feature\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_6[\"Code Review\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 -->|\"Yes\"| t_5\n  t_5 --> t_6\n"
 }
