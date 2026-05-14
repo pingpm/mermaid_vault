@@ -97,6 +97,81 @@
         "height": 56
       },
       "selected": false
+    },
+    {
+      "id": "8401fbdf-0c92-4288-a200-c9e7317da08b",
+      "type": "flow-process",
+      "position": {
+        "x": 930,
+        "y": 313
+      },
+      "data": {
+        "label": "Process 1",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "width": 160,
+      "height": 56,
+      "measured": {
+        "width": 160,
+        "height": 56
+      },
+      "selected": true,
+      "dragging": false
+    },
+    {
+      "id": "f1382452-b99f-4d7c-b6d5-e49aef0921c6",
+      "type": "flow-process",
+      "position": {
+        "x": 1094,
+        "y": 491
+      },
+      "data": {
+        "label": "Process 2",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "width": 160,
+      "height": 56,
+      "measured": {
+        "width": 160,
+        "height": 56
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "9e470f9f-c24d-41d5-9c25-6bd3248a7ab6",
+      "type": "flow-process",
+      "position": {
+        "x": 960,
+        "y": 343
+      },
+      "data": {
+        "label": "Process 1",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "width": 160,
+      "height": 56,
+      "measured": {
+        "width": 160,
+        "height": 56
+      },
+      "selected": false,
+      "dragging": false
     }
   ],
   "edges": [
@@ -177,6 +252,6 @@
       "targetHandle": "bottom"
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0(\"Process 1\")\n  n_1(\"Process 2\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4\")\n  n_0 <--> n_1\n  n_1 -.-> n_2\n  n_2 ==> n_3\n  n_3 --x n_0\n",
+  "mermaidCode": "flowchart TD\n  n_0(\"Process 1\")\n  n_1(\"Process 2\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4\")\n  n_4(\"Process 1\")\n  n_5(\"Process 2\")\n  n_6(\"Process 1\")\n  n_0 <--> n_1\n  n_1 -.-> n_2\n  n_2 ==> n_3\n  n_3 --x n_0\n",
   "flowEdgeStyle": "smooth"
 }
