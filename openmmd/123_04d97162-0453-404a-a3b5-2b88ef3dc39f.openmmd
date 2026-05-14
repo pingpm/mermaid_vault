@@ -289,6 +289,29 @@
       },
       "selected": false,
       "dragging": false
+    },
+    {
+      "id": "ca6e32d0-8fee-4abc-90d2-98c41feb4598",
+      "type": "flow-decision",
+      "position": {
+        "x": 423,
+        "y": 423
+      },
+      "data": {
+        "label": "Decision 13",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "measured": {
+        "width": 160,
+        "height": 56
+      },
+      "selected": true,
+      "dragging": false
     }
   ],
   "edges": [
@@ -369,6 +392,6 @@
       "targetHandle": "bottom"
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0(\"Process 1\")\n  n_1(\"Process 2\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4\")\n  n_4(\"Process 1\")\n  n_5(\"Process 2\")\n  n_6(\"Process 1\")\n  n_7(\"Process 1\")\n  n_8(\"Process 1\")\n  n_9(\"Process 1\")\n  n_10(\"Process 1\")\n  n_11(\"Process 1\")\n  n_0 <--> n_1\n  n_1 -.-> n_2\n  n_2 ==> n_3\n  n_3 --x n_0\n",
+  "mermaidCode": "flowchart TD\n  n_0(\"Process 1\")\n  n_1(\"Process 2\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4\")\n  n_4(\"Process 1\")\n  n_5(\"Process 2\")\n  n_6(\"Process 1\")\n  n_7(\"Process 1\")\n  n_8(\"Process 1\")\n  n_9(\"Process 1\")\n  n_10(\"Process 1\")\n  n_11(\"Process 1\")\n  n_12{\"Decision 13\"}\n  n_0 <--> n_1\n  n_1 -.-> n_2\n  n_2 ==> n_3\n  n_3 --x n_0\n",
   "flowEdgeStyle": "smooth"
 }
