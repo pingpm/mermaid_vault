@@ -113,7 +113,8 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": true
     },
     {
       "id": "838ea2ad-fa13-4a24-8584-879ecb4fe13e",
@@ -136,7 +137,8 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": true
     },
     {
       "id": "25711072-090e-4329-aa84-9937e5391c3d",
@@ -205,7 +207,8 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false
     },
     {
       "id": "a74fa724-a88f-4ddd-9827-3096d1465699",
@@ -228,7 +231,8 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false
     }
   ],
   "edges": [
