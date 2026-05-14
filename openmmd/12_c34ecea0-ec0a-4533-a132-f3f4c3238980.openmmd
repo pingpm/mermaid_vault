@@ -45,28 +45,6 @@
       "y": 72
     },
     {
-      "id": "753cb128-d9e6-4bc2-b047-c51495dfd1f5",
-      "laneId": "66e9f9e7-961f-4a39-a415-0907e4401a61",
-      "label": "Approved?",
-      "shape": "decision",
-      "order": 3,
-      "x": 480,
-      "y": 74,
-      "width": 156,
-      "height": 92
-    },
-    {
-      "id": "966907a9-d7cc-45d3-aca0-446afb226f4c",
-      "laneId": "66e9f9e7-961f-4a39-a415-0907e4401a61",
-      "label": "Define Requirements",
-      "shape": "process",
-      "order": 4,
-      "x": 260,
-      "y": 92,
-      "width": 156,
-      "height": 56
-    },
-    {
       "id": "9a3327c5-a5f2-47e2-bcbd-c25f7015eba1",
       "laneId": "635aeb6b-699a-4613-8230-e52f189c439c",
       "label": "Implement Feature",
@@ -130,5 +108,5 @@
   "swTheme": "default",
   "swLaneGap": 24,
   "swLaneColorOverrides": {},
-  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements\"]\n    t_3{\"Approved?\"}\n    t_4[\"Define Requirements\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_5[\"Implement Feature\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_6[\"Code Review\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 -->|\"Yes\"| t_5\n  t_5 --> t_6\n"
+  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_3[\"Implement Feature\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_4[\"Code Review\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 -->|\"Yes\"| t_3\n  t_3 --> t_4\n"
 }
