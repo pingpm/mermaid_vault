@@ -4,8 +4,8 @@
       "id": "de6d64f4-fd17-49b2-b4bf-cef4fed8fc2e",
       "type": "flow-process",
       "position": {
-        "x": 660,
-        "y": 559
+        "x": 654,
+        "y": 461
       },
       "data": {
         "label": "Process 1",
@@ -21,14 +21,16 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false,
+      "dragging": false
     },
     {
       "id": "b6e3f5b8-fe34-490b-af45-b062afe91d71",
       "type": "flow-process",
       "position": {
-        "x": 1070,
-        "y": 559
+        "x": 1064,
+        "y": 461
       },
       "data": {
         "label": "Process 2",
@@ -44,7 +46,9 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": true,
+      "dragging": false
     },
     {
       "id": "6c7abdde-becf-423c-b63f-53c9eee22690",
@@ -67,7 +71,8 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false
     },
     {
       "id": "b3023bbc-25c3-446f-81df-34e50a9b9cd6",
@@ -90,7 +95,8 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false
     }
   ],
   "edges": [
@@ -98,6 +104,10 @@
       "id": "e-0",
       "source": "de6d64f4-fd17-49b2-b4bf-cef4fed8fc2e",
       "target": "b6e3f5b8-fe34-490b-af45-b062afe91d71",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "double",
@@ -113,6 +123,10 @@
       "id": "e-1",
       "source": "b6e3f5b8-fe34-490b-af45-b062afe91d71",
       "target": "6c7abdde-becf-423c-b63f-53c9eee22690",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "dashed",
         "arrowHead": "arrow",
@@ -128,6 +142,10 @@
       "id": "e-2",
       "source": "6c7abdde-becf-423c-b63f-53c9eee22690",
       "target": "b3023bbc-25c3-446f-81df-34e50a9b9cd6",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "thick",
         "arrowHead": "arrow",
@@ -143,6 +161,10 @@
       "id": "e-3",
       "source": "b3023bbc-25c3-446f-81df-34e50a9b9cd6",
       "target": "de6d64f4-fd17-49b2-b4bf-cef4fed8fc2e",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "cross",

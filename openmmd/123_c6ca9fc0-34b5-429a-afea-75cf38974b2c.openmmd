@@ -1,6 +1,71 @@
 {
-  "nodes": [],
-  "edges": [],
-  "mermaidCode": "flowchart TD\n",
-  "flowEdgeStyle": "smooth"
+  "lanes": [
+    {
+      "id": "36e37722-fc6c-4b29-b0a7-16aabdb7fad4",
+      "label": "Lane 1",
+      "order": 0
+    }
+  ],
+  "tasks": [
+    {
+      "id": "a538ebec-38c4-4665-a55b-da974e587601",
+      "laneId": "36e37722-fc6c-4b29-b0a7-16aabdb7fad4",
+      "label": "Process 1",
+      "shape": "process",
+      "order": 0,
+      "x": 414.32338308457713,
+      "y": 103.29850746268659,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "b0b7c70a-747f-4421-925d-6214e398adf2",
+      "laneId": "36e37722-fc6c-4b29-b0a7-16aabdb7fad4",
+      "label": "Process 2",
+      "shape": "process",
+      "order": 1,
+      "x": 733.5522388059702,
+      "y": 120.63681592039802,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "6f566c15-d37f-425c-a086-92c0a334d2d5",
+      "laneId": "36e37722-fc6c-4b29-b0a7-16aabdb7fad4",
+      "label": "Process 1",
+      "shape": "process",
+      "order": 2,
+      "x": 1050.3432835820895,
+      "y": 93.7213930348259,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "8aea8ce5-fa28-4015-aa09-b7e3919d04c9",
+      "laneId": "36e37722-fc6c-4b29-b0a7-16aabdb7fad4",
+      "label": "Process 2",
+      "shape": "process",
+      "order": 3,
+      "x": 753.5522388059702,
+      "y": 140.63681592039802,
+      "width": 156,
+      "height": 56
+    }
+  ],
+  "connections": [
+    {
+      "id": "82ac43fb-ea11-4b5e-9b04-a5e9cc2dd891",
+      "fromTaskId": "b0b7c70a-747f-4421-925d-6214e398adf2",
+      "toTaskId": "a538ebec-38c4-4665-a55b-da974e587601",
+      "sourceHandle": "top",
+      "targetHandle": "top"
+    }
+  ],
+  "swBgPattern": "none",
+  "swDirection": "LR",
+  "swEdgeStyle": "smooth",
+  "swTheme": "default",
+  "swLaneGap": 24,
+  "swLaneColorOverrides": {},
+  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Lane 1\"]\n    t_0[\"Process 1\"]\n    t_1[\"Process 1\"]\n    t_2[\"Process 2\"]\n    t_3[\"Process 2\"]\n  end\n  t_2 --> t_1\n"
 }

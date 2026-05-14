@@ -1,1 +1,8 @@
-flowchart TD
+flowchart LR
+  subgraph lane_0["Lane 1"]
+    t_0["Process 1"]
+    t_1["Process 1"]
+    t_2["Process 2"]
+    t_3["Process 2"]
+  end
+  t_2 --> t_1
