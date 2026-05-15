@@ -21,7 +21,8 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false
     },
     {
       "id": "d9d0aaf3-ea13-4719-bcd0-ef05b08de561",
@@ -44,7 +45,8 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false
     },
     {
       "id": "3144a7ef-d7a2-41aa-a932-3e6ad8ead589",
@@ -67,7 +69,8 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false
     },
     {
       "id": "e0f8e4c9-e6af-42bd-8aec-b11fd05d3a27",
@@ -90,7 +93,8 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false
     },
     {
       "id": "a7c20978-4556-499e-8ab1-5becb025f3a4",
@@ -114,7 +118,7 @@
         "width": 160,
         "height": 56
       },
-      "selected": true
+      "selected": false
     },
     {
       "id": "838ea2ad-fa13-4a24-8584-879ecb4fe13e",
@@ -138,7 +142,7 @@
         "width": 160,
         "height": 56
       },
-      "selected": true
+      "selected": false
     },
     {
       "id": "25711072-090e-4329-aa84-9937e5391c3d",
@@ -161,7 +165,8 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false
     },
     {
       "id": "2938f312-366b-48be-b0de-4ab026c47412",
@@ -184,7 +189,8 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false
     },
     {
       "id": "ad26b1ff-255f-466f-a35c-7ab5befc4746",
@@ -221,6 +227,84 @@
         "label": "Process 4",
         "width": 160,
         "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "width": 160,
+      "height": 56,
+      "measured": {
+        "width": 160,
+        "height": 56
+      },
+      "selected": false
+    },
+    {
+      "id": "c039605b-defb-4f6d-a9da-1b9c2ea6c5bf",
+      "type": "flow-process",
+      "position": {
+        "x": 961,
+        "y": 608
+      },
+      "data": {
+        "label": "Process 3",
+        "width": 160,
+        "height": 56,
+        "selectedCount": 3,
+        "isMultiSelectAnchor": true
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "width": 160,
+      "height": 56,
+      "measured": {
+        "width": 160,
+        "height": 56
+      },
+      "selected": false
+    },
+    {
+      "id": "1fb0a231-bdbd-4f84-ab96-bf0a862b86d2",
+      "type": "flow-process",
+      "position": {
+        "x": 1313,
+        "y": 626
+      },
+      "data": {
+        "label": "Process 4",
+        "width": 160,
+        "height": 56,
+        "selectedCount": 3,
+        "isMultiSelectAnchor": false
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "width": 160,
+      "height": 56,
+      "measured": {
+        "width": 160,
+        "height": 56
+      },
+      "selected": false
+    },
+    {
+      "id": "c0ea852f-87d3-4026-85c5-b041c7cfc501",
+      "type": "flow-process",
+      "position": {
+        "x": 1367,
+        "y": 512
+      },
+      "data": {
+        "label": "Process 4",
+        "width": 160,
+        "height": 56,
+        "selectedCount": 3,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -328,8 +412,28 @@
       },
       "sourceHandle": "right",
       "targetHandle": "left"
+    },
+    {
+      "id": "558c3bd8-478e-4bcb-84a9-a07977dd4686",
+      "source": "c039605b-defb-4f6d-a9da-1b9c2ea6c5bf",
+      "target": "1fb0a231-bdbd-4f84-ab96-bf0a862b86d2",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "arrow",
+        "color": "#6366f1"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      },
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "selected": false
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4\")\n  n_4(\"Process 3\")\n  n_5(\"Process 4\")\n  n_6(\"Process 3\")\n  n_7(\"Process 4\")\n  n_8(\"Process 3\")\n  n_9(\"Process 4\")\n  n_0 --> n_1\n  n_2 --> n_3\n  n_4 --> n_5\n  n_6 --> n_7\n  n_8 --> n_9\n",
+  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4\")\n  n_4(\"Process 3\")\n  n_5(\"Process 4\")\n  n_6(\"Process 3\")\n  n_7(\"Process 4\")\n  n_8(\"Process 3\")\n  n_9(\"Process 4\")\n  n_10(\"Process 3\")\n  n_11(\"Process 4\")\n  n_12(\"Process 4\")\n  n_0 --> n_1\n  n_2 --> n_3\n  n_4 --> n_5\n  n_6 --> n_7\n  n_8 --> n_9\n  n_10 --> n_11\n",
   "flowEdgeStyle": "smooth"
 }
