@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "id": "e8a5e197-d3b0-430b-a3fe-7694e80ac1df",
+      "id": "85e92cb6-d5ae-4dc0-8df1-1d42bea08017",
       "type": "flow-terminator",
       "position": {
         "x": 250,
@@ -21,11 +21,10 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false
+      }
     },
     {
-      "id": "d9d0aaf3-ea13-4719-bcd0-ef05b08de561",
+      "id": "fbd0e843-83e4-4786-b3f4-18c1ab240f28",
       "type": "flow-process",
       "position": {
         "x": 250,
@@ -45,11 +44,10 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false
+      }
     },
     {
-      "id": "3144a7ef-d7a2-41aa-a932-3e6ad8ead589",
+      "id": "e5ddf1a2-e06e-4ba5-8ee8-8ea20570ca29",
       "type": "flow-process",
       "position": {
         "x": 637,
@@ -69,11 +67,10 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false
+      }
     },
     {
-      "id": "e0f8e4c9-e6af-42bd-8aec-b11fd05d3a27",
+      "id": "21e6383a-c73e-4a62-8b56-a06a5316df72",
       "type": "flow-process",
       "position": {
         "x": 989,
@@ -93,11 +90,10 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false
+      }
     },
     {
-      "id": "a7c20978-4556-499e-8ab1-5becb025f3a4",
+      "id": "fc9c11bb-5f00-45dc-baa9-3b0cbb64239c",
       "type": "flow-process",
       "position": {
         "x": 818,
@@ -117,11 +113,10 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false
+      }
     },
     {
-      "id": "838ea2ad-fa13-4a24-8584-879ecb4fe13e",
+      "id": "7736ddf0-f7aa-460b-a7e1-d9bb58063584",
       "type": "flow-process",
       "position": {
         "x": 1170,
@@ -141,11 +136,10 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false
+      }
     },
     {
-      "id": "25711072-090e-4329-aa84-9937e5391c3d",
+      "id": "55ac8028-9ed3-4098-8e27-1ad719c71b16",
       "type": "flow-process",
       "position": {
         "x": 866,
@@ -165,11 +159,10 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": true
+      }
     },
     {
-      "id": "2938f312-366b-48be-b0de-4ab026c47412",
+      "id": "ca5e3d65-4851-4564-bf5c-21b35f7a0642",
       "type": "flow-process",
       "position": {
         "x": 1218,
@@ -189,11 +182,10 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false
+      }
     },
     {
-      "id": "ad26b1ff-255f-466f-a35c-7ab5befc4746",
+      "id": "30a3204a-e3b8-4685-87d9-32d6d76ee2be",
       "type": "flow-process",
       "position": {
         "x": 872,
@@ -213,11 +205,10 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false
+      }
     },
     {
-      "id": "a74fa724-a88f-4ddd-9827-3096d1465699",
+      "id": "bb3f339a-e9c4-4573-be0f-187c26bfc010",
       "type": "flow-process",
       "position": {
         "x": 1224,
@@ -237,11 +228,10 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false
+      }
     },
     {
-      "id": "c039605b-defb-4f6d-a9da-1b9c2ea6c5bf",
+      "id": "ab96f509-e004-4177-aa4e-9466ec0e8c37",
       "type": "flow-process",
       "position": {
         "x": 961,
@@ -250,9 +240,7 @@
       "data": {
         "label": "Process 3",
         "width": 160,
-        "height": 56,
-        "selectedCount": 3,
-        "isMultiSelectAnchor": true
+        "height": 56
       },
       "style": {
         "width": 160,
@@ -263,11 +251,10 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false
+      }
     },
     {
-      "id": "1fb0a231-bdbd-4f84-ab96-bf0a862b86d2",
+      "id": "048b59cc-d0bc-45cf-ad55-e580081a740b",
       "type": "flow-process",
       "position": {
         "x": 1313,
@@ -276,9 +263,7 @@
       "data": {
         "label": "Process 4",
         "width": 160,
-        "height": 56,
-        "selectedCount": 3,
-        "isMultiSelectAnchor": false
+        "height": 56
       },
       "style": {
         "width": 160,
@@ -289,11 +274,10 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false
+      }
     },
     {
-      "id": "c0ea852f-87d3-4026-85c5-b041c7cfc501",
+      "id": "b1fc8440-fe20-4609-b7b9-786fb5cf44be",
       "type": "flow-process",
       "position": {
         "x": 1367,
@@ -302,9 +286,7 @@
       "data": {
         "label": "Process 4",
         "width": 160,
-        "height": 56,
-        "selectedCount": 3,
-        "isMultiSelectAnchor": false
+        "height": 56
       },
       "style": {
         "width": 160,
@@ -315,19 +297,14 @@
       "measured": {
         "width": 160,
         "height": 56
-      },
-      "selected": false
+      }
     }
   ],
   "edges": [
     {
       "id": "e-0",
-      "source": "e8a5e197-d3b0-430b-a3fe-7694e80ac1df",
-      "target": "d9d0aaf3-ea13-4719-bcd0-ef05b08de561",
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
+      "source": "85e92cb6-d5ae-4dc0-8df1-1d42bea08017",
+      "target": "fbd0e843-83e4-4786-b3f4-18c1ab240f28",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow",
@@ -339,12 +316,8 @@
     },
     {
       "id": "e-1",
-      "source": "3144a7ef-d7a2-41aa-a932-3e6ad8ead589",
-      "target": "e0f8e4c9-e6af-42bd-8aec-b11fd05d3a27",
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
+      "source": "e5ddf1a2-e06e-4ba5-8ee8-8ea20570ca29",
+      "target": "21e6383a-c73e-4a62-8b56-a06a5316df72",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow",
@@ -358,12 +331,8 @@
     },
     {
       "id": "e-2",
-      "source": "a7c20978-4556-499e-8ab1-5becb025f3a4",
-      "target": "838ea2ad-fa13-4a24-8584-879ecb4fe13e",
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
+      "source": "fc9c11bb-5f00-45dc-baa9-3b0cbb64239c",
+      "target": "7736ddf0-f7aa-460b-a7e1-d9bb58063584",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow",
@@ -377,12 +346,8 @@
     },
     {
       "id": "e-3",
-      "source": "25711072-090e-4329-aa84-9937e5391c3d",
-      "target": "2938f312-366b-48be-b0de-4ab026c47412",
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
+      "source": "55ac8028-9ed3-4098-8e27-1ad719c71b16",
+      "target": "ca5e3d65-4851-4564-bf5c-21b35f7a0642",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow",
@@ -396,12 +361,8 @@
     },
     {
       "id": "e-4",
-      "source": "ad26b1ff-255f-466f-a35c-7ab5befc4746",
-      "target": "a74fa724-a88f-4ddd-9827-3096d1465699",
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
+      "source": "30a3204a-e3b8-4685-87d9-32d6d76ee2be",
+      "target": "bb3f339a-e9c4-4573-be0f-187c26bfc010",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow",
@@ -414,13 +375,9 @@
       "targetHandle": "left"
     },
     {
-      "id": "558c3bd8-478e-4bcb-84a9-a07977dd4686",
-      "source": "c039605b-defb-4f6d-a9da-1b9c2ea6c5bf",
-      "target": "1fb0a231-bdbd-4f84-ab96-bf0a862b86d2",
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
+      "id": "e-5",
+      "source": "ab96f509-e004-4177-aa4e-9466ec0e8c37",
+      "target": "048b59cc-d0bc-45cf-ad55-e580081a740b",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow",
@@ -430,8 +387,7 @@
         "type": "arrowclosed"
       },
       "sourceHandle": "right",
-      "targetHandle": "left",
-      "selected": false
+      "targetHandle": "left"
     }
   ],
   "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4\")\n  n_4(\"Process 3\")\n  n_5(\"Process 4\")\n  n_6(\"Process 3\")\n  n_7(\"Process 4\")\n  n_8(\"Process 3\")\n  n_9(\"Process 4\")\n  n_10(\"Process 3\")\n  n_11(\"Process 4\")\n  n_12(\"Process 4\")\n  n_0 --> n_1\n  n_2 --> n_3\n  n_4 --> n_5\n  n_6 --> n_7\n  n_8 --> n_9\n  n_10 --> n_11\n",
