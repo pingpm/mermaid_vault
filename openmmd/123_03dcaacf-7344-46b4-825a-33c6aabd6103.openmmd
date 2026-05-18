@@ -166,7 +166,7 @@
         "width": 160,
         "height": 56
       },
-      "selected": false
+      "selected": true
     },
     {
       "id": "2938f312-366b-48be-b0de-4ab026c47412",
@@ -264,7 +264,7 @@
         "width": 160,
         "height": 56
       },
-      "selected": true
+      "selected": false
     },
     {
       "id": "1fb0a231-bdbd-4f84-ab96-bf0a862b86d2",
