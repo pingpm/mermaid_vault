@@ -190,6 +190,10 @@
       "id": "e-0",
       "source": "ac09132e-e60e-48e8-a49b-144913caaefa",
       "target": "a85266ac-1614-49c7-9251-0505f18bf136",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "决定价值"
       },
@@ -201,6 +205,10 @@
       "id": "e-1",
       "source": "a85266ac-1614-49c7-9251-0505f18bf136",
       "target": "db756ff0-b6d6-4c7a-a44a-a2136821558f",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "决定“汇率”基准<br>市场信心与风险对冲"
       },
@@ -212,6 +220,10 @@
       "id": "e-2",
       "source": "db756ff0-b6d6-4c7a-a44a-a2136821558f",
       "target": "9ef0c0f2-a4bf-4bb4-82ee-782b9e43603e",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "发行/接受"
       },
@@ -223,6 +235,10 @@
       "id": "e-3",
       "source": "c39672fd-ec35-4408-8b40-1434a30d07dd",
       "target": "9ef0c0f2-a4bf-4bb4-82ee-782b9e43603e",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "发行/接受"
       },
@@ -234,6 +250,10 @@
       "id": "e-4",
       "source": "db756ff0-b6d6-4c7a-a44a-a2136821558f",
       "target": "b19a27ad-6702-47ae-bdfc-f694a0dfac72",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "基于信誉的贴现率"
       },
@@ -245,6 +265,10 @@
       "id": "e-5",
       "source": "c39672fd-ec35-4408-8b40-1434a30d07dd",
       "target": "b19a27ad-6702-47ae-bdfc-f694a0dfac72",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "基于信誉的贴现率"
       },
@@ -256,6 +280,10 @@
       "id": "e-6",
       "source": "b19a27ad-6702-47ae-bdfc-f694a0dfac72",
       "target": "9ef0c0f2-a4bf-4bb4-82ee-782b9e43603e",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "提供流动性"
       },
@@ -267,6 +295,10 @@
       "id": "e-7",
       "source": "b01f0d47-7314-493f-8303-ed805b90fe81",
       "target": "9ef0c0f2-a4bf-4bb4-82ee-782b9e43603e",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "直接用于消费"
       },
@@ -278,6 +310,10 @@
       "id": "e-8",
       "source": "003c0cef-c040-48b9-a490-7f754981f932",
       "target": "9ef0c0f2-a4bf-4bb4-82ee-782b9e43603e",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "直接用于消费"
       },
@@ -289,6 +325,10 @@
       "id": "e-9",
       "source": "a85266ac-1614-49c7-9251-0505f18bf136",
       "target": "c39672fd-ec35-4408-8b40-1434a30d07dd",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "color": "#6366f1"
       },
