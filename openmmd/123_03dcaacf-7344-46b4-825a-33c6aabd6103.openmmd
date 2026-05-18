@@ -305,6 +305,10 @@
       "id": "e-0",
       "source": "85e92cb6-d5ae-4dc0-8df1-1d42bea08017",
       "target": "fbd0e843-83e4-4786-b3f4-18c1ab240f28",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow",
@@ -318,6 +322,10 @@
       "id": "e-1",
       "source": "e5ddf1a2-e06e-4ba5-8ee8-8ea20570ca29",
       "target": "21e6383a-c73e-4a62-8b56-a06a5316df72",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow",
@@ -333,6 +341,10 @@
       "id": "e-2",
       "source": "fc9c11bb-5f00-45dc-baa9-3b0cbb64239c",
       "target": "7736ddf0-f7aa-460b-a7e1-d9bb58063584",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow",
@@ -348,6 +360,10 @@
       "id": "e-3",
       "source": "55ac8028-9ed3-4098-8e27-1ad719c71b16",
       "target": "ca5e3d65-4851-4564-bf5c-21b35f7a0642",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow",
@@ -363,6 +379,10 @@
       "id": "e-4",
       "source": "30a3204a-e3b8-4685-87d9-32d6d76ee2be",
       "target": "bb3f339a-e9c4-4573-be0f-187c26bfc010",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow",
@@ -378,6 +398,10 @@
       "id": "e-5",
       "source": "ab96f509-e004-4177-aa4e-9466ec0e8c37",
       "target": "048b59cc-d0bc-45cf-ad55-e580081a740b",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow",
