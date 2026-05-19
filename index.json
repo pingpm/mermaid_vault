@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1779167945848,
+  "updatedAt": 1779167973379,
   "projects": [
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -87,15 +87,6 @@
       "createdAt": 1778568840856,
       "updatedAt": 1778572459126,
       "version": 7
-    },
-    {
-      "id": "4da51209-7242-4a0f-9dee-73e1acd72e99",
-      "projectId": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
-      "name": "233 (copy)",
-      "type": "mindmap",
-      "createdAt": 1778499129612,
-      "updatedAt": 1778499139990,
-      "version": 2
     },
     {
       "id": "62e732d6-279a-49c4-8cc4-1713fc0f8396",
