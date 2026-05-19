@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1779170581606,
+  "updatedAt": 1779179225967,
   "projects": [
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -12,7 +12,7 @@
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1778491131629
+      "updatedAt": 1779179212990
     }
   ],
   "diagrams": [
@@ -132,6 +132,15 @@
       "createdAt": 1777470305130,
       "updatedAt": 1778652392913,
       "version": 1
+    },
+    {
+      "id": "72efae66-ceff-41ab-903d-b84af630eb56",
+      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
+      "name": "123",
+      "type": "flowchart",
+      "createdAt": 1779179175950,
+      "updatedAt": 1779179224242,
+      "version": 2
     },
     {
       "id": "b66f33fe-f22a-4010-b0a8-42139f03c121",
