@@ -1,7 +1,7 @@
 {
   "nodes": [
     {
-      "id": "0a4e540a-eac9-47d7-997a-04a3e0801206",
+      "id": "a846b3bd-9644-4bd3-a2e6-a615dee5aa8b",
       "type": "flow-terminator",
       "position": {
         "x": 250,
@@ -24,11 +24,11 @@
       }
     },
     {
-      "id": "eea3e413-e73c-4f7f-bfd8-f0496749d950",
+      "id": "1b9e51bb-9ada-48e7-88bf-49fc2ca7c07b",
       "type": "flow-decision",
       "position": {
-        "x": 750,
-        "y": 171
+        "x": 250,
+        "y": 150
       },
       "data": {
         "label": "是否有大板取价规则",
@@ -47,7 +47,7 @@
       }
     },
     {
-      "id": "14eb587e-cdb8-435d-8ad4-a77636c0e1bc",
+      "id": "eed10b96-ab64-4a82-8004-e1e2bdd64a72",
       "type": "flow-decision",
       "position": {
         "x": 40,
@@ -62,15 +62,13 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "3c54f6f1-2183-4406-8a2e-c320b764e0cb",
+      "id": "e0e31e1a-581c-4c32-b5a3-819fb04c6a57",
       "type": "flow-process",
       "position": {
         "x": 150,
@@ -85,19 +83,17 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "8afcec25-2b38-4d77-b81d-2fe9c073f513",
+      "id": "6b3b6b76-cf17-47c9-a619-650e98c92781",
       "type": "flow-decision",
       "position": {
-        "x": 150,
-        "y": 790
+        "x": 544,
+        "y": 783
       },
       "data": {
         "label": "是否有命中价格",
@@ -108,19 +104,19 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": true,
+      "dragging": false
     },
     {
-      "id": "6f50b490-784b-434a-854f-e26eb69ea793",
+      "id": "67ec8804-6e93-4f17-8925-cc1b7707dfa1",
       "type": "flow-process",
       "position": {
-        "x": -70,
-        "y": 1430
+        "x": -215,
+        "y": 1428
       },
       "data": {
         "label": "增加保障服务费（客配置中的）",
@@ -131,15 +127,15 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false,
+      "dragging": false
     },
     {
-      "id": "b193bf48-61cd-46fb-9968-e6d1bc2dfc82",
+      "id": "37fd5883-f1d3-413f-b538-a263c85c3034",
       "type": "flow-process",
       "position": {
         "x": 40,
@@ -154,15 +150,13 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "a1ecdd18-9d44-4eef-9aea-2f14c10dbfe1",
+      "id": "26e7945f-d680-44f1-bb00-3b4d4935842c",
       "type": "flow-process",
       "position": {
         "x": 40,
@@ -177,15 +171,13 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "8a3f3fc1-1236-4f46-a0a6-d2786f8668e2",
+      "id": "a9e182ba-15f9-4632-9405-e8bf61e16f2b",
       "type": "flow-decision",
       "position": {
         "x": 150,
@@ -200,15 +192,13 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "5c4fdee5-feb3-4b65-94f9-223522d06caa",
+      "id": "1bc3847d-29c1-4e74-87c6-92e31814e1a9",
       "type": "flow-process",
       "position": {
         "x": -70,
@@ -223,19 +213,17 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "15208658-9f44-424a-92c9-d91a2a883271",
+      "id": "b852e126-19d2-4d81-be5c-fa5c52e65c94",
       "type": "flow-process",
       "position": {
-        "x": 152,
-        "y": 1423
+        "x": 151,
+        "y": 1433
       },
       "data": {
         "label": "增加保障服务费（客配置中的）",
@@ -246,15 +234,15 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false,
+      "dragging": false
     },
     {
-      "id": "d5c5f6f8-d138-4100-9f6f-e915ba5e6b92",
+      "id": "f2ba2eb8-81ef-48e9-9c2d-348c60a24784",
       "type": "flow-process",
       "position": {
         "x": 150,
@@ -269,15 +257,13 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "2a91b21a-0977-450a-9c14-3cbd30a4fcca",
+      "id": "b08703e3-2ace-45bd-972b-5752a682f602",
       "type": "flow-process",
       "position": {
         "x": 260,
@@ -292,15 +278,13 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "08674175-784e-488f-9498-f43bdb01905b",
+      "id": "ce4d6a7c-1e9b-4991-aa60-14645fa88134",
       "type": "flow-process",
       "position": {
         "x": 260,
@@ -315,15 +299,13 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "980f8e73-4695-4b34-af11-bc74701a545a",
+      "id": "411ae6b6-d7e4-4b2d-a15c-c3bb2d57495f",
       "type": "flow-process",
       "position": {
         "x": 40,
@@ -338,15 +320,13 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "aec6d733-bcb3-457b-a907-f282f38c993d",
+      "id": "3d9ff138-01cf-4291-bfbb-8fad73647ade",
       "type": "flow-process",
       "position": {
         "x": 150,
@@ -361,15 +341,13 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "9275ae04-1f46-403f-8fc9-884c220e3d05",
+      "id": "ceedcdf2-90a5-4ef2-aeb0-fece3877a6d5",
       "type": "flow-process",
       "position": {
         "x": 260,
@@ -384,15 +362,13 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "66473190-3755-4135-a535-761875f624cd",
+      "id": "b92de789-e120-4501-8242-a66043273261",
       "type": "flow-process",
       "position": {
         "x": 150,
@@ -407,15 +383,13 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "aef4d803-269b-4354-853b-d0239987d36c",
+      "id": "91bae768-ba3d-4bab-839f-d1a510af5a1e",
       "type": "flow-process",
       "position": {
         "x": 150,
@@ -430,15 +404,13 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "74f60100-4936-49ec-84de-dfe62ed35014",
+      "id": "37bb7351-94ee-46ef-9285-a768965b0d34",
       "type": "flow-process",
       "position": {
         "x": 260,
@@ -453,19 +425,17 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "2fe6b5ad-122b-4dda-a33f-2ba87cc28ceb",
+      "id": "117b36be-3e25-4238-aea0-32971af2a80e",
       "type": "flow-decision",
       "position": {
-        "x": 150,
-        "y": 950
+        "x": 81,
+        "y": 955
       },
       "data": {
         "label": "是否开启兜底策略",
@@ -476,19 +446,19 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false,
+      "dragging": false
     },
     {
-      "id": "d959af08-de3f-4b04-ba33-426611c9be18",
+      "id": "a10f579f-b9a1-48e0-a9e3-fec8fff367a9",
       "type": "flow-process",
       "position": {
-        "x": 593,
-        "y": 549
+        "x": 260,
+        "y": 470
       },
       "data": {
         "label": "返回不可承运available=false",
@@ -499,15 +469,13 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "8b2fe062-cb74-4ba8-878d-39c008ef8e2d",
+      "id": "784cbdb9-dc1e-42c9-aa84-08f85d7dd234",
       "type": "flow-decision",
       "position": {
         "x": 150,
@@ -522,15 +490,13 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "5c5ee71f-6005-4eb3-8a6d-14214a59fd3b",
+      "id": "c8a46f9e-ed1b-4a5c-9327-0c695bd332a6",
       "type": "flow-decision",
       "position": {
         "x": 370,
@@ -545,19 +511,17 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
       }
     },
     {
-      "id": "f03e3e89-d83e-48f5-9438-778b4da05727",
+      "id": "9a3c3fa2-1b9e-42de-a9dc-bfaed712fd75",
       "type": "flow-process",
       "position": {
-        "x": 552,
-        "y": 1427
+        "x": 367,
+        "y": 1430
       },
       "data": {
         "label": "返回不可承运available=false",
@@ -568,19 +532,19 @@
         "width": 160,
         "height": 56
       },
-      "width": 160,
-      "height": 56,
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false,
+      "dragging": false
     }
   ],
   "edges": [
     {
       "id": "e-0",
-      "source": "eea3e413-e73c-4f7f-bfd8-f0496749d950",
-      "target": "14eb587e-cdb8-435d-8ad4-a77636c0e1bc",
+      "source": "1b9e51bb-9ada-48e7-88bf-49fc2ca7c07b",
+      "target": "eed10b96-ab64-4a82-8004-e1e2bdd64a72",
       "data": {
         "label": "否",
         "lineStyle": "solid",
@@ -594,8 +558,8 @@
     },
     {
       "id": "e-1",
-      "source": "eea3e413-e73c-4f7f-bfd8-f0496749d950",
-      "target": "3c54f6f1-2183-4406-8a2e-c320b764e0cb",
+      "source": "1b9e51bb-9ada-48e7-88bf-49fc2ca7c07b",
+      "target": "e0e31e1a-581c-4c32-b5a3-819fb04c6a57",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -608,8 +572,8 @@
     },
     {
       "id": "e-2",
-      "source": "3c54f6f1-2183-4406-8a2e-c320b764e0cb",
-      "target": "8afcec25-2b38-4d77-b81d-2fe9c073f513",
+      "source": "e0e31e1a-581c-4c32-b5a3-819fb04c6a57",
+      "target": "6b3b6b76-cf17-47c9-a619-650e98c92781",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -622,8 +586,8 @@
     },
     {
       "id": "e-3",
-      "source": "8afcec25-2b38-4d77-b81d-2fe9c073f513",
-      "target": "6f50b490-784b-434a-854f-e26eb69ea793",
+      "source": "6b3b6b76-cf17-47c9-a619-650e98c92781",
+      "target": "67ec8804-6e93-4f17-8925-cc1b7707dfa1",
       "data": {
         "label": "是",
         "lineStyle": "solid",
@@ -637,8 +601,8 @@
     },
     {
       "id": "e-4",
-      "source": "6f50b490-784b-434a-854f-e26eb69ea793",
-      "target": "b193bf48-61cd-46fb-9968-e6d1bc2dfc82",
+      "source": "67ec8804-6e93-4f17-8925-cc1b7707dfa1",
+      "target": "37fd5883-f1d3-413f-b538-a263c85c3034",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -651,8 +615,8 @@
     },
     {
       "id": "e-5",
-      "source": "b193bf48-61cd-46fb-9968-e6d1bc2dfc82",
-      "target": "a1ecdd18-9d44-4eef-9aea-2f14c10dbfe1",
+      "source": "37fd5883-f1d3-413f-b538-a263c85c3034",
+      "target": "26e7945f-d680-44f1-bb00-3b4d4935842c",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -665,8 +629,8 @@
     },
     {
       "id": "e-6",
-      "source": "a1ecdd18-9d44-4eef-9aea-2f14c10dbfe1",
-      "target": "8a3f3fc1-1236-4f46-a0a6-d2786f8668e2",
+      "source": "26e7945f-d680-44f1-bb00-3b4d4935842c",
+      "target": "a9e182ba-15f9-4632-9405-e8bf61e16f2b",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -679,8 +643,8 @@
     },
     {
       "id": "e-7",
-      "source": "14eb587e-cdb8-435d-8ad4-a77636c0e1bc",
-      "target": "5c4fdee5-feb3-4b65-94f9-223522d06caa",
+      "source": "eed10b96-ab64-4a82-8004-e1e2bdd64a72",
+      "target": "1bc3847d-29c1-4e74-87c6-92e31814e1a9",
       "data": {
         "label": "否",
         "lineStyle": "solid",
@@ -694,8 +658,8 @@
     },
     {
       "id": "e-8",
-      "source": "14eb587e-cdb8-435d-8ad4-a77636c0e1bc",
-      "target": "d5c5f6f8-d138-4100-9f6f-e915ba5e6b92",
+      "source": "eed10b96-ab64-4a82-8004-e1e2bdd64a72",
+      "target": "f2ba2eb8-81ef-48e9-9c2d-348c60a24784",
       "data": {
         "label": "是",
         "lineStyle": "solid",
@@ -709,8 +673,8 @@
     },
     {
       "id": "e-9",
-      "source": "d5c5f6f8-d138-4100-9f6f-e915ba5e6b92",
-      "target": "15208658-9f44-424a-92c9-d91a2a883271",
+      "source": "f2ba2eb8-81ef-48e9-9c2d-348c60a24784",
+      "target": "b852e126-19d2-4d81-be5c-fa5c52e65c94",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -723,8 +687,8 @@
     },
     {
       "id": "e-10",
-      "source": "15208658-9f44-424a-92c9-d91a2a883271",
-      "target": "2a91b21a-0977-450a-9c14-3cbd30a4fcca",
+      "source": "b852e126-19d2-4d81-be5c-fa5c52e65c94",
+      "target": "b08703e3-2ace-45bd-972b-5752a682f602",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -737,8 +701,8 @@
     },
     {
       "id": "e-11",
-      "source": "2a91b21a-0977-450a-9c14-3cbd30a4fcca",
-      "target": "08674175-784e-488f-9498-f43bdb01905b",
+      "source": "b08703e3-2ace-45bd-972b-5752a682f602",
+      "target": "ce4d6a7c-1e9b-4991-aa60-14645fa88134",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -751,8 +715,8 @@
     },
     {
       "id": "e-12",
-      "source": "9275ae04-1f46-403f-8fc9-884c220e3d05",
-      "target": "aec6d733-bcb3-457b-a907-f282f38c993d",
+      "source": "ceedcdf2-90a5-4ef2-aeb0-fece3877a6d5",
+      "target": "3d9ff138-01cf-4291-bfbb-8fad73647ade",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -765,8 +729,8 @@
     },
     {
       "id": "e-13",
-      "source": "aec6d733-bcb3-457b-a907-f282f38c993d",
-      "target": "66473190-3755-4135-a535-761875f624cd",
+      "source": "3d9ff138-01cf-4291-bfbb-8fad73647ade",
+      "target": "b92de789-e120-4501-8242-a66043273261",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -779,8 +743,8 @@
     },
     {
       "id": "e-14",
-      "source": "66473190-3755-4135-a535-761875f624cd",
-      "target": "aef4d803-269b-4354-853b-d0239987d36c",
+      "source": "b92de789-e120-4501-8242-a66043273261",
+      "target": "91bae768-ba3d-4bab-839f-d1a510af5a1e",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -793,8 +757,8 @@
     },
     {
       "id": "e-15",
-      "source": "8a3f3fc1-1236-4f46-a0a6-d2786f8668e2",
-      "target": "980f8e73-4695-4b34-af11-bc74701a545a",
+      "source": "a9e182ba-15f9-4632-9405-e8bf61e16f2b",
+      "target": "411ae6b6-d7e4-4b2d-a15c-c3bb2d57495f",
       "data": {
         "label": "否",
         "lineStyle": "solid",
@@ -808,8 +772,8 @@
     },
     {
       "id": "e-16",
-      "source": "8a3f3fc1-1236-4f46-a0a6-d2786f8668e2",
-      "target": "9275ae04-1f46-403f-8fc9-884c220e3d05",
+      "source": "a9e182ba-15f9-4632-9405-e8bf61e16f2b",
+      "target": "ceedcdf2-90a5-4ef2-aeb0-fece3877a6d5",
       "data": {
         "label": "是",
         "lineStyle": "solid",
@@ -823,8 +787,8 @@
     },
     {
       "id": "e-17",
-      "source": "8afcec25-2b38-4d77-b81d-2fe9c073f513",
-      "target": "2fe6b5ad-122b-4dda-a33f-2ba87cc28ceb",
+      "source": "6b3b6b76-cf17-47c9-a619-650e98c92781",
+      "target": "117b36be-3e25-4238-aea0-32971af2a80e",
       "data": {
         "label": "否",
         "lineStyle": "solid",
@@ -838,8 +802,8 @@
     },
     {
       "id": "e-18",
-      "source": "2fe6b5ad-122b-4dda-a33f-2ba87cc28ceb",
-      "target": "74f60100-4936-49ec-84de-dfe62ed35014",
+      "source": "117b36be-3e25-4238-aea0-32971af2a80e",
+      "target": "37bb7351-94ee-46ef-9285-a768965b0d34",
       "data": {
         "label": "是",
         "lineStyle": "solid",
@@ -853,8 +817,8 @@
     },
     {
       "id": "e-19",
-      "source": "2fe6b5ad-122b-4dda-a33f-2ba87cc28ceb",
-      "target": "14eb587e-cdb8-435d-8ad4-a77636c0e1bc",
+      "source": "117b36be-3e25-4238-aea0-32971af2a80e",
+      "target": "eed10b96-ab64-4a82-8004-e1e2bdd64a72",
       "data": {
         "label": "否",
         "lineStyle": "solid",
@@ -868,8 +832,8 @@
     },
     {
       "id": "e-20",
-      "source": "0a4e540a-eac9-47d7-997a-04a3e0801206",
-      "target": "8b2fe062-cb74-4ba8-878d-39c008ef8e2d",
+      "source": "a846b3bd-9644-4bd3-a2e6-a615dee5aa8b",
+      "target": "784cbdb9-dc1e-42c9-aa84-08f85d7dd234",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -882,8 +846,8 @@
     },
     {
       "id": "e-21",
-      "source": "8b2fe062-cb74-4ba8-878d-39c008ef8e2d",
-      "target": "d959af08-de3f-4b04-ba33-426611c9be18",
+      "source": "784cbdb9-dc1e-42c9-aa84-08f85d7dd234",
+      "target": "a10f579f-b9a1-48e0-a9e3-fec8fff367a9",
       "data": {
         "label": "否",
         "lineStyle": "solid",
@@ -897,8 +861,8 @@
     },
     {
       "id": "e-22",
-      "source": "8b2fe062-cb74-4ba8-878d-39c008ef8e2d",
-      "target": "eea3e413-e73c-4f7f-bfd8-f0496749d950",
+      "source": "784cbdb9-dc1e-42c9-aa84-08f85d7dd234",
+      "target": "1b9e51bb-9ada-48e7-88bf-49fc2ca7c07b",
       "data": {
         "label": "是",
         "lineStyle": "solid",
@@ -912,8 +876,8 @@
     },
     {
       "id": "e-23",
-      "source": "5c5ee71f-6005-4eb3-8a6d-14214a59fd3b",
-      "target": "6f50b490-784b-434a-854f-e26eb69ea793",
+      "source": "c8a46f9e-ed1b-4a5c-9327-0c695bd332a6",
+      "target": "67ec8804-6e93-4f17-8925-cc1b7707dfa1",
       "data": {
         "label": "是",
         "lineStyle": "solid",
@@ -927,8 +891,8 @@
     },
     {
       "id": "e-24",
-      "source": "74f60100-4936-49ec-84de-dfe62ed35014",
-      "target": "5c5ee71f-6005-4eb3-8a6d-14214a59fd3b",
+      "source": "37bb7351-94ee-46ef-9285-a768965b0d34",
+      "target": "c8a46f9e-ed1b-4a5c-9327-0c695bd332a6",
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -941,8 +905,8 @@
     },
     {
       "id": "e-25",
-      "source": "5c5ee71f-6005-4eb3-8a6d-14214a59fd3b",
-      "target": "f03e3e89-d83e-48f5-9438-778b4da05727",
+      "source": "c8a46f9e-ed1b-4a5c-9327-0c695bd332a6",
+      "target": "9a3c3fa2-1b9e-42de-a9dc-bfaed712fd75",
       "data": {
         "label": "否",
         "lineStyle": "solid",
