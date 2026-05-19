@@ -8,9 +8,11 @@
         "y": 50
       },
       "data": {
-        "label": "查询报价",
+        "label": "A",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -21,19 +23,22 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false
     },
     {
       "id": "cc5d036a-1037-4af2-b40e-8bf000814593",
       "type": "flow-decision",
       "position": {
-        "x": 261,
-        "y": 135
+        "x": 580,
+        "y": 233
       },
       "data": {
-        "label": "是否有大板取价规则",
+        "label": "C",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -58,7 +63,9 @@
       "data": {
         "label": "是否有小板取价规则",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -79,7 +86,9 @@
       "data": {
         "label": "大板线路查询",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -100,7 +109,9 @@
       "data": {
         "label": "是否有命中价格",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -121,7 +132,9 @@
       "data": {
         "label": "增加保障服务费（客配置中的）",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -142,7 +155,9 @@
       "data": {
         "label": "加价规则（利润、税率等）",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -163,7 +178,9 @@
       "data": {
         "label": "得到大板报价",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -184,7 +201,9 @@
       "data": {
         "label": "是否有小板取价规则",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -205,7 +224,9 @@
       "data": {
         "label": "返回不可承运available=false",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -226,7 +247,9 @@
       "data": {
         "label": "增加保障服务费（客配置中的）",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -247,7 +270,9 @@
       "data": {
         "label": "小板价格计算",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -268,7 +293,9 @@
       "data": {
         "label": "加价规则（利润、税率等）",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -289,7 +316,9 @@
       "data": {
         "label": "返回可承运available=true和小板价格",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -310,7 +339,9 @@
       "data": {
         "label": "返回可承运available=true\n和大板价格",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -331,7 +362,9 @@
       "data": {
         "label": "增加保障服务费（客配置中的）",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -352,7 +385,9 @@
       "data": {
         "label": "小板价格计算",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -373,7 +408,9 @@
       "data": {
         "label": "加价规则（利润、税率等）",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -394,7 +431,9 @@
       "data": {
         "label": "返回可承运available=true、大板价格和小板价格",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -415,7 +454,9 @@
       "data": {
         "label": "兜底策略计算价格",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -436,7 +477,9 @@
       "data": {
         "label": "是否开启兜底策略",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -451,13 +494,15 @@
       "id": "5fe78faa-77a8-44cf-ab61-5ac7fc5ac1e0",
       "type": "flow-process",
       "position": {
-        "x": 150,
-        "y": 470
+        "x": 246,
+        "y": 373
       },
       "data": {
         "label": "返回不可承运available=false",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -466,19 +511,23 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false,
+      "dragging": false
     },
     {
       "id": "e13b5503-de81-4c42-9be1-2cf50af0b17a",
       "type": "flow-decision",
       "position": {
-        "x": 150,
-        "y": 310
+        "x": 249,
+        "y": 232
       },
       "data": {
-        "label": "渠道是否命中规则",
+        "label": "B",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -487,7 +536,9 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false,
+      "dragging": false
     },
     {
       "id": "aa08e58a-6ff3-4295-ad64-49bd02678e76",
@@ -499,7 +550,9 @@
       "data": {
         "label": "兜底价格是否有结果",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -520,7 +573,9 @@
       "data": {
         "label": "返回不可承运available=false",
         "width": 160,
-        "height": 56
+        "height": 56,
+        "selectedCount": 1,
+        "isMultiSelectAnchor": false
       },
       "style": {
         "width": 160,
@@ -852,21 +907,6 @@
       "targetHandle": "top"
     },
     {
-      "id": "e-22",
-      "source": "e13b5503-de81-4c42-9be1-2cf50af0b17a",
-      "target": "cc5d036a-1037-4af2-b40e-8bf000814593",
-      "data": {
-        "label": "是",
-        "lineStyle": "solid",
-        "arrowHead": "arrow"
-      },
-      "markerEnd": {
-        "type": "arrowclosed"
-      },
-      "sourceHandle": "bottom",
-      "targetHandle": "top"
-    },
-    {
       "id": "e-23",
       "source": "aa08e58a-6ff3-4295-ad64-49bd02678e76",
       "target": "5805ab89-2f49-47e7-994b-d70a2e5fd1fb",
@@ -909,8 +949,24 @@
       },
       "sourceHandle": "bottom",
       "targetHandle": "top"
+    },
+    {
+      "source": "e13b5503-de81-4c42-9be1-2cf50af0b17a",
+      "sourceHandle": "right",
+      "target": "cc5d036a-1037-4af2-b40e-8bf000814593",
+      "targetHandle": "left",
+      "animated": false,
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      },
+      "id": "xy-edge__e13b5503-de81-4c42-9be1-2cf50af0b17aright-cc5d036a-1037-4af2-b40e-8bf000814593left"
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0([\"查询报价\"])\n  n_1{\"是否有大板取价规则\"}\n  n_2{\"是否有小板取价规则\"}\n  n_3(\"大板线路查询\")\n  n_4{\"是否有命中价格\"}\n  n_5(\"增加保障服务费（客配置中的）\")\n  n_6(\"加价规则（利润、税率等）\")\n  n_7(\"得到大板报价\")\n  n_8{\"是否有小板取价规则\"}\n  n_9(\"返回不可承运available=false\")\n  n_10(\"增加保障服务费（客配置中的）\")\n  n_11(\"小板价格计算\")\n  n_12(\"加价规则（利润、税率等）\")\n  n_13(\"返回可承运available=true和小板价格\")\n  n_14(\"返回可承运available=true<br/>和大板价格\")\n  n_15(\"增加保障服务费（客配置中的）\")\n  n_16(\"小板价格计算\")\n  n_17(\"加价规则（利润、税率等）\")\n  n_18(\"返回可承运available=true、大板价格和小板价格\")\n  n_19(\"兜底策略计算价格\")\n  n_20{\"是否开启兜底策略\"}\n  n_21(\"返回不可承运available=false\")\n  n_22{\"渠道是否命中规则\"}\n  n_23{\"兜底价格是否有结果\"}\n  n_24(\"返回不可承运available=false\")\n  n_1 -->|\"否\"| n_2\n  n_1 --> n_3\n  n_3 --> n_4\n  n_4 -->|\"是\"| n_5\n  n_5 --> n_6\n  n_6 --> n_7\n  n_7 --> n_8\n  n_2 -->|\"否\"| n_9\n  n_2 -->|\"是\"| n_11\n  n_11 --> n_10\n  n_10 --> n_12\n  n_12 --> n_13\n  n_16 --> n_15\n  n_15 --> n_17\n  n_17 --> n_18\n  n_8 -->|\"否\"| n_14\n  n_8 -->|\"是\"| n_16\n  n_4 -->|\"否\"| n_20\n  n_20 -->|\"是\"| n_19\n  n_20 -->|\"否\"| n_2\n  n_0 --> n_22\n  n_22 -->|\"否\"| n_21\n  n_22 -->|\"是\"| n_1\n  n_23 -->|\"是\"| n_5\n  n_19 --> n_23\n  n_23 -->|\"否\"| n_24\n",
+  "mermaidCode": "flowchart TD\n  n_0([\"A\"])\n  n_1{\"C\"}\n  n_2{\"是否有小板取价规则\"}\n  n_3(\"大板线路查询\")\n  n_4{\"是否有命中价格\"}\n  n_5(\"增加保障服务费（客配置中的）\")\n  n_6(\"加价规则（利润、税率等）\")\n  n_7(\"得到大板报价\")\n  n_8{\"是否有小板取价规则\"}\n  n_9(\"返回不可承运available=false\")\n  n_10(\"增加保障服务费（客配置中的）\")\n  n_11(\"小板价格计算\")\n  n_12(\"加价规则（利润、税率等）\")\n  n_13(\"返回可承运available=true和小板价格\")\n  n_14(\"返回可承运available=true<br/>和大板价格\")\n  n_15(\"增加保障服务费（客配置中的）\")\n  n_16(\"小板价格计算\")\n  n_17(\"加价规则（利润、税率等）\")\n  n_18(\"返回可承运available=true、大板价格和小板价格\")\n  n_19(\"兜底策略计算价格\")\n  n_20{\"是否开启兜底策略\"}\n  n_21(\"返回不可承运available=false\")\n  n_22{\"B\"}\n  n_23{\"兜底价格是否有结果\"}\n  n_24(\"返回不可承运available=false\")\n  n_1 -->|\"否\"| n_2\n  n_1 --> n_3\n  n_3 --> n_4\n  n_4 -->|\"是\"| n_5\n  n_5 --> n_6\n  n_6 --> n_7\n  n_7 --> n_8\n  n_2 -->|\"否\"| n_9\n  n_2 -->|\"是\"| n_11\n  n_11 --> n_10\n  n_10 --> n_12\n  n_12 --> n_13\n  n_16 --> n_15\n  n_15 --> n_17\n  n_17 --> n_18\n  n_8 -->|\"否\"| n_14\n  n_8 -->|\"是\"| n_16\n  n_4 -->|\"否\"| n_20\n  n_20 -->|\"是\"| n_19\n  n_20 -->|\"否\"| n_2\n  n_0 --> n_22\n  n_22 -->|\"否\"| n_21\n  n_23 -->|\"是\"| n_5\n  n_19 --> n_23\n  n_23 -->|\"否\"| n_24\n  n_22 --> n_1\n",
   "flowEdgeStyle": "smooth"
 }
