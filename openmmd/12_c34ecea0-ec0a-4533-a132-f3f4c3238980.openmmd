@@ -1,35 +1,41 @@
 {
   "lanes": [
     {
-      "id": "3e0a7fd5-af71-41dd-afd7-a8ec3cfcbec9",
-      "label": "Planning",
-      "order": 0
+      "id": "468300b3-cbbe-4101-b95e-63895c912d3f",
+      "label": "用户",
+      "order": 0,
+      "width": 5539,
+      "height": 280
     },
     {
-      "id": "aca0e4e9-5e76-4275-a0eb-c218f3b93f01",
-      "label": "Development",
-      "order": 1
+      "id": "648dd7f9-30ed-4b4f-a039-3777107083ca",
+      "label": "支付宝",
+      "order": 1,
+      "width": 5539,
+      "height": 280
     },
     {
-      "id": "6f3796b7-1904-4b38-bb21-568828d4e84f",
-      "label": "Review",
-      "order": 2
+      "id": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "交付系统",
+      "order": 2,
+      "width": 5539,
+      "height": 280
     }
   ],
   "tasks": [
     {
-      "id": "2660bf08-a76b-4a24-8d45-cba358bd7a4b",
-      "laneId": "3e0a7fd5-af71-41dd-afd7-a8ec3cfcbec9",
-      "label": "Approved?",
-      "shape": "decision",
+      "id": "456b1113-9d3a-4ad2-8f0d-e18bd87c687f",
+      "laneId": "468300b3-cbbe-4101-b95e-63895c912d3f",
+      "label": "录入托运信息",
+      "shape": "terminator",
       "order": 0,
       "x": 491.2361809045226,
       "y": 49.53768844221105
     },
     {
-      "id": "768bf3c6-4919-43d5-8cab-fe7a13d005ed",
-      "laneId": "3e0a7fd5-af71-41dd-afd7-a8ec3cfcbec9",
-      "label": "Approved?",
+      "id": "51261cdf-3281-4733-9956-8d5c11a2588c",
+      "laneId": "468300b3-cbbe-4101-b95e-63895c912d3f",
+      "label": "是否确认运输",
       "shape": "decision",
       "order": 1,
       "x": 1206.1608040201006,
@@ -38,28 +44,28 @@
       "height": 92
     },
     {
-      "id": "3704e411-05a2-4bd7-ba76-a9365b42e054",
-      "laneId": "3e0a7fd5-af71-41dd-afd7-a8ec3cfcbec9",
-      "label": "Start",
-      "shape": "terminator",
+      "id": "57a17c39-9013-4b62-b93c-1d861103d30b",
+      "laneId": "468300b3-cbbe-4101-b95e-63895c912d3f",
+      "label": "用户是否支付成功",
+      "shape": "decision",
       "order": 2,
       "x": 40,
       "y": 72
     },
     {
-      "id": "f6bc291a-90da-4a77-b4c8-a88841456139",
-      "laneId": "3e0a7fd5-af71-41dd-afd7-a8ec3cfcbec9",
-      "label": "Define Requirements",
+      "id": "7099965c-4414-44b9-a367-5dabc3361871",
+      "laneId": "468300b3-cbbe-4101-b95e-63895c912d3f",
+      "label": "不处理",
       "shape": "process",
       "order": 3,
       "x": 240,
       "y": 72
     },
     {
-      "id": "8f0c87fc-138c-44e8-a5bf-0e24a65a2080",
-      "laneId": "3e0a7fd5-af71-41dd-afd7-a8ec3cfcbec9",
-      "label": "Approved?",
-      "shape": "decision",
+      "id": "a8dc5834-a0e7-4623-b9df-64aef4e210c0",
+      "laneId": "468300b3-cbbe-4101-b95e-63895c912d3f",
+      "label": "等待支付",
+      "shape": "process",
       "order": 4,
       "x": 763.356783919598,
       "y": 88.50251256281408,
@@ -67,10 +73,10 @@
       "height": 92
     },
     {
-      "id": "a7398544-9128-4467-b045-29a03bf4c464",
-      "laneId": "3e0a7fd5-af71-41dd-afd7-a8ec3cfcbec9",
-      "label": "Define Requirements",
-      "shape": "process",
+      "id": "d970d501-4aa8-445b-9cd0-aa07800c333a",
+      "laneId": "468300b3-cbbe-4101-b95e-63895c912d3f",
+      "label": "用户是否支付",
+      "shape": "decision",
       "order": 5,
       "x": 1018.5929648241208,
       "y": 134.39195979899498,
@@ -78,94 +84,1441 @@
       "height": 56
     },
     {
-      "id": "4d5a519b-d46e-48f6-86dc-1fedc1ef94a0",
-      "laneId": "aca0e4e9-5e76-4275-a0eb-c218f3b93f01",
-      "label": "Decision 2",
-      "shape": "decision",
-      "order": 0,
-      "x": 1310,
-      "y": 15.683417085427152,
+      "id": "a98b8e9b-fba8-458f-9675-ee502d6f3ed7",
+      "laneId": "468300b3-cbbe-4101-b95e-63895c912d3f",
+      "label": "不处理",
+      "shape": "process",
+      "order": 6,
+      "x": 1894.415093294733,
+      "y": 67,
       "width": 218,
       "height": 165
     },
     {
-      "id": "adf6812a-3145-46fa-9906-b38d8a65dd62",
-      "laneId": "aca0e4e9-5e76-4275-a0eb-c218f3b93f01",
-      "label": "Implement Feature",
+      "id": "dbb66164-960b-45b9-8e37-724862733300",
+      "laneId": "648dd7f9-30ed-4b4f-a039-3777107083ca",
+      "label": "提交订单信息",
+      "shape": "process",
+      "order": 0,
+      "x": 1179.692041939761,
+      "y": 67,
+      "width": 218,
+      "height": 165
+    },
+    {
+      "id": "bab389b3-8050-4833-8e60-3a203798bd22",
+      "laneId": "648dd7f9-30ed-4b4f-a039-3777107083ca",
+      "label": "展示价格信息",
       "shape": "process",
       "order": 1,
       "x": 460,
       "y": 72
     },
     {
-      "id": "ff538ec0-a449-4079-8477-bf0a9d1e0f14",
-      "laneId": "aca0e4e9-5e76-4275-a0eb-c218f3b93f01",
-      "label": "Decision 2",
-      "shape": "decision",
+      "id": "c8322afc-6541-4d4e-99f3-d41329ee6e17",
+      "laneId": "648dd7f9-30ed-4b4f-a039-3777107083ca",
+      "label": "记录托运信息",
+      "shape": "process",
       "order": 2,
-      "x": 843.6482412060303,
-      "y": 140,
-      "width": 218,
-      "height": 165
-    },
-    {
-      "id": "ee0f99cd-4436-47f5-9ee1-371765cc60d3",
-      "laneId": "6f3796b7-1904-4b38-bb21-568828d4e84f",
-      "label": "Code Review",
-      "shape": "process",
-      "order": 0,
       "x": 460,
       "y": 72
     },
     {
-      "id": "45e2c0fc-44a2-40cf-8ded-45d1171b5068",
-      "laneId": "6f3796b7-1904-4b38-bb21-568828d4e84f",
-      "label": "Document 2",
-      "shape": "document",
-      "order": 1,
-      "x": 778.9447236180905,
-      "y": 84.09045226130661,
+      "id": "cc358acb-4014-41f9-9d16-c2dd510f745a",
+      "laneId": "648dd7f9-30ed-4b4f-a039-3777107083ca",
+      "label": "展示支付成功",
+      "shape": "process",
+      "order": 3,
+      "x": 929.2026986527646,
+      "y": 82.85882951512076,
       "width": 156,
       "height": 56
+    },
+    {
+      "id": "48414680-9afe-4f4e-9b8f-a752ce299b70",
+      "laneId": "648dd7f9-30ed-4b4f-a039-3777107083ca",
+      "label": "展示待⽀付账单",
+      "shape": "process",
+      "order": 4,
+      "x": 880,
+      "y": 20
+    },
+    {
+      "id": "4eab3dd7-fb47-4c26-b4e5-b8d8e4d0df24",
+      "laneId": "648dd7f9-30ed-4b4f-a039-3777107083ca",
+      "label": "接收通知",
+      "shape": "process",
+      "order": 5,
+      "x": 1100,
+      "y": 20
+    },
+    {
+      "id": "58ba0b73-3414-40e3-a4b8-35690ff287bf",
+      "laneId": "648dd7f9-30ed-4b4f-a039-3777107083ca",
+      "label": "接收通知",
+      "shape": "process",
+      "order": 6,
+      "x": 1320,
+      "y": 20
+    },
+    {
+      "id": "3da1a921-a19d-460a-ac07-425debef0135",
+      "laneId": "648dd7f9-30ed-4b4f-a039-3777107083ca",
+      "label": "拉起收银台",
+      "shape": "process",
+      "order": 7,
+      "x": 1634.624971127484,
+      "y": 0
+    },
+    {
+      "id": "656f275d-e095-42f6-bd9f-96fe465d662e",
+      "laneId": "648dd7f9-30ed-4b4f-a039-3777107083ca",
+      "label": "展示支付成功",
+      "shape": "process",
+      "order": 8,
+      "x": 1713.8703265753516,
+      "y": 53.11873989461941
+    },
+    {
+      "id": "d6fa91d5-413d-45e9-a386-8196d2cbdedd",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "使用订单的预付款金额调用支付宝js API创建交易单，生成交易单号\n订单状态=待支付",
+      "shape": "document",
+      "order": 0,
+      "x": 0,
+      "y": 20
+    },
+    {
+      "id": "1f60a7a5-c28e-4036-a446-0418281edd12",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "客服需要查询支付宝订单，与客户沟通确认运车细节后，才能进入运力竞价",
+      "shape": "document",
+      "order": 1,
+      "x": 220,
+      "y": 20,
+      "tag": "other",
+      "tagNote": "这里需要给客服培训，使用特定流程处理支付宝渠道的订单"
+    },
+    {
+      "id": "a020ce05-d958-49c4-8b83-3cfa567cfa5f",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "在取价规则和加价规则中为支付宝配置渠道值和规则",
+      "shape": "document",
+      "order": 2,
+      "x": 440,
+      "y": 20,
+      "tag": "existing",
+      "tagNote": "需要配置支付宝聚合搜索渠道，配置相关取价规则和加价规则，应该不涉及到代码修改，只需要配置即可"
+    },
+    {
+      "id": "8c2552be-5d24-4ea8-a7a0-d0779a8080b1",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "记录查价记录",
+      "shape": "document",
+      "order": 3,
+      "x": 660,
+      "y": 20
+    },
+    {
+      "id": "91183298-3d05-4a44-b13f-8f0ac69008e0",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "available：true，price_type：MEMBER，transport_type：LARGE_TRUCK，price_info:{}",
+      "shape": "document",
+      "order": 4,
+      "x": 880,
+      "y": 20
+    },
+    {
+      "id": "b7069d97-36dd-4247-8067-5b2c9d94bd08",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "是否支付成功",
+      "shape": "decision",
+      "order": 5,
+      "x": 1100,
+      "y": 20
+    },
+    {
+      "id": "3d3f08a3-ad38-41f0-8d73-5f305993b6a1",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "是否支付成功",
+      "shape": "decision",
+      "order": 6,
+      "x": 1320,
+      "y": 20
+    },
+    {
+      "id": "91127e47-0344-4a4c-a864-a5b5386604ba",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "金额是否有变化",
+      "shape": "decision",
+      "order": 7,
+      "x": 1540,
+      "y": 20
+    },
+    {
+      "id": "cb769049-5822-4235-acf6-f78a01fad4a1",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "【销售】补充车架号、车辆品牌信息，修改订单金额（若金额不正确）",
+      "shape": "process",
+      "order": 8,
+      "x": 1760,
+      "y": 20
+    },
+    {
+      "id": "e003a321-8829-4164-a6e9-c13c134d54f8",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "汽车还是摩托车",
+      "shape": "decision",
+      "order": 9,
+      "x": 1980,
+      "y": 20
+    },
+    {
+      "id": "4b0454a4-53be-478c-b697-d065519152fb",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "查询支付状态",
+      "shape": "process",
+      "order": 10,
+      "x": 2200,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "新增的支付状态查询逻辑"
+    },
+    {
+      "id": "93624ff7-b0c9-439b-9f39-7c2babcd53a4",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "订单状态=待竞价",
+      "shape": "process",
+      "order": 11,
+      "x": 2420,
+      "y": 20
+    },
+    {
+      "id": "f5ce59d2-209a-4b27-adbb-5eea12f7afb7",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "【销售】查看支付宝渠道订单",
+      "shape": "process",
+      "order": 12,
+      "x": 2640,
+      "y": 20
+    },
+    {
+      "id": "06979da8-086e-4c03-92e0-b684ae95ab67",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "【司机、售后】上传交车单，交车",
+      "shape": "process",
+      "order": 13,
+      "x": 2860,
+      "y": 20
+    },
+    {
+      "id": "56a65112-e163-45cf-9e05-f5e98a4f688a",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "调用⽀付单状态同步接口",
+      "shape": "process",
+      "order": 14,
+      "x": 3080,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "新增接口推送逻辑"
+    },
+    {
+      "id": "932d14c5-e64c-4419-966e-9143294633e5",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "查询订单支付状态",
+      "shape": "process",
+      "order": 15,
+      "x": 3300,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "新增逻辑"
+    },
+    {
+      "id": "349202c4-e541-4400-955b-a3db0097a54b",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "【运力】确认竞价",
+      "shape": "process",
+      "order": 16,
+      "x": 3520,
+      "y": 20
+    },
+    {
+      "id": "01559436-c64f-4a39-82ab-ef1957f698ff",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "【销售】人工通知运力可以竞价",
+      "shape": "process",
+      "order": 17,
+      "x": 3740,
+      "y": 20
+    },
+    {
+      "id": "2756bc88-bf45-4d43-8537-6b783cc94db5",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "是否有线路（大板、小板）价格",
+      "shape": "decision",
+      "order": 18,
+      "x": 3960,
+      "y": 20
+    },
+    {
+      "id": "5e117d7c-4bf0-4d48-94b3-2336bb3c21e5",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "【售后】派单",
+      "shape": "process",
+      "order": 19,
+      "x": 4180,
+      "y": 20
+    },
+    {
+      "id": "d6dd0cf5-b62e-47bd-96b1-a68e84c12acd",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "【司机、售后】确认提车",
+      "shape": "process",
+      "order": 20,
+      "x": 4400,
+      "y": 20
+    },
+    {
+      "id": "e9e7b18a-f645-4bf4-809d-9a7fcb995692",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "【司机、售后】到达交车地",
+      "shape": "process",
+      "order": 21,
+      "x": 4620,
+      "y": 20
+    },
+    {
+      "id": "4aa3720f-64f5-426c-ba3e-3c98ce3ec632",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "【司机、售后】发运",
+      "shape": "process",
+      "order": 22,
+      "x": 4840,
+      "y": 20
+    },
+    {
+      "id": "fdd290de-c997-4222-928c-ca2257fd0dff",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "下单",
+      "shape": "process",
+      "order": 23,
+      "x": 5060,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "与原有的下单接口可能不同，需要新增"
+    },
+    {
+      "id": "f34b4ba7-94f3-4670-b6ee-cca6128fad0a",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "创建支付宝支付单号",
+      "shape": "process",
+      "order": 24,
+      "x": 5280,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "支付宝订单需要自动调用支付宝接口，生成交易单号"
+    },
+    {
+      "id": "e51e1d5c-f165-4344-bb77-7b0a5bbac0f6",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "关联查价单号，更新订单报价",
+      "shape": "process",
+      "order": 25,
+      "x": 5500,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "需要关联订单号"
+    },
+    {
+      "id": "4c5a4048-fcb6-4c7b-a2ea-8e6417ad20da",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "自动确认报价",
+      "shape": "process",
+      "order": 26,
+      "x": 5720,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "支付宝渠道过来的订单需要自动确认报价"
+    },
+    {
+      "id": "3a5a15e3-63f8-4f0d-97b2-2e463df3b1f7",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "查询大板线路库",
+      "shape": "process",
+      "order": 27,
+      "x": 5940,
+      "y": 20,
+      "tag": "existing",
+      "tagNote": "在查价的时候，需要增加会员检查和自动注册逻辑"
+    },
+    {
+      "id": "61c67c9b-8d9c-4171-ae50-0058c91e4cb6",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "推送价格",
+      "shape": "process",
+      "order": 28,
+      "x": 6160,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "新增的推送价格接口"
+    },
+    {
+      "id": "e8537975-a8f7-41be-a6ec-dbaab529e546",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "干线+保障服务费",
+      "shape": "process",
+      "order": 29,
+      "x": 6380,
+      "y": 20
+    },
+    {
+      "id": "c51f177e-9426-4aec-bf5e-6ec41b51adc5",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "调用汽车托运订单状态同步同步订单状态=服务完成（CS_ARRIVED）",
+      "shape": "process",
+      "order": 30,
+      "x": 6600,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "新增接口推送逻辑"
+    },
+    {
+      "id": "c8ac993b-7a7b-4328-a0f0-b42fd028418b",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "兜底计算规则，返回价格信息",
+      "shape": "process",
+      "order": 31,
+      "x": 6820,
+      "y": 20,
+      "tag": "pending",
+      "tagNote": "是否需要兜底计算规则，还是直接返回不能承运"
+    },
+    {
+      "id": "42ecc204-cb51-40bf-bb4f-c41d30893912",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "调用汽车托运订单状态同步同步订单状态=运送中（CS_DELIVERING）",
+      "shape": "process",
+      "order": 32,
+      "x": 7040,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "新增接口推送逻辑"
+    },
+    {
+      "id": "9a7b89fb-91b8-4c3a-bf07-af8a4bd71ffb",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "调用汽车托运订单状态同步接口同步订单状态=待接单\n（CS_TO_PICK_UP）",
+      "shape": "process",
+      "order": 33,
+      "x": 7260,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "新增逻辑"
+    },
+    {
+      "id": "744f80c1-bf6a-431b-b25c-356ae60e38db",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "调用汽车托运订单状态同步同步订单状态=已接单（CS_TAKE_ORDER）",
+      "shape": "process",
+      "order": 34,
+      "x": 7480,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "新增接口推送逻辑"
+    },
+    {
+      "id": "9b901235-9948-48ab-8b85-654cb6f73545",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "调用汽车托运订单状态同步同步订单状态=已取车（CS_PICKED_UP）",
+      "shape": "process",
+      "order": 35,
+      "x": 7700,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "新增接口推送逻辑"
+    },
+    {
+      "id": "ffedd689-0f53-4c1c-a1c4-22dad4a906ca",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "返回不可承运available=false",
+      "shape": "process",
+      "order": 36,
+      "x": 7920,
+      "y": 20
+    },
+    {
+      "id": "cb0233d0-0930-4641-9f3e-7bc517981c37",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "使用支付单状态同步接口更新订单金额和支付状态",
+      "shape": "process",
+      "order": 37,
+      "x": 8140,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "新增逻辑"
+    },
+    {
+      "id": "f3087d61-5f9f-49bc-b3d1-b63011db6bf2",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "缺失信息使用默认值补充，比如车型车系等，后续需要人工确认并修改",
+      "shape": "document",
+      "order": 38,
+      "x": 8360,
+      "y": 20
+    },
+    {
+      "id": "17b8a0f5-6eef-43f5-bc80-baa009bc9f52",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "查询次数是否超过3次",
+      "shape": "decision",
+      "order": 39,
+      "x": 8580,
+      "y": 20
+    },
+    {
+      "id": "d55d162a-4f2e-4bfe-9f6b-d88e535902f1",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "订单号关联查价单号，查价单号在下单时支付宝会传过来",
+      "shape": "document",
+      "order": 40,
+      "x": 8800,
+      "y": 20
+    },
+    {
+      "id": "331d1395-6410-423e-a662-ec1087ec3e05",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "返回订单信息后，比如延迟2秒；调用汽车托运订单状态同步同步订单状态=待支付（CS_TO_PAY）",
+      "shape": "process",
+      "order": 41,
+      "x": 9020,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "新增逻辑"
+    },
+    {
+      "id": "407ca8dc-0917-403b-9fb0-779de6557cc6",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "调用汽车托运订单状态同步同步订单状态=订单完成（CS_SUCCESS）",
+      "shape": "process",
+      "order": 42,
+      "x": 9240,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "新增接口状态同步逻辑"
+    },
+    {
+      "id": "fd2d2a65-707d-4153-a34e-e4a8d9ef1453",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "调用支付状态同步接口，更新状态为：待支付",
+      "shape": "process",
+      "order": 43,
+      "x": 9460,
+      "y": 20
+    },
+    {
+      "id": "7ba2c912-db55-4393-afd0-bea8b37e66e8",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "creator_phone是否已注册",
+      "shape": "decision",
+      "order": 44,
+      "x": 9680,
+      "y": 20
+    },
+    {
+      "id": "6195e88a-3d11-4b15-845a-42af9c719d41",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "使用creator_phone注册会员",
+      "shape": "process",
+      "order": 45,
+      "x": 9900,
+      "y": 20,
+      "tag": "new",
+      "tagNote": "在查价的时候就需要注册会员"
+    },
+    {
+      "id": "356806fb-5b69-42bb-8a98-7d7058540495",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "此处跳过了订单状态=已送达（CS_ARRIVED），因为需要推送账单给客户",
+      "shape": "document",
+      "order": 46,
+      "x": 10120,
+      "y": 20
+    },
+    {
+      "id": "38299ac6-425b-4838-b883-f5fd8477e5a3",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "调用支付状态同步接口，",
+      "shape": "process",
+      "order": 47,
+      "x": 10340,
+      "y": 20
+    },
+    {
+      "id": "f6560aa4-aa06-4dc5-92d8-f7958daad146",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "同步：待⽀付 (TO_PAY)，明细 (order_fee, base_delivery_fee 等)",
+      "shape": "document",
+      "order": 48,
+      "x": 10560,
+      "y": 20
+    },
+    {
+      "id": "8a8e7c0b-3cad-4a42-84b7-cbd369368dfa",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "此时无法交车",
+      "shape": "document",
+      "order": 49,
+      "x": 10780,
+      "y": 20
+    },
+    {
+      "id": "8f491ed8-282b-4e19-b9c3-43f7effe4796",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "等待10秒继续查询",
+      "shape": "process",
+      "order": 50,
+      "x": 11000,
+      "y": 20
+    },
+    {
+      "id": "ab928f94-b52d-4719-b784-2fc24772fef0",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "查询是否超过3次",
+      "shape": "decision",
+      "order": 51,
+      "x": 11220,
+      "y": 20
+    },
+    {
+      "id": "6b9d4b8b-214b-42a2-8dcf-cdc02a275fd4",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "调用支付状态同步接口，更新状态为：待支付",
+      "shape": "process",
+      "order": 52,
+      "x": 11440,
+      "y": 20
+    },
+    {
+      "id": "fc4e0573-878c-43fc-bc5c-3c7557e7a7b9",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "不处理，无需自动注册",
+      "shape": "process",
+      "order": 53,
+      "x": 11660,
+      "y": 20
+    },
+    {
+      "id": "7280aca6-9b25-478e-aafc-fac0d5e3e269",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "当前支付宝支付状态缺少待支付定金还是待支付尾款，无法区分用户应当支付哪一笔",
+      "shape": "document",
+      "order": 54,
+      "x": 11880,
+      "y": 20
+    },
+    {
+      "id": "67b745c0-a180-43b1-bdcc-fe245944612c",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "等待10秒后再次查询",
+      "shape": "process",
+      "order": 55,
+      "x": 12100,
+      "y": 20
+    },
+    {
+      "id": "3f59dd99-03e3-4b43-b3c7-b22195e6bf1c",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "调用支付状态同步接口，更新状态为：支付完成",
+      "shape": "process",
+      "order": 56,
+      "x": 12320,
+      "y": 20
+    },
+    {
+      "id": "9b1bcb74-587b-4e36-a33b-19d738923e8d",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "用户在其他渠道支付完成",
+      "shape": "process",
+      "order": 57,
+      "x": 12540,
+      "y": 20
+    },
+    {
+      "id": "a268dc5a-bdf7-45cc-bfa9-e4e509d12bb1",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "调用支付状态同步接口，更新状态为：支付完成",
+      "shape": "process",
+      "order": 58,
+      "x": 12760,
+      "y": 20
+    },
+    {
+      "id": "7975774f-5f23-4819-8067-2ddc3a118940",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "用户在其他渠道支付完成",
+      "shape": "process",
+      "order": 59,
+      "x": 12980,
+      "y": 20
+    },
+    {
+      "id": "15e1233a-9f9f-4f48-be00-156e04d33fad",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "不允许使用微信在线支付",
+      "shape": "document",
+      "order": 60,
+      "x": 13200,
+      "y": 20
+    },
+    {
+      "id": "74d71f36-51d5-4238-91f8-41cc2d14faf6",
+      "laneId": "4e23b01f-ca9b-473c-bed2-b81b6c57067d",
+      "label": "不允许使用微信在线支付",
+      "shape": "document",
+      "order": 61,
+      "x": 13420,
+      "y": 20
     }
   ],
   "connections": [
     {
-      "id": "28b39f2b-d341-41cd-8273-9e7b0a250f0a",
-      "fromTaskId": "3704e411-05a2-4bd7-ba76-a9365b42e054",
-      "toTaskId": "f6bc291a-90da-4a77-b4c8-a88841456139",
+      "id": "2be3b110-9bce-4e55-879a-046dcc188e8c",
+      "fromTaskId": "456b1113-9d3a-4ad2-8f0d-e18bd87c687f",
+      "toTaskId": "c8322afc-6541-4d4e-99f3-d41329ee6e17",
       "lineStyle": "solid",
       "arrowHead": "arrow",
       "sourceHandle": "right",
       "targetHandle": "left"
     },
     {
-      "id": "23054519-7077-4896-9f55-b35cbd90d395",
-      "fromTaskId": "f6bc291a-90da-4a77-b4c8-a88841456139",
-      "toTaskId": "2660bf08-a76b-4a24-8d45-cba358bd7a4b",
+      "id": "3bbdf3a5-13d4-4ede-8ed6-917fc6c79e97",
+      "fromTaskId": "c8322afc-6541-4d4e-99f3-d41329ee6e17",
+      "toTaskId": "e003a321-8829-4164-a6e9-c13c134d54f8",
       "lineStyle": "solid",
       "arrowHead": "arrow",
       "sourceHandle": "right",
       "targetHandle": "left"
     },
     {
-      "id": "6985db08-f801-42fd-9b39-0fa585c4e2a9",
-      "fromTaskId": "2660bf08-a76b-4a24-8d45-cba358bd7a4b",
-      "toTaskId": "adf6812a-3145-46fa-9906-b38d8a65dd62",
-      "label": "Yes",
+      "id": "09ccbdfc-2d4b-4800-9266-1e48907b23f1",
+      "fromTaskId": "e003a321-8829-4164-a6e9-c13c134d54f8",
+      "toTaskId": "ffedd689-0f53-4c1c-a1c4-22dad4a906ca",
+      "label": "摩托车",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "2a5b5e0e-b1a1-4aef-a308-aa31b2fb5f5f",
+      "fromTaskId": "e003a321-8829-4164-a6e9-c13c134d54f8",
+      "toTaskId": "3a5a15e3-63f8-4f0d-97b2-2e463df3b1f7",
+      "label": "汽车",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "bottom",
+      "targetHandle": "left"
+    },
+    {
+      "id": "c8256e11-8a8e-45fe-9350-521bf74ab980",
+      "fromTaskId": "3a5a15e3-63f8-4f0d-97b2-2e463df3b1f7",
+      "toTaskId": "2756bc88-bf45-4d43-8537-6b783cc94db5",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "116d218b-952c-412a-bd3b-227a2a5e8a20",
+      "fromTaskId": "2756bc88-bf45-4d43-8537-6b783cc94db5",
+      "toTaskId": "e8537975-a8f7-41be-a6ec-dbaab529e546",
+      "label": "是",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "289351f9-fef7-40dc-b278-fee60c9e2d9a",
+      "fromTaskId": "3a5a15e3-63f8-4f0d-97b2-2e463df3b1f7",
+      "toTaskId": "7ba2c912-db55-4393-afd0-bea8b37e66e8",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "635faf6c-f83f-4627-965b-d24dea9827a9",
+      "fromTaskId": "7ba2c912-db55-4393-afd0-bea8b37e66e8",
+      "toTaskId": "6195e88a-3d11-4b15-845a-42af9c719d41",
+      "label": "否",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "35703794-2feb-4a02-989f-3f4e8f93ffdf",
+      "fromTaskId": "a020ce05-d958-49c4-8b83-3cfa567cfa5f",
+      "toTaskId": "3a5a15e3-63f8-4f0d-97b2-2e463df3b1f7",
+      "lineStyle": "dashed",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "bottom"
+    },
+    {
+      "id": "f08b2163-936c-4b02-b871-50f4ec28a931",
+      "fromTaskId": "2756bc88-bf45-4d43-8537-6b783cc94db5",
+      "toTaskId": "c8ac993b-7a7b-4328-a0f0-b42fd028418b",
+      "label": "否",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "bottom",
+      "targetHandle": "left"
+    },
+    {
+      "id": "f7e50804-e9db-4b3e-8840-6350af5695d9",
+      "fromTaskId": "c8ac993b-7a7b-4328-a0f0-b42fd028418b",
+      "toTaskId": "e8537975-a8f7-41be-a6ec-dbaab529e546",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "2361da29-41f2-4f85-b580-0d3a1247ef25",
+      "fromTaskId": "bab389b3-8050-4833-8e60-3a203798bd22",
+      "toTaskId": "51261cdf-3281-4733-9956-8d5c11a2588c",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "top",
+      "targetHandle": "bottom"
+    },
+    {
+      "id": "7b6136ff-1f84-42f3-897d-fd5959f6f302",
+      "fromTaskId": "51261cdf-3281-4733-9956-8d5c11a2588c",
+      "toTaskId": "7099965c-4414-44b9-a367-5dabc3361871",
+      "label": "否",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "5a3a1949-e7b8-418c-a774-467fff4eadc0",
+      "fromTaskId": "51261cdf-3281-4733-9956-8d5c11a2588c",
+      "toTaskId": "dbb66164-960b-45b9-8e37-724862733300",
+      "label": "是",
       "lineStyle": "solid",
       "arrowHead": "arrow",
       "sourceHandle": "bottom",
       "targetHandle": "top"
     },
     {
-      "id": "a245aaa8-8707-4477-a1d6-25ad0d653be1",
-      "fromTaskId": "adf6812a-3145-46fa-9906-b38d8a65dd62",
-      "toTaskId": "ee0f99cd-4436-47f5-9ee1-371765cc60d3",
+      "id": "10463f57-036a-43cc-9dd3-1f0bc78a2a7b",
+      "fromTaskId": "dbb66164-960b-45b9-8e37-724862733300",
+      "toTaskId": "fdd290de-c997-4222-928c-ca2257fd0dff",
+      "label": "调用下单接口",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "821deb75-c968-4482-b280-0db080ac6dbd",
+      "fromTaskId": "fdd290de-c997-4222-928c-ca2257fd0dff",
+      "toTaskId": "e51e1d5c-f165-4344-bb77-7b0a5bbac0f6",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "81e50725-b593-4bb3-bac2-f6ed1174d561",
+      "fromTaskId": "d55d162a-4f2e-4bfe-9f6b-d88e535902f1",
+      "toTaskId": "e51e1d5c-f165-4344-bb77-7b0a5bbac0f6",
+      "lineStyle": "dashed",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "db43bf01-e366-48f5-9f09-b12d3410ab16",
+      "fromTaskId": "e51e1d5c-f165-4344-bb77-7b0a5bbac0f6",
+      "toTaskId": "4c5a4048-fcb6-4c7b-a2ea-8e6417ad20da",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "b08104b5-42ff-453a-b88b-599601839f05",
+      "fromTaskId": "4c5a4048-fcb6-4c7b-a2ea-8e6417ad20da",
+      "toTaskId": "f34b4ba7-94f3-4670-b6ee-cca6128fad0a",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "e123f644-cd46-4ff7-af62-8b862891eb7d",
+      "fromTaskId": "f34b4ba7-94f3-4670-b6ee-cca6128fad0a",
+      "toTaskId": "3da1a921-a19d-460a-ac07-425debef0135",
+      "label": "返回订单信息和支付信息",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "55aa1b3c-bce1-49e9-857d-7b91347e669e",
+      "fromTaskId": "d970d501-4aa8-445b-9cd0-aa07800c333a",
+      "toTaskId": "a98b8e9b-fba8-458f-9675-ee502d6f3ed7",
+      "label": "否",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "447f9489-c649-42fe-8e0c-a096ad784856",
+      "fromTaskId": "3da1a921-a19d-460a-ac07-425debef0135",
+      "toTaskId": "d970d501-4aa8-445b-9cd0-aa07800c333a",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "24546358-8434-4d1c-8f76-e7a9fa95b3cd",
+      "fromTaskId": "d970d501-4aa8-445b-9cd0-aa07800c333a",
+      "toTaskId": "656f275d-e095-42f6-bd9f-96fe465d662e",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "bottom",
+      "targetHandle": "left"
+    },
+    {
+      "id": "33d3b633-e135-49c5-b967-bb73ed70ba53",
+      "fromTaskId": "656f275d-e095-42f6-bd9f-96fe465d662e",
+      "toTaskId": "932d14c5-e64c-4419-966e-9143294633e5",
+      "label": "通知支付成功",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "07b73d53-c7f9-4ace-91e8-b4d4c7f3e89e",
+      "fromTaskId": "932d14c5-e64c-4419-966e-9143294633e5",
+      "toTaskId": "b7069d97-36dd-4247-8067-5b2c9d94bd08",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "36906837-ff19-4a8a-bfc5-c7e372a41634",
+      "fromTaskId": "b7069d97-36dd-4247-8067-5b2c9d94bd08",
+      "toTaskId": "ab928f94-b52d-4719-b784-2fc24772fef0",
+      "label": "否",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "6daa83eb-9c17-4bda-aacc-22baa17044e4",
+      "fromTaskId": "ab928f94-b52d-4719-b784-2fc24772fef0",
+      "toTaskId": "67b745c0-a180-43b1-bdcc-fe245944612c",
+      "label": "否",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "d2c229e3-3a5a-4256-85ec-bfa0d09eba13",
+      "fromTaskId": "67b745c0-a180-43b1-bdcc-fe245944612c",
+      "toTaskId": "932d14c5-e64c-4419-966e-9143294633e5",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "5a9f8592-411e-44ef-93fa-331e32fbd4fc",
+      "fromTaskId": "ab928f94-b52d-4719-b784-2fc24772fef0",
+      "toTaskId": "6b9d4b8b-214b-42a2-8dcf-cdc02a275fd4",
+      "label": "是",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "bottom",
+      "targetHandle": "left"
+    },
+    {
+      "id": "89616fa2-bb45-40d4-a4d4-1954b3a5b71f",
+      "fromTaskId": "7280aca6-9b25-478e-aafc-fac0d5e3e269",
+      "toTaskId": "6b9d4b8b-214b-42a2-8dcf-cdc02a275fd4",
+      "lineStyle": "dashed",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "23ea8c4c-ede3-428e-9a54-fabb9e5ecb9f",
+      "fromTaskId": "b7069d97-36dd-4247-8067-5b2c9d94bd08",
+      "toTaskId": "93624ff7-b0c9-439b-9f39-7c2babcd53a4",
+      "label": "是",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "bottom",
+      "targetHandle": "left"
+    },
+    {
+      "id": "f9fae247-35cb-48cd-9c62-adf6920a2a67",
+      "fromTaskId": "1f60a7a5-c28e-4036-a446-0418281edd12",
+      "toTaskId": "93624ff7-b0c9-439b-9f39-7c2babcd53a4",
+      "lineStyle": "dashed",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "bottom"
+    },
+    {
+      "id": "118ca3aa-ebf9-4ab9-947c-d20fd49d9748",
+      "fromTaskId": "93624ff7-b0c9-439b-9f39-7c2babcd53a4",
+      "toTaskId": "f5ce59d2-209a-4b27-adbb-5eea12f7afb7",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "ace37e74-9f35-430b-a800-654649f43e6e",
+      "fromTaskId": "f5ce59d2-209a-4b27-adbb-5eea12f7afb7",
+      "toTaskId": "cb769049-5822-4235-acf6-f78a01fad4a1",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "84809617-cd94-48fa-a526-83bf4270c660",
+      "fromTaskId": "cb769049-5822-4235-acf6-f78a01fad4a1",
+      "toTaskId": "91127e47-0344-4a4c-a864-a5b5386604ba",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "3cd7ad70-de9e-49b0-9264-ac2201a2f5e1",
+      "fromTaskId": "91127e47-0344-4a4c-a864-a5b5386604ba",
+      "toTaskId": "cb0233d0-0930-4641-9f3e-7bc517981c37",
+      "label": "是",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "7d361903-585c-4a78-bfa4-b53544031a39",
+      "fromTaskId": "91127e47-0344-4a4c-a864-a5b5386604ba",
+      "toTaskId": "01559436-c64f-4a39-82ab-ef1957f698ff",
+      "label": "否",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "bottom",
+      "targetHandle": "left"
+    },
+    {
+      "id": "6a6d5d3c-35f2-448c-af0f-9bf1ee49b215",
+      "fromTaskId": "cb0233d0-0930-4641-9f3e-7bc517981c37",
+      "toTaskId": "01559436-c64f-4a39-82ab-ef1957f698ff",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "9324dc68-fc63-4cc7-8bd2-9019f6dc0c8b",
+      "fromTaskId": "01559436-c64f-4a39-82ab-ef1957f698ff",
+      "toTaskId": "349202c4-e541-4400-955b-a3db0097a54b",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "cd6b9766-0919-40c5-b89a-560fc868d9dc",
+      "fromTaskId": "349202c4-e541-4400-955b-a3db0097a54b",
+      "toTaskId": "5e117d7c-4bf0-4d48-94b3-2336bb3c21e5",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "2e05f0a1-db55-4f02-a5d3-e2f54e9729dc",
+      "fromTaskId": "349202c4-e541-4400-955b-a3db0097a54b",
+      "toTaskId": "744f80c1-bf6a-431b-b25c-356ae60e38db",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "bottom",
+      "targetHandle": "left"
+    },
+    {
+      "id": "548084a9-3b84-4290-923d-6856955658a5",
+      "fromTaskId": "93624ff7-b0c9-439b-9f39-7c2babcd53a4",
+      "toTaskId": "9a7b89fb-91b8-4c3a-bf07-af8a4bd71ffb",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "bottom",
+      "targetHandle": "left"
+    },
+    {
+      "id": "cabd1390-c6b0-413f-a12c-974502d199c7",
+      "fromTaskId": "d6fa91d5-413d-45e9-a386-8196d2cbdedd",
+      "toTaskId": "f34b4ba7-94f3-4670-b6ee-cca6128fad0a",
+      "lineStyle": "dashed",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "320a55ef-b14a-4061-af6a-00d8160bd7e2",
+      "fromTaskId": "5e117d7c-4bf0-4d48-94b3-2336bb3c21e5",
+      "toTaskId": "d6dd0cf5-b62e-47bd-96b1-a68e84c12acd",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "e5f11f75-0077-4e1e-aec3-84a2b773b8fa",
+      "fromTaskId": "d6dd0cf5-b62e-47bd-96b1-a68e84c12acd",
+      "toTaskId": "9b901235-9948-48ab-8b85-654cb6f73545",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "2ad84955-f27c-4389-8566-8ba2efe23512",
+      "fromTaskId": "d6dd0cf5-b62e-47bd-96b1-a68e84c12acd",
+      "toTaskId": "4aa3720f-64f5-426c-ba3e-3c98ce3ec632",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "bottom",
+      "targetHandle": "left"
+    },
+    {
+      "id": "6fab6b40-1072-4999-a5b2-aaa3b99ad218",
+      "fromTaskId": "4aa3720f-64f5-426c-ba3e-3c98ce3ec632",
+      "toTaskId": "42ecc204-cb51-40bf-bb4f-c41d30893912",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "6ee2e5dd-d3e5-447c-bcca-ab6e58f6f5ec",
+      "fromTaskId": "4aa3720f-64f5-426c-ba3e-3c98ce3ec632",
+      "toTaskId": "e9e7b18a-f645-4bf4-809d-9a7fcb995692",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "9360d70d-c427-4100-a518-15cf228553b7",
+      "fromTaskId": "e9e7b18a-f645-4bf4-809d-9a7fcb995692",
+      "toTaskId": "c51f177e-9426-4aec-bf5e-6ec41b51adc5",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "816ce461-bfe0-4340-b0c4-8de902b30853",
+      "fromTaskId": "356806fb-5b69-42bb-8a98-7d7058540495",
+      "toTaskId": "c51f177e-9426-4aec-bf5e-6ec41b51adc5",
+      "lineStyle": "dashed",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "2ff4fed7-42b1-4d34-a361-631ec22af599",
+      "fromTaskId": "06979da8-086e-4c03-92e0-b684ae95ab67",
+      "toTaskId": "407ca8dc-0917-403b-9fb0-779de6557cc6",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "c09601ad-b070-4b76-8702-38c46afd455b",
+      "fromTaskId": "48414680-9afe-4f4e-9b8f-a752ce299b70",
+      "toTaskId": "57a17c39-9013-4b62-b93c-1d861103d30b",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "c6491373-f1aa-4116-b2cc-729a815390ad",
+      "fromTaskId": "57a17c39-9013-4b62-b93c-1d861103d30b",
+      "toTaskId": "a8dc5834-a0e7-4623-b9df-64aef4e210c0",
+      "label": "否",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "82379bf8-459c-4897-9b43-6fed46b450b4",
+      "fromTaskId": "57a17c39-9013-4b62-b93c-1d861103d30b",
+      "toTaskId": "cc358acb-4014-41f9-9d16-c2dd510f745a",
       "lineStyle": "solid",
       "arrowHead": "arrow",
       "sourceHandle": "bottom",
       "targetHandle": "top"
+    },
+    {
+      "id": "a3289cec-23fb-4973-b3f8-edb697bee0e5",
+      "fromTaskId": "cc358acb-4014-41f9-9d16-c2dd510f745a",
+      "toTaskId": "4b0454a4-53be-478c-b697-d065519152fb",
+      "label": "推送支付状态",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "ffec5481-0c87-4ac7-9feb-2a726903d83a",
+      "fromTaskId": "3d3f08a3-ad38-41f0-8d73-5f305993b6a1",
+      "toTaskId": "17b8a0f5-6eef-43f5-bc80-baa009bc9f52",
+      "label": "否",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "d0549787-1d72-4fcb-a7a4-2a08f3aa5f7e",
+      "fromTaskId": "4b0454a4-53be-478c-b697-d065519152fb",
+      "toTaskId": "3d3f08a3-ad38-41f0-8d73-5f305993b6a1",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "0b743389-a69c-4c21-8723-7912adea8c1e",
+      "fromTaskId": "17b8a0f5-6eef-43f5-bc80-baa009bc9f52",
+      "toTaskId": "8f491ed8-282b-4e19-b9c3-43f7effe4796",
+      "label": "否",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "f4d74049-6371-479d-aa6f-7c939e1b039d",
+      "fromTaskId": "8f491ed8-282b-4e19-b9c3-43f7effe4796",
+      "toTaskId": "4b0454a4-53be-478c-b697-d065519152fb",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "351c992e-ae4f-4d06-b36d-d1440ef3dff0",
+      "fromTaskId": "3d3f08a3-ad38-41f0-8d73-5f305993b6a1",
+      "toTaskId": "06979da8-086e-4c03-92e0-b684ae95ab67",
+      "label": "是",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "bottom",
+      "targetHandle": "left"
+    },
+    {
+      "id": "707bcc37-e9a5-47ca-b010-b541c33af606",
+      "fromTaskId": "17b8a0f5-6eef-43f5-bc80-baa009bc9f52",
+      "toTaskId": "fd2d2a65-707d-4153-a34e-e4a8d9ef1453",
+      "label": "是",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "bottom",
+      "targetHandle": "left"
+    },
+    {
+      "id": "33361fbb-1faf-4b66-a25e-b400b2e04621",
+      "fromTaskId": "8a8e7c0b-3cad-4a42-84b7-cbd369368dfa",
+      "toTaskId": "fd2d2a65-707d-4153-a34e-e4a8d9ef1453",
+      "lineStyle": "dashed",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "63e2bb21-2b44-44cb-b0e7-8ae317bde85a",
+      "fromTaskId": "e9e7b18a-f645-4bf4-809d-9a7fcb995692",
+      "toTaskId": "56a65112-e163-45cf-9e05-f5e98a4f688a",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "d34c79c6-4e3a-4395-9aec-e1ec21130dbe",
+      "fromTaskId": "56a65112-e163-45cf-9e05-f5e98a4f688a",
+      "toTaskId": "48414680-9afe-4f4e-9b8f-a752ce299b70",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "3b135ca9-cdb1-43f2-bf5b-9cfc97645541",
+      "fromTaskId": "7ba2c912-db55-4393-afd0-bea8b37e66e8",
+      "toTaskId": "fc4e0573-878c-43fc-bc5c-3c7557e7a7b9",
+      "label": "是",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "bottom",
+      "targetHandle": "left"
+    },
+    {
+      "id": "aa7d478b-c230-4e24-8b75-ef620be1f116",
+      "fromTaskId": "e8537975-a8f7-41be-a6ec-dbaab529e546",
+      "toTaskId": "61c67c9b-8d9c-4171-ae50-0058c91e4cb6",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "403c86b9-93d5-4424-8ab0-d398f239cafa",
+      "fromTaskId": "61c67c9b-8d9c-4171-ae50-0058c91e4cb6",
+      "toTaskId": "bab389b3-8050-4833-8e60-3a203798bd22",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "feff9789-629a-444d-a96d-f3aab107733b",
+      "fromTaskId": "91183298-3d05-4a44-b13f-8f0ac69008e0",
+      "toTaskId": "61c67c9b-8d9c-4171-ae50-0058c91e4cb6",
+      "lineStyle": "dashed",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "74c1d7f3-4dce-4648-ab3a-59b6e39f73be",
+      "fromTaskId": "56a65112-e163-45cf-9e05-f5e98a4f688a",
+      "toTaskId": "f6560aa4-aa06-4dc5-92d8-f7958daad146",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "02eee4d2-a944-4a08-b156-39dae328c087",
+      "fromTaskId": "f3087d61-5f9f-49bc-b3d1-b63011db6bf2",
+      "toTaskId": "fdd290de-c997-4222-928c-ca2257fd0dff",
+      "lineStyle": "dashed",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "f62dc8a7-ffb6-414c-8283-36244ff694be",
+      "fromTaskId": "8c2552be-5d24-4ea8-a7a0-d0779a8080b1",
+      "toTaskId": "3a5a15e3-63f8-4f0d-97b2-2e463df3b1f7",
+      "lineStyle": "dashed",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "top"
+    },
+    {
+      "id": "d6bfa1aa-b3e5-4f2d-a265-3459a0280425",
+      "fromTaskId": "06979da8-086e-4c03-92e0-b684ae95ab67",
+      "toTaskId": "4eab3dd7-fb47-4c26-b4e5-b8d8e4d0df24",
+      "label": "返回result=true",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "7c9f4db6-8f50-4540-80c3-dea8c16b2f8e",
+      "fromTaskId": "93624ff7-b0c9-439b-9f39-7c2babcd53a4",
+      "toTaskId": "58ba0b73-3414-40e3-a4b8-35690ff287bf",
+      "label": "返回result=true",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "e9e4f14b-15c9-4d15-b3d3-7d230106a316",
+      "fromTaskId": "f34b4ba7-94f3-4670-b6ee-cca6128fad0a",
+      "toTaskId": "7975774f-5f23-4819-8067-2ddc3a118940",
+      "lineStyle": "dashed",
+      "arrowHead": "arrow",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "97034080-0d0a-4814-b4f5-e5c2c3a24477",
+      "fromTaskId": "7975774f-5f23-4819-8067-2ddc3a118940",
+      "toTaskId": "a268dc5a-bdf7-45cc-bfa9-e4e509d12bb1",
+      "label": "alipay_trade_no为空",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "554dc2c0-c4d1-4b0b-b9ee-5677b00dca89",
+      "fromTaskId": "9b1bcb74-587b-4e36-a33b-19d738923e8d",
+      "toTaskId": "3f59dd99-03e3-4b43-b3c7-b22195e6bf1c",
+      "label": "alipay_trade_no为空",
+      "lineStyle": "solid",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "a7486042-951f-4c60-9c60-54df45655502",
+      "fromTaskId": "e9e7b18a-f645-4bf4-809d-9a7fcb995692",
+      "toTaskId": "9b1bcb74-587b-4e36-a33b-19d738923e8d",
+      "lineStyle": "dashed",
+      "arrowHead": "arrow",
+      "sourceHandle": "bottom",
+      "targetHandle": "left"
+    },
+    {
+      "id": "7c34eb6d-2572-41b0-bc1a-e3e819711bbf",
+      "fromTaskId": "15e1233a-9f9f-4f48-be00-156e04d33fad",
+      "toTaskId": "9b1bcb74-587b-4e36-a33b-19d738923e8d",
+      "lineStyle": "dashed",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
+    },
+    {
+      "id": "93583c23-dbc4-4565-ab71-a1e7b32bbc0c",
+      "fromTaskId": "74d71f36-51d5-4238-91f8-41cc2d14faf6",
+      "toTaskId": "7975774f-5f23-4819-8067-2ddc3a118940",
+      "lineStyle": "dashed",
+      "arrowHead": "arrow",
+      "sourceHandle": "left",
+      "targetHandle": "right"
     }
   ],
   "swBgPattern": "none",
@@ -174,5 +1527,5 @@
   "swTheme": "default",
   "swLaneGap": 24,
   "swLaneColorOverrides": {},
-  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1{\"Approved?\"}\n    t_2([\"Start\"])\n    t_3[\"Define Requirements\"]\n    t_4{\"Approved?\"}\n    t_5[\"Define Requirements\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_6{\"Decision 2\"}\n    t_7[\"Implement Feature\"]\n    t_8{\"Decision 2\"}\n  end\n  subgraph lane_2[\"Review\"]\n    t_9[\"Code Review\"]\n    t_10[/\"Document 2\"\\]\n  end\n  t_2 --> t_3\n  t_3 --> t_0\n  t_0 -->|\"Yes\"| t_7\n  t_7 --> t_9\n"
+  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"用户\"]\n    t_0([\"录入托运信息\"])\n    t_1{\"是否确认运输\"}\n    t_2[\"不处理\"]\n    t_3{\"用户是否支付成功\"}\n    t_4[\"不处理\"]\n    t_5[\"等待支付\"]\n    t_6{\"用户是否支付\"}\n  end\n  subgraph lane_1[\"支付宝\"]\n    t_7[\"拉起收银台\"]\n    t_8[\"展示待⽀付账单\"]\n    t_9[\"接收通知\"]\n    t_10[\"接收通知\"]\n    t_11[\"展示支付成功\"]\n    t_12[\"提交订单信息\"]\n    t_13[\"展示价格信息\"]\n    t_14[\"记录托运信息\"]\n    t_15[\"展示支付成功\"]\n  end\n  subgraph lane_2[\"交付系统\"]\n    t_16[/\"使用订单的预付款金额调用支付宝js API创建交易单，生成交易单号<br/>订单状态=待支付\"\\]\n    t_17[/\"客服需要查询支付宝订单，与客户沟通确认运车细节后，才能进入运力竞价\"\\]\n    %% [tag:other] 其他 | 这里需要给客服培训，使用特定流程处理支付宝渠道的订单\n    t_18[/\"在取价规则和加价规则中为支付宝配置渠道值和规则\"\\]\n    %% [tag:existing] 已有 | 需要配置支付宝聚合搜索渠道，配置相关取价规则和加价规则，应该不涉及到代码修改，只需要配置即可\n    t_19[/\"记录查价记录\"\\]\n    t_20[/\"available：true，price_type：MEMBER，transport_type：LARGE_TRUCK，price_info:{}\"\\]\n    t_21{\"是否支付成功\"}\n    t_22{\"是否支付成功\"}\n    t_23{\"金额是否有变化\"}\n    t_24[\"【销售】补充车架号、车辆品牌信息，修改订单金额（若金额不正确）\"]\n    t_25{\"汽车还是摩托车\"}\n    t_26[\"查询支付状态\"]\n    %% [tag:new] 新增 | 新增的支付状态查询逻辑\n    t_27[\"订单状态=待竞价\"]\n    t_28[\"【销售】查看支付宝渠道订单\"]\n    t_29[\"【司机、售后】上传交车单，交车\"]\n    t_30[\"调用⽀付单状态同步接口\"]\n    %% [tag:new] 新增 | 新增接口推送逻辑\n    t_31[\"查询订单支付状态\"]\n    %% [tag:new] 新增 | 新增逻辑\n    t_32[\"【运力】确认竞价\"]\n    t_33[\"【销售】人工通知运力可以竞价\"]\n    t_34{\"是否有线路（大板、小板）价格\"}\n    t_35[\"【售后】派单\"]\n    t_36[\"【司机、售后】确认提车\"]\n    t_37[\"【司机、售后】到达交车地\"]\n    t_38[\"【司机、售后】发运\"]\n    t_39[\"下单\"]\n    %% [tag:new] 新增 | 与原有的下单接口可能不同，需要新增\n    t_40[\"创建支付宝支付单号\"]\n    %% [tag:new] 新增 | 支付宝订单需要自动调用支付宝接口，生成交易单号\n    t_41[\"关联查价单号，更新订单报价\"]\n    %% [tag:new] 新增 | 需要关联订单号\n    t_42[\"自动确认报价\"]\n    %% [tag:new] 新增 | 支付宝渠道过来的订单需要自动确认报价\n    t_43[\"查询大板线路库\"]\n    %% [tag:existing] 已有 | 在查价的时候，需要增加会员检查和自动注册逻辑\n    t_44[\"推送价格\"]\n    %% [tag:new] 新增 | 新增的推送价格接口\n    t_45[\"干线+保障服务费\"]\n    t_46[\"调用汽车托运订单状态同步同步订单状态=服务完成（CS_ARRIVED）\"]\n    %% [tag:new] 新增 | 新增接口推送逻辑\n    t_47[\"兜底计算规则，返回价格信息\"]\n    %% [tag:pending] 待确认 | 是否需要兜底计算规则，还是直接返回不能承运\n    t_48[\"调用汽车托运订单状态同步同步订单状态=运送中（CS_DELIVERING）\"]\n    %% [tag:new] 新增 | 新增接口推送逻辑\n    t_49[\"调用汽车托运订单状态同步接口同步订单状态=待接单<br/>（CS_TO_PICK_UP）\"]\n    %% [tag:new] 新增 | 新增逻辑\n    t_50[\"调用汽车托运订单状态同步同步订单状态=已接单（CS_TAKE_ORDER）\"]\n    %% [tag:new] 新增 | 新增接口推送逻辑\n    t_51[\"调用汽车托运订单状态同步同步订单状态=已取车（CS_PICKED_UP）\"]\n    %% [tag:new] 新增 | 新增接口推送逻辑\n    t_52[\"返回不可承运available=false\"]\n    t_53[\"使用支付单状态同步接口更新订单金额和支付状态\"]\n    %% [tag:new] 新增 | 新增逻辑\n    t_54[/\"缺失信息使用默认值补充，比如车型车系等，后续需要人工确认并修改\"\\]\n    t_55{\"查询次数是否超过3次\"}\n    t_56[/\"订单号关联查价单号，查价单号在下单时支付宝会传过来\"\\]\n    t_57[\"返回订单信息后，比如延迟2秒；调用汽车托运订单状态同步同步订单状态=待支付（CS_TO_PAY）\"]\n    %% [tag:new] 新增 | 新增逻辑\n    t_58[\"调用汽车托运订单状态同步同步订单状态=订单完成（CS_SUCCESS）\"]\n    %% [tag:new] 新增 | 新增接口状态同步逻辑\n    t_59[\"调用支付状态同步接口，更新状态为：待支付\"]\n    t_60{\"creator_phone是否已注册\"}\n    t_61[\"使用creator_phone注册会员\"]\n    %% [tag:new] 新增 | 在查价的时候就需要注册会员\n    t_62[/\"此处跳过了订单状态=已送达（CS_ARRIVED），因为需要推送账单给客户\"\\]\n    t_63[\"调用支付状态同步接口，\"]\n    t_64[/\"同步：待⽀付 (TO_PAY)，明细 (order_fee, base_delivery_fee 等)\"\\]\n    t_65[/\"此时无法交车\"\\]\n    t_66[\"等待10秒继续查询\"]\n    t_67{\"查询是否超过3次\"}\n    t_68[\"调用支付状态同步接口，更新状态为：待支付\"]\n    t_69[\"不处理，无需自动注册\"]\n    t_70[/\"当前支付宝支付状态缺少待支付定金还是待支付尾款，无法区分用户应当支付哪一笔\"\\]\n    t_71[\"等待10秒后再次查询\"]\n    t_72[\"调用支付状态同步接口，更新状态为：支付完成\"]\n    t_73[\"用户在其他渠道支付完成\"]\n    t_74[\"调用支付状态同步接口，更新状态为：支付完成\"]\n    t_75[\"用户在其他渠道支付完成\"]\n    t_76[/\"不允许使用微信在线支付\"\\]\n    t_77[/\"不允许使用微信在线支付\"\\]\n  end\n  t_0 --> t_14\n  t_14 --> t_25\n  t_25 -->|\"摩托车\"| t_52\n  t_25 -->|\"汽车\"| t_43\n  t_43 --> t_34\n  t_34 -->|\"是\"| t_45\n  t_43 --> t_60\n  t_60 -->|\"否\"| t_61\n  t_18 -.-> t_43\n  t_34 -->|\"否\"| t_47\n  t_47 --> t_45\n  t_13 --> t_1\n  t_1 -->|\"否\"| t_4\n  t_1 -->|\"是\"| t_12\n  t_12 -->|\"调用下单接口\"| t_39\n  t_39 --> t_41\n  t_56 -.-> t_41\n  t_41 --> t_42\n  t_42 --> t_40\n  t_40 -->|\"返回订单信息和支付信息\"| t_7\n  t_6 -->|\"否\"| t_2\n  t_7 --> t_6\n  t_6 --> t_11\n  t_11 -->|\"通知支付成功\"| t_31\n  t_31 --> t_21\n  t_21 -->|\"否\"| t_67\n  t_67 -->|\"否\"| t_71\n  t_71 --> t_31\n  t_67 -->|\"是\"| t_68\n  t_70 -.-> t_68\n  t_21 -->|\"是\"| t_27\n  t_17 -.-> t_27\n  t_27 --> t_28\n  t_28 --> t_24\n  t_24 --> t_23\n  t_23 -->|\"是\"| t_53\n  t_23 -->|\"否\"| t_33\n  t_53 --> t_33\n  t_33 --> t_32\n  t_32 --> t_35\n  t_32 --> t_50\n  t_27 --> t_49\n  t_16 -.-> t_40\n  t_35 --> t_36\n  t_36 --> t_51\n  t_36 --> t_38\n  t_38 --> t_48\n  t_38 --> t_37\n  t_37 --> t_46\n  t_62 -.-> t_46\n  t_29 --> t_58\n  t_8 --> t_3\n  t_3 -->|\"否\"| t_5\n  t_3 --> t_15\n  t_15 -->|\"推送支付状态\"| t_26\n  t_22 -->|\"否\"| t_55\n  t_26 --> t_22\n  t_55 -->|\"否\"| t_66\n  t_66 --> t_26\n  t_22 -->|\"是\"| t_29\n  t_55 -->|\"是\"| t_59\n  t_65 -.-> t_59\n  t_37 --> t_30\n  t_30 --> t_8\n  t_60 -->|\"是\"| t_69\n  t_45 --> t_44\n  t_44 --> t_13\n  t_20 -.-> t_44\n  t_30 --> t_64\n  t_54 -.-> t_39\n  t_19 -.-> t_43\n  t_29 -->|\"返回result=true\"| t_9\n  t_27 -->|\"返回result=true\"| t_10\n  t_40 -.-> t_75\n  t_75 -->|\"alipay_trade_no为空\"| t_74\n  t_73 -->|\"alipay_trade_no为空\"| t_72\n  t_37 -.-> t_73\n  t_76 -.-> t_73\n  t_77 -.-> t_75\n"
 }
