@@ -202,8 +202,8 @@
       "id": "05bda108-ad72-4660-ad4e-7ce08d643b54",
       "type": "flow-process",
       "position": {
-        "x": 240,
-        "y": 1080
+        "x": 255.9557000216331,
+        "y": 1003.2131936458907
       },
       "data": {
         "label": "增加保障服务费（客配置中的）",
@@ -217,7 +217,9 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false,
+      "dragging": false
     },
     {
       "id": "51e410db-cb21-4c02-8f54-6e1944ef7776",
@@ -500,8 +502,8 @@
       "id": "13a8cad0-86b5-4897-aee3-3ac8f2e0c6ea",
       "type": "flow-process",
       "position": {
-        "x": 40,
-        "y": 1080
+        "x": -139.7509330562105,
+        "y": 1170.7480438730383
       },
       "data": {
         "label": "返回不可承运available=false",
@@ -515,7 +517,9 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": true,
+      "dragging": false
     }
   ],
   "edges": [

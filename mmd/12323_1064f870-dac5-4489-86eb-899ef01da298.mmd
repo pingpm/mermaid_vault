@@ -1,0 +1,19 @@
+sequenceDiagram
+  autonumber
+  participant p0 as 交付系统
+  participant p1 as 支付宝商户平台
+  p0->>p1: 请求创建alipay.trade.create
+  activate p1
+  Note over p1: 关键参数out_trade_no、total_amount、subject、product_code、op_app_id、buyer_id
+  p1-->>p0: 返回创建信息
+  deactivate p1
+  Note over p1: 关键参数：trade_no，记录该trade_no是预付款还是尾款
+  p0->>p1: 请求撤销alipay.trade.cancel
+  activate p1
+  Note over p1: 关键参数：out_trade_no、trade_no
+  p1-->>p0: 返回撤销信息
+  deactivate p1
+
+  %% Links
+  %% [统一收单交易创建接口] https://open.alipay.com/api/detail?preProductName=JSAPI%E6%94%AF%E4%BB%98&productName=JSAPI%E6%94%AF%E4%BB%98&preCode=I1080300001000060370&code=I1140300001000013424&index=1 (used in: 请求创建alipay.trade.create)
+  %% [统一收单交易撤销接口] https://open.alipay.com/api/detail?preProductName=JSAPI%E6%94%AF%E4%BB%98&productName=JSAPI%E6%94%AF%E4%BB%98&preCode=I1080300001000060370&code=I1140300001000013424&index=1 (used in: 请求撤销alipay.trade.cancel)
