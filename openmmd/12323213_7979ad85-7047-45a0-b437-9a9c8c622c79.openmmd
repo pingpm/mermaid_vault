@@ -1,0 +1,770 @@
+{
+  "nodes": [
+    {
+      "id": "ddf845e2-da25-4916-8338-14cdc4883746",
+      "type": "flow-terminator",
+      "position": {
+        "x": 250,
+        "y": 50
+      },
+      "data": {
+        "label": "查询报价",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "width": 160,
+      "height": 56,
+      "measured": {
+        "width": 160,
+        "height": 56
+      }
+    },
+    {
+      "id": "9e399a1a-b635-44d9-ada7-4926cb0cb3a3",
+      "type": "flow-decision",
+      "position": {
+        "x": 250,
+        "y": 150
+      },
+      "data": {
+        "label": "是否有大板取价规则",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "width": 160,
+      "height": 56,
+      "measured": {
+        "width": 160,
+        "height": 56
+      }
+    },
+    {
+      "id": "cd9d95fb-3708-479e-b087-79b31bdd5cff",
+      "type": "flow-decision",
+      "position": {
+        "x": 520,
+        "y": 80
+      },
+      "data": {
+        "label": "是否有小板取价规则",
+        "width": 198,
+        "height": 67
+      },
+      "measured": {
+        "width": 198,
+        "height": 67
+      }
+    },
+    {
+      "id": "6340db92-1a7a-4201-b2fb-522618d1d5c0",
+      "type": "flow-process",
+      "position": {
+        "x": 740,
+        "y": 80
+      },
+      "data": {
+        "label": "大板线路查询",
+        "width": 112,
+        "height": 40
+      },
+      "measured": {
+        "width": 112,
+        "height": 40
+      }
+    },
+    {
+      "id": "69721946-40f8-4236-a860-d975ae59441a",
+      "type": "flow-decision",
+      "position": {
+        "x": 80,
+        "y": 240
+      },
+      "data": {
+        "label": "是否有命中价格",
+        "width": 170,
+        "height": 67
+      },
+      "measured": {
+        "width": 170,
+        "height": 67
+      }
+    },
+    {
+      "id": "ec3794d4-34d8-461d-b7c2-766d8745580d",
+      "type": "flow-process",
+      "position": {
+        "x": 300,
+        "y": 240
+      },
+      "data": {
+        "label": "增加保障服务费（客配置中的）",
+        "width": 224,
+        "height": 40
+      },
+      "measured": {
+        "width": 224,
+        "height": 40
+      }
+    },
+    {
+      "id": "b7bf5155-fc44-4c1d-a4bb-791af5f8f4da",
+      "type": "flow-process",
+      "position": {
+        "x": 520,
+        "y": 240
+      },
+      "data": {
+        "label": "加价规则（利润、税率等）",
+        "width": 196,
+        "height": 40
+      },
+      "measured": {
+        "width": 196,
+        "height": 40
+      }
+    },
+    {
+      "id": "baaf2f8a-162d-442c-ba5d-fb380615f23b",
+      "type": "flow-process",
+      "position": {
+        "x": 740,
+        "y": 240
+      },
+      "data": {
+        "label": "得到大板报价",
+        "width": 112,
+        "height": 40
+      },
+      "measured": {
+        "width": 112,
+        "height": 40
+      }
+    },
+    {
+      "id": "4bf99c6c-19d9-4482-85ed-fe19e246553b",
+      "type": "flow-decision",
+      "position": {
+        "x": 80,
+        "y": 400
+      },
+      "data": {
+        "label": "是否有小板取价规则",
+        "width": 198,
+        "height": 67
+      },
+      "measured": {
+        "width": 198,
+        "height": 67
+      }
+    },
+    {
+      "id": "02fb9e49-d74d-41bd-905f-9005c52582d4",
+      "type": "flow-process",
+      "position": {
+        "x": 300,
+        "y": 400
+      },
+      "data": {
+        "label": "返回不可承运available=false",
+        "width": 210,
+        "height": 40
+      },
+      "measured": {
+        "width": 210,
+        "height": 40
+      }
+    },
+    {
+      "id": "ec1b7cda-ea2a-4ee6-8d87-a203a801048e",
+      "type": "flow-process",
+      "position": {
+        "x": 520,
+        "y": 400
+      },
+      "data": {
+        "label": "增加保障服务费（客配置中的）",
+        "width": 224,
+        "height": 40
+      },
+      "measured": {
+        "width": 224,
+        "height": 40
+      }
+    },
+    {
+      "id": "5988a3dd-d991-41c3-a56f-9f866f0e94cc",
+      "type": "flow-process",
+      "position": {
+        "x": 740,
+        "y": 400
+      },
+      "data": {
+        "label": "小板价格计算",
+        "width": 112,
+        "height": 40
+      },
+      "measured": {
+        "width": 112,
+        "height": 40
+      }
+    },
+    {
+      "id": "a977020b-5bc9-478b-8b82-4fc5efe414d7",
+      "type": "flow-process",
+      "position": {
+        "x": 80,
+        "y": 560
+      },
+      "data": {
+        "label": "加价规则（利润、税率等）",
+        "width": 196,
+        "height": 40
+      },
+      "measured": {
+        "width": 196,
+        "height": 40
+      }
+    },
+    {
+      "id": "545f802d-133f-452a-a572-60d6dcc695ee",
+      "type": "flow-process",
+      "position": {
+        "x": 300,
+        "y": 560
+      },
+      "data": {
+        "label": "返回可承运available=true和小板价格",
+        "width": 261,
+        "height": 40
+      },
+      "measured": {
+        "width": 261,
+        "height": 40
+      }
+    },
+    {
+      "id": "4f5ecc20-c9bb-416b-83f4-4c22a6211d2c",
+      "type": "flow-process",
+      "position": {
+        "x": 520,
+        "y": 560
+      },
+      "data": {
+        "label": "返回可承运available=true\n和大板价格",
+        "width": 191,
+        "height": 59
+      },
+      "measured": {
+        "width": 191,
+        "height": 59
+      }
+    },
+    {
+      "id": "d2e7c0b7-9230-48ab-984c-5e190b292fe3",
+      "type": "flow-process",
+      "position": {
+        "x": 740,
+        "y": 560
+      },
+      "data": {
+        "label": "增加保障服务费（客配置中的）",
+        "width": 224,
+        "height": 40
+      },
+      "measured": {
+        "width": 224,
+        "height": 40
+      }
+    },
+    {
+      "id": "e11a6534-4292-4a3f-a386-6370cbaf496f",
+      "type": "flow-process",
+      "position": {
+        "x": 80,
+        "y": 720
+      },
+      "data": {
+        "label": "小板价格计算",
+        "width": 112,
+        "height": 40
+      },
+      "measured": {
+        "width": 112,
+        "height": 40
+      }
+    },
+    {
+      "id": "78c1ede4-1437-43c8-bf02-0f30662ee480",
+      "type": "flow-process",
+      "position": {
+        "x": 300,
+        "y": 720
+      },
+      "data": {
+        "label": "加价规则（利润、税率等）",
+        "width": 196,
+        "height": 40
+      },
+      "measured": {
+        "width": 196,
+        "height": 40
+      }
+    },
+    {
+      "id": "8c78ea12-379f-4cbd-b527-0920abf6acb9",
+      "type": "flow-process",
+      "position": {
+        "x": 520,
+        "y": 720
+      },
+      "data": {
+        "label": "返回可承运available=true、大板价格和小板价格",
+        "width": 331,
+        "height": 40
+      },
+      "measured": {
+        "width": 331,
+        "height": 40
+      }
+    },
+    {
+      "id": "219da3e4-53fe-4db8-aadf-aa654870fa23",
+      "type": "flow-process",
+      "position": {
+        "x": 740,
+        "y": 720
+      },
+      "data": {
+        "label": "兜底策略计算价格",
+        "width": 140,
+        "height": 40
+      },
+      "measured": {
+        "width": 140,
+        "height": 40
+      }
+    },
+    {
+      "id": "506b2569-0e7e-488e-9e3b-1b988445e775",
+      "type": "flow-decision",
+      "position": {
+        "x": 80,
+        "y": 880
+      },
+      "data": {
+        "label": "是否开启兜底策略",
+        "width": 184,
+        "height": 67
+      },
+      "measured": {
+        "width": 184,
+        "height": 67
+      }
+    },
+    {
+      "id": "dd70e6c8-2ff4-4693-8619-46a40c95fd12",
+      "type": "flow-process",
+      "position": {
+        "x": 300,
+        "y": 880
+      },
+      "data": {
+        "label": "返回不可承运available=false",
+        "width": 210,
+        "height": 40
+      },
+      "measured": {
+        "width": 210,
+        "height": 40
+      }
+    },
+    {
+      "id": "c88543f7-667a-4263-9c6f-685665458018",
+      "type": "flow-decision",
+      "position": {
+        "x": 520,
+        "y": 880
+      },
+      "data": {
+        "label": "渠道是否命中规则",
+        "width": 184,
+        "height": 67
+      },
+      "measured": {
+        "width": 184,
+        "height": 67
+      }
+    },
+    {
+      "id": "c9cdbcd3-f360-4b67-b698-03e55144b33c",
+      "type": "flow-decision",
+      "position": {
+        "x": 740,
+        "y": 880
+      },
+      "data": {
+        "label": "兜底价格是否有结果",
+        "width": 198,
+        "height": 67
+      },
+      "measured": {
+        "width": 198,
+        "height": 67
+      }
+    },
+    {
+      "id": "5d8e68b2-1eaa-4b54-9637-5efc2fcfeff2",
+      "type": "flow-process",
+      "position": {
+        "x": 80,
+        "y": 1040
+      },
+      "data": {
+        "label": "返回不可承运available=false",
+        "width": 210,
+        "height": 40
+      },
+      "measured": {
+        "width": 210,
+        "height": 40
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-0",
+      "source": "9e399a1a-b635-44d9-ada7-4926cb0cb3a3",
+      "target": "cd9d95fb-3708-479e-b087-79b31bdd5cff",
+      "data": {
+        "label": "否",
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-1",
+      "source": "9e399a1a-b635-44d9-ada7-4926cb0cb3a3",
+      "target": "6340db92-1a7a-4201-b2fb-522618d1d5c0",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-2",
+      "source": "6340db92-1a7a-4201-b2fb-522618d1d5c0",
+      "target": "69721946-40f8-4236-a860-d975ae59441a",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-3",
+      "source": "69721946-40f8-4236-a860-d975ae59441a",
+      "target": "ec3794d4-34d8-461d-b7c2-766d8745580d",
+      "data": {
+        "label": "是",
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-4",
+      "source": "ec3794d4-34d8-461d-b7c2-766d8745580d",
+      "target": "b7bf5155-fc44-4c1d-a4bb-791af5f8f4da",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-5",
+      "source": "b7bf5155-fc44-4c1d-a4bb-791af5f8f4da",
+      "target": "baaf2f8a-162d-442c-ba5d-fb380615f23b",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-6",
+      "source": "baaf2f8a-162d-442c-ba5d-fb380615f23b",
+      "target": "4bf99c6c-19d9-4482-85ed-fe19e246553b",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-7",
+      "source": "cd9d95fb-3708-479e-b087-79b31bdd5cff",
+      "target": "02fb9e49-d74d-41bd-905f-9005c52582d4",
+      "data": {
+        "label": "否",
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-8",
+      "source": "cd9d95fb-3708-479e-b087-79b31bdd5cff",
+      "target": "5988a3dd-d991-41c3-a56f-9f866f0e94cc",
+      "data": {
+        "label": "是",
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-9",
+      "source": "5988a3dd-d991-41c3-a56f-9f866f0e94cc",
+      "target": "ec1b7cda-ea2a-4ee6-8d87-a203a801048e",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-10",
+      "source": "ec1b7cda-ea2a-4ee6-8d87-a203a801048e",
+      "target": "a977020b-5bc9-478b-8b82-4fc5efe414d7",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-11",
+      "source": "a977020b-5bc9-478b-8b82-4fc5efe414d7",
+      "target": "545f802d-133f-452a-a572-60d6dcc695ee",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-12",
+      "source": "e11a6534-4292-4a3f-a386-6370cbaf496f",
+      "target": "d2e7c0b7-9230-48ab-984c-5e190b292fe3",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-13",
+      "source": "d2e7c0b7-9230-48ab-984c-5e190b292fe3",
+      "target": "78c1ede4-1437-43c8-bf02-0f30662ee480",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-14",
+      "source": "78c1ede4-1437-43c8-bf02-0f30662ee480",
+      "target": "8c78ea12-379f-4cbd-b527-0920abf6acb9",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-15",
+      "source": "4bf99c6c-19d9-4482-85ed-fe19e246553b",
+      "target": "4f5ecc20-c9bb-416b-83f4-4c22a6211d2c",
+      "data": {
+        "label": "否",
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-16",
+      "source": "4bf99c6c-19d9-4482-85ed-fe19e246553b",
+      "target": "e11a6534-4292-4a3f-a386-6370cbaf496f",
+      "data": {
+        "label": "是",
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-17",
+      "source": "69721946-40f8-4236-a860-d975ae59441a",
+      "target": "506b2569-0e7e-488e-9e3b-1b988445e775",
+      "data": {
+        "label": "否",
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-18",
+      "source": "506b2569-0e7e-488e-9e3b-1b988445e775",
+      "target": "219da3e4-53fe-4db8-aadf-aa654870fa23",
+      "data": {
+        "label": "是",
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-19",
+      "source": "506b2569-0e7e-488e-9e3b-1b988445e775",
+      "target": "cd9d95fb-3708-479e-b087-79b31bdd5cff",
+      "data": {
+        "label": "否",
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-20",
+      "source": "ddf845e2-da25-4916-8338-14cdc4883746",
+      "target": "c88543f7-667a-4263-9c6f-685665458018",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-21",
+      "source": "c88543f7-667a-4263-9c6f-685665458018",
+      "target": "dd70e6c8-2ff4-4693-8619-46a40c95fd12",
+      "data": {
+        "label": "否",
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-22",
+      "source": "c88543f7-667a-4263-9c6f-685665458018",
+      "target": "9e399a1a-b635-44d9-ada7-4926cb0cb3a3",
+      "data": {
+        "label": "是",
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-23",
+      "source": "c9cdbcd3-f360-4b67-b698-03e55144b33c",
+      "target": "ec3794d4-34d8-461d-b7c2-766d8745580d",
+      "data": {
+        "label": "是",
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-24",
+      "source": "219da3e4-53fe-4db8-aadf-aa654870fa23",
+      "target": "c9cdbcd3-f360-4b67-b698-03e55144b33c",
+      "data": {
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    },
+    {
+      "id": "e-25",
+      "source": "c9cdbcd3-f360-4b67-b698-03e55144b33c",
+      "target": "5d8e68b2-1eaa-4b54-9637-5efc2fcfeff2",
+      "data": {
+        "label": "否",
+        "lineStyle": "solid",
+        "arrowHead": "arrow"
+      },
+      "markerEnd": {
+        "type": "arrowclosed"
+      }
+    }
+  ],
+  "mermaidCode": "flowchart TD\n  n_0([\"查询报价\"])\n  n_1{\"是否有大板取价规则\"}\n  n_2{\"是否有小板取价规则\"}\n  n_3(\"大板线路查询\")\n  n_4{\"是否有命中价格\"}\n  n_5(\"增加保障服务费（客配置中的）\")\n  n_6(\"加价规则（利润、税率等）\")\n  n_7(\"得到大板报价\")\n  n_8{\"是否有小板取价规则\"}\n  n_9(\"返回不可承运available=false\")\n  n_10(\"增加保障服务费（客配置中的）\")\n  n_11(\"小板价格计算\")\n  n_12(\"加价规则（利润、税率等）\")\n  n_13(\"返回可承运available=true和小板价格\")\n  n_14(\"返回可承运available=true<br/>和大板价格\")\n  n_15(\"增加保障服务费（客配置中的）\")\n  n_16(\"小板价格计算\")\n  n_17(\"加价规则（利润、税率等）\")\n  n_18(\"返回可承运available=true、大板价格和小板价格\")\n  n_19(\"兜底策略计算价格\")\n  n_20{\"是否开启兜底策略\"}\n  n_21(\"返回不可承运available=false\")\n  n_22{\"渠道是否命中规则\"}\n  n_23{\"兜底价格是否有结果\"}\n  n_24(\"返回不可承运available=false\")\n  n_1 -->|\"否\"| n_2\n  n_1 --> n_3\n  n_3 --> n_4\n  n_4 -->|\"是\"| n_5\n  n_5 --> n_6\n  n_6 --> n_7\n  n_7 --> n_8\n  n_2 -->|\"否\"| n_9\n  n_2 -->|\"是\"| n_11\n  n_11 --> n_10\n  n_10 --> n_12\n  n_12 --> n_13\n  n_16 --> n_15\n  n_15 --> n_17\n  n_17 --> n_18\n  n_8 -->|\"否\"| n_14\n  n_8 -->|\"是\"| n_16\n  n_4 -->|\"否\"| n_20\n  n_20 -->|\"是\"| n_19\n  n_20 -->|\"否\"| n_2\n  n_0 --> n_22\n  n_22 -->|\"否\"| n_21\n  n_22 -->|\"是\"| n_1\n  n_23 -->|\"是\"| n_5\n  n_19 --> n_23\n  n_23 -->|\"否\"| n_24\n",
+  "flowEdgeStyle": "smooth"
+}
