@@ -4,8 +4,8 @@
       "id": "8c386c54-3245-4311-995b-b6eb09a0c19b",
       "type": "flow-terminator",
       "position": {
-        "x": 250,
-        "y": 50
+        "x": 149.28567073026343,
+        "y": 66.98795915393146
       },
       "data": {
         "label": "查询报价",
@@ -21,14 +21,16 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": true,
+      "dragging": false
     },
     {
       "id": "4536a2e2-9e95-4714-87cc-f70a16509393",
       "type": "flow-decision",
       "position": {
-        "x": 250,
-        "y": 150
+        "x": -111.80097236457588,
+        "y": 307.52570425985755
       },
       "data": {
         "label": "是否有大板取价规则",
@@ -44,7 +46,9 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false,
+      "dragging": false
     },
     {
       "id": "2ca1682f-28ff-4c2e-9795-f232f01d13de",
@@ -512,8 +516,8 @@
       "id": "6b1271a8-7292-433d-9ac5-438664ecf7bb",
       "type": "flow-process",
       "position": {
-        "x": 1190,
-        "y": 790
+        "x": 1182.7194460768865,
+        "y": 840.9638774617944
       },
       "data": {
         "label": "返回不可承运available=false",
@@ -527,7 +531,9 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": false,
+      "dragging": false
     }
   ],
   "edges": [
