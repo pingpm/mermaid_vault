@@ -1,100 +1,475 @@
 {
   "lanes": [
     {
-      "id": "lane-1",
-      "label": "Planning",
-      "order": 0
+      "id": "b6ddadb2-7a3c-49cb-9db2-c42b1684f36b",
+      "label": "业务部门",
+      "order": 0,
+      "height": 3204,
+      "width": 276
     },
     {
-      "id": "lane-2",
-      "label": "Development",
-      "order": 1
+      "id": "9b4ebcea-0a78-4db7-9137-b908131c753e",
+      "label": "项目管理部",
+      "order": 1,
+      "height": 3204,
+      "width": 276
     },
     {
-      "id": "lane-3",
-      "label": "Review",
-      "order": 2
+      "id": "60aef7fe-c052-4b54-859d-5c637608c54e",
+      "label": "产研部门",
+      "order": 2,
+      "height": 3204,
+      "width": 276
+    },
+    {
+      "id": "f48cbd1e-7663-4913-b9a0-aedf3803ed78",
+      "label": "高层",
+      "order": 3,
+      "height": 3204,
+      "width": 276
+    },
+    {
+      "id": "77ee749d-21ee-47c7-89fe-d37284feee0f",
+      "label": "其他",
+      "order": 4,
+      "height": 3204,
+      "width": 276
     }
   ],
   "tasks": [
     {
-      "id": "task-1",
-      "laneId": "lane-1",
-      "label": "Start",
-      "shape": "terminator",
+      "id": "92d78a91-e1c8-4dfe-af36-591b5e0bab75",
+      "laneId": "b6ddadb2-7a3c-49cb-9db2-c42b1684f36b",
+      "label": "需求提交",
+      "shape": "process",
       "order": 0,
-      "x": 40,
-      "y": 72
+      "x": 24,
+      "y": 260,
+      "width": 156,
+      "height": 56
     },
     {
-      "id": "task-2",
-      "laneId": "lane-1",
-      "label": "Define Requirements",
+      "id": "6c079f48-e3f6-4531-9798-620dedc4f721",
+      "laneId": "9b4ebcea-0a78-4db7-9137-b908131c753e",
+      "label": "ROI初评",
       "shape": "process",
       "order": 1,
-      "x": 240,
-      "y": 72
+      "x": 24,
+      "y": 396,
+      "width": 156,
+      "height": 56
     },
     {
-      "id": "task-3",
-      "laneId": "lane-1",
-      "label": "Approved?",
+      "id": "e33d19d9-9b1a-468f-a688-8de4cb40906f",
+      "laneId": "9b4ebcea-0a78-4db7-9137-b908131c753e",
+      "label": "立项评审\n第一道门",
       "shape": "decision",
       "order": 2,
-      "x": 460,
-      "y": 54
+      "x": 24,
+      "y": 532,
+      "width": 156,
+      "height": 92
     },
     {
-      "id": "task-4",
-      "laneId": "lane-2",
-      "label": "Implement Feature",
+      "id": "49b8ed49-6893-4e65-adaf-32b2a298f93a",
+      "laneId": "9b4ebcea-0a78-4db7-9137-b908131c753e",
+      "label": "中期检查\n第二道门",
       "shape": "process",
-      "order": 0,
-      "x": 460,
-      "y": 72
+      "order": 3,
+      "x": 24,
+      "y": 704,
+      "width": 156,
+      "height": 56
     },
     {
-      "id": "task-5",
-      "laneId": "lane-3",
-      "label": "Code Review",
+      "id": "55e7267f-4de5-4dd5-85d9-bc272bc7cc03",
+      "laneId": "9b4ebcea-0a78-4db7-9137-b908131c753e",
+      "label": "验收需求",
       "shape": "process",
-      "order": 0,
-      "x": 460,
-      "y": 72
+      "order": 4,
+      "x": 24,
+      "y": 840,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "082f3019-2b9d-4ed2-9a0f-41d2d20ebca3",
+      "laneId": "9b4ebcea-0a78-4db7-9137-b908131c753e",
+      "label": "项目结项会",
+      "shape": "decision",
+      "order": 5,
+      "x": 24,
+      "y": 976,
+      "width": 156,
+      "height": 92
+    },
+    {
+      "id": "a67b302d-682b-46d2-951e-eb25e74a6687",
+      "laneId": "9b4ebcea-0a78-4db7-9137-b908131c753e",
+      "label": "ROI复盘验证\n第三道门",
+      "shape": "process",
+      "order": 6,
+      "x": 24,
+      "y": 1148,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "8897fd62-c12d-4b1b-8733-2aa531d499fc",
+      "laneId": "9b4ebcea-0a78-4db7-9137-b908131c753e",
+      "label": "经验沉淀与模型校准",
+      "shape": "process",
+      "order": 7,
+      "x": 24,
+      "y": 1284,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "77189728-eba3-415c-a284-44cf02b3f667",
+      "laneId": "60aef7fe-c052-4b54-859d-5c637608c54e",
+      "label": "需求规划与边界确认",
+      "shape": "process",
+      "order": 8,
+      "x": 24,
+      "y": 1420,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "0b88fd98-3c69-4b2f-b328-8e92e9d6b5ad",
+      "laneId": "60aef7fe-c052-4b54-859d-5c637608c54e",
+      "label": "需求对齐评审",
+      "shape": "decision",
+      "order": 9,
+      "x": 24,
+      "y": 1556,
+      "width": 156,
+      "height": 92
+    },
+    {
+      "id": "e8dfe147-5d35-4770-a46b-476889c05c2c",
+      "laneId": "60aef7fe-c052-4b54-859d-5c637608c54e",
+      "label": "技术方案与成本复核",
+      "shape": "process",
+      "order": 10,
+      "x": 24,
+      "y": 1728,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "546fba20-015f-4d87-b86b-205d668b0255",
+      "laneId": "60aef7fe-c052-4b54-859d-5c637608c54e",
+      "label": "需求开发",
+      "shape": "process",
+      "order": 11,
+      "x": 24,
+      "y": 1864,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "44364fa9-5b45-405e-8773-e97f46034b2b",
+      "laneId": "60aef7fe-c052-4b54-859d-5c637608c54e",
+      "label": "需求测试",
+      "shape": "process",
+      "order": 12,
+      "x": 24,
+      "y": 2000,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "dd9abf19-4df7-4466-ab4f-4514c89e9963",
+      "laneId": "f48cbd1e-7663-4913-b9a0-aedf3803ed78",
+      "label": "高层审批",
+      "shape": "decision",
+      "order": 13,
+      "x": 24,
+      "y": 2136,
+      "width": 156,
+      "height": 92
+    },
+    {
+      "id": "18e63164-4d36-4b83-a2f1-7eb9ad4d4477",
+      "laneId": "77ee749d-21ee-47c7-89fe-d37284feee0f",
+      "label": "需求终止",
+      "shape": "process",
+      "order": 14,
+      "x": 24,
+      "y": 2308,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "2ae2ddac-db9b-4579-9fcc-9ece1170243b",
+      "laneId": "77ee749d-21ee-47c7-89fe-d37284feee0f",
+      "label": "需求完结归档",
+      "shape": "process",
+      "order": 15,
+      "x": 24,
+      "y": 2444,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "b0879e85-f5ae-415c-b253-358c9df44a83",
+      "laneId": "77ee749d-21ee-47c7-89fe-d37284feee0f",
+      "label": "终止原因记录",
+      "shape": "process",
+      "order": 16,
+      "x": 24,
+      "y": 2580,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "760937d0-033c-46ee-8626-4b75b38a8aec",
+      "laneId": "77ee749d-21ee-47c7-89fe-d37284feee0f",
+      "label": "资源释放",
+      "shape": "process",
+      "order": 17,
+      "x": 24,
+      "y": 2716,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "7aeae388-136c-4913-88ee-6eb809c2aa1c",
+      "laneId": "77ee749d-21ee-47c7-89fe-d37284feee0f",
+      "label": "已终止归档",
+      "shape": "process",
+      "order": 18,
+      "x": 24,
+      "y": 2852,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "f9446c64-f63c-49df-a9d6-286b1e73d49d",
+      "laneId": "77ee749d-21ee-47c7-89fe-d37284feee0f",
+      "label": "填写特殊通道原因",
+      "shape": "process",
+      "order": 19,
+      "x": 24,
+      "y": 2988,
+      "width": 156,
+      "height": 56
     }
   ],
   "connections": [
     {
-      "id": "c1",
-      "fromTaskId": "task-1",
-      "toTaskId": "task-2",
-      "sourceHandle": "right",
-      "targetHandle": "left"
+      "id": "0fedbaa3-f2b3-4811-bb5f-c64b4ccef2d4",
+      "fromTaskId": "92d78a91-e1c8-4dfe-af36-591b5e0bab75",
+      "toTaskId": "6c079f48-e3f6-4531-9798-620dedc4f721",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
     },
     {
-      "id": "c2",
-      "fromTaskId": "task-2",
-      "toTaskId": "task-3",
-      "sourceHandle": "right",
-      "targetHandle": "left"
+      "id": "0db5b1a7-3d8e-47af-b5b1-920b3e834d4d",
+      "fromTaskId": "6c079f48-e3f6-4531-9798-620dedc4f721",
+      "toTaskId": "e33d19d9-9b1a-468f-a688-8de4cb40906f",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
     },
     {
-      "id": "c3",
-      "fromTaskId": "task-3",
-      "toTaskId": "task-4",
-      "label": "Yes",
-      "sourceHandle": "bottom",
-      "targetHandle": "top"
+      "id": "498c3028-86f1-4426-831c-746edf5b7c1e",
+      "fromTaskId": "e33d19d9-9b1a-468f-a688-8de4cb40906f",
+      "toTaskId": "dd9abf19-4df7-4466-ab4f-4514c89e9963",
+      "label": "通过",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
     },
     {
-      "id": "c4",
-      "fromTaskId": "task-4",
-      "toTaskId": "task-5",
-      "sourceHandle": "bottom",
-      "targetHandle": "top"
+      "id": "5d73f431-80eb-44f4-8dff-83cfa7dac813",
+      "fromTaskId": "dd9abf19-4df7-4466-ab4f-4514c89e9963",
+      "toTaskId": "77189728-eba3-415c-a284-44cf02b3f667",
+      "label": "同意",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "32e5fa8d-32d4-4b9d-9737-1ab6def5a641",
+      "fromTaskId": "dd9abf19-4df7-4466-ab4f-4514c89e9963",
+      "toTaskId": "92d78a91-e1c8-4dfe-af36-591b5e0bab75",
+      "label": "不同意",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "7cce94f6-c395-4358-86bd-a95a1149098a",
+      "fromTaskId": "e33d19d9-9b1a-468f-a688-8de4cb40906f",
+      "toTaskId": "92d78a91-e1c8-4dfe-af36-591b5e0bab75",
+      "label": "不通过/暂缓",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "b1f194c0-c9c0-4a95-844e-b1cf2aa728ae",
+      "fromTaskId": "e33d19d9-9b1a-468f-a688-8de4cb40906f",
+      "toTaskId": "92d78a91-e1c8-4dfe-af36-591b5e0bab75",
+      "label": "建议拆分",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "2482a487-3bb2-4703-bdfd-6b0614429dfe",
+      "fromTaskId": "77189728-eba3-415c-a284-44cf02b3f667",
+      "toTaskId": "0b88fd98-3c69-4b2f-b328-8e92e9d6b5ad",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "9702da68-00eb-40a6-8ef3-23c504f260e6",
+      "fromTaskId": "0b88fd98-3c69-4b2f-b328-8e92e9d6b5ad",
+      "toTaskId": "e8dfe147-5d35-4770-a46b-476889c05c2c",
+      "label": "对齐通过",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "78485ddb-5f75-4693-af3c-65a5c253b6ef",
+      "fromTaskId": "0b88fd98-3c69-4b2f-b328-8e92e9d6b5ad",
+      "toTaskId": "77189728-eba3-415c-a284-44cf02b3f667",
+      "label": "对齐不通过",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "c4bde6f0-6f76-4f84-9059-7348c7880d06",
+      "fromTaskId": "e8dfe147-5d35-4770-a46b-476889c05c2c",
+      "toTaskId": "546fba20-015f-4d87-b86b-205d668b0255",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "4a210f7e-aaac-4f48-97fb-0b7e1ce28d63",
+      "fromTaskId": "e8dfe147-5d35-4770-a46b-476889c05c2c",
+      "toTaskId": "49b8ed49-6893-4e65-adaf-32b2a298f93a",
+      "label": "成本超30%",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "67875d2c-d280-4499-8bfe-ffdf31c0bfac",
+      "fromTaskId": "546fba20-015f-4d87-b86b-205d668b0255",
+      "toTaskId": "49b8ed49-6893-4e65-adaf-32b2a298f93a",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "86391c83-25e5-4d83-9b16-97e1eaa39627",
+      "fromTaskId": "49b8ed49-6893-4e65-adaf-32b2a298f93a",
+      "toTaskId": "44364fa9-5b45-405e-8773-e97f46034b2b",
+      "label": "继续",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "5fa053e6-b1a9-4fe5-9630-eef15a6d6025",
+      "fromTaskId": "49b8ed49-6893-4e65-adaf-32b2a298f93a",
+      "toTaskId": "18e63164-4d36-4b83-a2f1-7eb9ad4d4477",
+      "label": "范围失控/ROI不成立",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "6786af25-0480-4f9b-a272-9deea5154ffc",
+      "fromTaskId": "44364fa9-5b45-405e-8773-e97f46034b2b",
+      "toTaskId": "55e7267f-4de5-4dd5-85d9-bc272bc7cc03",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "be009318-688f-4bc8-99ae-b6c16cabde29",
+      "fromTaskId": "55e7267f-4de5-4dd5-85d9-bc272bc7cc03",
+      "toTaskId": "082f3019-2b9d-4ed2-9a0f-41d2d20ebca3",
+      "label": "通过",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "8f35915a-627a-48da-9fc9-4f630e3597b0",
+      "fromTaskId": "55e7267f-4de5-4dd5-85d9-bc272bc7cc03",
+      "toTaskId": "546fba20-015f-4d87-b86b-205d668b0255",
+      "label": "不通过",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "135e06dd-c8fe-4c58-be65-6873acd5db1d",
+      "fromTaskId": "082f3019-2b9d-4ed2-9a0f-41d2d20ebca3",
+      "toTaskId": "a67b302d-682b-46d2-951e-eb25e74a6687",
+      "label": "通过",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "183b5009-8ef6-4a20-a82c-d8403a6d0ecc",
+      "fromTaskId": "a67b302d-682b-46d2-951e-eb25e74a6687",
+      "toTaskId": "8897fd62-c12d-4b1b-8733-2aa531d499fc",
+      "label": "ROI达标",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "6189304e-b103-431e-a0eb-2ff1d98ce6f5",
+      "fromTaskId": "a67b302d-682b-46d2-951e-eb25e74a6687",
+      "toTaskId": "8897fd62-c12d-4b1b-8733-2aa531d499fc",
+      "label": "ROI偏差",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "22b39f04-266d-4245-9f74-8f9c41824c81",
+      "fromTaskId": "8897fd62-c12d-4b1b-8733-2aa531d499fc",
+      "toTaskId": "2ae2ddac-db9b-4579-9fcc-9ece1170243b",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "d21d48a7-74a4-4920-a167-df03c49f6eb3",
+      "fromTaskId": "18e63164-4d36-4b83-a2f1-7eb9ad4d4477",
+      "toTaskId": "b0879e85-f5ae-415c-b253-358c9df44a83",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "04cece1e-6e50-4ed4-b882-2812199ed68e",
+      "fromTaskId": "b0879e85-f5ae-415c-b253-358c9df44a83",
+      "toTaskId": "760937d0-033c-46ee-8626-4b75b38a8aec",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "c9077d80-fc7d-445b-b33d-e8243e3c5748",
+      "fromTaskId": "760937d0-033c-46ee-8626-4b75b38a8aec",
+      "toTaskId": "7aeae388-136c-4913-88ee-6eb809c2aa1c",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "6f9b2c10-efda-415a-96c1-f10487093cee",
+      "fromTaskId": "92d78a91-e1c8-4dfe-af36-591b5e0bab75",
+      "toTaskId": "f9446c64-f63c-49df-a9d6-286b1e73d49d",
+      "label": "特殊需求",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
+    },
+    {
+      "id": "f545e591-f168-4ab9-be71-c034764ac0bf",
+      "fromTaskId": "f9446c64-f63c-49df-a9d6-286b1e73d49d",
+      "toTaskId": "dd9abf19-4df7-4466-ab4f-4514c89e9963",
+      "lineStyle": "solid",
+      "arrowHead": "arrow"
     }
   ],
   "swBgPattern": "none",
-  "swDirection": "LR",
-  "mermaidCode": ""
+  "swDirection": "TD",
+  "swEdgeStyle": "smooth",
+  "swTheme": "default",
+  "swLaneGap": 24,
+  "swLaneColorOverrides": {},
+  "mermaidCode": "flowchart TD\n  subgraph lane_0[\"业务部门\"]\n    t_0[\"需求提交\"]\n  end\n  subgraph lane_1[\"项目管理部\"]\n    t_1[\"ROI初评\"]\n    t_2{\"立项评审<br/>第一道门\"}\n    t_3[\"中期检查<br/>第二道门\"]\n    t_4[\"验收需求\"]\n    t_5{\"项目结项会\"}\n    t_6[\"ROI复盘验证<br/>第三道门\"]\n    t_7[\"经验沉淀与模型校准\"]\n  end\n  subgraph lane_2[\"产研部门\"]\n    t_8[\"需求规划与边界确认\"]\n    t_9{\"需求对齐评审\"}\n    t_10[\"技术方案与成本复核\"]\n    t_11[\"需求开发\"]\n    t_12[\"需求测试\"]\n  end\n  subgraph lane_3[\"高层\"]\n    t_13{\"高层审批\"}\n  end\n  subgraph lane_4[\"其他\"]\n    t_14[\"需求终止\"]\n    t_15[\"需求完结归档\"]\n    t_16[\"终止原因记录\"]\n    t_17[\"资源释放\"]\n    t_18[\"已终止归档\"]\n    t_19[\"填写特殊通道原因\"]\n  end\n  t_0 --> t_1\n  t_1 --> t_2\n  t_2 -->|\"通过\"| t_13\n  t_13 -->|\"同意\"| t_8\n  t_13 -->|\"不同意\"| t_0\n  t_2 -->|\"不通过/暂缓\"| t_0\n  t_2 -->|\"建议拆分\"| t_0\n  t_8 --> t_9\n  t_9 -->|\"对齐通过\"| t_10\n  t_9 -->|\"对齐不通过\"| t_8\n  t_10 --> t_11\n  t_10 -->|\"成本超30%\"| t_3\n  t_11 --> t_3\n  t_3 -->|\"继续\"| t_12\n  t_3 -->|\"范围失控/ROI不成立\"| t_14\n  t_12 --> t_4\n  t_4 -->|\"通过\"| t_5\n  t_4 -->|\"不通过\"| t_11\n  t_5 -->|\"通过\"| t_6\n  t_6 -->|\"ROI达标\"| t_7\n  t_6 -->|\"ROI偏差\"| t_7\n  t_7 --> t_15\n  t_14 --> t_16\n  t_16 --> t_17\n  t_17 --> t_18\n  t_0 -->|\"特殊需求\"| t_19\n  t_19 --> t_13\n"
 }
