@@ -1,13 +1,13 @@
 {
   "lifelines": [
     {
-      "id": "02c07087-478a-475f-80b5-eaed4fd4cb9c",
+      "id": "36ed3f2d-b0d3-444c-b3e1-dfa5965a8380",
       "label": "支付宝",
       "kind": "actor",
       "order": 0
     },
     {
-      "id": "c689e429-d4e0-4eac-a690-f7a1c163b562",
+      "id": "1194d713-47c3-43a8-929c-8c02d87aa8fb",
       "label": "运车管家",
       "kind": "entity",
       "order": 1
@@ -15,192 +15,141 @@
   ],
   "messages": [
     {
-      "id": "c1893489-4961-4bfd-a5ba-b872a2f39442",
-      "from": "02c07087-478a-475f-80b5-eaed4fd4cb9c",
-      "to": "c689e429-d4e0-4eac-a690-f7a1c163b562",
+      "id": "4ae527cc-804e-4fdd-baa5-dd0481a7354b",
+      "from": "36ed3f2d-b0d3-444c-b3e1-dfa5965a8380",
+      "to": "1194d713-47c3-43a8-929c-8c02d87aa8fb",
       "label": "Request",
       "type": "sync",
       "order": 0
     },
     {
-      "id": "38586c7b-da81-46dd-a284-cfb08aacd1dc",
-      "from": "c689e429-d4e0-4eac-a690-f7a1c163b562",
-      "to": "02c07087-478a-475f-80b5-eaed4fd4cb9c",
+      "id": "7bd95dbd-c86b-4eda-853d-22036d2e16e6",
+      "from": "1194d713-47c3-43a8-929c-8c02d87aa8fb",
+      "to": "36ed3f2d-b0d3-444c-b3e1-dfa5965a8380",
       "label": "Response",
       "type": "return",
       "order": 1
     },
     {
-      "id": "f5f0b519-c5fa-45b5-be8c-4cc2ec285590",
-      "from": "02c07087-478a-475f-80b5-eaed4fd4cb9c",
-      "to": "c689e429-d4e0-4eac-a690-f7a1c163b562",
+      "id": "69242a73-e48d-4477-84c0-d536d29ec32c",
+      "from": "36ed3f2d-b0d3-444c-b3e1-dfa5965a8380",
+      "to": "1194d713-47c3-43a8-929c-8c02d87aa8fb",
       "label": "request",
       "type": "sync",
       "order": 2
     },
     {
-      "id": "dc07d60d-c78c-46b1-8a50-a55de414ab39",
-      "from": "c689e429-d4e0-4eac-a690-f7a1c163b562",
-      "to": "02c07087-478a-475f-80b5-eaed4fd4cb9c",
+      "id": "b0388cf7-b133-4100-9736-1f503d849d0e",
+      "from": "1194d713-47c3-43a8-929c-8c02d87aa8fb",
+      "to": "36ed3f2d-b0d3-444c-b3e1-dfa5965a8380",
       "label": "response",
       "type": "return",
       "order": 3
     },
     {
-      "id": "69cfaed0-76e5-4ce0-8dbd-4661551a4d43",
-      "from": "02c07087-478a-475f-80b5-eaed4fd4cb9c",
-      "to": "c689e429-d4e0-4eac-a690-f7a1c163b562",
+      "id": "618705e1-214a-49f0-b16d-64a8fba56e7d",
+      "from": "1194d713-47c3-43a8-929c-8c02d87aa8fb",
+      "to": "36ed3f2d-b0d3-444c-b3e1-dfa5965a8380",
       "label": "Request",
       "type": "sync",
       "order": 4
     },
     {
-      "id": "bfd91830-84eb-44bf-8141-eeb579addeed",
-      "from": "c689e429-d4e0-4eac-a690-f7a1c163b562",
-      "to": "02c07087-478a-475f-80b5-eaed4fd4cb9c",
+      "id": "d22dc686-230f-4ba3-a963-d1c657cdaedd",
+      "from": "36ed3f2d-b0d3-444c-b3e1-dfa5965a8380",
+      "to": "1194d713-47c3-43a8-929c-8c02d87aa8fb",
       "label": "response",
       "type": "return",
       "order": 5
-    },
-    {
-      "id": "2297e471-04f5-4e06-8fc3-9c62a849246e",
-      "from": "02c07087-478a-475f-80b5-eaed4fd4cb9c",
-      "to": "c689e429-d4e0-4eac-a690-f7a1c163b562",
-      "label": "Request",
-      "type": "sync",
-      "order": 6
-    },
-    {
-      "id": "5f2edeb4-0c62-41a0-9f7b-1be107c1cb97",
-      "from": "c689e429-d4e0-4eac-a690-f7a1c163b562",
-      "to": "02c07087-478a-475f-80b5-eaed4fd4cb9c",
-      "label": "response",
-      "type": "return",
-      "order": 7
-    },
-    {
-      "id": "8abac63a-bbea-402e-b105-391200b47e60",
-      "from": "02c07087-478a-475f-80b5-eaed4fd4cb9c",
-      "to": "c689e429-d4e0-4eac-a690-f7a1c163b562",
-      "label": "Request",
-      "type": "sync",
-      "order": 8
-    },
-    {
-      "id": "ad9e61e7-b2a2-4d96-b541-9c5856f5b058",
-      "from": "c689e429-d4e0-4eac-a690-f7a1c163b562",
-      "to": "02c07087-478a-475f-80b5-eaed4fd4cb9c",
-      "label": "response",
-      "type": "return",
-      "order": 9
     }
   ],
   "notes": [
     {
-      "id": "cc6bcbde-4100-4c28-b127-ad141e7ea531",
-      "text": "询价",
+      "id": "41aed7d6-4cfc-4236-a998-85ce0176f56c",
+      "text": "一、询价（spi.alipay.commerce.logistics.carshipping.inquiry.query）",
       "position": "over",
       "lifelineIds": [
-        "02c07087-478a-475f-80b5-eaed4fd4cb9c",
-        "c689e429-d4e0-4eac-a690-f7a1c163b562"
+        "36ed3f2d-b0d3-444c-b3e1-dfa5965a8380",
+        "1194d713-47c3-43a8-929c-8c02d87aa8fb"
       ],
       "afterOrder": -1
     },
     {
-      "id": "f802b915-82b3-42d9-82a2-fc43fe5dca52",
+      "id": "e8aad74b-bd4d-40dd-8d00-265b6890a0e9",
       "text": "[{\n\t\"price_id\":\"1111111\",\n\t\"mileage_fee\":100000,//1000元\n\t\"order_fee\":100000,//1000元\n\t\"before_discount_fee\":100000,//1000元，无优惠\n\t\"deposit_fee\":30000//定金300元\n\t\"transport_type\":\"LARGE_TRUCK\"//大板运输\n\t....\n}]",
       "position": "over",
       "lifelineIds": [
-        "c689e429-d4e0-4eac-a690-f7a1c163b562"
+        "1194d713-47c3-43a8-929c-8c02d87aa8fb"
       ],
       "afterOrder": 1,
       "textAlign": "left",
-      "width": 351
+      "width": 354.35999999999996
     },
     {
-      "id": "4a5d642b-195e-45af-8a32-19595c66330c",
-      "text": "下单",
+      "id": "e15fdbc1-1bb3-488a-b3fb-665457086e9e",
+      "text": "二、下单（spi.alipay.commerce.logistics.carshipping.order.create）",
       "position": "over",
       "lifelineIds": [
-        "02c07087-478a-475f-80b5-eaed4fd4cb9c",
-        "c689e429-d4e0-4eac-a690-f7a1c163b562"
+        "36ed3f2d-b0d3-444c-b3e1-dfa5965a8380",
+        "1194d713-47c3-43a8-929c-8c02d87aa8fb"
       ],
       "afterOrder": 1
     },
     {
-      "id": "35931dda-9298-4d18-a726-116db4b95d1b",
+      "id": "230754bd-4f85-4092-84c1-2e76a2cca80a",
       "text": "{\n\t\"price_id\":\"1111111\"\n}",
       "position": "over",
       "lifelineIds": [
-        "02c07087-478a-475f-80b5-eaed4fd4cb9c"
+        "36ed3f2d-b0d3-444c-b3e1-dfa5965a8380"
       ],
       "afterOrder": 2
     },
     {
-      "id": "99956db1-465f-43e4-a93b-ea622aed0a2b",
-      "text": "用户刚下单，需要用户支付定金",
+      "id": "edab9204-c027-45ff-83f9-ce84cc32d8c1",
+      "text": "三、用户支付了定金，后期线下沟通，增加了提送车费用（无需通知支付宝订单金额变化？）",
       "position": "over",
       "lifelineIds": [
-        "02c07087-478a-475f-80b5-eaed4fd4cb9c",
-        "c689e429-d4e0-4eac-a690-f7a1c163b562"
+        "36ed3f2d-b0d3-444c-b3e1-dfa5965a8380",
+        "1194d713-47c3-43a8-929c-8c02d87aa8fb"
       ],
       "afterOrder": 3
     },
     {
-      "id": "e8976ac9-0b8c-4c55-9567-52877361f109",
-      "text": "{\n\torder_status:\"TO_PAY\",//待支付\n\tmileage_fee:30000,//定金300元\n\torder_fee:30000,//定金300元\n\tadditional_fee:0,//没有附加费用\n\talipay_trade_no:\"1234\"//支付宝交易号\n}",
+      "id": "371ce630-f451-497f-838e-7e9b030c75d9",
+      "text": "{\n\t\"business_order_no\":\"YC12787283\",//运车管家订单号\n    \"alipay_trade_no\":\"2222\"//300元定金支付交易单号\n}",
       "position": "over",
       "lifelineIds": [
-        "02c07087-478a-475f-80b5-eaed4fd4cb9c"
+        "1194d713-47c3-43a8-929c-8c02d87aa8fb"
+      ],
+      "afterOrder": 3
+    },
+    {
+      "id": "5cea65a0-b4bd-425c-ad7c-f7e2d247cd37",
+      "text": "四、订单状态变为CS_SERVICE_COMPLETED，给用户推送尾款账单",
+      "position": "over",
+      "lifelineIds": [
+        "36ed3f2d-b0d3-444c-b3e1-dfa5965a8380",
+        "1194d713-47c3-43a8-929c-8c02d87aa8fb"
+      ],
+      "afterOrder": 3
+    },
+    {
+      "id": "6dc9e9dd-8949-4b2f-803f-9c2b8503a630",
+      "text": "{\n\torder_status:\"TO_PAY\",//待支付\n\tmileage_fee:120000,//订单总金额1200（增加了200）\n\torder_fee:120000,//订单总金额1200（增加了200）\n\tadditional_fee:20000,//与原始报价对比增加的钱\n\talipay_trade_no:\"2345\"//尾款900元（增加了200提车费）的支付宝交易单号\n}",
+      "position": "over",
+      "lifelineIds": [
+        "1194d713-47c3-43a8-929c-8c02d87aa8fb"
       ],
       "afterOrder": 4
-    },
-    {
-      "id": "5c25829c-9c2b-4ed4-b1fa-d405f8e9a2c4",
-      "text": "用户支付了定金，后期线下沟通，增加了提送车费用",
-      "position": "over",
-      "lifelineIds": [
-        "02c07087-478a-475f-80b5-eaed4fd4cb9c",
-        "c689e429-d4e0-4eac-a690-f7a1c163b562"
-      ],
-      "afterOrder": 5
-    },
-    {
-      "id": "ecf214cf-9326-44ff-8b47-acd6745461d0",
-      "text": "{\n\torder_status:\"\",\n\tmileage_fee:\"\",\n\torder_fee\"\",\n\tadditional_fee:\"20000\",//增加了200元提送车\n\talipay_trade_no:\"1234\"//支付宝交易号\n}",
-      "position": "over",
-      "lifelineIds": [
-        "02c07087-478a-475f-80b5-eaed4fd4cb9c"
-      ],
-      "afterOrder": 6
-    },
-    {
-      "id": "8c967dc8-7490-4f5d-acc6-e0ea12a63995",
-      "text": "订单状态变为CS_SERVICE_COMPLETED，给用户推送尾款账单",
-      "position": "over",
-      "lifelineIds": [
-        "02c07087-478a-475f-80b5-eaed4fd4cb9c",
-        "c689e429-d4e0-4eac-a690-f7a1c163b562"
-      ],
-      "afterOrder": 7
-    },
-    {
-      "id": "9f8efb54-4c20-4233-8465-4a266fa12401",
-      "text": "{\n\torder_status:\"TO_PAY\",//待支付\n\tmileage_fee:90000,//增加了200元后的尾款\n\torder_fee:90000,//增加了200元后的尾款\n\tadditional_fee:0,\n\talipay_trade_no:\"2345\"//支付宝交易号\n}",
-      "position": "over",
-      "lifelineIds": [
-        "02c07087-478a-475f-80b5-eaed4fd4cb9c"
-      ],
-      "afterOrder": 8
     }
   ],
   "fragments": [],
   "links": [],
   "colWidths": {},
   "gaps": {
-    "02c07087-478a-475f-80b5-eaed4fd4cb9c": 482
+    "36ed3f2d-b0d3-444c-b3e1-dfa5965a8380": 584
   },
   "lifelineStyle": "dashed",
   "boxStyle": "rounded",
-  "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 支付宝\n  participant p1 as 运车管家\n  Note over p0,p1: 询价\n  p0->>p1: Request\n  p1-->>p0: Response\n  %% [note-meta] align:left width:351\n  Note over p1: [{<br/>\t\"price_id\":\"1111111\",<br/>\t\"mileage_fee\":100000,//1000元<br/>\t\"order_fee\":100000,//1000元<br/>\t\"before_discount_fee\":100000,//1000元，无优惠<br/>\t\"deposit_fee\":30000//定金300元<br/>\t\"transport_type\":\"LARGE_TRUCK\"//大板运输<br/>\t....<br/>}]\n  Note over p0,p1: 下单\n  p0->>p1: request\n  Note over p0: {<br/>\t\"price_id\":\"1111111\"<br/>}\n  p1-->>p0: response\n  Note over p0,p1: 用户刚下单，需要用户支付定金\n  p0->>p1: Request\n  Note over p0: {<br/>\torder_status:\"TO_PAY\",//待支付<br/>\tmileage_fee:30000,//定金300元<br/>\torder_fee:30000,//定金300元<br/>\tadditional_fee:0,//没有附加费用<br/>\talipay_trade_no:\"1234\"//支付宝交易号<br/>}\n  p1-->>p0: response\n  Note over p0,p1: 用户支付了定金，后期线下沟通，增加了提送车费用\n  p0->>p1: Request\n  Note over p0: {<br/>\torder_status:\"\",<br/>\tmileage_fee:\"\",<br/>\torder_fee\"\",<br/>\tadditional_fee:\"20000\",//增加了200元提送车<br/>\talipay_trade_no:\"1234\"//支付宝交易号<br/>}\n  p1-->>p0: response\n  Note over p0,p1: 订单状态变为CS_SERVICE_COMPLETED，给用户推送尾款账单\n  p0->>p1: Request\n  Note over p0: {<br/>\torder_status:\"TO_PAY\",//待支付<br/>\tmileage_fee:90000,//增加了200元后的尾款<br/>\torder_fee:90000,//增加了200元后的尾款<br/>\tadditional_fee:0,<br/>\talipay_trade_no:\"2345\"//支付宝交易号<br/>}\n  p1-->>p0: response\n"
+  "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as 支付宝\n  participant p1 as 运车管家\n  Note over p0,p1: 一、询价（spi.alipay.commerce.logistics.carshipping.inquiry.query）\n  p0->>p1: Request\n  p1-->>p0: Response\n  %% [note-meta] align:left width:354.35999999999996\n  Note over p1: [{<br/>\t\"price_id\":\"1111111\",<br/>\t\"mileage_fee\":100000,//1000元<br/>\t\"order_fee\":100000,//1000元<br/>\t\"before_discount_fee\":100000,//1000元，无优惠<br/>\t\"deposit_fee\":30000//定金300元<br/>\t\"transport_type\":\"LARGE_TRUCK\"//大板运输<br/>\t....<br/>}]\n  Note over p0,p1: 二、下单（spi.alipay.commerce.logistics.carshipping.order.create）\n  p0->>p1: request\n  Note over p0: {<br/>\t\"price_id\":\"1111111\"<br/>}\n  p1-->>p0: response\n  Note over p0,p1: 三、用户支付了定金，后期线下沟通，增加了提送车费用（无需通知支付宝订单金额变化？）\n  Note over p1: {<br/>\t\"business_order_no\":\"YC12787283\",//运车管家订单号<br/>    \"alipay_trade_no\":\"2222\"//300元定金支付交易单号<br/>}\n  Note over p0,p1: 四、订单状态变为CS_SERVICE_COMPLETED，给用户推送尾款账单\n  p1->>p0: Request\n  Note over p1: {<br/>\torder_status:\"TO_PAY\",//待支付<br/>\tmileage_fee:120000,//订单总金额1200（增加了200）<br/>\torder_fee:120000,//订单总金额1200（增加了200）<br/>\tadditional_fee:20000,//与原始报价对比增加的钱<br/>\talipay_trade_no:\"2345\"//尾款900元（增加了200提车费）的支付宝交易单号<br/>}\n  p0-->>p1: response\n"
 }
