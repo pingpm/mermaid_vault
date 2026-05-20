@@ -113,7 +113,9 @@
       "lifelineIds": [
         "e1c6005d-764c-4126-9181-3b7b19dd5c85"
       ],
-      "afterOrder": 1
+      "afterOrder": 1,
+      "width": 370.35999999999996,
+      "textAlign": "left"
     },
     {
       "id": "8939b204-6066-4d4b-92d8-b6209a4cdaeb",
