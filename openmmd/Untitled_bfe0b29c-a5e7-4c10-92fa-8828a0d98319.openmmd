@@ -4,35 +4,35 @@
       "id": "d89e72f4-ce65-48bf-97f8-92b321a1424d",
       "label": "业务部门",
       "order": 0,
-      "width": 1636,
+      "width": 1953,
       "height": 172
     },
     {
       "id": "c1269e91-ce65-4d89-a252-135a4cb46c71",
       "label": "项目管理部",
       "order": 1,
-      "width": 1636,
+      "width": 1953,
       "height": 208
     },
     {
       "id": "30cb91de-893e-4bff-be22-7684fc87401c",
       "label": "产研部门",
       "order": 2,
-      "width": 1636,
+      "width": 1953,
       "height": 208
     },
     {
       "id": "d5d7c285-dc18-40b6-b642-67519d754127",
       "label": "高层",
       "order": 3,
-      "width": 1636,
+      "width": 1953,
       "height": 208
     },
     {
       "id": "55b98f0a-6789-4021-8ee8-c075bcf951fd",
       "label": "归档",
       "order": 4,
-      "width": 1636,
+      "width": 1953,
       "height": 172
     }
   ],
