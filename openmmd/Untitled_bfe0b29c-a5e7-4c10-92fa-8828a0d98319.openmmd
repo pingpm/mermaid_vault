@@ -1,0 +1,104 @@
+{
+  "lanes": [
+    {
+      "id": "lane-1",
+      "label": "Planning",
+      "order": 0
+    },
+    {
+      "id": "lane-2",
+      "label": "Development",
+      "order": 1
+    },
+    {
+      "id": "lane-3",
+      "label": "Review",
+      "order": 2
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "laneId": "lane-1",
+      "label": "Start",
+      "shape": "terminator",
+      "order": 0,
+      "x": 40,
+      "y": 72
+    },
+    {
+      "id": "task-2",
+      "laneId": "lane-1",
+      "label": "Define Requirements",
+      "shape": "process",
+      "order": 1,
+      "x": 240,
+      "y": 72
+    },
+    {
+      "id": "task-3",
+      "laneId": "lane-1",
+      "label": "Approved?",
+      "shape": "decision",
+      "order": 2,
+      "x": 460,
+      "y": 54
+    },
+    {
+      "id": "task-4",
+      "laneId": "lane-2",
+      "label": "Implement Feature",
+      "shape": "process",
+      "order": 0,
+      "x": 460,
+      "y": 72
+    },
+    {
+      "id": "task-5",
+      "laneId": "lane-3",
+      "label": "Code Review",
+      "shape": "process",
+      "order": 0,
+      "x": 460,
+      "y": 72
+    }
+  ],
+  "connections": [
+    {
+      "id": "c1",
+      "fromTaskId": "task-1",
+      "toTaskId": "task-2",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "c2",
+      "fromTaskId": "task-2",
+      "toTaskId": "task-3",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "c3",
+      "fromTaskId": "task-3",
+      "toTaskId": "task-4",
+      "label": "Yes",
+      "sourceHandle": "bottom",
+      "targetHandle": "top"
+    },
+    {
+      "id": "c4",
+      "fromTaskId": "task-4",
+      "toTaskId": "task-5",
+      "sourceHandle": "bottom",
+      "targetHandle": "top"
+    }
+  ],
+  "swBgPattern": "none",
+  "swDirection": "LR",
+  "swEdgeStyle": "smooth",
+  "swTheme": "default",
+  "swLaneGap": 24,
+  "swLaneColorOverrides": {},
+  "mermaidCode": "flowchart TD\n    subgraph 业务部门\n        A1[需求提交]\n    end\n    \n    subgraph 项目管理部\n        B1[ROI初评]\n        B2{立项评审<br/>第一道门}\n        B3[中期检查<br/>第二道门]\n        B4[验收需求]\n        B5{项目结项会}\n        B6[ROI复盘验证<br/>第三道门]\n        B7[经验沉淀与模型校准]\n    end\n    \n    subgraph 产研部门\n        C1[需求规划与边界确认]\n        C2{需求对齐评审}\n        C3[技术方案与成本复核]\n        C4[需求开发]\n        C5[需求测试]\n    end\n    \n    subgraph 高层\n        D1{高层审批}\n    end\n    \n    %% 主流程\n    A1 --> B1\n    B1 --> B2\n    B2 -->|通过| D1\n    D1 -->|同意| C1\n    D1 -->|不同意| A1\n    B2 -->|不通过/暂缓| A1\n    B2 -->|建议拆分| A1\n    \n    C1 --> C2\n    C2 -->|对齐通过| C3\n    C2 -->|对齐不通过| C1\n    C3 --> C4\n    C3 -->|成本超30%| B3\n    \n    C4 --> B3\n    B3 -->|继续| C5\n    B3 -->|范围失控/ROI不成立| T1[需求终止]\n    \n    C5 --> B4\n    B4 -->|通过| B5\n    B4 -->|不通过| C4\n    \n    B5 -->|通过| B6\n    B6 -->|ROI达标| B7\n    B6 -->|ROI偏差| B7\n    B7 --> E1[需求完结归档]\n    \n    %% 终止机制\n    T1 --> T2[终止原因记录]\n    T2 --> T3[资源释放]\n    T3 --> E2[已终止归档]\n    \n    %% 特殊通道\n    A1 -->|特殊需求| S1[填写特殊通道原因]\n    S1 --> D1"
+}
