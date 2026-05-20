@@ -1,29 +1,6 @@
 # Untitled
 
 ```mermaid
-sequenceDiagram
-  autonumber
-  actor p0 as 支付宝
-  participant p1 as 运车管家
-  Note over p0,p1: 询价
-  p0->>p1: Request
-  p1-->>p0: Response
-  Note over p1: [{<br/>	"price_id":"1111111",<br/>	"mileage_fee":100000,//1000元<br/>	"order_fee":100000,//1000元<br/>	"before_discount_fee":100000,//1000元，无优惠<br/>	"deposit_fee":30000//定金300元<br/>	"transport_type":"LARGE_TRUCK"//大板运输<br/>	....<br/>}]
-  Note over p0,p1: 下单
-  p0->>p1: request
-  Note over p0: {<br/>	"price_id":"1111111"<br/>}
-  p1-->>p0: response
-  Note over p0,p1: 用户刚下单，需要用户支付定金
-  p0->>p1: Request
-  Note over p0: {<br/>	order_status:"TO_PAY",//待支付<br/>	mileage_fee:30000,//定金300元<br/>	order_fee:30000,//定金300元<br/>	additional_fee:0,//没有附加费用<br/>	alipay_trade_no:"1234"//支付宝交易号<br/>}
-  p1-->>p0: response
-  Note over p0,p1: 用户支付了定金，后期线下沟通，增加了提送车费用
-  p0->>p1: Request
-  Note over p0: {<br/>	order_status:"",<br/>	mileage_fee:"",<br/>	order_fee"",<br/>	additional_fee:"20000",//增加了200元提送车<br/>	alipay_trade_no:"1234"//支付宝交易号<br/>}
-  p1-->>p0: response
-  Note over p0,p1: 订单状态变为CS_SERVICE_COMPLETED，给用户推送尾款账单
-  p0->>p1: Request
-  Note over p0: {<br/>	order_status:"TO_PAY",//待支付<br/>	mileage_fee:90000,//增加了200元后的尾款<br/>	order_fee:90000,//增加了200元后的尾款<br/>	additional_fee:0,<br/>	alipay_trade_no:"2345"//支付宝交易号<br/>}
-  p1-->>p0: response
+flowchart TD
 
 ```
