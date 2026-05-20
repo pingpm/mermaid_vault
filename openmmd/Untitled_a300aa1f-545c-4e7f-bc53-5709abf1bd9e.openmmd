@@ -57,17 +57,6 @@
       "height": 56
     },
     {
-      "id": "13a8a53b-78e3-41f6-9f63-5221bbe72f3d",
-      "laneId": "a1dbd7d6-84f9-48cd-a245-bd79a9d2aec2",
-      "label": "Process 4",
-      "shape": "process",
-      "order": 3,
-      "x": 1774.0086298384836,
-      "y": 176,
-      "width": 156,
-      "height": 56
-    },
-    {
       "id": "fcc85ea8-f132-407b-823a-4513e3d5dd32",
       "laneId": "ad22217f-58dd-42b4-afad-2890374aa170",
       "label": "调用取消订单接口",
@@ -681,5 +670,5 @@
   "swTheme": "default",
   "swLaneGap": 24,
   "swLaneColorOverrides": {},
-  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"客户\"]\n    t_0{\"是否确认取消\"}\n    t_1([\"发起取消订单\"])\n    t_2[\"不处理\"]\n    t_3[\"Process 4\"]\n  end\n  subgraph lane_1[\"支付宝\"]\n    t_4[\"调用取消订单接口\"]\n    t_5[\"展示取消结果\"]\n    t_6[\"弹出取消确认弹窗\"]\n    t_7[\"预取消订单查询\"]\n    t_8[\"取消失败\"]\n    t_9[\"推送：退款通知\"]\n  end\n  subgraph lane_2[\"交付系统\"]\n    t_10[/\"订单无责任取消：allow_cancel = true，cancel_fee=null，pay_cancel_fee=null，is_free_cancel=true\"\\]\n    t_11[/\"allow_cancel = false，cancel_fee=null，pay_cancel_fee=null\"\\]\n    t_12[/\"cancel_status=success\"\\]\n    t_13[\"【售后】人工提交退款申请\"]\n    t_14[\"【售后】线下接到退款申请\"]\n    t_15[\"【财务】支付宝商户后台手动退款\"]\n    t_16[\"【售后】退款凭证上传\"]\n    %% [tag:existing] 已有 | 已有功能改造\n    t_17[\"调用支付单状态同步接口，通知退款\"]\n    %% [tag:new] 新增 | 新增接口推送\n    t_18[\"返回取消成功\"]\n    t_19[\"取消订单、取消支付单\"]\n    t_20[/\"order_status=REFUND<br/>含refund_fee, refund_desc\"\\]\n    t_21[/\"售后在线下收到退款申请，比如客服电话等，与客户核实运车信息\"\\]\n    t_22[\"返回可取消\"]\n    t_23[\"返回不可取消\"]\n    t_24{\"状态=已取消\"}\n    t_25{\"状态=待支付\"}\n    t_26[\"查询订单状态\"]\n    %% [tag:new] 新增 | 新增接口\n    t_27{\"状态=已取消\"}\n    t_28{\"状态=待支付\"}\n    t_29[\"不允许取消\"]\n    t_30[\"查询订单状态\"]\n    %% [tag:new] 新增 | 新增取消接口\n    t_31[/\"cancel_status=FAIL，<br/>sub_code=NOT_CAN_CANCEL，<br/>sub_msg=因订单已派单原因，不能取消，请联系人工客服\"\\]\n  end\n  t_1 --> t_7\n  t_7 --> t_26\n  t_26 --> t_24\n  t_24 -->|\"否\"| t_25\n  t_24 -->|\"是\"| t_22\n  t_25 --> t_22\n  t_22 --> t_6\n  t_6 --> t_0\n  t_0 -->|\"否\"| t_2\n  t_0 --> t_4\n  t_4 --> t_30\n  t_30 --> t_27\n  t_27 -->|\"否\"| t_28\n  t_18 --> t_5\n  t_12 -.-> t_18\n  t_14 --> t_13\n  t_13 --> t_15\n  t_15 --> t_16\n  t_16 --> t_17\n  t_17 --> t_9\n  t_28 -->|\"否\"| t_29\n  t_29 --> t_8\n  t_31 -.-> t_29\n  t_21 -.-> t_14\n  t_20 -.-> t_17\n  t_25 -->|\"否\"| t_23\n  t_11 -.-> t_23\n  t_10 -.-> t_22\n  t_27 -->|\"是\"| t_19\n  t_28 -->|\"是\"| t_19\n  t_19 --> t_18\n"
+  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"客户\"]\n    t_0{\"是否确认取消\"}\n    t_1([\"发起取消订单\"])\n    t_2[\"不处理\"]\n  end\n  subgraph lane_1[\"支付宝\"]\n    t_3[\"调用取消订单接口\"]\n    t_4[\"展示取消结果\"]\n    t_5[\"弹出取消确认弹窗\"]\n    t_6[\"预取消订单查询\"]\n    t_7[\"取消失败\"]\n    t_8[\"推送：退款通知\"]\n  end\n  subgraph lane_2[\"交付系统\"]\n    t_9[/\"订单无责任取消：allow_cancel = true，cancel_fee=null，pay_cancel_fee=null，is_free_cancel=true\"\\]\n    t_10[/\"allow_cancel = false，cancel_fee=null，pay_cancel_fee=null\"\\]\n    t_11[/\"cancel_status=success\"\\]\n    t_12[\"【售后】人工提交退款申请\"]\n    t_13[\"【售后】线下接到退款申请\"]\n    t_14[\"【财务】支付宝商户后台手动退款\"]\n    t_15[\"【售后】退款凭证上传\"]\n    %% [tag:existing] 已有 | 已有功能改造\n    t_16[\"调用支付单状态同步接口，通知退款\"]\n    %% [tag:new] 新增 | 新增接口推送\n    t_17[\"返回取消成功\"]\n    t_18[\"取消订单、取消支付单\"]\n    t_19[/\"order_status=REFUND<br/>含refund_fee, refund_desc\"\\]\n    t_20[/\"售后在线下收到退款申请，比如客服电话等，与客户核实运车信息\"\\]\n    t_21[\"返回可取消\"]\n    t_22[\"返回不可取消\"]\n    t_23{\"状态=已取消\"}\n    t_24{\"状态=待支付\"}\n    t_25[\"查询订单状态\"]\n    %% [tag:new] 新增 | 新增接口\n    t_26{\"状态=已取消\"}\n    t_27{\"状态=待支付\"}\n    t_28[\"不允许取消\"]\n    t_29[\"查询订单状态\"]\n    %% [tag:new] 新增 | 新增取消接口\n    t_30[/\"cancel_status=FAIL，<br/>sub_code=NOT_CAN_CANCEL，<br/>sub_msg=因订单已派单原因，不能取消，请联系人工客服\"\\]\n  end\n  t_1 --> t_6\n  t_6 --> t_25\n  t_25 --> t_23\n  t_23 -->|\"否\"| t_24\n  t_23 -->|\"是\"| t_21\n  t_24 --> t_21\n  t_21 --> t_5\n  t_5 --> t_0\n  t_0 -->|\"否\"| t_2\n  t_0 --> t_3\n  t_3 --> t_29\n  t_29 --> t_26\n  t_26 -->|\"否\"| t_27\n  t_17 --> t_4\n  t_11 -.-> t_17\n  t_13 --> t_12\n  t_12 --> t_14\n  t_14 --> t_15\n  t_15 --> t_16\n  t_16 --> t_8\n  t_27 -->|\"否\"| t_28\n  t_28 --> t_7\n  t_30 -.-> t_28\n  t_20 -.-> t_13\n  t_19 -.-> t_16\n  t_24 -->|\"否\"| t_22\n  t_10 -.-> t_22\n  t_9 -.-> t_21\n  t_26 -->|\"是\"| t_18\n  t_27 -->|\"是\"| t_18\n  t_18 --> t_17\n"
 }
