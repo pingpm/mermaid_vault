@@ -85,22 +85,6 @@
     },
     {
       "source": "b17dc425-692f-4035-abeb-be63946e0026",
-      "sourceHandle": "left-source",
-      "target": "1",
-      "targetHandle": "right-target",
-      "animated": false,
-      "style": {
-        "stroke": "#6366f1",
-        "strokeWidth": 2
-      },
-      "markerEnd": {
-        "type": "arrowclosed",
-        "color": "#6366f1"
-      },
-      "id": "xy-edge__b17dc425-692f-4035-abeb-be63946e0026left-source-1right-target"
-    },
-    {
-      "source": "b17dc425-692f-4035-abeb-be63946e0026",
       "sourceHandle": "bottom-source",
       "target": "1",
       "targetHandle": "bottom-target",
@@ -130,8 +114,24 @@
         "color": "#6366f1"
       },
       "id": "xy-edge__1top-source-b17dc425-692f-4035-abeb-be63946e0026top-target"
+    },
+    {
+      "source": "1",
+      "sourceHandle": "right-source",
+      "target": "b17dc425-692f-4035-abeb-be63946e0026",
+      "targetHandle": "left-target",
+      "animated": false,
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      },
+      "id": "xy-edge__1right-source-b17dc425-692f-4035-abeb-be63946e0026left-target"
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2(\"Process 3\")\n  n_0 --> n_1\n  n_2 --> n_1\n  n_2 --> n_1\n  n_1 --> n_2\n",
+  "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2(\"Process 3\")\n  n_0 --> n_1\n  n_2 --> n_1\n  n_1 --> n_2\n  n_1 --> n_2\n",
   "flowEdgeStyle": "smooth"
 }
