@@ -20,7 +20,7 @@
         "width": 160,
         "height": 56
       },
-      "selected": true,
+      "selected": false,
       "dragging": false
     },
     {
@@ -47,10 +47,10 @@
   ],
   "edges": [
     {
-      "source": "0b04bf81-58db-433b-aac7-c6c6fb104dfd",
-      "sourceHandle": "top-source",
-      "target": "0f2fe507-f857-4cdc-9d36-49c84a7bb71b",
-      "targetHandle": "bottom-target",
+      "source": "0f2fe507-f857-4cdc-9d36-49c84a7bb71b",
+      "sourceHandle": "bottom-source",
+      "target": "0b04bf81-58db-433b-aac7-c6c6fb104dfd",
+      "targetHandle": "top-target",
       "animated": false,
       "style": {
         "stroke": "#6366f1",
@@ -60,9 +60,25 @@
         "type": "arrowclosed",
         "color": "#6366f1"
       },
-      "id": "xy-edge__0b04bf81-58db-433b-aac7-c6c6fb104dfdtop-source-0f2fe507-f857-4cdc-9d36-49c84a7bb71bbottom-target"
+      "id": "xy-edge__0f2fe507-f857-4cdc-9d36-49c84a7bb71bbottom-source-0b04bf81-58db-433b-aac7-c6c6fb104dfdtop-target"
+    },
+    {
+      "source": "0b04bf81-58db-433b-aac7-c6c6fb104dfd",
+      "sourceHandle": "right-source",
+      "target": "0f2fe507-f857-4cdc-9d36-49c84a7bb71b",
+      "targetHandle": "right-target",
+      "animated": false,
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      },
+      "id": "xy-edge__0b04bf81-58db-433b-aac7-c6c6fb104dfdright-source-0f2fe507-f857-4cdc-9d36-49c84a7bb71bright-target"
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0(\"Process 1\")\n  n_1(\"Process 2\")\n  n_1 --> n_0\n",
+  "mermaidCode": "flowchart TD\n  n_0(\"Process 1\")\n  n_1(\"Process 2\")\n  n_0 --> n_1\n  n_1 --> n_0\n",
   "flowEdgeStyle": "smooth"
 }
