@@ -1,0 +1,66 @@
+{
+  "nodes": [
+    {
+      "id": "0f2fe507-f857-4cdc-9d36-49c84a7bb71b",
+      "type": "flow-process",
+      "position": {
+        "x": 490,
+        "y": 261
+      },
+      "data": {
+        "label": "Process 1",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "measured": {
+        "width": 160,
+        "height": 56
+      }
+    },
+    {
+      "id": "0b04bf81-58db-433b-aac7-c6c6fb104dfd",
+      "type": "flow-process",
+      "position": {
+        "x": 508,
+        "y": 520
+      },
+      "data": {
+        "label": "Process 2",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "measured": {
+        "width": 160,
+        "height": 56
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "0b04bf81-58db-433b-aac7-c6c6fb104dfd",
+      "sourceHandle": "top-source",
+      "target": "0f2fe507-f857-4cdc-9d36-49c84a7bb71b",
+      "targetHandle": "bottom-target",
+      "animated": false,
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      },
+      "id": "xy-edge__0b04bf81-58db-433b-aac7-c6c6fb104dfdtop-source-0f2fe507-f857-4cdc-9d36-49c84a7bb71bbottom-target"
+    }
+  ],
+  "mermaidCode": "flowchart TD\n  n_0(\"Process 1\")\n  n_1(\"Process 2\")\n  n_1 --> n_0\n",
+  "flowEdgeStyle": "smooth"
+}
