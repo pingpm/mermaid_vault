@@ -4,8 +4,8 @@
       "id": "0f2fe507-f857-4cdc-9d36-49c84a7bb71b",
       "type": "flow-process",
       "position": {
-        "x": 490,
-        "y": 261
+        "x": 516,
+        "y": 264
       },
       "data": {
         "label": "Process 1",
@@ -19,7 +19,9 @@
       "measured": {
         "width": 160,
         "height": 56
-      }
+      },
+      "selected": true,
+      "dragging": false
     },
     {
       "id": "0b04bf81-58db-433b-aac7-c6c6fb104dfd",
