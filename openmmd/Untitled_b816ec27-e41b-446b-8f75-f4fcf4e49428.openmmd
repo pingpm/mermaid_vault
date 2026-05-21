@@ -76,7 +76,7 @@
         "width": 160,
         "height": 56
       },
-      "selected": true,
+      "selected": false,
       "dragging": false
     },
     {
@@ -155,7 +155,7 @@
         "width": 176,
         "height": 77
       },
-      "selected": true,
+      "selected": false,
       "dragging": false
     },
     {
@@ -396,7 +396,7 @@
       "id": "c29bb540-0042-4eb2-a9d0-ba3537265bbc",
       "type": "flow-document",
       "position": {
-        "x": 1079.8454363119877,
+        "x": 1100.8454363119877,
         "y": 190.5317370255442
       },
       "data": {
@@ -469,7 +469,7 @@
         "width": 176,
         "height": 77
       },
-      "selected": true,
+      "selected": false,
       "dragging": false
     },
     {
