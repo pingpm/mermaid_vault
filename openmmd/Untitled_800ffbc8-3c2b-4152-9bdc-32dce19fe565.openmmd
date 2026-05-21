@@ -27,11 +27,34 @@
       "id": "0b04bf81-58db-433b-aac7-c6c6fb104dfd",
       "type": "flow-process",
       "position": {
-        "x": 508,
-        "y": 520
+        "x": 515,
+        "y": 526
       },
       "data": {
         "label": "Process 2",
+        "width": 160,
+        "height": 56
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      },
+      "measured": {
+        "width": 160,
+        "height": 56
+      },
+      "selected": false,
+      "dragging": false
+    },
+    {
+      "id": "081b3da2-345a-4bba-a5ac-f56448b5e4f0",
+      "type": "flow-process",
+      "position": {
+        "x": 697,
+        "y": 791
+      },
+      "data": {
+        "label": "Process 3",
         "width": 160,
         "height": 56
       },
@@ -60,12 +83,29 @@
         "type": "arrowclosed",
         "color": "#6366f1"
       },
-      "id": "xy-edge__0f2fe507-f857-4cdc-9d36-49c84a7bb71bbottom-source-0b04bf81-58db-433b-aac7-c6c6fb104dfdtop-target"
+      "id": "xy-edge__0f2fe507-f857-4cdc-9d36-49c84a7bb71bbottom-source-0b04bf81-58db-433b-aac7-c6c6fb104dfdtop-target",
+      "selected": false
     },
     {
       "source": "0b04bf81-58db-433b-aac7-c6c6fb104dfd",
-      "sourceHandle": "right-source",
+      "sourceHandle": "right-target",
       "target": "0f2fe507-f857-4cdc-9d36-49c84a7bb71b",
+      "targetHandle": "right-source",
+      "animated": false,
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      },
+      "id": "xy-edge__0b04bf81-58db-433b-aac7-c6c6fb104dfdright-target-0f2fe507-f857-4cdc-9d36-49c84a7bb71bright-source"
+    },
+    {
+      "source": "0f2fe507-f857-4cdc-9d36-49c84a7bb71b",
+      "sourceHandle": "right-target",
+      "target": "0b04bf81-58db-433b-aac7-c6c6fb104dfd",
       "targetHandle": "right-target",
       "animated": false,
       "style": {
@@ -76,9 +116,25 @@
         "type": "arrowclosed",
         "color": "#6366f1"
       },
-      "id": "xy-edge__0b04bf81-58db-433b-aac7-c6c6fb104dfdright-source-0f2fe507-f857-4cdc-9d36-49c84a7bb71bright-target"
+      "id": "xy-edge__0f2fe507-f857-4cdc-9d36-49c84a7bb71bright-target-0b04bf81-58db-433b-aac7-c6c6fb104dfdright-target"
+    },
+    {
+      "source": "0b04bf81-58db-433b-aac7-c6c6fb104dfd",
+      "sourceHandle": "bottom-target",
+      "target": "081b3da2-345a-4bba-a5ac-f56448b5e4f0",
+      "targetHandle": "top-source",
+      "animated": false,
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
+      "markerEnd": {
+        "type": "arrowclosed",
+        "color": "#6366f1"
+      },
+      "id": "xy-edge__0b04bf81-58db-433b-aac7-c6c6fb104dfdbottom-target-081b3da2-345a-4bba-a5ac-f56448b5e4f0top-source"
     }
   ],
-  "mermaidCode": "flowchart TD\n  n_0(\"Process 1\")\n  n_1(\"Process 2\")\n  n_0 --> n_1\n  n_1 --> n_0\n",
+  "mermaidCode": "flowchart TD\n  n_0(\"Process 1\")\n  n_1(\"Process 2\")\n  n_2(\"Process 3\")\n  n_0 --> n_1\n  n_1 --> n_0\n  n_0 --> n_1\n  n_1 --> n_2\n",
   "flowEdgeStyle": "smooth"
 }
