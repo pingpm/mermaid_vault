@@ -5,5 +5,6 @@ flowchart TD
   n_0("Process 1")
   n_1("Process 2")
   n_0 --> n_1
+  n_1 --> n_0
 
 ```
