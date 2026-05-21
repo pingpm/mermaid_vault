@@ -56,8 +56,8 @@
       "id": "527d686e-07a0-4f37-acd3-08dc95617978",
       "type": "flow-process",
       "position": {
-        "x": 598.3395440907818,
-        "y": 251.3302279546091
+        "x": 579.3395440907818,
+        "y": 252.3302279546091
       },
       "data": {
         "label": "不自动报价",
@@ -76,7 +76,8 @@
         "width": 160,
         "height": 56
       },
-      "selected": true
+      "selected": true,
+      "dragging": false
     },
     {
       "id": "9acbd334-2cca-4b46-8eb5-ce9cea0eecd7",
@@ -134,8 +135,8 @@
       "id": "2f8a8e24-a685-4713-8224-80f6d34b59fe",
       "type": "flow-decision",
       "position": {
-        "x": 1079.646433087404,
-        "y": 438.7355229800811
+        "x": 1060.646433087404,
+        "y": 439.7355229800811
       },
       "data": {
         "label": "是否有直运线路",
@@ -154,7 +155,8 @@
         "width": 176,
         "height": 77
       },
-      "selected": true
+      "selected": true,
+      "dragging": false
     },
     {
       "id": "64b1ea8b-2c73-477b-abd1-10d531e9fd7e",
@@ -394,8 +396,8 @@
       "id": "c29bb540-0042-4eb2-a9d0-ba3537265bbc",
       "type": "flow-document",
       "position": {
-        "x": 1098.8454363119877,
-        "y": 189.53173702554423
+        "x": 1079.8454363119877,
+        "y": 190.5317370255442
       },
       "data": {
         "label": "订单来源=支付宝聚合搜索时，需要给支付宝返回不可承运",
@@ -414,7 +416,8 @@
         "width": 268,
         "height": 116
       },
-      "selected": true
+      "selected": true,
+      "dragging": false
     },
     {
       "id": "fb526b44-3337-4769-971b-36b3993ef873",
@@ -446,8 +449,8 @@
       "id": "0bd57925-a2e3-4f40-8c8b-7ca4125f3580",
       "type": "flow-decision",
       "position": {
-        "x": 632.4887137183989,
-        "y": 436.62977180847173
+        "x": 613.4887137183989,
+        "y": 437.62977180847173
       },
       "data": {
         "label": "是否开启线路取价",
@@ -466,7 +469,8 @@
         "width": 176,
         "height": 77
       },
-      "selected": false
+      "selected": true,
+      "dragging": false
     },
     {
       "id": "79b22306-cd51-4718-9d65-ccf590f058cf",
