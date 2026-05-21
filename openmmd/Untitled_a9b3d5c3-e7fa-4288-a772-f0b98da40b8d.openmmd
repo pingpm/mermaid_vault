@@ -1,0 +1,51 @@
+{
+  "lifelines": [
+    {
+      "id": "user",
+      "label": "User",
+      "kind": "actor",
+      "order": 0
+    },
+    {
+      "id": "system",
+      "label": "System",
+      "kind": "entity",
+      "order": 1
+    }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "from": "user",
+      "to": "system",
+      "label": "Request",
+      "type": "sync",
+      "order": 0
+    },
+    {
+      "id": "m2",
+      "from": "system",
+      "to": "user",
+      "label": "Response",
+      "type": "return",
+      "order": 1,
+      "replyToId": "m1"
+    },
+    {
+      "id": "d232bf66-9510-474f-a6a5-782724b6bdb8",
+      "from": "user",
+      "to": "system",
+      "label": "Message",
+      "type": "sync",
+      "order": 2
+    }
+  ],
+  "notes": [],
+  "fragments": [],
+  "links": [],
+  "colWidths": {},
+  "gaps": {},
+  "lifelineStyle": "dashed",
+  "boxStyle": "rounded",
+  "mermaidCode": "sequenceDiagram\n  autonumber\n  actor p0 as User\n  participant p1 as System\n  p0->>p1: Request\n  activate p1\n  p1-->>p0: Response\n  deactivate p1\n  p0->>p1: Message\n"
+}

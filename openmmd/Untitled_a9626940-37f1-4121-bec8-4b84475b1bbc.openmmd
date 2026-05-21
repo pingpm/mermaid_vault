@@ -1,0 +1,158 @@
+{
+  "lanes": [
+    {
+      "id": "lane-1",
+      "label": "Planning",
+      "order": 0
+    },
+    {
+      "id": "lane-2",
+      "label": "Development",
+      "order": 1
+    },
+    {
+      "id": "lane-3",
+      "label": "Review",
+      "order": 2
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "laneId": "lane-1",
+      "label": "Start",
+      "shape": "terminator",
+      "order": 0,
+      "x": 40,
+      "y": 72
+    },
+    {
+      "id": "task-2",
+      "laneId": "lane-1",
+      "label": "Define Requirements",
+      "shape": "process",
+      "order": 1,
+      "x": 240,
+      "y": 72
+    },
+    {
+      "id": "task-3",
+      "laneId": "lane-1",
+      "label": "Approved?",
+      "shape": "decision",
+      "order": 2,
+      "x": 460,
+      "y": 54
+    },
+    {
+      "id": "task-4",
+      "laneId": "lane-2",
+      "label": "Implement Feature",
+      "shape": "process",
+      "order": 0,
+      "x": 460,
+      "y": 72
+    },
+    {
+      "id": "task-5",
+      "laneId": "lane-3",
+      "label": "Code Review",
+      "shape": "process",
+      "order": 0,
+      "x": 460,
+      "y": 72
+    },
+    {
+      "id": "dc02ad0a-a99d-4fae-9f90-720efde93e4e",
+      "laneId": "lane-1",
+      "label": "Process 4",
+      "shape": "process",
+      "order": 3,
+      "x": 808.5645161290322,
+      "y": 81.67741935483866,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "1a1da887-526a-44ba-a729-7359365a28a0",
+      "laneId": "lane-2",
+      "label": "Process 2",
+      "shape": "process",
+      "order": 1,
+      "x": 828.8548387096773,
+      "y": 49.806451612903174,
+      "width": 156,
+      "height": 56
+    },
+    {
+      "id": "bea9e787-27de-4ed9-9a76-c5b57322cfaa",
+      "laneId": "lane-3",
+      "label": "Process 2",
+      "shape": "process",
+      "order": 1,
+      "x": 874.2096774193549,
+      "y": 106.25806451612902,
+      "width": 156,
+      "height": 56
+    }
+  ],
+  "connections": [
+    {
+      "id": "c1",
+      "fromTaskId": "task-1",
+      "toTaskId": "task-2",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "c2",
+      "fromTaskId": "task-2",
+      "toTaskId": "task-3",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "c3",
+      "fromTaskId": "task-3",
+      "toTaskId": "task-4",
+      "label": "Yes",
+      "sourceHandle": "bottom",
+      "targetHandle": "top"
+    },
+    {
+      "id": "c4",
+      "fromTaskId": "task-4",
+      "toTaskId": "task-5",
+      "sourceHandle": "bottom",
+      "targetHandle": "top"
+    },
+    {
+      "id": "0a9e2358-8bc7-4fbc-89af-c6de2d302b95",
+      "fromTaskId": "task-3",
+      "toTaskId": "dc02ad0a-a99d-4fae-9f90-720efde93e4e",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "f37fa12b-5a8d-45fc-ba84-0421e16ac2d4",
+      "fromTaskId": "task-4",
+      "toTaskId": "1a1da887-526a-44ba-a729-7359365a28a0",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    },
+    {
+      "id": "c68dbd8f-258a-4a05-bfcc-e3699a055c2d",
+      "fromTaskId": "task-5",
+      "toTaskId": "bea9e787-27de-4ed9-9a76-c5b57322cfaa",
+      "sourceHandle": "right",
+      "targetHandle": "left"
+    }
+  ],
+  "swBgPattern": "none",
+  "swDirection": "LR",
+  "swEdgeStyle": "smooth",
+  "swTheme": "default",
+  "swLaneGap": 24,
+  "swLaneColorOverrides": {},
+  "mermaidCode": "flowchart LR\n  subgraph lane_0[\"Planning\"]\n    t_0{\"Approved?\"}\n    t_1([\"Start\"])\n    t_2[\"Define Requirements\"]\n    t_3[\"Process 4\"]\n  end\n  subgraph lane_1[\"Development\"]\n    t_4[\"Process 2\"]\n    t_5[\"Implement Feature\"]\n  end\n  subgraph lane_2[\"Review\"]\n    t_6[\"Code Review\"]\n    t_7[\"Process 2\"]\n  end\n  t_1 --> t_2\n  t_2 --> t_0\n  t_0 -->|\"Yes\"| t_5\n  t_5 --> t_6\n  t_0 --> t_3\n  t_5 --> t_4\n  t_6 --> t_7\n"
+}
