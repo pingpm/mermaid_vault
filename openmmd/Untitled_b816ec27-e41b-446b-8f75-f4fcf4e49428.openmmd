@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "type": "flow-terminator",
+      "position": {
+        "x": 250,
+        "y": 50
+      },
+      "data": {
+        "label": "Start"
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      }
+    },
+    {
+      "id": "1",
+      "type": "flow-process",
+      "position": {
+        "x": 250,
+        "y": 150
+      },
+      "data": {
+        "label": "Process"
+      },
+      "style": {
+        "width": 160,
+        "height": 56
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-start-1",
+      "source": "start",
+      "target": "1",
+      "animated": true
+    }
+  ],
+  "mermaidCode": "flowchart TD\n  start([\"Start\"])\n  1(\"Process\")\n  start --> 1\n"
+}
