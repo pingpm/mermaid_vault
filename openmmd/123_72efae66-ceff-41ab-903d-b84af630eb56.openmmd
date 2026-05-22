@@ -518,7 +518,7 @@
         "width": 160,
         "height": 56
       },
-      "selected": true,
+      "selected": false,
       "dragging": false
     }
   ],
@@ -527,6 +527,10 @@
       "id": "e-0",
       "source": "a82a1ca0-edc0-41d2-a45c-882e93341f3c",
       "target": "4211d062-dfa3-434f-a9e5-d8cbc13ad37d",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "否",
         "lineStyle": "solid",
@@ -542,6 +546,10 @@
       "id": "e-1",
       "source": "a82a1ca0-edc0-41d2-a45c-882e93341f3c",
       "target": "fc3c3514-94eb-40d8-9265-e0f8c8527200",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -556,6 +564,10 @@
       "id": "e-2",
       "source": "fc3c3514-94eb-40d8-9265-e0f8c8527200",
       "target": "8b800e05-fd75-45dd-aff6-746e3c9b27a5",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -570,6 +582,10 @@
       "id": "e-3",
       "source": "8b800e05-fd75-45dd-aff6-746e3c9b27a5",
       "target": "a22b60d2-e60d-4d51-b452-73b97079f6b8",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "是",
         "lineStyle": "solid",
@@ -585,6 +601,10 @@
       "id": "e-4",
       "source": "a22b60d2-e60d-4d51-b452-73b97079f6b8",
       "target": "51491cd4-f9b1-484c-811c-feb8e5715bea",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -599,6 +619,10 @@
       "id": "e-5",
       "source": "51491cd4-f9b1-484c-811c-feb8e5715bea",
       "target": "c1d0c14e-d9c9-44b7-b5d4-a3ac7daee751",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -613,6 +637,10 @@
       "id": "e-6",
       "source": "c1d0c14e-d9c9-44b7-b5d4-a3ac7daee751",
       "target": "4f66203f-d88f-4c41-ab23-d0db7089d434",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -627,6 +655,10 @@
       "id": "e-7",
       "source": "4211d062-dfa3-434f-a9e5-d8cbc13ad37d",
       "target": "b0e56929-af62-4b25-ab9c-748a3d3cf2af",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "否",
         "lineStyle": "solid",
@@ -642,6 +674,10 @@
       "id": "e-8",
       "source": "4211d062-dfa3-434f-a9e5-d8cbc13ad37d",
       "target": "51e410db-cb21-4c02-8f54-6e1944ef7776",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "是",
         "lineStyle": "solid",
@@ -657,6 +693,10 @@
       "id": "e-9",
       "source": "51e410db-cb21-4c02-8f54-6e1944ef7776",
       "target": "05bda108-ad72-4660-ad4e-7ce08d643b54",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -671,6 +711,10 @@
       "id": "e-10",
       "source": "05bda108-ad72-4660-ad4e-7ce08d643b54",
       "target": "f2ae5aa2-d9c5-45fe-ba54-cce924b2f675",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -685,6 +729,10 @@
       "id": "e-11",
       "source": "f2ae5aa2-d9c5-45fe-ba54-cce924b2f675",
       "target": "121031b9-9b8e-4f1c-8b5b-0c214e529b93",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -699,6 +747,10 @@
       "id": "e-12",
       "source": "e16695df-05c4-40ba-bbb1-5f9e607bfcbe",
       "target": "0c3b7a88-20aa-4757-8368-454b0a26b275",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -713,6 +765,10 @@
       "id": "e-13",
       "source": "0c3b7a88-20aa-4757-8368-454b0a26b275",
       "target": "9bc23655-f8d2-4cb4-b35b-25666dda133d",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -727,6 +783,10 @@
       "id": "e-14",
       "source": "9bc23655-f8d2-4cb4-b35b-25666dda133d",
       "target": "967c653c-deff-4957-949d-b21c607ea0aa",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -741,6 +801,10 @@
       "id": "e-15",
       "source": "4f66203f-d88f-4c41-ab23-d0db7089d434",
       "target": "ca17a363-4ab5-43f7-9fb0-554d99aa14f6",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "否",
         "lineStyle": "solid",
@@ -756,6 +820,10 @@
       "id": "e-16",
       "source": "4f66203f-d88f-4c41-ab23-d0db7089d434",
       "target": "e16695df-05c4-40ba-bbb1-5f9e607bfcbe",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "是",
         "lineStyle": "solid",
@@ -771,6 +839,10 @@
       "id": "e-17",
       "source": "8b800e05-fd75-45dd-aff6-746e3c9b27a5",
       "target": "6b83395d-a36a-473b-a957-38f486472f46",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "否",
         "lineStyle": "solid",
@@ -786,6 +858,10 @@
       "id": "e-18",
       "source": "6b83395d-a36a-473b-a957-38f486472f46",
       "target": "787ccf92-cf92-46da-ad6e-d296b7144033",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "是",
         "lineStyle": "solid",
@@ -801,6 +877,10 @@
       "id": "e-19",
       "source": "6b83395d-a36a-473b-a957-38f486472f46",
       "target": "4211d062-dfa3-434f-a9e5-d8cbc13ad37d",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "否",
         "lineStyle": "solid",
@@ -816,6 +896,10 @@
       "id": "e-20",
       "source": "6c619f99-b72e-4038-82f9-76940d1b6037",
       "target": "05ab657b-c2e1-4a5e-8d4c-29d29b71294a",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -830,6 +914,10 @@
       "id": "e-21",
       "source": "05ab657b-c2e1-4a5e-8d4c-29d29b71294a",
       "target": "7c20adde-bb63-466f-ad6f-0327c073000c",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "否",
         "lineStyle": "solid",
@@ -845,6 +933,10 @@
       "id": "e-22",
       "source": "05ab657b-c2e1-4a5e-8d4c-29d29b71294a",
       "target": "a82a1ca0-edc0-41d2-a45c-882e93341f3c",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "是",
         "lineStyle": "solid",
@@ -860,6 +952,10 @@
       "id": "e-23",
       "source": "fdc1b038-121e-4c45-a596-cb68f82a817b",
       "target": "a22b60d2-e60d-4d51-b452-73b97079f6b8",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "是",
         "lineStyle": "solid",
@@ -875,6 +971,10 @@
       "id": "e-24",
       "source": "787ccf92-cf92-46da-ad6e-d296b7144033",
       "target": "fdc1b038-121e-4c45-a596-cb68f82a817b",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "lineStyle": "solid",
         "arrowHead": "arrow"
@@ -889,6 +989,10 @@
       "id": "e-25",
       "source": "fdc1b038-121e-4c45-a596-cb68f82a817b",
       "target": "13a8cad0-86b5-4897-aee3-3ac8f2e0c6ea",
+      "style": {
+        "stroke": "#6366f1",
+        "strokeWidth": 2
+      },
       "data": {
         "label": "否",
         "lineStyle": "solid",
@@ -918,5 +1022,6 @@
     }
   ],
   "mermaidCode": "flowchart TD\n  n_0([\"查询报价\"])\n  n_1{\"是否有大板取价规则\"}\n  n_2{\"是否有小板取价规则\"}\n  n_3(\"大板线路查询\")\n  n_4(\"增加保障服务费（客配置中的）\")\n  n_5(\"加价规则（利润、税率等）\")\n  n_6(\"得到大板报价\")\n  n_7{\"是否有小板取价规则\"}\n  n_8(\"返回不可承运available=false\")\n  n_9(\"增加保障服务费（客配置中的）\")\n  n_10(\"小板价格计算\")\n  n_11(\"加价规则（利润、税率等）\")\n  n_12(\"返回可承运available=true和小板价格\")\n  n_13(\"返回可承运available=true<br/>和大板价格\")\n  n_14(\"增加保障服务费（客配置中的）\")\n  n_15(\"小板价格计算\")\n  n_16(\"加价规则（利润、税率等）\")\n  n_17(\"返回可承运available=true、大板价格和小板价格\")\n  n_18(\"兜底策略计算价格\")\n  n_19{\"是否开启兜底策略\"}\n  n_20(\"返回不可承运available=false\")\n  n_21{\"渠道是否命中规则\"}\n  n_22{\"兜底价格是否有结果\"}\n  n_23(\"返回不可承运available=false\")\n  n_1 -->|\"否\"| n_2\n  n_1 --> n_3\n  n_3 --> 8b800e05-fd75-45dd-aff6-746e3c9b27a5\n  8b800e05-fd75-45dd-aff6-746e3c9b27a5 -->|\"是\"| n_4\n  n_4 --> n_5\n  n_5 --> n_6\n  n_6 --> n_7\n  n_2 -->|\"否\"| n_8\n  n_2 -->|\"是\"| n_10\n  n_10 --> n_9\n  n_9 --> n_11\n  n_11 --> n_12\n  n_15 --> n_14\n  n_14 --> n_16\n  n_16 --> n_17\n  n_7 -->|\"否\"| n_13\n  n_7 -->|\"是\"| n_15\n  8b800e05-fd75-45dd-aff6-746e3c9b27a5 -->|\"否\"| n_19\n  n_19 -->|\"是\"| n_18\n  n_19 -->|\"否\"| n_2\n  n_0 --> n_21\n  n_21 -->|\"否\"| n_20\n  n_21 -->|\"是\"| n_1\n  n_22 -->|\"是\"| n_4\n  n_18 --> n_22\n  n_22 -->|\"否\"| n_23\n  8b800e05-fd75-45dd-aff6-746e3c9b27a5 --> 8b800e05-fd75-45dd-aff6-746e3c9b27a5\n",
-  "flowEdgeStyle": "smooth"
+  "flowEdgeStyle": "smooth",
+  "flowDirection": "TD"
 }
