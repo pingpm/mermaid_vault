@@ -170,5 +170,6 @@
     }
   ],
   "mermaidCode": "flowchart TD\n  n_0([\"Start\"])\n  n_1(\"Process\")\n  n_2(\"Process 3\")\n  n_3(\"Process 4\")\n  n_1 --> n_2\n  n_2 --> n_1\n  n_2 --> n_3\n  n_2 --> n_3\n  n_3 --> n_2\n",
-  "flowEdgeStyle": "smooth"
+  "flowEdgeStyle": "smooth",
+  "flowDirection": "TD"
 }
