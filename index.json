@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1779441044304,
+  "updatedAt": 1779441130981,
   "projects": [
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -12,7 +12,7 @@
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1779441034304
+      "updatedAt": 1779441118127
     }
   ],
   "diagrams": [
@@ -303,15 +303,6 @@
       "createdAt": 1777470305130,
       "updatedAt": 1778652392913,
       "version": 1
-    },
-    {
-      "id": "e797a554-1429-4d1b-aee2-48363c772980",
-      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
-      "name": "未命名",
-      "type": "swimlane",
-      "createdAt": 1779441024021,
-      "updatedAt": 1779441034296,
-      "version": 2
     },
     {
       "id": "1064f870-dac5-4489-86eb-899ef01da298",
