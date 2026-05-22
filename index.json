@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1779440849306,
+  "updatedAt": 1779440872936,
   "projects": [
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -303,15 +303,6 @@
       "createdAt": 1777470305130,
       "updatedAt": 1778652392913,
       "version": 1
-    },
-    {
-      "id": "58b3ea22-f79f-45d4-88cd-ced212720d9f",
-      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
-      "name": "未命名",
-      "type": "markdown",
-      "createdAt": 1779440582788,
-      "updatedAt": 1779440593693,
-      "version": 2
     },
     {
       "id": "f70264a7-e800-4f46-bc77-d32218d12c50",
