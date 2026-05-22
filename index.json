@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1779445797453,
+  "updatedAt": 1779445916629,
   "projects": [
     {
       "id": "acca182d-1f73-403d-8da0-d7f1ea0cea27",
@@ -12,7 +12,7 @@
       "id": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "test",
       "createdAt": 1777271925178,
-      "updatedAt": 1779445698491
+      "updatedAt": 1779445828366
     }
   ],
   "diagrams": [
@@ -305,13 +305,22 @@
       "version": 1
     },
     {
+      "id": "732c02dd-6b9a-44fc-9122-9c86642af889",
+      "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
+      "name": "Mermaid 可视化编辑器 JSON",
+      "type": "markdown",
+      "createdAt": 1779445800466,
+      "updatedAt": 1779445828362,
+      "version": 4
+    },
+    {
       "id": "1b259e24-7bb8-4e56-be24-11462b0611b0",
       "projectId": "339976c6-a72b-425f-b20c-f713e2c976b0",
       "name": "Untitled",
       "type": "markdown",
       "createdAt": 1779444758251,
-      "updatedAt": 1779445698487,
-      "version": 3
+      "updatedAt": 1779445796951,
+      "version": 4
     },
     {
       "id": "1064f870-dac5-4489-86eb-899ef01da298",
