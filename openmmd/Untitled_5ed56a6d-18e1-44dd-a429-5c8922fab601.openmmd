@@ -1,4 +1,4 @@
 {
-  "content": "# test\n\n\n1. #### title1\n2. #### title2\n\n撒大叔的\n\n```javascript\n阿斯顿撒开的开始垃圾袋\n```",
-  "mermaidCode": "# test\n\n\n1. #### title1\n2. #### title2\n\n撒大叔的\n\n```javascript\n阿斯顿撒开的开始垃圾袋\n```"
+  "content": "# test\n\n\n1. #### title1\n2. #### title2\n\n撒大叔的\n\n```javascript\n阿斯顿撒开的开始垃圾袋\n```\n\n```json\n{\n  \"key\": \"value\"\n}\n```",
+  "mermaidCode": "# test\n\n\n1. #### title1\n2. #### title2\n\n撒大叔的\n\n```javascript\n阿斯顿撒开的开始垃圾袋\n```\n\n```json\n{\n  \"key\": \"value\"\n}\n```"
 }
