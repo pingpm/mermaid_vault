@@ -1,4 +1,4 @@
 {
-  "content": "# test\n\n\ntest{\n\n```json\n\"key\": \"value\"\n}\n```",
-  "mermaidCode": "# test\n\n\ntest{\n\n```json\n\"key\": \"value\"\n}\n```"
+  "content": "# test\n\n\ntest\n\n```json\n{\n  \"key\": \"value\"\n}\n```",
+  "mermaidCode": "# test\n\n\ntest\n\n```json\n{\n  \"key\": \"value\"\n}\n```"
 }
